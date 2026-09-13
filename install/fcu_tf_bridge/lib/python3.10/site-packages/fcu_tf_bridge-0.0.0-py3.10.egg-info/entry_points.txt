@@ -1,2 +1,0 @@
-[console_scripts]
-fcu_tf_bridge_node = fcu_tf_bridge.fcu_tf_bridge_node:main

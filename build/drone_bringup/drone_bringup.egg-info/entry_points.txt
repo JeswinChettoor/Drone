@@ -1,3 +1,0 @@
-[console_scripts]
-rangefinder_to_mavros = drone_bringup.rangefinder_to_mavros:main
-rf2o_mavros = drone_bringup.rf2o_mavros:main

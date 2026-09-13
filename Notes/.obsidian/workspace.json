@@ -4,53 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "888e4358f282a125",
+        "id": "935470f81357b14c",
         "type": "tabs",
         "children": [
           {
-            "id": "c09ab0675b06dee1",
+            "id": "0204b9f6fc630d0c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "How to launch the world and drone.md",
+                "file": "Untitled 4/Ardupilot Params.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How to launch the world and drone"
+              "title": "Ardupilot Params"
             }
           },
           {
-            "id": "ef88ff49797b2924",
+            "id": "0a12a2b1319681fd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Updates.md",
+                "file": "Untitled 4/Setting up  localization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Updates"
-            }
-          },
-          {
-            "id": "d0280653e6b432c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Getting stuff to work.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Getting stuff to work"
+              "title": "Setting up  localization"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -70,7 +56,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false,
+                "autoReveal": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -217,17 +203,27 @@
       "bases:Create new base": false
     }
   },
-  "active": "d0280653e6b432c4",
+  "active": "0a12a2b1319681fd",
   "lastOpenFiles": [
-    "Getting the drone model.md",
-    "How to launch the world and drone.md",
-    "Localization + Maze Solving.md",
-    "Localization final.md",
-    "Person Detection.md",
-    "Setting up  localization.md",
-    "Updates.md",
-    "Getting stuff to work.md",
-    "Ardupilot Params.md",
+    "Making a drone that flies/Untitled.md",
+    "Making a drone that actually flies/Untitled.md",
+    "Making a drone that actually flies",
+    "Untitled 4/Setting up  localization.md",
+    "Untitled 4/How to launch the world and drone.md",
+    "Untitled 4/Ardupilot Params.md",
+    "Untitled 4/Updates.md",
+    "Untitled 4",
+    "Untitled 4/Getting stuff to work.md",
+    "Untitled 3",
+    "Untitled 4/Person Detection.md",
+    "Untitled 1.md",
+    "Untitled 4/Localization final.md",
+    "Untitled 4/Getting the drone model.md",
+    "Untitled 4/Localization + Maze Solving.md",
+    "Untitled 4/Mavlink Based.md",
+    "Untitled 2",
+    "Untitled 1",
+    "Making a drone that flies",
     "Random.md",
     "Nectar SDK.md",
     "Task 0.4 — ML Fundamentals & Data Preprocessing Concepts.md",

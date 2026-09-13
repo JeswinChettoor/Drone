@@ -1,2 +1,0 @@
-Invoking command in '/workspace/build/ardupilot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/drone_bringup:/opt/ros/humble /usr/bin/cmake /workspace/ardupilot_gazebo -DCMAKE_INSTALL_PREFIX=/workspace/install/ardupilot_gazebo
-Invoked command in '/workspace/build/ardupilot_gazebo' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/drone_bringup:/opt/ros/humble /usr/bin/cmake /workspace/ardupilot_gazebo -DCMAKE_INSTALL_PREFIX=/workspace/install/ardupilot_gazebo

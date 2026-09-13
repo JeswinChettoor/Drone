@@ -1,6 +1,0 @@
-source;share/fcu_tf_bridge/hook/pythonpath.ps1
-source;share/fcu_tf_bridge/hook/pythonpath.dsv
-source;share/fcu_tf_bridge/hook/pythonpath.sh
-source;share/fcu_tf_bridge/hook/ament_prefix_path.ps1
-source;share/fcu_tf_bridge/hook/ament_prefix_path.dsv
-source;share/fcu_tf_bridge/hook/ament_prefix_path.sh

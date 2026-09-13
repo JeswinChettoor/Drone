@@ -1,9 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000241] (-) JobUnselected: {'identifier': 'ardupilot_dds_tests'}
-[0.000258] (-) JobUnselected: {'identifier': 'ardupilot_gazebo'}
-[0.000270] (-) JobUnselected: {'identifier': 'ardupilot_msgs'}
-[0.000283] (-) JobUnselected: {'identifier': 'ardupilot_sitl'}
-[0.000289] (-) JobUnselected: {'identifier': 'drone_bringup'}
-[0.000295] (-) JobUnselected: {'identifier': 'lidar_preprocessing'}
-[0.000302] (-) JobUnselected: {'identifier': 'rf2o_laser_odometry'}
-[0.000617] (-) EventReactorShutdown: {}

@@ -1,2 +1,0 @@
-Invoking command in '/workspace/build/lidar_preprocessing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/drone_bringup:/opt/ros/humble /usr/bin/cmake --build /workspace/build/lidar_preprocessing -- -j16 -l16
-Invoked command in '/workspace/build/lidar_preprocessing' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/drone_bringup:/opt/ros/humble /usr/bin/cmake --build /workspace/build/lidar_preprocessing -- -j16 -l16

@@ -1,0 +1,34 @@
+[0.432s] Invoking command in '/workspace/src/drone_control': PYTHONPATH=/workspace/src/drone_control/build/drone_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/drone_control/install/drone_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/drone_control build --build-base /workspace/src/drone_control/build/drone_control/build install --record /workspace/src/drone_control/build/drone_control/install.log --install-scripts $base/lib/drone_control --single-version-externally-managed install_data
+[0.517s] /home/developer/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'
+[0.517s]   warnings.warn(msg)
+[0.553s] running egg_info
+[0.559s] creating build/drone_control/drone_control.egg-info
+[0.559s] writing build/drone_control/drone_control.egg-info/PKG-INFO
+[0.559s] writing dependency_links to build/drone_control/drone_control.egg-info/dependency_links.txt
+[0.559s] writing requirements to build/drone_control/drone_control.egg-info/requires.txt
+[0.559s] writing top-level names to build/drone_control/drone_control.egg-info/top_level.txt
+[0.559s] writing manifest file 'build/drone_control/drone_control.egg-info/SOURCES.txt'
+[0.572s] reading manifest file 'build/drone_control/drone_control.egg-info/SOURCES.txt'
+[0.573s] writing manifest file 'build/drone_control/drone_control.egg-info/SOURCES.txt'
+[0.573s] running build
+[0.573s] running build_py
+[0.573s] creating /workspace/src/drone_control/build/drone_control/build/lib/drone_control
+[0.573s] copying drone_control/init.py -> /workspace/src/drone_control/build/drone_control/build/lib/drone_control
+[0.573s] running install
+[0.575s] running install_lib
+[0.581s] creating /workspace/src/drone_control/install/drone_control/lib/python3.10/site-packages/drone_control
+[0.581s] copying /workspace/src/drone_control/build/drone_control/build/lib/drone_control/init.py -> /workspace/src/drone_control/install/drone_control/lib/python3.10/site-packages/drone_control
+[0.581s] byte-compiling /workspace/src/drone_control/install/drone_control/lib/python3.10/site-packages/drone_control/init.py to init.cpython-310.pyc
+[0.581s] running install_data
+[0.581s] creating /workspace/src/drone_control/install/drone_control/share/ament_index/resource_index/packages
+[0.581s] copying resource/drone_control -> /workspace/src/drone_control/install/drone_control/share/ament_index/resource_index/packages
+[0.581s] copying package.xml -> /workspace/src/drone_control/install/drone_control/share/drone_control
+[0.582s] creating /workspace/src/drone_control/install/drone_control/share/drone_control/launch
+[0.582s] copying launch/slam.launch.py -> /workspace/src/drone_control/install/drone_control/share/drone_control/launch
+[0.582s] creating /workspace/src/drone_control/install/drone_control/share/drone_control/config
+[0.582s] copying config/slam_toolbox.yaml -> /workspace/src/drone_control/install/drone_control/share/drone_control/config
+[0.582s] running install_egg_info
+[0.588s] Copying build/drone_control/drone_control.egg-info to /workspace/src/drone_control/install/drone_control/lib/python3.10/site-packages/drone_control-0.1.0-py3.10.egg-info
+[0.589s] running install_scripts
+[0.602s] writing list of installed files to '/workspace/src/drone_control/build/drone_control/install.log'
+[0.614s] Invoked command in '/workspace/src/drone_control' returned '0': PYTHONPATH=/workspace/src/drone_control/build/drone_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/drone_control/install/drone_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/drone_control build --build-base /workspace/src/drone_control/build/drone_control/build install --record /workspace/src/drone_control/build/drone_control/install.log --install-scripts $base/lib/drone_control --single-version-externally-managed install_data

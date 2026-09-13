@@ -1,3 +1,0 @@
-Invoking command in '/workspace/build/ardupilot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/drone_bringup:/opt/ros/humble /usr/bin/cmake --build /workspace/build/ardupilot_msgs -- -j16 -l16
-Invoked command in '/workspace/build/ardupilot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/drone_bringup:/opt/ros/humble /usr/bin/cmake --build /workspace/build/ardupilot_msgs -- -j16 -l16
-Invoking command in '/workspace/build/ardupilot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/drone_bringup:/opt/ros/humble /usr/bin/cmake --install /workspace/build/ardupilot_msgs
