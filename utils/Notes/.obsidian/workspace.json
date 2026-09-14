@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "32e17163d3865287",
+    "type": "split",
+    "children": [
+      {
+        "id": "935470f81357b14c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0204b9f6fc630d0c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 4/Ardupilot Params.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ardupilot Params"
+            }
+          },
+          {
+            "id": "0a12a2b1319681fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 4/How to launch the world and drone.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "How to launch the world and drone"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1e86bb26ba78061f",
+    "type": "split",
+    "children": [
+      {
+        "id": "693190ba2911a721",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4b05cd49a6bfbcf6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "94e05953a896b3c5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "7ebd451e878252e1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bfcd821cb480ea3b",
+    "type": "split",
+    "children": [
+      {
+        "id": "b4e24a715ebc8cd6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3313ffb463bba314",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Gazebo Harmonic.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "243f500290c8e11c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Gazebo Harmonic.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "05d66eeecb4025fc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "72b1c3d30bac2c6e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "c16022021f8a7889",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Gazebo Harmonic.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "0a12a2b1319681fd",
+  "lastOpenFiles": [
+    "Untitled 4/Getting the drone model.md",
+    "Untitled 4/Localization + Maze Solving.md",
+    "Untitled 4/How to launch the world and drone.md",
+    "Untitled 4/Ardupilot Params.md",
+    "Untitled 4/Mavlink Based.md",
+    "Untitled 4/Person Detection.md",
+    "Untitled 4/Setting up  localization.md",
+    "Untitled 4/Updates.md",
+    "Untitled 4/Getting stuff to work.md",
+    "Untitled 4/Localization final.md",
+    "Making a drone that flies/Untitled.md",
+    "Making a drone that actually flies/Untitled.md",
+    "Making a drone that actually flies",
+    "Untitled 4",
+    "Untitled 3",
+    "Untitled 1.md",
+    "Untitled 2",
+    "Untitled 1",
+    "Making a drone that flies",
+    "Random.md",
+    "Nectar SDK.md",
+    "Task 0.4 — ML Fundamentals & Data Preprocessing Concepts.md",
+    "Running commands.md",
+    "Install-prereqs output.md",
+    "Gazebo Harmonic.md",
+    "Gazebo Fortress.md"
+  ]
+}

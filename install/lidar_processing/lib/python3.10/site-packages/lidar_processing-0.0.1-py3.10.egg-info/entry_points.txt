@@ -1,0 +1,2 @@
+[console_scripts]
+lidar_tilt_stabilizer_node = lidar_processing.lidar_tilt_stabilizer_node:main

@@ -1,0 +1,30 @@
+running egg_info
+creating ../../build/drone_control/drone_control.egg-info
+writing ../../build/drone_control/drone_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/drone_control/drone_control.egg-info/dependency_links.txt
+writing requirements to ../../build/drone_control/drone_control.egg-info/requires.txt
+writing top-level names to ../../build/drone_control/drone_control.egg-info/top_level.txt
+writing manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'
+reading manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /workspace/build/drone_control/build/lib/drone_control
+copying drone_control/init.py -> /workspace/build/drone_control/build/lib/drone_control
+running install
+running install_lib
+creating /workspace/install/drone_control/lib/python3.10/site-packages/drone_control
+copying /workspace/build/drone_control/build/lib/drone_control/init.py -> /workspace/install/drone_control/lib/python3.10/site-packages/drone_control
+byte-compiling /workspace/install/drone_control/lib/python3.10/site-packages/drone_control/init.py to init.cpython-310.pyc
+running install_data
+creating /workspace/install/drone_control/share/ament_index/resource_index/packages
+copying resource/drone_control -> /workspace/install/drone_control/share/ament_index/resource_index/packages
+copying package.xml -> /workspace/install/drone_control/share/drone_control
+creating /workspace/install/drone_control/share/drone_control/launch
+copying launch/slam.launch.py -> /workspace/install/drone_control/share/drone_control/launch
+creating /workspace/install/drone_control/share/drone_control/config
+copying config/slam_toolbox.yaml -> /workspace/install/drone_control/share/drone_control/config
+running install_egg_info
+Copying ../../build/drone_control/drone_control.egg-info to /workspace/install/drone_control/lib/python3.10/site-packages/drone_control-0.1.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/workspace/build/drone_control/install.log'
