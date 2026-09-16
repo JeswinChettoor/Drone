@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "935470f81357b14c",
+        "id": "0c0d99e3a0848198",
         "type": "tabs",
         "children": [
           {
-            "id": "0204b9f6fc630d0c",
+            "id": "b16cb07f0f3653b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled 4/Ardupilot Params.md",
+                "file": "Untitled 4/Getting stuff to work.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ardupilot Params"
-            }
-          },
-          {
-            "id": "0a12a2b1319681fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 4/How to launch the world and drone.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "How to launch the world and drone"
+              "title": "Getting stuff to work"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -203,20 +188,21 @@
       "bases:Create new base": false
     }
   },
-  "active": "0a12a2b1319681fd",
+  "active": "b16cb07f0f3653b0",
   "lastOpenFiles": [
     "Untitled 4/Getting the drone model.md",
-    "Untitled 4/Localization + Maze Solving.md",
-    "Untitled 4/How to launch the world and drone.md",
+    "Untitled 4/Getting stuff to work.md",
     "Untitled 4/Ardupilot Params.md",
-    "Untitled 4/Mavlink Based.md",
-    "Untitled 4/Person Detection.md",
+    "To run the simulation.md",
+    "Making a drone that actually flies/Untitled.md",
     "Untitled 4/Setting up  localization.md",
     "Untitled 4/Updates.md",
-    "Untitled 4/Getting stuff to work.md",
     "Untitled 4/Localization final.md",
+    "Untitled 4/How to launch the world and drone.md",
+    "Untitled 4/Localization + Maze Solving.md",
+    "Untitled 4/Mavlink Based.md",
+    "Untitled 4/Person Detection.md",
     "Making a drone that flies/Untitled.md",
-    "Making a drone that actually flies/Untitled.md",
     "Making a drone that actually flies",
     "Untitled 4",
     "Untitled 3",

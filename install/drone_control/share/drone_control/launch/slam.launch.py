@@ -9,9 +9,7 @@ def generate_launch_description():
     slam_config = os.path.join(config_dir, 'slam_toolbox.yaml')
 
     return LaunchDescription([
-        # This globally forces all nodes in this file to use simulation time
         SetParameter(name='use_sim_time', value=True),
-
         Node(
             package='slam_toolbox',
             executable='async_slam_toolbox_node',
