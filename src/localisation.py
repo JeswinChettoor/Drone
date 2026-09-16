@@ -75,7 +75,7 @@ class APSlamBridge(Node):
                     UNKNOWN_COVARIANCE,
                     UNKNOWN_COVARIANCE,
                     self.reset_counter,
-                    mavutil.mavlink.MAV_ESTIMATOR_TYPE_LIDAR,
+                    mavutil.mavlink.MAV_ESTIMATOR_TYPE_VISION,
                     0,
                 )
             self._sent_count += 1

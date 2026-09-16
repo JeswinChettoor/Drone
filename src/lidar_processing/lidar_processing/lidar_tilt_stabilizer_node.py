@@ -2,11 +2,10 @@
 """
 lidar_tilt_filter_node.py
 
-Simple version: reads roll/pitch from ArduPilot SITL (MAVLink), and for each
+ Reads roll/pitch from ArduPilot SITL (MAVLink), and for each
 incoming /scan point, works out how high that point actually is once the
 vehicle's tilt is accounted for. Points that are really just ground or
-ceiling get dropped (set to inf). Everything else is passed straight
-through, in its ORIGINAL angle bin, on /scan_stabilized.
+ceiling get dropped (set to inf). 
 
 No re-binning, no yaw correction, no vectorization tricks. Feed
 /scan_stabilized straight into slam_toolbox.
@@ -29,8 +28,8 @@ class LidarTiltFilter(Node):
         self.declare_parameter('mavlink_connection', 'udp:127.0.0.1:14550')
         self.declare_parameter('scan_in_topic', '/scan')
         self.declare_parameter('scan_out_topic', '/scan_stabilized')
-        self.declare_parameter('min_height', -0.20)
-        self.declare_parameter('max_height', 0.50)
+        self.declare_parameter('min_height', -2.0)
+        self.declare_parameter('max_height', 2.50)
 
         self.mav_conn_str = self.get_parameter('mavlink_connection').value
         scan_in = self.get_parameter('scan_in_topic').value

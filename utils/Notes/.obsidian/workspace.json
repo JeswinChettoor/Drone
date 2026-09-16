@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled 4/Getting stuff to work.md",
+                "file": "To run the simulation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Getting stuff to work"
+              "title": "To run the simulation"
             }
           }
         ]
@@ -190,13 +190,13 @@
   },
   "active": "b16cb07f0f3653b0",
   "lastOpenFiles": [
-    "Untitled 4/Getting the drone model.md",
+    "Untitled 4/Updates.md",
     "Untitled 4/Getting stuff to work.md",
+    "Untitled 4/Getting the drone model.md",
     "Untitled 4/Ardupilot Params.md",
     "To run the simulation.md",
     "Making a drone that actually flies/Untitled.md",
     "Untitled 4/Setting up  localization.md",
-    "Untitled 4/Updates.md",
     "Untitled 4/Localization final.md",
     "Untitled 4/How to launch the world and drone.md",
     "Untitled 4/Localization + Maze Solving.md",

@@ -4,7 +4,7 @@
     mavlink_connection: "udin:127.0.0.1:15000"
     scan_in_topic: "/scan"
     scan_out_topic: "/scan_stabilized"
-    min_height: -0.20
-    max_height: 0.50
+    min_height: -2.0
+    max_height: 2.0
     use_yaw: false
     sensor_z_offset: 0.10
