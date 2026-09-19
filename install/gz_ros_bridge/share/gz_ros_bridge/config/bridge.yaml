@@ -8,7 +8,7 @@
   direction: GZ_TO_ROS
 
 # 2D Lidar Scan
-- ros_topic_name: "/scan"
+- ros_topic_name: "/scan_stabilized"
   gz_topic_name: "/model/iris/lidar/scan"
   ros_type_name: "sensor_msgs/msg/LaserScan"
   gz_type_name: "gz.msgs.LaserScan"

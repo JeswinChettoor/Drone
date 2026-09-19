@@ -1,10 +1,10 @@
 /lidar_tilt_stabilizer:
   ros__parameters:
     use_sim_time: true
-    mavlink_connection: "udin:127.0.0.1:15000"
+    mavlink_connection: "udpin:127.0.0.1:15000"
     scan_in_topic: "/scan"
     scan_out_topic: "/scan_stabilized"
     min_height: -2.0
     max_height: 2.0
     use_yaw: false
-    sensor_z_offset: 0.10
+    sensor_z_offset: 0.00

@@ -1,0 +1,22 @@
+[0.461s] Invoking command in '/workspace/src/lidar_processing': PYTHONPATH=/workspace/build/lidar_processing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/lidar_processing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lidar_processing build --build-base /workspace/build/lidar_processing/build install --record /workspace/build/lidar_processing/install.log --install-scripts $base/lib/lidar_processing --single-version-externally-managed install_data
+[0.583s] running egg_info
+[0.589s] writing ../../build/lidar_processing/lidar_processing.egg-info/PKG-INFO
+[0.590s] writing dependency_links to ../../build/lidar_processing/lidar_processing.egg-info/dependency_links.txt
+[0.590s] writing entry points to ../../build/lidar_processing/lidar_processing.egg-info/entry_points.txt
+[0.590s] writing requirements to ../../build/lidar_processing/lidar_processing.egg-info/requires.txt
+[0.590s] writing top-level names to ../../build/lidar_processing/lidar_processing.egg-info/top_level.txt
+[0.603s] reading manifest file '../../build/lidar_processing/lidar_processing.egg-info/SOURCES.txt'
+[0.604s] writing manifest file '../../build/lidar_processing/lidar_processing.egg-info/SOURCES.txt'
+[0.604s] running build
+[0.604s] running build_py
+[0.604s] running install
+[0.606s] running install_lib
+[0.613s] running install_data
+[0.613s] copying config/lidar_tilt_stabilizer.yaml -> /workspace/install/lidar_processing/share/lidar_processing/config
+[0.613s] running install_egg_info
+[0.621s] removing '/workspace/install/lidar_processing/lib/python3.10/site-packages/lidar_processing-0.0.1-py3.10.egg-info' (and everything under it)
+[0.621s] Copying ../../build/lidar_processing/lidar_processing.egg-info to /workspace/install/lidar_processing/lib/python3.10/site-packages/lidar_processing-0.0.1-py3.10.egg-info
+[0.621s] running install_scripts
+[0.635s] Installing lidar_tilt_stabilizer_node script to /workspace/install/lidar_processing/lib/lidar_processing
+[0.635s] writing list of installed files to '/workspace/build/lidar_processing/install.log'
+[0.654s] Invoked command in '/workspace/src/lidar_processing' returned '0': PYTHONPATH=/workspace/build/lidar_processing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/lidar_processing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lidar_processing build --build-base /workspace/build/lidar_processing/build install --record /workspace/build/lidar_processing/install.log --install-scripts $base/lib/lidar_processing --single-version-externally-managed install_data

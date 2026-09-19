@@ -66,8 +66,8 @@ class APSlamBridge(Node):
                 print("The position sent last : ", x_ned , y_ned)
                 self.mav.mav.odometry_send(
                     int(stamp.sec * 1_000_000 + stamp.nanosec / 1000),
-                    mavutil.mavlink.MAV_FRAME_LOCAL_FRD,
-                    mavutil.mavlink.MAV_FRAME_BODY_FRD,
+                    mavutil.mavlink.MAV_FRAME_LOCAL_NED,
+                    mavutil.mavlink.MAV_FRAME_BODY_NED,
                     x_ned, y_ned,z_ned,
                     NULL_ROTATION_QUATERNION,
                     NAN, NAN, NAN,
