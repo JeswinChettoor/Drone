@@ -111,4 +111,4 @@ while True:
 
     print(f"Sent ODOMETRY #{counter}")
 
-    time.sleep(0.01)   # 10 Hz
+    time.sleep(0.1)   # 10 Hz

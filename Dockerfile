@@ -44,31 +44,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         ros-humble-ros-gzharmonic-sim \
     && rm -rf /var/lib/apt/lists/*
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-        ros-humble-mavros \
-        ros-humble-mavros-msgs \
-        ros-humble-geographic-msgs \
-        geographiclib-tools \
-        python3-opencv \
-        python3-wxgtk4.0 \
-        libgtk-3-dev \
-        libnotify-dev \
-        libsdl2-dev \
-    && /opt/ros/humble/lib/mavros/install_geographiclib_datasets.sh \
-    && pip3 install --no-cache-dir \
-        pymavlink \
-        MAVProxy \
-        dronecan \
-        pexpect \
-        future \
-        transforms3d \
-        matplotlib \
-        scipy \
-    && pip3 install --no-cache-dir \
-        -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-22.04 \
-        wxPython \
-    && rm -rf /var/lib/apt/lists/*
-
+#RUN apt-get update && apt-get install -y --no-install-recommends \
+ #       ros-humble-mavros \
+  #      ros-humble-mavros-msgs \
+   #     ros-humble-geographic-msgs \
+    #    geographiclib-tools \
+     #   python3-opencv \
+      #  python3-wxgtk4.0 \
+#        libgtk-3-dev \
+ #      libnotify-dev \
+  #      libsdl2-dev \
+  #  && /opt/ros/humble/lib/mavros/install_geographiclib_datasets.sh \
+  #  && pip3 install --no-cache-dir \
+   #     pymavlink \
+    #    MAVProxy \
+     #   dronecan \
+      #  pexpect \
+       # future \
+        #transforms3d \
+      #  matplotlib \
+     #   scipy \
+    #&& pip3 install --no-cache-dir \
+   #     -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-22.04 \
+  #     wxPython \
+ #   && rm -rf /var/lib/apt/lists/*
+#
 RUN apt-get update && apt-get install -y --no-install-recommends \
         ros-humble-slam-toolbox \
         ros-humble-navigation2 \
@@ -79,15 +79,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ARG USERNAME=developer
 ARG USER_UID=1000
 ARG USER_GID=1000
+ARG RENDER_GID=992
+ARG VIDEO_GID=44
 
 RUN (groupadd --gid $USER_GID $USERNAME 2>/dev/null || true) && \
-    (groupadd -f render) && \
-    (groupadd -f video) && \
+    (groupadd --gid $RENDER_GID render 2>/dev/null || groupmod -g $RENDER_GID render) && \
+    (groupadd --gid $VIDEO_GID video 2>/dev/null || groupmod -g $VIDEO_GID video) && \
     (useradd --uid $USER_UID --gid $USER_GID -m -s /bin/bash $USERNAME 2>/dev/null || true) && \
     usermod -aG sudo,video,render $USERNAME && \
     echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
     echo "$USERNAME:$USERNAME" | chpasswd
-
 
 WORKDIR /workspace
 ENV USER=$USERNAME

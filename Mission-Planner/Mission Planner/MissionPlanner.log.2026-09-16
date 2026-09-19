@@ -1,0 +1,1295 @@
+﻿2026-09-14 21:52:43,163  INFO MissionPlanner.MainV2 - Create FD (:0) [Base Thread]
+2026-09-14 21:52:43,169 DEBUG MissionPlanner.Program - Loaded: SkiaSharp, Version=2.88.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756 from /workspace/Mission-Planner/SkiaSharp.dll (:0) [Base Thread]
+2026-09-14 21:52:43,173  INFO MissionPlanner.GCSViews.FlightData - Ctor Start (:0) [Base Thread]
+2026-09-14 21:52:43,175 DEBUG MissionPlanner.Program - Loaded: GeoUtility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/GeoUtility.dll (:0) [Base Thread]
+2026-09-14 21:52:43,176 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,198  INFO MissionPlanner.Controls.HUD - Static HUD ctor (:0) [Base Thread]
+2026-09-14 21:52:43,199 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,201 DEBUG MissionPlanner.Program - Loaded: System.Resources.Extensions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /workspace/Mission-Planner/System.Resources.Extensions.dll (:0) [Base Thread]
+2026-09-14 21:52:43,204 DEBUG MissionPlanner.Program - Loaded: System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /workspace/Mission-Planner/System.Memory.dll (:0) [Base Thread]
+2026-09-14 21:52:43,205 DEBUG MissionPlanner.Program - Loaded: System.Runtime.CompilerServices.Unsafe, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /workspace/Mission-Planner/System.Runtime.CompilerServices.Unsafe.dll (:0) [Base Thread]
+2026-09-14 21:52:43,207 DEBUG MissionPlanner.Program - Loaded: System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /workspace/Mission-Planner/System.Numerics.Vectors.dll (:0) [Base Thread]
+2026-09-14 21:52:43,220  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:52:43,220  INFO MissionPlanner.Controls.HUD - Instance HUD ctor (:0) [Base Thread]
+2026-09-14 21:52:43,257 DEBUG MissionPlanner.Program - Loaded: Microsoft.GeneratedCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (:0) [Base Thread]
+2026-09-14 21:52:43,470  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:52:43,500 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.Caching.Memory, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /workspace/Mission-Planner/Microsoft.Extensions.Caching.Memory.dll (:0) [Base Thread]
+2026-09-14 21:52:43,501 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,501 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.Caching.Abstractions, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /workspace/Mission-Planner/Microsoft.Extensions.Caching.Abstractions.dll (:0) [Base Thread]
+2026-09-14 21:52:43,501 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,502 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.Options, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /workspace/Mission-Planner/Microsoft.Extensions.Options.dll (:0) [Base Thread]
+2026-09-14 21:52:43,502 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.Logging.Abstractions, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /workspace/Mission-Planner/Microsoft.Extensions.Logging.Abstractions.dll (:0) [Base Thread]
+2026-09-14 21:52:43,503 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,504 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.Primitives, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /workspace/Mission-Planner/Microsoft.Extensions.Primitives.dll (:0) [Base Thread]
+2026-09-14 21:52:43,505 DEBUG MissionPlanner.Program - Loaded: System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from /usr/lib/mono/gac/System.Xml.Linq/4.0.0.0__b77a5c561934e089/System.Xml.Linq.dll (:0) [Base Thread]
+2026-09-14 21:52:43,562 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,616  INFO MissionPlanner.GCSViews.FlightData - Components Done (:0) [Base Thread]
+2026-09-14 21:52:43,617  INFO MissionPlanner.GCSViews.FlightData - Tunning Graph Settings (:0) [Base Thread]
+2026-09-14 21:52:43,624  INFO MissionPlanner.GCSViews.FlightData - HUD Settings (:0) [Base Thread]
+2026-09-14 21:52:43,627  INFO MissionPlanner.GCSViews.FlightData - Graph Setup (:0) [Base Thread]
+2026-09-14 21:52:43,627  INFO MissionPlanner.GCSViews.FlightData - Map Setup (:0) [Base Thread]
+2026-09-14 21:52:43,629 DEBUG MissionPlanner.MAVLinkInterface - Subscribed .ctor at offset 0 in file:line:column <filename unknown>:0:0 FlightData_ParentChanged FlightData System.EventHandler (:0) [Base Thread]
+2026-09-14 21:52:43,630  INFO MissionPlanner.MainV2 - Create FP (:0) [Base Thread]
+2026-09-14 21:52:43,689  INFO MissionPlanner.GCSViews.FlightPlanner - Loading wp params (:0) [Base Thread]
+2026-09-14 21:52:43,690  INFO MissionPlanner.GCSViews.FlightPlanner - param WP_RADIUS 30 (:0) [Base Thread]
+2026-09-14 21:52:43,690  INFO MissionPlanner.GCSViews.FlightPlanner - param LOITER_RADIUS 45 (:0) [Base Thread]
+2026-09-14 21:52:43,692  INFO MissionPlanner.GCSViews.FlightPlanner - Reading MAV_CMD for ArduCopter2 (:0) [Base Thread]
+2026-09-14 21:52:43,698  INFO MissionPlanner.GCSViews.FlightPlanner - Command item count 0 orig list 51 (:0) [Base Thread]
+2026-09-14 21:52:43,714  INFO MissionPlanner.GCSViews.FlightPlanner - Reading MAV_CMD for ArduCopter2 (:0) [Base Thread]
+2026-09-14 21:52:43,714  INFO MissionPlanner.GCSViews.FlightPlanner - Command item count 0 orig list 51 (:0) [Base Thread]
+2026-09-14 21:52:43,717  INFO MissionPlanner.GCSViews.FlightPlanner - updateMapType invoke req? False (:0) [Base Thread]
+2026-09-14 21:52:43,721  INFO MissionPlanner.MainV2 - Create SIM (:0) [Base Thread]
+2026-09-14 21:52:43,741  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:52:43,746 DEBUG MissionPlanner.Program - Loaded: Microsoft.GeneratedCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (:0) [Base Thread]
+2026-09-14 21:52:43,776 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabQuick (:0) [Base Thread]
+2026-09-14 21:52:43,776 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabActions (:0) [Base Thread]
+2026-09-14 21:52:43,776 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagemessages (:0) [Base Thread]
+2026-09-14 21:52:43,776 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions tabActionsSimple (:0) [Base Thread]
+2026-09-14 21:52:43,776 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagePreFlight (:0) [Base Thread]
+2026-09-14 21:52:43,776 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabGauges (:0) [Base Thread]
+2026-09-14 21:52:43,776 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTransponder (:0) [Base Thread]
+2026-09-14 21:52:43,778 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabStatus (:0) [Base Thread]
+2026-09-14 21:52:43,778 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabServo (:0) [Base Thread]
+2026-09-14 21:52:43,779 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabAuxFunction (:0) [Base Thread]
+2026-09-14 21:52:43,779 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabScripts (:0) [Base Thread]
+2026-09-14 21:52:43,779 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPayload (:0) [Base Thread]
+2026-09-14 21:52:43,779 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTLogs (:0) [Base Thread]
+2026-09-14 21:52:43,779 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tablogbrowse (:0) [Base Thread]
+2026-09-14 21:52:43,779 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions  (:0) [Base Thread]
+2026-09-14 21:52:43,781  INFO MissionPlanner.MainV2 - myview width 1101 height 1101 (:0) [Base Thread]
+2026-09-14 21:52:43,781  INFO MissionPlanner.MainV2 - this   width 1109 height 1158 (:0) [Base Thread]
+2026-09-14 21:52:43,781  INFO MissionPlanner.MainV2 - myview width 1854 height 1101 (:0) [Base Thread]
+2026-09-14 21:52:43,781  INFO MissionPlanner.MainV2 - this   width 1862 height 1158 (:0) [Base Thread]
+2026-09-14 21:52:43,792  INFO MissionPlanner.MAVLinkInterface - Subscribed .ctor at offset 0 in file:line:column <filename unknown>:0:0 comPort_MavChanged MainV2 System.EventHandler (:0) [Base Thread]
+2026-09-14 21:52:43,792  INFO MissionPlanner.MainV2 - Saving config (:0) [Base Thread]
+2026-09-14 21:52:43,803 DEBUG MissionPlanner.Program - Loaded: LibVLC.NET, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/LibVLC.NET.dll (:0) [Base Thread]
+2026-09-14 21:52:43,803 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,805 DEBUG MissionPlanner.Program - Loaded: DroneCAN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/DroneCAN.dll (:0) [Base Thread]
+2026-09-14 21:52:43,806 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,807 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,823  INFO MissionPlanner.MainV2 - Load Pluggins (:0) [Base Thread]
+2026-09-14 21:52:43,824  INFO MissionPlanner.Plugin.PluginLoader - Plugin path: /workspace/Mission-Planner/plugins/ (:0) [Base Thread]
+2026-09-14 21:52:43,826 DEBUG MissionPlanner.Program - Loaded: System.CodeDom, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /workspace/Mission-Planner/System.CodeDom.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:43,827 DEBUG MissionPlanner.Program - Loaded: AltitudeAngelWings, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/plugins/AltitudeAngelWings.dll (:0) [Base Thread]
+2026-09-14 21:52:43,827  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example8.cs (:0) [Thread Pool Worker]
+2026-09-14 21:52:43,827  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/AltitudeAngelWings.dll (:0) [Base Thread]
+2026-09-14 21:52:43,828 DEBUG MissionPlanner.Program - Loaded: Microsoft.CodeAnalysis, Version=3.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 from /workspace/Mission-Planner/Microsoft.CodeAnalysis.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:43,829 DEBUG MissionPlanner.Program - Loaded: System.Reflection.Metadata, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /workspace/Mission-Planner/System.Reflection.Metadata.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:43,829 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,830 DEBUG MissionPlanner.Program - Loaded: System.Collections.Immutable, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /workspace/Mission-Planner/System.Collections.Immutable.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:43,832 DEBUG MissionPlanner.Program - Loaded: Flurl.Http, Version=3.2.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/Flurl.Http.dll (:0) [Base Thread]
+2026-09-14 21:52:43,833 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:43,834 DEBUG MissionPlanner.Program - Loaded: Microsoft.CodeAnalysis.CSharp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 from /workspace/Mission-Planner/Microsoft.CodeAnalysis.CSharp.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:43,834 DEBUG MissionPlanner.Program - Loaded: GeoJSON.Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/GeoJSON.Net.dll (:0) [Base Thread]
+2026-09-14 21:52:43,836 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:43,840 DEBUG MissionPlanner.Program - Loaded: NodaTime, Version=3.0.0.0, Culture=neutral, PublicKeyToken=4226afe0d9b296d1 from /workspace/Mission-Planner/plugins/NodaTime.dll (:0) [Base Thread]
+2026-09-14 21:52:43,840 DEBUG MissionPlanner.Program - Loaded: example8, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:52:43,841 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,842  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example8.cs (:0) [Thread Pool Worker]
+2026-09-14 21:52:43,842 DEBUG MissionPlanner.Program - Loaded: Polly, Version=7.0.0.0, Culture=neutral, PublicKeyToken=c8a3ffc3f8f825cc from /workspace/Mission-Planner/plugins/Polly.dll (:0) [Base Thread]
+2026-09-14 21:52:43,844 DEBUG MissionPlanner.Program - Loaded: Markdig, Version=0.32.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/plugins/Markdig.dll (:0) [Base Thread]
+2026-09-14 21:52:43,845 DEBUG MissionPlanner.Program - Loaded: NetTopologySuite, Version=2.0.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1 from /workspace/Mission-Planner/NetTopologySuite.dll (:0) [Base Thread]
+2026-09-14 21:52:43,846 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,847  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/AltitudeAngelWings.dll time 0.020135 s (:0) [Base Thread]
+2026-09-14 21:52:43,848 DEBUG MissionPlanner.Program - Loaded: FaceMap, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/plugins/FaceMap.dll (:0) [Base Thread]
+2026-09-14 21:52:43,848  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/FaceMap.dll (:0) [Base Thread]
+2026-09-14 21:52:43,858 DEBUG MissionPlanner.Program - Loaded: Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null (:0) [Base Thread]
+2026-09-14 21:52:43,862  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Face Map 1.0.0.0 by Jonathan Wang (:0) [Base Thread]
+2026-09-14 21:52:43,863  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/FaceMap.dll time 0.015211 s (:0) [Base Thread]
+2026-09-14 21:52:43,863 DEBUG MissionPlanner.Program - Loaded: NodaTime, Version=3.0.0.0, Culture=neutral, PublicKeyToken=4226afe0d9b296d1 from /workspace/Mission-Planner/plugins/NodaTime.dll (:0) [Base Thread]
+2026-09-14 21:52:43,863  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/NodaTime.dll (:0) [Base Thread]
+2026-09-14 21:52:43,865  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/NodaTime.dll time 0.002483 s (:0) [Base Thread]
+2026-09-14 21:52:43,866 DEBUG MissionPlanner.Program - Loaded: MavlinkMessagePlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/plugins/MavlinkMessagePlugin.dll (:0) [Base Thread]
+2026-09-14 21:52:43,866  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/MavlinkMessagePlugin.dll (:0) [Base Thread]
+2026-09-14 21:52:43,870  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init MavlinkMessagePlugin 0.1 by Michael Oborne (:0) [Base Thread]
+2026-09-14 21:52:43,870  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/MavlinkMessagePlugin.dll time 0.004089 s (:0) [Base Thread]
+2026-09-14 21:52:43,870 DEBUG MissionPlanner.Program - Loaded: NodaTime.Serialization.JsonNet, Version=3.0.1.0, Culture=neutral, PublicKeyToken=4226afe0d9b296d1 from /workspace/Mission-Planner/plugins/NodaTime.Serialization.JsonNet.dll (:0) [Base Thread]
+2026-09-14 21:52:43,871  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/NodaTime.Serialization.JsonNet.dll (:0) [Base Thread]
+2026-09-14 21:52:43,871 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,871  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/NodaTime.Serialization.JsonNet.dll time 0.001191 s (:0) [Base Thread]
+2026-09-14 21:52:43,872 DEBUG MissionPlanner.Program - Loaded: Markdig, Version=0.32.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/plugins/Markdig.dll (:0) [Base Thread]
+2026-09-14 21:52:43,872  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/Markdig.dll (:0) [Base Thread]
+2026-09-14 21:52:43,874  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/Markdig.dll time 0.002812 s (:0) [Base Thread]
+2026-09-14 21:52:43,875 DEBUG MissionPlanner.Program - Loaded: TrackerHome, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/plugins/TrackerHome.dll (:0) [Base Thread]
+2026-09-14 21:52:43,875  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/TrackerHome.dll (:0) [Base Thread]
+2026-09-14 21:52:43,876  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init GPS Tracker Home Plugin 1.0 by Will Bryan (:0) [Base Thread]
+2026-09-14 21:52:43,876  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/TrackerHome.dll time 0.00145 s (:0) [Base Thread]
+2026-09-14 21:52:43,877 DEBUG MissionPlanner.Program - Loaded: opendroneid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/plugins/opendroneid.dll (:0) [Base Thread]
+2026-09-14 21:52:43,877  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/opendroneid.dll (:0) [Base Thread]
+2026-09-14 21:52:43,878 DEBUG MissionPlanner.Program - Loaded: Bulb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/plugins/Bulb.dll (:0) [Base Thread]
+2026-09-14 21:52:43,898  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Open Drone ID 0.05 by Steven Borenstein, updated by BlueMark Innovations BV (:0) [Base Thread]
+2026-09-14 21:52:43,898  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/opendroneid.dll time 0.021514 s (:0) [Base Thread]
+2026-09-14 21:52:43,898 DEBUG MissionPlanner.Program - Loaded: TerrainMakerPlugin, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/plugins/TerrainMakerPlugin.dll (:0) [Base Thread]
+2026-09-14 21:52:43,899  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/TerrainMakerPlugin.dll (:0) [Base Thread]
+2026-09-14 21:52:43,899  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init TerrainMakerPlugin 2.0 by Andras "EosBandi" Schaffer (:0) [Base Thread]
+2026-09-14 21:52:43,900  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/TerrainMakerPlugin.dll time 0.001164 s (:0) [Base Thread]
+2026-09-14 21:52:43,900 DEBUG MissionPlanner.Program - Loaded: MissionPlanner.SimpleGrid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/plugins/MissionPlanner.SimpleGrid.dll (:0) [Base Thread]
+2026-09-14 21:52:43,900  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/MissionPlanner.SimpleGrid.dll (:0) [Base Thread]
+2026-09-14 21:52:43,901  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init SimpleGrid 0.1 by Michael Oborne (:0) [Base Thread]
+2026-09-14 21:52:43,901  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/MissionPlanner.SimpleGrid.dll time 0.001285 s (:0) [Base Thread]
+2026-09-14 21:52:43,901 DEBUG MissionPlanner.Program - Loaded: MissionPlanner.Stats, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/plugins/MissionPlanner.Stats.dll (:0) [Base Thread]
+2026-09-14 21:52:43,902  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/MissionPlanner.Stats.dll (:0) [Base Thread]
+2026-09-14 21:52:43,903 DEBUG MissionPlanner.Program - Loaded: Microsoft.GeneratedCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (:0) [Base Thread]
+2026-09-14 21:52:43,909  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Stats 0.1 by Michael Oborne (:0) [Base Thread]
+2026-09-14 21:52:43,910  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/MissionPlanner.Stats.dll time 0.008205 s (:0) [Base Thread]
+2026-09-14 21:52:43,910 DEBUG MissionPlanner.Program - Loaded: Polly, Version=7.0.0.0, Culture=neutral, PublicKeyToken=c8a3ffc3f8f825cc from /workspace/Mission-Planner/plugins/Polly.dll (:0) [Base Thread]
+2026-09-14 21:52:43,910  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/Polly.dll (:0) [Base Thread]
+2026-09-14 21:52:43,914  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/Polly.dll time 0.004022 s (:0) [Base Thread]
+2026-09-14 21:52:43,915 DEBUG MissionPlanner.Program - Loaded: MissionPlanner.Gridv2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/plugins/MissionPlanner.Gridv2.dll (:0) [Base Thread]
+2026-09-14 21:52:43,915  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/MissionPlanner.Gridv2.dll (:0) [Base Thread]
+2026-09-14 21:52:43,916  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Grid 0.1 by Michael Oborne (:0) [Base Thread]
+2026-09-14 21:52:43,916  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/MissionPlanner.Gridv2.dll time 0.001534 s (:0) [Base Thread]
+2026-09-14 21:52:43,916 DEBUG MissionPlanner.Program - Loaded: Bulb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/plugins/Bulb.dll (:0) [Base Thread]
+2026-09-14 21:52:43,917  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/Bulb.dll (:0) [Base Thread]
+2026-09-14 21:52:43,917  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/Bulb.dll time 0.000627 s (:0) [Base Thread]
+2026-09-14 21:52:43,917 DEBUG MissionPlanner.Program - Loaded: AltitudeAngelWings.Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/plugins/AltitudeAngelWings.Plugin.dll (:0) [Base Thread]
+2026-09-14 21:52:43,918  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/AltitudeAngelWings.Plugin.dll (:0) [Base Thread]
+2026-09-14 21:52:43,920 ERROR MissionPlanner.Plugin.PluginLoader - Failed to load plugin AltitudeAngelWings.Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (:0) [Base Thread]
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentException: A null reference or invalid value was found [GDI+ status: InvalidParameter]
+  at System.Drawing.GDIPlus.CheckStatus (System.Drawing.Status status) [0x00098] in <855fb33ee0ce444c9734eb0dae83c706>:0 
+  at System.Drawing.Bitmap..ctor (System.Int32 width, System.Int32 height, System.Drawing.Imaging.PixelFormat format) [0x00016] in <855fb33ee0ce444c9734eb0dae83c706>:0 
+  at System.Drawing.Bitmap..ctor (System.Drawing.Image original, System.Int32 width, System.Int32 height) [0x00000] in <855fb33ee0ce444c9734eb0dae83c706>:0 
+  at System.Drawing.Bitmap..ctor (System.Drawing.Image original) [0x0000e] in <855fb33ee0ce444c9734eb0dae83c706>:0 
+  at (wrapper remoting-invoke-with-check) System.Drawing.Bitmap..ctor(System.Drawing.Image)
+  at System.Drawing.Icon.ToBitmap () [0x0001e] in <855fb33ee0ce444c9734eb0dae83c706>:0 
+  at (wrapper remoting-invoke-with-check) System.Drawing.Icon.ToBitmap()
+  at AltitudeAngelWings.Plugin.AltitudeAngelPlugin.CreateSettingsMenuItem () [0x0002f] in <3c3e1a75afc547c6ba2494e65ddded3e>:0 
+  at AltitudeAngelWings.Plugin.AltitudeAngelPlugin.<Init>b__9_0 () [0x00010] in <3c3e1a75afc547c6ba2494e65ddded3e>:0 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <d636f104d58046fd9b195699bcb1a744>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Delegate.DynamicInvokeImpl (System.Object[] args) [0x000e7] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) [0x00008] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Delegate.DynamicInvoke (System.Object[] args) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Windows.Forms.Control.Invoke (System.Delegate method, System.Object[] args) [0x0000f] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at (wrapper remoting-invoke-with-check) System.Windows.Forms.Control.Invoke(System.Delegate,object[])
+  at System.Windows.Forms.Control.Invoke (System.Delegate method) [0x0001d] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at (wrapper remoting-invoke-with-check) System.Windows.Forms.Control.Invoke(System.Delegate)
+  at AltitudeAngelWings.Plugin.AltitudeAngelPlugin.Init () [0x00011] in <3c3e1a75afc547c6ba2494e65ddded3e>:0 
+  at MissionPlanner.Plugin.PluginLoader.InitPlugin (System.Reflection.Assembly asm, System.String pluginfilename) [0x00093] in <b0e70e19ad564dc7bb0b8e33a4ca21c0>:0 
+2026-09-14 21:52:43,921  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /workspace/Mission-Planner/plugins/AltitudeAngelWings.Plugin.dll time 0.003857 s (:0) [Base Thread]
+2026-09-14 21:52:43,922 DEBUG MissionPlanner.Program - Loaded: OSDConfigurator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/OSDConfigurator.dll (:0) [Base Thread]
+2026-09-14 21:52:43,923 DEBUG MissionPlanner.Program - Loaded: netDxf, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/netDxf.dll (:0) [Base Thread]
+2026-09-14 21:52:43,923 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,924 DEBUG MissionPlanner.Program - Loaded: Microsoft.Scripting, Version=1.3.4.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1 from /workspace/Mission-Planner/Microsoft.Scripting.dll (:0) [Base Thread]
+2026-09-14 21:52:43,925 DEBUG MissionPlanner.Program - Loaded: Xamarin.Forms.Platform.WinForms, Version=4.1.0.1, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/Xamarin.Forms.Platform.WinForms.dll (:0) [Base Thread]
+2026-09-14 21:52:43,926 DEBUG MissionPlanner.Program - Loaded: px4uploader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/px4uploader.dll (:0) [Base Thread]
+2026-09-14 21:52:43,926 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,927 DEBUG MissionPlanner.Program - Loaded: Accord.Imaging, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7 from /workspace/Mission-Planner/Accord.Imaging.dll (:0) [Base Thread]
+2026-09-14 21:52:43,927 DEBUG MissionPlanner.Program - Loaded: Accord, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7 from /workspace/Mission-Planner/Accord.dll (:0) [Base Thread]
+2026-09-14 21:52:43,928 DEBUG MissionPlanner.Program - Loaded: Renci.SshNet, Version=2020.0.2.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106 from /workspace/Mission-Planner/Renci.SshNet.dll (:0) [Base Thread]
+2026-09-14 21:52:43,930  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Grid 1.3.9384.38250 by Michael Oborne (:0) [Base Thread]
+2026-09-14 21:52:43,933 DEBUG MissionPlanner.Program - Loaded: AviFile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/AviFile.dll (:0) [Base Thread]
+2026-09-14 21:52:43,933 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:43,934 DEBUG MissionPlanner.Program - Loaded: MissionPlanner.Antenna, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/MissionPlanner.Antenna.dll (:0) [Base Thread]
+2026-09-14 21:52:43,944 ERROR MissionPlanner.Plugin.PluginLoader - System.DllNotFoundException: setupapi.dll assembly:<unknown assembly> type:<unknown type> member:(null)
+  at (wrapper managed-to-native) TrackerHomeGPS.Device.SetupDiGetClassDevs(System.Guid&,intptr,intptr,uint)
+  at TrackerHomeGPS.Device.DevicePresent (System.Guid g) [0x00017] in <61b5e1c3b6794f43be7075a5b191b88c>:0 
+  at TrackerHomeGPS.GarminUSBGPS.DevicePresent () [0x00000] in <61b5e1c3b6794f43be7075a5b191b88c>:0 
+  at TrackerHome.getDevice () [0x00000] in <61b5e1c3b6794f43be7075a5b191b88c>:0 
+  at TrackerHome.Loaded () [0x00115] in <61b5e1c3b6794f43be7075a5b191b88c>:0 
+  at MissionPlanner.Plugin.PluginLoader.PluginInit () [0x00043] in <b0e70e19ad564dc7bb0b8e33a4ca21c0>:0  (:0) [Base Thread]
+2026-09-14 21:52:43,947  INFO MissionPlanner.MainV2 - Load Pluggins... Done (:0) [Base Thread]
+2026-09-14 21:52:43,947  INFO MissionPlanner.MainV2 - show FlightData (:0) [Base Thread]
+2026-09-14 21:52:43,950  INFO MissionPlanner.GCSViews.FlightData - Activate Called (:0) [Base Thread]
+2026-09-14 21:52:43,951 DEBUG MissionPlanner.Utilities.Tracking - v=1&tid=UA-43098846-1&cid=3adfd570-a978-48b4-a0d3-413942151673&t=appview&an=Mission+Planner&av=1.3.83&cd=MissionPlanner.GCSViews.FlightData&dp=MissionPlanner.GCSViews.FlightData&dt=FlightData&sc=start&ul=en-US&sd=32-bits&sr=1920x1200&cd1=Unix+7.0.0.31&cd4=16&z=1947867348 (:0) [Thread Pool Worker]
+2026-09-14 21:52:43,962 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabQuick (:0) [Base Thread]
+2026-09-14 21:52:43,962 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabActions (:0) [Base Thread]
+2026-09-14 21:52:43,962 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagemessages (:0) [Base Thread]
+2026-09-14 21:52:43,962 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions tabActionsSimple (:0) [Base Thread]
+2026-09-14 21:52:43,963 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagePreFlight (:0) [Base Thread]
+2026-09-14 21:52:43,963 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabGauges (:0) [Base Thread]
+2026-09-14 21:52:43,963 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTransponder (:0) [Base Thread]
+2026-09-14 21:52:43,963 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabStatus (:0) [Base Thread]
+2026-09-14 21:52:43,964 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabServo (:0) [Base Thread]
+2026-09-14 21:52:43,964 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabAuxFunction (:0) [Base Thread]
+2026-09-14 21:52:43,964 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabScripts (:0) [Base Thread]
+2026-09-14 21:52:43,964 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPayload (:0) [Base Thread]
+2026-09-14 21:52:43,964 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTLogs (:0) [Base Thread]
+2026-09-14 21:52:43,965 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tablogbrowse (:0) [Base Thread]
+2026-09-14 21:52:43,965 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions  (:0) [Base Thread]
+2026-09-14 21:52:43,967  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:52:43,972  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:52:44,008  INFO MissionPlanner.Controls.HUD - OnHandleCreated Start (:0) [Base Thread]
+2026-09-14 21:52:44,090  INFO MissionPlanner.Controls.HUD - OnLoad Start (:0) [Base Thread]
+2026-09-14 21:52:44,093  INFO MissionPlanner.Controls.HUD - Vendor: Intel (:0) [Base Thread]
+2026-09-14 21:52:44,095  INFO MissionPlanner.Controls.HUD - Version: 4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1~22.04.4 (:0) [Base Thread]
+2026-09-14 21:52:44,097  INFO MissionPlanner.Controls.HUD - Device: Mesa Intel(R) Graphics (RPL-S) (:0) [Base Thread]
+2026-09-14 21:52:44,100 DEBUG MissionPlanner.Controls.HUD - GetInteger (:0) [Base Thread]
+2026-09-14 21:52:44,102 DEBUG MissionPlanner.Controls.HUD - MatrixMode (:0) [Base Thread]
+2026-09-14 21:52:44,104 DEBUG MissionPlanner.Controls.HUD - LoadIdentity (:0) [Base Thread]
+2026-09-14 21:52:44,107 DEBUG MissionPlanner.Controls.HUD - Ortho (:0) [Base Thread]
+2026-09-14 21:52:44,109 DEBUG MissionPlanner.Controls.HUD - MatrixMode (:0) [Base Thread]
+2026-09-14 21:52:44,111 DEBUG MissionPlanner.Controls.HUD - LoadIdentity (:0) [Base Thread]
+2026-09-14 21:52:44,114 DEBUG MissionPlanner.Controls.HUD - PushAttrib (:0) [Base Thread]
+2026-09-14 21:52:44,116 DEBUG MissionPlanner.Controls.HUD - Disable (:0) [Base Thread]
+2026-09-14 21:52:44,118 DEBUG MissionPlanner.Controls.HUD - BlendFunc (:0) [Base Thread]
+2026-09-14 21:52:44,121 DEBUG MissionPlanner.Controls.HUD - Enable (:0) [Base Thread]
+2026-09-14 21:52:44,123 DEBUG MissionPlanner.Controls.HUD - Hint (:0) [Base Thread]
+2026-09-14 21:52:44,126 DEBUG MissionPlanner.Controls.HUD - Enable (:0) [Base Thread]
+2026-09-14 21:52:44,128  INFO MissionPlanner.Controls.HUD - OnLoad Done (:0) [Base Thread]
+2026-09-14 21:52:44,137  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:52:44,138  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:52:44,140  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:52:44,141  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:52:44,199  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:52:44,201  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:52:44,246  INFO MissionPlanner.MainV2 - Saving config (:0) [Base Thread]
+2026-09-14 21:52:44,247  INFO MissionPlanner.MainV2 - show FlightData... Done (:0) [Base Thread]
+2026-09-14 21:52:44,252  INFO MissionPlanner.MainV2 - start http (:0) [Base Thread]
+2026-09-14 21:52:44,253  INFO MissionPlanner.MainV2 - start joystick (:0) [Base Thread]
+2026-09-14 21:52:44,254  INFO MissionPlanner.Utilities.httpserver - Listening for client (:0) [motion jpg stream-network kml]
+2026-09-14 21:52:44,255 ERROR MissionPlanner.MainV2 - Mono: closing joystick thread (:0) [Base Thread]
+2026-09-14 21:52:44,256  INFO MissionPlanner.MainV2 - start serialreader (:0) [Base Thread]
+2026-09-14 21:52:44,260  INFO MissionPlanner.MainV2 - start adsbsender (:0) [Base Thread]
+2026-09-14 21:52:44,262  INFO MissionPlanner.MainV2 - start plugin thread (:0) [Base Thread]
+2026-09-14 21:52:44,263 DEBUG MissionPlanner.Program - Loaded: tlogThumbnailHandler, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/tlogThumbnailHandler.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:44,263 DEBUG MissionPlanner.Program - Loaded: DotNetZip, Version=1.16.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745 from /workspace/Mission-Planner/DotNetZip.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:44,264  INFO MissionPlanner.MainV2 - start AutoConnect (:0) [Base Thread]
+2026-09-14 21:52:44,265 DEBUG MissionPlanner.Program - Loaded: SharpCompress, Version=0.29.0.0, Culture=neutral, PublicKeyToken=afb0a02973931d96 from /workspace/Mission-Planner/SharpCompress.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:44,266 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:44,270 DEBUG MissionPlanner.Program - Loaded: I18N, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756 from /usr/lib/mono/gac/I18N/4.0.0.0__0738eb9f132ed756/I18N.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:44,277 DEBUG MissionPlanner.Program - Loaded: I18N.West, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756 from /usr/lib/mono/gac/I18N.West/4.0.0.0__0738eb9f132ed756/I18N.West.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:44,278 DEBUG MissionPlanner.Program - Loaded: System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /workspace/Mission-Planner/System.Buffers.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:44,294 DEBUG MissionPlanner.Program - Loaded: System.Runtime.InteropServices.RuntimeInformation, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/4.5/Facades/System.Runtime.InteropServices.RuntimeInformation.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:44,317  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Mavlink default port",
+  "Enabled": true,
+  "Port": 14550,
+  "Protocol": "Udp",
+  "Format": "MAVLink",
+  "Direction": "Inbound",
+  "ConfigString": ""
+} (:0) [Base Thread]
+2026-09-14 21:52:44,318  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Mavlink alt port",
+  "Enabled": true,
+  "Port": 14551,
+  "Protocol": "Udp",
+  "Format": "MAVLink",
+  "Direction": "Inbound",
+  "ConfigString": ""
+} (:0) [Base Thread]
+2026-09-14 21:52:44,321  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Video udp 5000 h264",
+  "Enabled": true,
+  "Port": 5000,
+  "Protocol": "Udp",
+  "Format": "Video",
+  "Direction": "Inbound",
+  "ConfigString": "udpsrc port=5000 buffer-size=90000 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+} (:0) [Base Thread]
+2026-09-14 21:52:44,322  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Video udp 5100 h264",
+  "Enabled": true,
+  "Port": 5100,
+  "Protocol": "Udp",
+  "Format": "Video",
+  "Direction": "Inbound",
+  "ConfigString": "udpsrc port=5100 buffer-size=90000 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+} (:0) [Base Thread]
+2026-09-14 21:52:44,329  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Video udp 5600 h264",
+  "Enabled": true,
+  "Port": 5600,
+  "Protocol": "Udp",
+  "Format": "Video",
+  "Direction": "Inbound",
+  "ConfigString": "udpsrc port=5600 buffer-size=90000 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+} (:0) [Base Thread]
+2026-09-14 21:52:44,330  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Video udp 5601 h265",
+  "Enabled": true,
+  "Port": 5601,
+  "Protocol": "Udp",
+  "Format": "Video",
+  "Direction": "Inbound",
+  "ConfigString": "udpsrc port=5601 buffer-size=90000 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H265 ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+} (:0) [Base Thread]
+2026-09-14 21:52:44,332 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:52:44,365  INFO MissionPlanner.MainV2 - appload time (:0) [Base Thread]
+2026-09-14 21:52:44,368 DEBUG MissionPlanner.Utilities.Tracking - v=1&tid=UA-43098846-1&cid=3adfd570-a978-48b4-a0d3-413942151673&t=timing&an=Mission+Planner&av=1.3.83&cd=MissionPlanner.GCSViews.FlightData&dp=MissionPlanner.GCSViews.FlightData&utc=AppLoad&utv=Load+Time&utt=2770&utl=&ul=en-US&sd=32-bits&sr=1920x1200&cd1=Unix+7.0.0.31&cd4=16&z=1390700237 (:0) [Thread Pool Worker]
+2026-09-14 21:52:44,388  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:52:44,388  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:52:44,395 DEBUG MissionPlanner.Program - Loaded: SharpKml, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/SharpKml.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:44,397 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:44,406  INFO MissionPlanner.MainV2 - Loaded 4855 airports (:0) [Thread Pool Worker]
+2026-09-14 21:52:44,415  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:52:44,415  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:52:44,574 ERROR MissionPlanner.Utilities.AutoConnect - System.Net.Sockets.SocketException (0x80004005): The socket is not connected
+  at System.Net.Sockets.Socket.get_RemoteEndPoint () [0x00035] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at MissionPlanner.Utilities.AutoConnect.clientdataMAVLink (System.IAsyncResult ar) [0x00059] in <c7cb5fd349cd49ffbca279b7c11182d1>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:52:45,062 DEBUG MissionPlanner.Program - Loaded: Flurl, Version=3.0.2.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/Flurl.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:45,842  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example18-externalapi.cs (:0) [Thread Pool Worker]
+2026-09-14 21:52:45,843  INFO MissionPlanner.Plugin.PluginLoader - Try load BouncyCastle.Cryptography (:0) [Thread Pool Worker]
+2026-09-14 21:52:45,910 DEBUG MissionPlanner.Utilities.nfz.HK - fl=765f58
+h=www.cloudflare.com
+ip=45.112.151.121
+ts=1789422765.000
+visit_scheme=https
+uag=
+colo=MAA
+sliver=none
+http=http/1.1
+loc=IN
+tls=TLSv1.2
+sni=plaintext
+warp=off
+gateway=off
+rbi=off
+kex=X25519
+ (:0) [Thread Pool Worker]
+2026-09-14 21:52:45,992 DEBUG MissionPlanner.Utilities.nfz.EU - fl=765f58
+h=www.cloudflare.com
+ip=45.112.151.121
+ts=1789422765.000
+visit_scheme=https
+uag=
+colo=MAA
+sliver=none
+http=http/1.1
+loc=IN
+tls=TLSv1.2
+sni=plaintext
+warp=off
+gateway=off
+rbi=off
+kex=X25519
+ (:0) [Thread Pool Worker]
+2026-09-14 21:52:46,061 DEBUG MissionPlanner.Program - Loaded: System.Globalization, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/4.5/Facades/System.Globalization.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:46,577  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example18-externalapi.cs (:0) [Thread Pool Worker]
+2026-09-14 21:52:47,531  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:52:47,532  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:52:47,550 DEBUG MissionPlanner.Utilities.Tracking - v=1&tid=UA-43098846-1&cid=3adfd570-a978-48b4-a0d3-413942151673&t=appview&an=Mission+Planner&av=1.3.83&cd=MissionPlanner.GCSViews.SITL&dp=MissionPlanner.GCSViews.SITL&dt=Simulation&ul=en-US&sd=32-bits&sr=1920x1200&cd1=Unix+7.0.0.31&cd4=16&z=985744004 (:0) [Thread Pool Worker]
+2026-09-14 21:52:48,578  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/generator.cs (:0) [Thread Pool Worker]
+2026-09-14 21:52:48,579 DEBUG MissionPlanner.Program - Loaded: generator, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:52:48,582  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init generator 0.11 by Michael Oborne (:0) [Thread Pool Worker]
+2026-09-14 21:52:48,583  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/generator.cs (:0) [Thread Pool Worker]
+2026-09-14 21:52:50,298  INFO MissionPlanner.Utilities.Airports - getAirports - regen list (:0) [FD Mainloop]
+2026-09-14 21:52:50,299  INFO MissionPlanner.Utilities.Airports - getAirports done 0.000859 sec (:0) [FD Mainloop]
+2026-09-14 21:52:50,583  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example4-herelink.cs (:0) [Thread Pool Worker]
+2026-09-14 21:52:50,584 DEBUG MissionPlanner.Program - Loaded: example4-herelink, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:52:50,585  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Camera Control 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-09-14 21:52:50,586  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example4-herelink.cs (:0) [Thread Pool Worker]
+2026-09-14 21:52:52,586  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example13-herelink2.cs (:0) [Thread Pool Worker]
+2026-09-14 21:52:52,587 DEBUG MissionPlanner.Program - Loaded: example13-herelink2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:52:52,588  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example13-herelink2.cs (:0) [Thread Pool Worker]
+2026-09-14 21:52:54,589  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example20-multiplepositions.cs (:0) [Thread Pool Worker]
+2026-09-14 21:52:54,590 DEBUG MissionPlanner.Program - Loaded: example20-multiplepositions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:52:54,601  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init multiple positions  by  (:0) [Thread Pool Worker]
+2026-09-14 21:52:54,602  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example20-multiplepositions.cs (:0) [Thread Pool Worker]
+2026-09-14 21:52:56,602  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example15-leds.cs (:0) [Thread Pool Worker]
+2026-09-14 21:52:56,603 DEBUG MissionPlanner.Program - Loaded: example15-leds, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:52:56,604  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init LED Control 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-09-14 21:52:56,604  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example15-leds.cs (:0) [Thread Pool Worker]
+2026-09-14 21:52:58,605  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example.cs (:0) [Thread Pool Worker]
+2026-09-14 21:52:58,605  INFO MissionPlanner.Plugin.PluginLoader - Try load MissionPlanner.WebAPIs (:0) [Thread Pool Worker]
+2026-09-14 21:52:58,606 DEBUG MissionPlanner.Program - Loaded: MissionPlanner.WebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/MissionPlanner.WebAPIs.dll (:0) [Thread Pool Worker]
+2026-09-14 21:52:58,606 DEBUG MissionPlanner.Program - Loaded: example, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:52:58,609  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:00,610  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example14-mass.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:00,611 DEBUG MissionPlanner.Program - Loaded: example14-mass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:00,614  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init mass Control 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-09-14 21:53:00,615  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example14-mass.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:02,615  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example19-multiforward.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:02,616 DEBUG MissionPlanner.Program - Loaded: example19-multiforward, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:02,617  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Link Forward  by  (:0) [Thread Pool Worker]
+2026-09-14 21:53:02,618  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example19-multiforward.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:04,618  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example7-canrtcm.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:04,618  INFO MissionPlanner.Plugin.PluginLoader - Try load DroneCAN (:0) [Thread Pool Worker]
+2026-09-14 21:53:04,619 DEBUG MissionPlanner.Program - Loaded: example7-canrtcm, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:04,620  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init CAN RTCM Extract 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-09-14 21:53:04,620  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example7-canrtcm.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:06,621  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example4.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:06,621 DEBUG MissionPlanner.Program - Loaded: example8, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:06,624  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example4.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:08,625  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example9-hudonoff.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:08,625 DEBUG MissionPlanner.Program - Loaded: example9-hudonoff, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:08,629  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init HUD 0.2 by Michael Oborne (:0) [Thread Pool Worker]
+2026-09-14 21:53:08,630  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example9-hudonoff.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:10,630  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example3.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:10,631 DEBUG MissionPlanner.Program - Loaded: example8, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:10,632  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example3.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:12,632  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example6.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:12,633 DEBUG MissionPlanner.Program - Loaded: example8, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:12,634  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example6.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:14,634  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example6-mapicondesc.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:14,635 DEBUG MissionPlanner.Program - Loaded: example6-mapicondesc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:14,638  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init MapIconDesc 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-09-14 21:53:14,639  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example6-mapicondesc.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:16,639  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example16-donate.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:16,641 DEBUG MissionPlanner.Program - Loaded: example16-donate, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:16,643  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Donate 0.10 by Example (:0) [Thread Pool Worker]
+2026-09-14 21:53:16,644  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example16-donate.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:18,644  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example5.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:18,645 DEBUG MissionPlanner.Program - Loaded: example8, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:18,647  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example5.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:20,647  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example2-menu.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:20,650 DEBUG MissionPlanner.Program - Loaded: example2-menu, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:20,652  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Small stuff 0.10 by EOSBandi (:0) [Thread Pool Worker]
+2026-09-14 21:53:20,652  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example2-menu.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:22,652  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example11-trace.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:22,655 DEBUG MissionPlanner.Program - Loaded: example11-trace, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:22,657  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init tracemp 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-09-14 21:53:22,658  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example11-trace.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:24,658  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example12-forwarding.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:24,659 DEBUG MissionPlanner.Program - Loaded: example12-forwarding, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:24,661  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example12-forwarding.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:26,661  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example8-modechange.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:26,667 DEBUG MissionPlanner.Program - Loaded: example8-modechange, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:26,668  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example8-modechange.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:28,668  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example3-fencedist.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:28,671 DEBUG MissionPlanner.Program - Loaded: example3-fencedist, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:28,673  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init FenceDist 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-09-14 21:53:28,674  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example3-fencedist.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:30,674  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example7.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:30,675 DEBUG MissionPlanner.Program - Loaded: example8, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:30,676  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example7.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:32,676  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example21-persistentsimple.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:32,679 DEBUG MissionPlanner.Program - Loaded: example21-persistentsimple, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:32,680  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example21-persistentsimple.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:34,681  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example22-payloadconfig.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:34,684 DEBUG MissionPlanner.Program - Loaded: example22-payloadconfig, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:34,686  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example22-payloadconfig.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:36,686  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example10-canlogfile.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:36,690  INFO MissionPlanner.Plugin.PluginLoader - Try load DroneCAN (:0) [Thread Pool Worker]
+2026-09-14 21:53:36,691 DEBUG MissionPlanner.Program - Loaded: example10-canlogfile, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:36,692  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init CAN Log Extract 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-09-14 21:53:36,692  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example10-canlogfile.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:38,692  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example-watchbutton.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:38,695 DEBUG MissionPlanner.Program - Loaded: example-watchbutton, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:38,698  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Button change 0.1 by EOSBandi (:0) [Thread Pool Worker]
+2026-09-14 21:53:38,698  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example-watchbutton.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:40,699  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example17-menuremove.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:40,700 DEBUG MissionPlanner.Program - Loaded: example17-menuremove, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:40,701  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example17-menuremove.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:42,702  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example5-latencytracker.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:42,705 DEBUG MissionPlanner.Program - Loaded: example5-latencytracker, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:42,706  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example5-latencytracker.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:44,707  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example23-switch.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:44,710  INFO MissionPlanner.Plugin.PluginLoader - Try load DeviceProgramming (:0) [Thread Pool Worker]
+2026-09-14 21:53:44,711 DEBUG MissionPlanner.Program - Loaded: DeviceProgramming, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/DeviceProgramming.dll (:0) [Thread Pool Worker]
+2026-09-14 21:53:44,712  INFO MissionPlanner.Plugin.PluginLoader - Try load log4net (:0) [Thread Pool Worker]
+2026-09-14 21:53:44,976  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example23-switch.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:46,976  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /workspace/Mission-Planner/plugins/example2.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:46,977 DEBUG MissionPlanner.Program - Loaded: example8, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-09-14 21:53:46,980  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /workspace/Mission-Planner/plugins/example2.cs (:0) [Thread Pool Worker]
+2026-09-14 21:53:48,994 DEBUG MissionPlanner.MAVLinkInterface - Subscribed Loaded at offset 0 in file:line:column <filename unknown>:0:0 MavOnOnPacketReceivedHandler ButtonPlugin System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [Base Thread]
+2026-09-14 21:53:55,150  INFO MissionPlanner.ArduPilot.APFirmware - https://firmware.ardupilot.org/manifest.json.gz (:0) [Base Thread]
+2026-09-14 21:54:05,686  INFO MissionPlanner.ArduPilot.APFirmware - 97251 (:0) [Base Thread]
+2026-09-14 21:54:05,688  INFO MissionPlanner.ArduPilot.APFirmware - https://raw.githubusercontent.com/CubePilot/periph-manifest/main/manifest.json (:0) [Base Thread]
+2026-09-14 21:54:06,991  INFO MissionPlanner.ArduPilot.APFirmware - 97253 (:0) [Base Thread]
+2026-09-14 21:54:06,993  INFO MissionPlanner.ArduPilot.APFirmware - device: {
+  "name": null,
+  "description": null,
+  "board": "",
+  "hardwareid": ""
+} (:0) [Base Thread]
+2026-09-14 21:54:07,048  INFO MissionPlanner.Utilities.Download - https://firmware.ardupilot.org/Copter/latest/SITL_x86_64_linux_gnu/arducopter (:0) [Base Thread]
+2026-09-14 21:54:08,339  INFO MissionPlanner.Utilities.Download - OK (:0) [Base Thread]
+2026-09-14 21:54:08,342  INFO MissionPlanner.Utilities.Download - got LastModified /home/developer/.local/share/Mission Planner/sitl/ArduCopter 9/14/2026 7:34:33 AM vs 9/14/2026 3:53:48 PM (:0) [Base Thread]
+2026-09-14 21:54:08,345 DEBUG MissionPlanner.Program - Loaded: DotSpatial.Projections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null from /workspace/Mission-Planner/DotSpatial.Projections.dll (:0) [Base Thread]
+2026-09-14 21:54:08,345 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-09-14 21:54:08,346 DEBUG MissionPlanner.Program - Loaded: BitMiracle.LibTiff.NetStandard, Version=2.4.584.0, Culture=neutral, PublicKeyToken=53879b3e20e7a7d6 from /workspace/Mission-Planner/BitMiracle.LibTiff.NetStandard.dll (:0) [Base Thread]
+2026-09-14 21:54:08,346 DEBUG MissionPlanner.Program - Loaded: System.Runtime, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/4.5/Facades/System.Runtime.dll (:0) [Base Thread]
+2026-09-14 21:54:08,876  INFO MissionPlanner.Utilities.Download - Get https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py (:0) [Base Thread]
+2026-09-14 21:54:09,072  INFO MissionPlanner.ArduPilot.APFirmware - device: {
+  "name": null,
+  "description": null,
+  "board": "",
+  "hardwareid": ""
+} (:0) [Base Thread]
+2026-09-14 21:54:09,122  INFO MissionPlanner.Utilities.Download - https://firmware.ardupilot.org/Copter/latest/SITL_x86_64_linux_gnu/arducopter (:0) [Base Thread]
+2026-09-14 21:54:09,309  INFO MissionPlanner.Utilities.Download - https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py OK (:0) [Thread Pool Worker]
+2026-09-14 21:54:09,313  INFO MissionPlanner.Utilities.Download - https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py got LastModified /home/developer/.local/share/Mission Planner/sitl/sim_vehicle.py  vs 9/8/2026 1:12:54 PM (:0) [Thread Pool Worker]
+2026-09-14 21:54:09,326  INFO MissionPlanner.Utilities.Download - Get https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py (:0) [Thread Pool Worker]
+2026-09-14 21:54:10,368  INFO MissionPlanner.Utilities.Download - OK (:0) [Base Thread]
+2026-09-14 21:54:10,369  INFO MissionPlanner.Utilities.Download - got LastModified /home/developer/.local/share/Mission Planner/sitl/ArduCopter 9/14/2026 7:34:33 AM vs 9/14/2026 3:53:48 PM (:0) [Base Thread]
+2026-09-14 21:54:10,369  INFO MissionPlanner.Utilities.Download - Get https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py (:0) [Base Thread]
+2026-09-14 21:54:10,371  INFO MissionPlanner.ArduPilot.APFirmware - device: {
+  "name": null,
+  "description": null,
+  "board": "",
+  "hardwareid": ""
+} (:0) [Base Thread]
+2026-09-14 21:54:10,420  INFO MissionPlanner.Utilities.Download - https://firmware.ardupilot.org/Copter/latest/SITL_x86_64_linux_gnu/arducopter (:0) [Base Thread]
+2026-09-14 21:54:10,429  INFO MissionPlanner.Utilities.Download - https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py OK (:0) [Thread Pool Worker]
+2026-09-14 21:54:10,432  INFO MissionPlanner.Utilities.Download - https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py got LastModified /home/developer/.local/share/Mission Planner/sitl/sim_vehicle.py  vs 9/8/2026 1:12:54 PM (:0) [Thread Pool Worker]
+2026-09-14 21:54:10,440  INFO MissionPlanner.Utilities.Download - Get https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py (:0) [Thread Pool Worker]
+2026-09-14 21:54:10,685  INFO MissionPlanner.Utilities.Download - https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py OK (:0) [Thread Pool Worker]
+2026-09-14 21:54:10,693  INFO MissionPlanner.Utilities.Download - 381378.026070764 bps 1024 0.002685s 4.295302% of 23840      (:0) [Thread Pool Worker]
+2026-09-14 21:54:10,955  INFO MissionPlanner.Utilities.Download - Got https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py 23840 (:0) [Thread Pool Worker]
+2026-09-14 21:54:11,607  INFO MissionPlanner.Utilities.Download - https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py OK (:0) [Thread Pool Worker]
+2026-09-14 21:54:11,610  INFO MissionPlanner.Utilities.Download - OK (:0) [Base Thread]
+2026-09-14 21:54:11,611  INFO MissionPlanner.Utilities.Download - 64000000 bps 1024 1.6E-05s 4.295302% of 23840      (:0) [Thread Pool Worker]
+2026-09-14 21:54:11,611  INFO MissionPlanner.Utilities.Download - got LastModified /home/developer/.local/share/Mission Planner/sitl/ArduCopter 9/14/2026 7:34:33 AM vs 9/14/2026 3:53:48 PM (:0) [Base Thread]
+2026-09-14 21:54:11,615  INFO MissionPlanner.Utilities.Download - Get https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py (:0) [Base Thread]
+2026-09-14 21:54:11,655  INFO MissionPlanner.Utilities.Download - https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py OK (:0) [Thread Pool Worker]
+2026-09-14 21:54:11,659  INFO MissionPlanner.Utilities.Download - https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py got LastModified /home/developer/.local/share/Mission Planner/sitl/sim_vehicle.py  vs 9/8/2026 1:12:54 PM (:0) [Thread Pool Worker]
+2026-09-14 21:54:11,668  INFO MissionPlanner.Utilities.Download - Get https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py (:0) [Thread Pool Worker]
+2026-09-14 21:54:11,732  INFO MissionPlanner.ArduPilot.APFirmware - device: {
+  "name": null,
+  "description": null,
+  "board": "",
+  "hardwareid": ""
+} (:0) [Base Thread]
+2026-09-14 21:54:11,783  INFO MissionPlanner.Utilities.Download - Get https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py (:0) [Base Thread]
+2026-09-14 21:54:11,789  INFO MissionPlanner.ArduPilot.APFirmware - device: {
+  "name": null,
+  "description": null,
+  "board": "",
+  "hardwareid": ""
+} (:0) [Base Thread]
+2026-09-14 21:54:11,838  INFO MissionPlanner.Utilities.Download - Get https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py (:0) [Base Thread]
+2026-09-14 21:54:11,843  INFO MissionPlanner.ArduPilot.APFirmware - device: {
+  "name": null,
+  "description": null,
+  "board": "",
+  "hardwareid": ""
+} (:0) [Base Thread]
+2026-09-14 21:54:11,849  INFO MissionPlanner.Utilities.Download - https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py OK (:0) [Thread Pool Worker]
+2026-09-14 21:54:11,852  INFO MissionPlanner.Utilities.Download - https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py got LastModified /home/developer/.local/share/Mission Planner/sitl/sim_vehicle.py  vs 9/8/2026 1:12:54 PM (:0) [Thread Pool Worker]
+2026-09-14 21:54:11,849  INFO MissionPlanner.Utilities.Download - Got https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py 23840 (:0) [Thread Pool Worker]
+2026-09-14 21:54:11,920  INFO MissionPlanner.Utilities.Download - https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py OK (:0) [Thread Pool Worker]
+2026-09-14 21:54:11,922  INFO MissionPlanner.Utilities.Download - Get https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py (:0) [Thread Pool Worker]
+2026-09-14 21:54:11,924  INFO MissionPlanner.Utilities.Download - 146285714.285714 bps 1024 7E-06s 4.295302% of 23840      (:0) [Thread Pool Worker]
+2026-09-14 21:54:11,965  INFO MissionPlanner.Utilities.Download - Get https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py (:0) [Base Thread]
+2026-09-14 21:54:12,253  INFO MissionPlanner.Utilities.Download - https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py OK (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,253  INFO MissionPlanner.Utilities.Download - 51638.4094883297 bps 16980 0.328825s 71.22483% of 23840      (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,258  INFO MissionPlanner.Utilities.Download - https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py got LastModified /home/developer/.local/share/Mission Planner/sitl/sim_vehicle.py  vs 9/8/2026 1:12:54 PM (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,262  INFO MissionPlanner.Utilities.Download - Got https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py 23840 (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,264  INFO MissionPlanner.Utilities.Download - https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py OK (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,332  INFO MissionPlanner.Utilities.Download - Get https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,344  INFO MissionPlanner.Utilities.Download - https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py OK (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,344  INFO MissionPlanner.Utilities.Download - 60235294.1176471 bps 1024 1.7E-05s 4.295302% of 23840      (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,353  INFO MissionPlanner.Utilities.Download - https://raw.githubusercontent.com/ArduPilot/ardupilot/master/Tools/autotest/sim_vehicle.py got LastModified /home/developer/.local/share/Mission Planner/sitl/sim_vehicle.py  vs 9/8/2026 1:12:54 PM (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,357  INFO MissionPlanner.Utilities.Download - Got https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py 23840 (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,429  INFO MissionPlanner.Utilities.Download - Get https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,630  INFO MissionPlanner.Utilities.Download - https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py OK (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,633  INFO MissionPlanner.Utilities.Download - 146285714.285714 bps 1024 7E-06s 4.295302% of 23840      (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,637  INFO MissionPlanner.Utilities.Download - Got https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py 23840 (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,730  INFO MissionPlanner.Utilities.Download - https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py OK (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,733  INFO MissionPlanner.Utilities.Download - 128000000 bps 1024 8E-06s 4.295302% of 23840      (:0) [Thread Pool Worker]
+2026-09-14 21:54:12,737  INFO MissionPlanner.Utilities.Download - Got https://firmware.ardupilot.org/Tools/MissionPlanner/vehicleinfo.py 23840 (:0) [Thread Pool Worker]
+2026-09-14 21:54:13,705  INFO MissionPlanner.GCSViews.FlightData - Activate Called (:0) [Base Thread]
+2026-09-14 21:54:13,705 DEBUG MissionPlanner.Utilities.Tracking - v=1&tid=UA-43098846-1&cid=3adfd570-a978-48b4-a0d3-413942151673&t=appview&an=Mission+Planner&av=1.3.83&cd=MissionPlanner.GCSViews.FlightData&dp=MissionPlanner.GCSViews.FlightData&dt=FlightData&ul=en-US&sd=32-bits&sr=1920x1200&cd1=Unix+7.0.0.31&cd4=16&z=1916414340 (:0) [Thread Pool Worker]
+2026-09-14 21:54:13,708  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:13,710  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:13,711  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:13,712  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:13,773 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabQuick (:0) [Base Thread]
+2026-09-14 21:54:13,774 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabActions (:0) [Base Thread]
+2026-09-14 21:54:13,774 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagemessages (:0) [Base Thread]
+2026-09-14 21:54:13,775 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions tabActionsSimple (:0) [Base Thread]
+2026-09-14 21:54:13,775 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagePreFlight (:0) [Base Thread]
+2026-09-14 21:54:13,776 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabGauges (:0) [Base Thread]
+2026-09-14 21:54:13,776 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTransponder (:0) [Base Thread]
+2026-09-14 21:54:13,777 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabStatus (:0) [Base Thread]
+2026-09-14 21:54:13,777 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabServo (:0) [Base Thread]
+2026-09-14 21:54:13,780 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabAuxFunction (:0) [Base Thread]
+2026-09-14 21:54:13,781 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabScripts (:0) [Base Thread]
+2026-09-14 21:54:13,781 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPayload (:0) [Base Thread]
+2026-09-14 21:54:13,782 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTLogs (:0) [Base Thread]
+2026-09-14 21:54:13,782 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tablogbrowse (:0) [Base Thread]
+2026-09-14 21:54:13,783 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions  (:0) [Base Thread]
+2026-09-14 21:54:13,783  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:13,784  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:13,800  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:13,801  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:13,825  INFO MissionPlanner.MAVLinkInterface - Request stream EXTENDED_STATUS at 2 hz for 0:0 (:0) [Base Thread]
+2026-09-14 21:54:13,828  INFO MissionPlanner.MAVLinkInterface - Request stream POSITION at 2 hz for 0:0 (:0) [Base Thread]
+2026-09-14 21:54:13,829  INFO MissionPlanner.MAVLinkInterface - Request stream EXTRA1 at 4 hz for 0:0 (:0) [Base Thread]
+2026-09-14 21:54:13,830  INFO MissionPlanner.MAVLinkInterface - Request stream EXTRA2 at 4 hz for 0:0 (:0) [Base Thread]
+2026-09-14 21:54:13,830  INFO MissionPlanner.MAVLinkInterface - Request stream EXTRA3 at 2 hz for 0:0 (:0) [Base Thread]
+2026-09-14 21:54:13,831  INFO MissionPlanner.MAVLinkInterface - Request stream RAW_SENSORS at 2 hz for 0:0 (:0) [Base Thread]
+2026-09-14 21:54:13,832  INFO MissionPlanner.MAVLinkInterface - Request stream RC_CHANNELS at 2 hz for 0:0 (:0) [Base Thread]
+2026-09-14 21:54:13,982  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:13,983  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:14,001  INFO MissionPlanner.GCSViews.FlightData - Activate Called (:0) [Base Thread]
+2026-09-14 21:54:14,002  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:14,003  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:14,004  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:14,005  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:14,057 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabQuick (:0) [Base Thread]
+2026-09-14 21:54:14,058 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabActions (:0) [Base Thread]
+2026-09-14 21:54:14,058 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagemessages (:0) [Base Thread]
+2026-09-14 21:54:14,059 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions tabActionsSimple (:0) [Base Thread]
+2026-09-14 21:54:14,059 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagePreFlight (:0) [Base Thread]
+2026-09-14 21:54:14,060 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabGauges (:0) [Base Thread]
+2026-09-14 21:54:14,060 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTransponder (:0) [Base Thread]
+2026-09-14 21:54:14,061 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabStatus (:0) [Base Thread]
+2026-09-14 21:54:14,061 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabServo (:0) [Base Thread]
+2026-09-14 21:54:14,062 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabAuxFunction (:0) [Base Thread]
+2026-09-14 21:54:14,062 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabScripts (:0) [Base Thread]
+2026-09-14 21:54:14,063 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPayload (:0) [Base Thread]
+2026-09-14 21:54:14,063 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTLogs (:0) [Base Thread]
+2026-09-14 21:54:14,064 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tablogbrowse (:0) [Base Thread]
+2026-09-14 21:54:14,064 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions  (:0) [Base Thread]
+2026-09-14 21:54:14,065  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:14,065  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:14,081  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:14,082  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:14,084  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [Base Thread]
+2026-09-14 21:54:14,085  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [Base Thread]
+2026-09-14 21:54:14,088  INFO MissionPlanner.MainV2 - We are connecting to preset 5760 (:0) [Base Thread]
+2026-09-14 21:54:14,091  INFO MissionPlanner.MainV2 - Reset connection stats (:0) [Base Thread]
+2026-09-14 21:54:14,092  INFO MissionPlanner.MainV2 - Set Portname (:0) [Base Thread]
+2026-09-14 21:54:14,092  INFO MissionPlanner.MainV2 - Set Baudrate (:0) [Base Thread]
+2026-09-14 21:54:14,093  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current False new True (:0) [Base Thread]
+2026-09-14 21:54:14,094  INFO MissionPlanner.MainV2 - About to do dtr if needed (:0) [Base Thread]
+2026-09-14 21:54:14,094  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current True new False (:0) [Base Thread]
+2026-09-14 21:54:14,095  INFO MissionPlanner.MainV2 - creating logfile 2026-09-14 21-54-14.tlog (:0) [Base Thread]
+2026-09-14 21:54:14,105  INFO MissionPlanner.Controls.ProgressReporterDialogue - RunBackgroundOperation (:0) [Thread Pool Worker]
+2026-09-14 21:54:14,286  INFO MissionPlanner.MainV2 - We are connecting to preset 5760 (:0) [Base Thread]
+2026-09-14 21:54:14,288  INFO MissionPlanner.MainV2 - Reset connection stats (:0) [Base Thread]
+2026-09-14 21:54:14,289  INFO MissionPlanner.MainV2 - Set Portname (:0) [Base Thread]
+2026-09-14 21:54:14,290  INFO MissionPlanner.MainV2 - Set Baudrate (:0) [Base Thread]
+2026-09-14 21:54:14,291  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current False new True (:0) [Base Thread]
+2026-09-14 21:54:14,291  INFO MissionPlanner.MainV2 - About to do dtr if needed (:0) [Base Thread]
+2026-09-14 21:54:14,292  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current True new False (:0) [Base Thread]
+2026-09-14 21:54:15,184  INFO MissionPlanner.MAVLinkInterface - SubscribeToPacketType GENERATOR_STATUS System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] False 0 0 (:0) [plugin runner thread]
+2026-09-14 21:54:15,184 DEBUG MissionPlanner.MAVLinkInterface - SubscribeToPacketType GENERATOR_STATUS System.Func`2[MAVLink+MAVLinkMessage,System.Boolean] (:0) [plugin runner thread]
+2026-09-14 21:54:15,294  INFO MissionPlanner.MainV2 - creating logfile 2026-09-14 21-54-15-1.tlog (:0) [Base Thread]
+2026-09-14 21:54:15,300  INFO MissionPlanner.Controls.ProgressReporterDialogue - RunBackgroundOperation (:0) [Thread Pool Worker]
+2026-09-14 21:54:15,302  INFO MissionPlanner.Controls.ProgressReporterDialogue - Focus ctl  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:15,304  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,306  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,313  INFO MissionPlanner.GCSViews.FlightData - Activate Called (:0) [Base Thread]
+2026-09-14 21:54:15,315  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,318  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,321  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,324  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,376 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabQuick (:0) [Base Thread]
+2026-09-14 21:54:15,378 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabActions (:0) [Base Thread]
+2026-09-14 21:54:15,380 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagemessages (:0) [Base Thread]
+2026-09-14 21:54:15,382 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions tabActionsSimple (:0) [Base Thread]
+2026-09-14 21:54:15,384 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagePreFlight (:0) [Base Thread]
+2026-09-14 21:54:15,385 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabGauges (:0) [Base Thread]
+2026-09-14 21:54:15,387 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTransponder (:0) [Base Thread]
+2026-09-14 21:54:15,389 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabStatus (:0) [Base Thread]
+2026-09-14 21:54:15,391 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabServo (:0) [Base Thread]
+2026-09-14 21:54:15,392 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabAuxFunction (:0) [Base Thread]
+2026-09-14 21:54:15,394 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabScripts (:0) [Base Thread]
+2026-09-14 21:54:15,396 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPayload (:0) [Base Thread]
+2026-09-14 21:54:15,398 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTLogs (:0) [Base Thread]
+2026-09-14 21:54:15,400 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tablogbrowse (:0) [Base Thread]
+2026-09-14 21:54:15,402 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions  (:0) [Base Thread]
+2026-09-14 21:54:15,404  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,406  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,424  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,427  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,430  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [Base Thread]
+2026-09-14 21:54:15,432  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [Base Thread]
+2026-09-14 21:54:15,453  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,456  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,462  INFO MissionPlanner.GCSViews.FlightData - Activate Called (:0) [Base Thread]
+2026-09-14 21:54:15,464  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,466  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,469  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,472  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,539 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabQuick (:0) [Base Thread]
+2026-09-14 21:54:15,541 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabActions (:0) [Base Thread]
+2026-09-14 21:54:15,543 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagemessages (:0) [Base Thread]
+2026-09-14 21:54:15,545 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions tabActionsSimple (:0) [Base Thread]
+2026-09-14 21:54:15,547 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagePreFlight (:0) [Base Thread]
+2026-09-14 21:54:15,548 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabGauges (:0) [Base Thread]
+2026-09-14 21:54:15,550 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTransponder (:0) [Base Thread]
+2026-09-14 21:54:15,552 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabStatus (:0) [Base Thread]
+2026-09-14 21:54:15,554 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabServo (:0) [Base Thread]
+2026-09-14 21:54:15,555 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabAuxFunction (:0) [Base Thread]
+2026-09-14 21:54:15,558 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabScripts (:0) [Base Thread]
+2026-09-14 21:54:15,560 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPayload (:0) [Base Thread]
+2026-09-14 21:54:15,562 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTLogs (:0) [Base Thread]
+2026-09-14 21:54:15,564 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tablogbrowse (:0) [Base Thread]
+2026-09-14 21:54:15,565 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions  (:0) [Base Thread]
+2026-09-14 21:54:15,567  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,569  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,585  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,589  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,594  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [Base Thread]
+2026-09-14 21:54:15,596  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [Base Thread]
+2026-09-14 21:54:15,624  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,627  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,632  INFO MissionPlanner.GCSViews.FlightData - Activate Called (:0) [Base Thread]
+2026-09-14 21:54:15,634  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,636  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,639  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,642  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,709 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabQuick (:0) [Base Thread]
+2026-09-14 21:54:15,711 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabActions (:0) [Base Thread]
+2026-09-14 21:54:15,713 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagemessages (:0) [Base Thread]
+2026-09-14 21:54:15,714 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions tabActionsSimple (:0) [Base Thread]
+2026-09-14 21:54:15,717 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagePreFlight (:0) [Base Thread]
+2026-09-14 21:54:15,719 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabGauges (:0) [Base Thread]
+2026-09-14 21:54:15,721 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTransponder (:0) [Base Thread]
+2026-09-14 21:54:15,723 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabStatus (:0) [Base Thread]
+2026-09-14 21:54:15,724 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabServo (:0) [Base Thread]
+2026-09-14 21:54:15,726 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabAuxFunction (:0) [Base Thread]
+2026-09-14 21:54:15,728 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabScripts (:0) [Base Thread]
+2026-09-14 21:54:15,730 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPayload (:0) [Base Thread]
+2026-09-14 21:54:15,731 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTLogs (:0) [Base Thread]
+2026-09-14 21:54:15,733 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tablogbrowse (:0) [Base Thread]
+2026-09-14 21:54:15,735 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions  (:0) [Base Thread]
+2026-09-14 21:54:15,737  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,739  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,756  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,759  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,763  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [Base Thread]
+2026-09-14 21:54:15,764  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [Base Thread]
+2026-09-14 21:54:15,795  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,798  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,803  INFO MissionPlanner.GCSViews.FlightData - Activate Called (:0) [Base Thread]
+2026-09-14 21:54:15,817  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,819  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,822  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,826  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,879 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabQuick (:0) [Base Thread]
+2026-09-14 21:54:15,881 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabActions (:0) [Base Thread]
+2026-09-14 21:54:15,883 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagemessages (:0) [Base Thread]
+2026-09-14 21:54:15,884 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions tabActionsSimple (:0) [Base Thread]
+2026-09-14 21:54:15,886 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagePreFlight (:0) [Base Thread]
+2026-09-14 21:54:15,888 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabGauges (:0) [Base Thread]
+2026-09-14 21:54:15,890 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTransponder (:0) [Base Thread]
+2026-09-14 21:54:15,891 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabStatus (:0) [Base Thread]
+2026-09-14 21:54:15,893 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabServo (:0) [Base Thread]
+2026-09-14 21:54:15,895 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabAuxFunction (:0) [Base Thread]
+2026-09-14 21:54:15,897 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabScripts (:0) [Base Thread]
+2026-09-14 21:54:15,899 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPayload (:0) [Base Thread]
+2026-09-14 21:54:15,900 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTLogs (:0) [Base Thread]
+2026-09-14 21:54:15,902 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tablogbrowse (:0) [Base Thread]
+2026-09-14 21:54:15,904 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions  (:0) [Base Thread]
+2026-09-14 21:54:15,906  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,907  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,923  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-09-14 21:54:15,928  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-09-14 21:54:15,932  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [Base Thread]
+2026-09-14 21:54:15,934  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [Base Thread]
+2026-09-14 21:54:15,966  INFO MissionPlanner.Controls.ProgressReporterDialogue - in focus invoke (:0) [Base Thread]
+2026-09-14 21:54:15,968  INFO MissionPlanner.Controls.ProgressReporterDialogue - DoWork (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:15,972  INFO MissionPlanner.Utilities.TerrainFollow - OnPacketReceived to packets (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:15,972 DEBUG MissionPlanner.MAVLinkInterface - Subscribed .ctor at offset 0 in file:line:column <filename unknown>:0:0 _interface_OnPacketReceived TerrainFollow System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:15,973  INFO MissionPlanner.MAVLinkInterface - Open port with TCP5760 0 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:15,974  WARN MissionPlanner.Comms.TcpSerial - tcpserial socket already open (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:15,974  INFO MissionPlanner.Comms.TcpSerial - TcpSerial DiscardInBuffer 0 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:15,975  INFO MissionPlanner.MAVLinkInterface - 975 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:15,978  INFO MissionPlanner.Controls.ProgressReporterDialogue - Focus ctl  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:15,978  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:15,979 DEBUG MissionPlanner.MAVLinkInterface - UnSubscribed set_parent at offset 0 in file:line:column <filename unknown>:0:0 Parent_OnPacketReceived CurrentState System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:15,980 DEBUG MissionPlanner.MAVLinkInterface - Subscribed set_parent at offset 0 in file:line:column <filename unknown>:0:0 Parent_OnPacketReceived CurrentState System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:15,982  INFO MissionPlanner.MainV2 - We are connecting to preset 5760 (:0) [Base Thread]
+2026-09-14 21:54:15,984  INFO MissionPlanner.MainV2 - Reset connection stats (:0) [Base Thread]
+2026-09-14 21:54:15,986  INFO MissionPlanner.MainV2 - Set Portname (:0) [Base Thread]
+2026-09-14 21:54:15,987  INFO MissionPlanner.MainV2 - Set Baudrate (:0) [Base Thread]
+2026-09-14 21:54:15,989  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current True new True (:0) [Base Thread]
+2026-09-14 21:54:15,994 ERROR MissionPlanner.MAVLinkInterface -   at MissionPlanner.MAVLinkInterface.set_giveComport (System.Boolean value) [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MainV2.doConnect (MissionPlanner.MAVLinkInterface comPort, System.String portname, System.String baud, System.Boolean getparams, System.Boolean showui) [0x00000] in <b0e70e19ad564dc7bb0b8e33a4ca21c0>:0 
+  at MissionPlanner.GCSViews.SITL.StartSITL (System.String exepath, System.String model, System.String homelocation, System.String extraargs, System.Int32 speedup) [0x00000] in <b0e70e19ad564dc7bb0b8e33a4ca21c0>:0 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+MoveNextRunner.InvokeMoveNext (System.Object stateMachine) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+MoveNextRunner.Run () [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation+<>c.<.cctor>b__7_0 (System.Object state) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Reflection.RuntimeMethodInfo.InternalInvoke (System.Reflection.RuntimeMethodInfo , System.Object , System.Object[] , System.Exception& ) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Delegate.DynamicInvokeImpl (System.Object[] args) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Delegate.DynamicInvoke (System.Object[] args) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Windows.Forms.XplatUIDriverSupport.ExecutionCallback (System.Windows.Forms.AsyncMethodData data) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.XplatUIDriverSupport.ExecutionCallbackInContext (System.Object state) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Windows.Forms.XplatUIDriverSupport.ExecuteClientMessage (System.Runtime.InteropServices.GCHandle gchandle) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.XplatUIX11.GetMessage (System.Object queue_id, System.Windows.Forms.MSG& msg, System.IntPtr handle, System.Int32 wFilterMin, System.Int32 wFilterMax) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.XplatUI.GetMessage (System.Object queue_id, System.Windows.Forms.MSG& msg, System.IntPtr hWnd, System.Int32 wFilterMin, System.Int32 wFilterMax) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.Application.RunLoop (System.Boolean Modal, System.Windows.Forms.ApplicationContext context) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.Form.ShowDialog (System.Windows.Forms.IWin32Window owner) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.Form.ShowDialog () [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at MissionPlanner.Controls.ProgressReporterDialogue.RunBackgroundOperationAsync () [0x00000] in <ae7fec05f0884ac48e10b27edbf8e6b9>:0 
+  at MissionPlanner.MAVLinkInterface.Open (System.Boolean getparams, System.Boolean skipconnectedcheck, System.Boolean showui) [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MainV2.doConnect (MissionPlanner.MAVLinkInterface comPort, System.String portname, System.String baud, System.Boolean getparams, System.Boolean showui) [0x00000] in <b0e70e19ad564dc7bb0b8e33a4ca21c0>:0 
+  at MissionPlanner.GCSViews.SITL.StartSITL (System.String exepath, System.String model, System.String homelocation, System.String extraargs, System.Int32 speedup) [0x00000] in <b0e70e19ad564dc7bb0b8e33a4ca21c0>:0 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+MoveNextRunner.InvokeMoveNext (System.Object stateMachine) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+MoveNextRunner.Run () [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation+<>c.<.cctor>b__7_0 (System.Object state) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Reflection.RuntimeMethodInfo.InternalInvoke (System.Reflection.RuntimeMethodInfo , System.Object , System.Object[] , System.Exception& ) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Delegate.DynamicInvokeImpl (System.Object[] args) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Delegate.DynamicInvoke (System.Object[] args) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Windows.Forms.XplatUIDriverSupport.ExecutionCallback (System.Windows.Forms.AsyncMethodData data) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.XplatUIDriverSupport.ExecutionCallbackInContext (System.Object state) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Windows.Forms.XplatUIDriverSupport.ExecuteClientMessage (System.Runtime.InteropServices.GCHandle gchandle) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.XplatUIX11.GetMessage (System.Object queue_id, System.Windows.Forms.MSG& msg, System.IntPtr handle, System.Int32 wFilterMin, System.Int32 wFilterMax) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.XplatUI.GetMessage (System.Object queue_id, System.Windows.Forms.MSG& msg, System.IntPtr hWnd, System.Int32 wFilterMin, System.Int32 wFilterMax) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.Application.RunLoop (System.Boolean Modal, System.Windows.Forms.ApplicationContext context) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.Form.ShowDialog (System.Windows.Forms.IWin32Window owner) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.Form.ShowDialog () [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at MissionPlanner.Controls.ProgressReporterDialogue.RunBackgroundOperationAsync () [0x00000] in <ae7fec05f0884ac48e10b27edbf8e6b9>:0 
+  at MissionPlanner.MAVLinkInterface.Open (System.Boolean getparams, System.Boolean skipconnectedcheck, System.Boolean showui) [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MainV2.doConnect (MissionPlanner.MAVLinkInterface comPort, System.String portname, System.String baud, System.Boolean getparams, System.Boolean showui) [0x00000] in <b0e70e19ad564dc7bb0b8e33a4ca21c0>:0 
+  at MissionPlanner.GCSViews.SITL.StartSITL (System.String exepath, System.String model, System.String homelocation, System.String extraargs, System.Int32 speedup) [0x00000] in <b0e70e19ad564dc7bb0b8e33a4ca21c0>:0 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+MoveNextRunner.InvokeMoveNext (System.Object stateMachine) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+MoveNextRunner.Run () [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation+<>c.<.cctor>b__7_0 (System.Object state) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Reflection.RuntimeMethodInfo.InternalInvoke (System.Reflection.RuntimeMethodInfo , System.Object , System.Object[] , System.Exception& ) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Delegate.DynamicInvokeImpl (System.Object[] args) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Delegate.DynamicInvoke (System.Object[] args) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Windows.Forms.XplatUIDriverSupport.ExecutionCallback (System.Windows.Forms.AsyncMethodData data) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.XplatUIDriverSupport.ExecutionCallbackInContext (System.Object state) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Windows.Forms.XplatUIDriverSupport.ExecuteClientMessage (System.Runtime.InteropServices.GCHandle gchandle) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.XplatUIX11.GetMessage (System.Object queue_id, System.Windows.Forms.MSG& msg, System.IntPtr handle, System.Int32 wFilterMin, System.Int32 wFilterMax) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.XplatUI.GetMessage (System.Object queue_id, System.Windows.Forms.MSG& msg, System.IntPtr hWnd, System.Int32 wFilterMin, System.Int32 wFilterMax) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.Application.RunLoop (System.Boolean Modal, System.Windows.Forms.ApplicationContext context) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.Application.Run (System.Windows.Forms.ApplicationContext context) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at System.Windows.Forms.Application.Run (System.Windows.Forms.Form mainForm) [0x00000] in <25c2bdf9d79a43a599eb46bd15cd77fb>:0 
+  at MissionPlanner.Program.Start (System.String[] args) [0x00000] in <b0e70e19ad564dc7bb0b8e33a4ca21c0>:0 
+  at MissionPlanner.Program.Main (System.String[] args) [0x00000] in <b0e70e19ad564dc7bb0b8e33a4ca21c0>:0  (:0) [Base Thread]
+2026-09-14 21:54:15,996  INFO MissionPlanner.MainV2 - About to do dtr if needed (:0) [Base Thread]
+2026-09-14 21:54:15,997  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current True new False (:0) [Base Thread]
+2026-09-14 21:54:15,999  INFO MissionPlanner.MainV2 - creating logfile 2026-09-14 21-54-15.tlog (:0) [Base Thread]
+2026-09-14 21:54:16,004  INFO MissionPlanner.Controls.ProgressReporterDialogue - RunBackgroundOperation (:0) [Thread Pool Worker]
+2026-09-14 21:54:16,010  INFO MissionPlanner.MainV2 - We are connecting to preset 5760 (:0) [Base Thread]
+2026-09-14 21:54:16,013  INFO MissionPlanner.MainV2 - Reset connection stats (:0) [Base Thread]
+2026-09-14 21:54:16,015  INFO MissionPlanner.MainV2 - Set Portname (:0) [Base Thread]
+2026-09-14 21:54:16,018  INFO MissionPlanner.MainV2 - Set Baudrate (:0) [Base Thread]
+2026-09-14 21:54:16,020  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current False new True (:0) [Base Thread]
+2026-09-14 21:54:16,023  INFO MissionPlanner.MainV2 - About to do dtr if needed (:0) [Base Thread]
+2026-09-14 21:54:16,026  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current True new False (:0) [Base Thread]
+2026-09-14 21:54:16,029  INFO MissionPlanner.MainV2 - creating logfile 2026-09-14 21-54-16.tlog (:0) [Base Thread]
+2026-09-14 21:54:16,033  INFO MissionPlanner.Controls.ProgressReporterDialogue - RunBackgroundOperation (:0) [Thread Pool Worker]
+2026-09-14 21:54:16,041  INFO MissionPlanner.MainV2 - We are connecting to preset 5760 (:0) [Base Thread]
+2026-09-14 21:54:16,045  INFO MissionPlanner.MainV2 - Reset connection stats (:0) [Base Thread]
+2026-09-14 21:54:16,049  INFO MissionPlanner.MainV2 - Set Portname (:0) [Base Thread]
+2026-09-14 21:54:16,052  INFO MissionPlanner.MainV2 - Set Baudrate (:0) [Base Thread]
+2026-09-14 21:54:16,056  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current False new True (:0) [Base Thread]
+2026-09-14 21:54:16,059  INFO MissionPlanner.MainV2 - About to do dtr if needed (:0) [Base Thread]
+2026-09-14 21:54:16,062  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current True new False (:0) [Base Thread]
+2026-09-14 21:54:17,066  INFO MissionPlanner.MainV2 - creating logfile 2026-09-14 21-54-17-1.tlog (:0) [Base Thread]
+2026-09-14 21:54:17,074  INFO MissionPlanner.Controls.ProgressReporterDialogue - RunBackgroundOperation (:0) [Thread Pool Worker]
+2026-09-14 21:54:17,078  INFO MissionPlanner.Controls.ProgressReporterDialogue - in focus invoke (:0) [Base Thread]
+2026-09-14 21:54:17,083  INFO MissionPlanner.MainV2 - We are connecting to preset 5760 (:0) [Base Thread]
+2026-09-14 21:54:17,083  INFO MissionPlanner.Controls.ProgressReporterDialogue - DoWork (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,089  INFO MissionPlanner.MainV2 - Reset connection stats (:0) [Base Thread]
+2026-09-14 21:54:17,095  INFO MissionPlanner.MainV2 - Set Portname (:0) [Base Thread]
+2026-09-14 21:54:17,089  INFO MissionPlanner.Utilities.TerrainFollow - OnPacketReceived remove to packets (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,100  INFO MissionPlanner.MainV2 - Set Baudrate (:0) [Base Thread]
+2026-09-14 21:54:17,100 DEBUG MissionPlanner.MAVLinkInterface - UnSubscribed UnSub at offset 0 in file:line:column <filename unknown>:0:0 _interface_OnPacketReceived TerrainFollow System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,105  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current False new True (:0) [Base Thread]
+2026-09-14 21:54:17,105  INFO MissionPlanner.Utilities.TerrainFollow - OnPacketReceived to packets (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,110  INFO MissionPlanner.MainV2 - About to do dtr if needed (:0) [Base Thread]
+2026-09-14 21:54:17,110 DEBUG MissionPlanner.MAVLinkInterface - Subscribed .ctor at offset 0 in file:line:column <filename unknown>:0:0 _interface_OnPacketReceived TerrainFollow System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,115  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current True new False (:0) [Base Thread]
+2026-09-14 21:54:17,116  INFO MissionPlanner.MAVLinkInterface - Open port with TCP5760 5760 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,121  INFO MissionPlanner.MainV2 - creating logfile 2026-09-14 21-54-17.tlog (:0) [Base Thread]
+2026-09-14 21:54:17,121  WARN MissionPlanner.Comms.TcpSerial - tcpserial socket already open (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,126  INFO MissionPlanner.Comms.TcpSerial - TcpSerial DiscardInBuffer 0 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,127  INFO MissionPlanner.MAVLinkInterface - 127 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,128  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,128  INFO MissionPlanner.Controls.ProgressReporterDialogue - RunBackgroundOperation (:0) [Thread Pool Worker]
+2026-09-14 21:54:17,134  INFO MissionPlanner.Controls.ProgressReporterDialogue - Focus ctl  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,138  INFO MissionPlanner.Controls.ProgressReporterDialogue - Focus ctl  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,187  INFO MissionPlanner.Controls.ProgressReporterDialogue - in focus invoke (:0) [Base Thread]
+2026-09-14 21:54:17,193  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:17,193  INFO MissionPlanner.Controls.ProgressReporterDialogue - DoWork (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,193  INFO MissionPlanner.Controls.ProgressReporterDialogue - in focus invoke (:0) [Base Thread]
+2026-09-14 21:54:17,194  INFO MissionPlanner.Utilities.TerrainFollow - OnPacketReceived remove to packets (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,195  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:17,200  INFO MissionPlanner.Controls.ProgressReporterDialogue - DoWork (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,200 DEBUG MissionPlanner.MAVLinkInterface - UnSubscribed UnSub at offset 0 in file:line:column <filename unknown>:0:0 _interface_OnPacketReceived TerrainFollow System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,201  INFO MissionPlanner.Utilities.TerrainFollow - OnPacketReceived to packets (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,201  INFO MissionPlanner.Utilities.TerrainFollow - OnPacketReceived remove to packets (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,201 DEBUG MissionPlanner.MAVLinkInterface - Subscribed .ctor at offset 0 in file:line:column <filename unknown>:0:0 _interface_OnPacketReceived TerrainFollow System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,202 DEBUG MissionPlanner.MAVLinkInterface - UnSubscribed UnSub at offset 0 in file:line:column <filename unknown>:0:0 _interface_OnPacketReceived TerrainFollow System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,202  INFO MissionPlanner.Utilities.TerrainFollow - OnPacketReceived to packets (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,202  INFO MissionPlanner.MAVLinkInterface - Open port with TCP5760 5760 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,202 DEBUG MissionPlanner.MAVLinkInterface - Subscribed .ctor at offset 0 in file:line:column <filename unknown>:0:0 _interface_OnPacketReceived TerrainFollow System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,203  WARN MissionPlanner.Comms.TcpSerial - tcpserial socket already open (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,203  INFO MissionPlanner.Comms.TcpSerial - TcpSerial DiscardInBuffer 0 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,203  INFO MissionPlanner.MAVLinkInterface - 203 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,203  INFO MissionPlanner.MAVLinkInterface - Open port with TCP5760 5760 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,204  WARN MissionPlanner.Comms.TcpSerial - tcpserial socket already open (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,204  INFO MissionPlanner.Comms.TcpSerial - TcpSerial DiscardInBuffer 0 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,204  INFO MissionPlanner.MAVLinkInterface - 204 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,205  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,207  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,207 ERROR MissionPlanner.MAVLinkInterface -   at MissionPlanner.MAVLinkInterface.set_giveComport (System.Boolean value) [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.getHeartBeatAsync () [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].Start[TStateMachine] (TStateMachine& stateMachine) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at MissionPlanner.MAVLinkInterface.getHeartBeatAsync () [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.getHeartBeat () [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.OpenBg (MissionPlanner.Utilities.IProgressReporterDialogue PRsender, System.Boolean getparams) [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.FrmProgressReporterDoWorkNOParams (MissionPlanner.Utilities.IProgressReporterDialogue sender) [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.Controls.ProgressReporterDialogue.RunBackgroundOperation (System.Object o) [0x00000] in <ae7fec05f0884ac48e10b27edbf8e6b9>:0 
+  at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context (System.Object state) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem () [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback () [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,209 ERROR MissionPlanner.MAVLinkInterface -   at MissionPlanner.MAVLinkInterface.set_giveComport (System.Boolean value) [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.getHeartBeatAsync () [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].Start[TStateMachine] (TStateMachine& stateMachine) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at MissionPlanner.MAVLinkInterface.getHeartBeatAsync () [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.getHeartBeat () [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.OpenBg (MissionPlanner.Utilities.IProgressReporterDialogue PRsender, System.Boolean getparams) [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.FrmProgressReporterDoWorkNOParams (MissionPlanner.Utilities.IProgressReporterDialogue sender) [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.Controls.ProgressReporterDialogue.RunBackgroundOperation (System.Object o) [0x00000] in <ae7fec05f0884ac48e10b27edbf8e6b9>:0 
+  at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context (System.Object state) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem () [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback () [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,274  INFO MissionPlanner.Controls.ProgressReporterDialogue - Focus ctl  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,275  INFO MissionPlanner.Controls.ProgressReporterDialogue - in focus invoke (:0) [Base Thread]
+2026-09-14 21:54:17,281  INFO MissionPlanner.Controls.ProgressReporterDialogue - DoWork (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,281  INFO MissionPlanner.Utilities.TerrainFollow - OnPacketReceived remove to packets (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,281 DEBUG MissionPlanner.MAVLinkInterface - UnSubscribed UnSub at offset 0 in file:line:column <filename unknown>:0:0 _interface_OnPacketReceived TerrainFollow System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,281  INFO MissionPlanner.Utilities.TerrainFollow - OnPacketReceived to packets (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,281 DEBUG MissionPlanner.MAVLinkInterface - Subscribed .ctor at offset 0 in file:line:column <filename unknown>:0:0 _interface_OnPacketReceived TerrainFollow System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,282  INFO MissionPlanner.MAVLinkInterface - Open port with TCP5760 5760 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,282  WARN MissionPlanner.Comms.TcpSerial - tcpserial socket already open (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,282  INFO MissionPlanner.Comms.TcpSerial - TcpSerial DiscardInBuffer 0 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,282  INFO MissionPlanner.MAVLinkInterface - 282 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,284  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,284 ERROR MissionPlanner.MAVLinkInterface -   at MissionPlanner.MAVLinkInterface.set_giveComport (System.Boolean value) [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.getHeartBeatAsync () [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].Start[TStateMachine] (TStateMachine& stateMachine) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at MissionPlanner.MAVLinkInterface.getHeartBeatAsync () [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.getHeartBeat () [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.OpenBg (MissionPlanner.Utilities.IProgressReporterDialogue PRsender, System.Boolean getparams) [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.FrmProgressReporterDoWorkNOParams (MissionPlanner.Utilities.IProgressReporterDialogue sender) [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.Controls.ProgressReporterDialogue.RunBackgroundOperation (System.Object o) [0x00000] in <ae7fec05f0884ac48e10b27edbf8e6b9>:0 
+  at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context (System.Object state) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem () [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback () [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,329  INFO MissionPlanner.Controls.ProgressReporterDialogue - Focus ctl  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,330  INFO MissionPlanner.Controls.ProgressReporterDialogue - in focus invoke (:0) [Base Thread]
+2026-09-14 21:54:17,337  INFO MissionPlanner.Controls.ProgressReporterDialogue - DoWork (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,338  INFO MissionPlanner.Utilities.TerrainFollow - OnPacketReceived remove to packets (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,338 DEBUG MissionPlanner.MAVLinkInterface - UnSubscribed UnSub at offset 0 in file:line:column <filename unknown>:0:0 _interface_OnPacketReceived TerrainFollow System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,338  INFO MissionPlanner.Utilities.TerrainFollow - OnPacketReceived to packets (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,338 DEBUG MissionPlanner.MAVLinkInterface - Subscribed .ctor at offset 0 in file:line:column <filename unknown>:0:0 _interface_OnPacketReceived TerrainFollow System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,338  INFO MissionPlanner.MAVLinkInterface - Open port with TCP5760 5760 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,338  WARN MissionPlanner.Comms.TcpSerial - tcpserial socket already open (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,339  INFO MissionPlanner.Comms.TcpSerial - TcpSerial DiscardInBuffer 0 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,339  INFO MissionPlanner.MAVLinkInterface - 339 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,340  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:17,341 ERROR MissionPlanner.MAVLinkInterface -   at MissionPlanner.MAVLinkInterface.set_giveComport (System.Boolean value) [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.getHeartBeatAsync () [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1[TResult].Start[TStateMachine] (TStateMachine& stateMachine) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at MissionPlanner.MAVLinkInterface.getHeartBeatAsync () [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.getHeartBeat () [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.OpenBg (MissionPlanner.Utilities.IProgressReporterDialogue PRsender, System.Boolean getparams) [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.MAVLinkInterface.FrmProgressReporterDoWorkNOParams (MissionPlanner.Utilities.IProgressReporterDialogue sender) [0x00000] in <3f469290027b4f4f9b9cce6b6c47604d>:0 
+  at MissionPlanner.Controls.ProgressReporterDialogue.RunBackgroundOperation (System.Object o) [0x00000] in <ae7fec05f0884ac48e10b27edbf8e6b9>:0 
+  at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context (System.Object state) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem () [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0 
+  at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback () [0x00000] in <d636f104d58046fd9b195699bcb1a744>:0  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:18,402  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:18,404  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:19,605  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:19,606  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:19,607  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:19,608  INFO MissionPlanner.MAVLinkInterface - 608 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:19,610  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:20,808  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:20,810  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:20,811  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:20,812  INFO MissionPlanner.MAVLinkInterface - 812 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:20,813  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:22,012  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:22,013  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:22,014  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:22,015  INFO MissionPlanner.MAVLinkInterface - 15 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:22,016  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:23,215  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:23,216  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:23,217  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:23,217  INFO MissionPlanner.MAVLinkInterface - 217 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:23,218  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:24,417  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:24,418  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:24,419  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:24,420  INFO MissionPlanner.MAVLinkInterface - 420 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:24,421  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:25,620  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:25,621  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:25,622  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:25,623  INFO MissionPlanner.MAVLinkInterface - 623 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:25,624  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:26,823  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:26,824  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:26,826  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:26,826  INFO MissionPlanner.MAVLinkInterface - 826 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:26,827  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:28,026  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:28,027  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:28,028  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:28,029  INFO MissionPlanner.MAVLinkInterface - 29 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:28,030  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:29,228  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:29,229  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:29,230  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:29,231  INFO MissionPlanner.MAVLinkInterface - 231 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:29,232  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:30,431  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:30,432  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:30,433  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:30,433  INFO MissionPlanner.MAVLinkInterface - 433 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:30,435  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:31,634  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:31,634  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:31,635  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:31,636  INFO MissionPlanner.MAVLinkInterface - 636 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:31,637  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:32,836  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:32,839  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:32,840  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:32,840  INFO MissionPlanner.MAVLinkInterface - 840 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:32,841  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:34,040  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:34,042  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:34,043  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:34,044  INFO MissionPlanner.MAVLinkInterface - 44 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:34,045  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:35,243  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:35,244  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:35,245  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:35,245  INFO MissionPlanner.MAVLinkInterface - 245 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:35,247  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:36,445  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:36,446  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:36,448  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:36,448  INFO MissionPlanner.MAVLinkInterface - 448 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:36,449  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:37,648  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:37,652  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:37,653  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:37,654  INFO MissionPlanner.MAVLinkInterface - 654 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:37,655  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:38,854  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:38,856  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:38,856  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:38,857  INFO MissionPlanner.MAVLinkInterface - 857 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:38,858  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:40,057  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:40,058  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:40,059  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:40,060  INFO MissionPlanner.MAVLinkInterface - 60 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:40,061  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:41,260  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:41,261  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:41,262  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:41,262  INFO MissionPlanner.MAVLinkInterface - 262 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:41,263  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:42,462  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:42,466  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:42,467  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:42,467  INFO MissionPlanner.MAVLinkInterface - 467 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:42,469  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:43,667  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:43,668  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:43,669  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:43,670  INFO MissionPlanner.MAVLinkInterface - 670 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:43,671  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:44,869  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:44,871  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:44,872  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:44,873  INFO MissionPlanner.MAVLinkInterface - 873 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:44,874  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:46,072  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:46,074  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:46,075  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:46,076  INFO MissionPlanner.MAVLinkInterface - 76 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:46,077  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,275  INFO MissionPlanner.MAVLinkInterface - MAVLINK: 1 wait time out btr 0 len 0 (:0) [Thread Pool Worker]
+2026-09-14 21:54:47,277  INFO MissionPlanner.MAVLinkInterface - MAVLink readpacket read error: System.TimeoutException: Timeout
+  at MissionPlanner.MAVLinkInterface.readPacketAsync () [0x00326] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:54:47,278  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current True new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:47,279  INFO MissionPlanner.MAVLinkInterface - 279 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,280  INFO MissionPlanner.Utilities.TerrainFollow - OnPacketReceived remove to packets (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,280 DEBUG MissionPlanner.MAVLinkInterface - UnSubscribed UnSub at offset 0 in file:line:column <filename unknown>:0:0 _interface_OnPacketReceived TerrainFollow System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,280  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,280  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,283  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,284  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,284 ERROR MissionPlanner.MAVLinkInterface - System.InvalidOperationException: Sequence contains no elements
+  at System.Linq.Enumerable.Aggregate[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`3[T1,T2,TResult] func) [0x00030] in <69ada62907b24213a012734531df1db1>:0 
+  at MissionPlanner.MAVLinkInterface.OpenBg (MissionPlanner.Utilities.IProgressReporterDialogue PRsender, System.Boolean getparams) [0x0029e] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,284  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current False new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:47,284  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current False new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:47,284  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current False new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:47,284  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current False new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:47,286  INFO MissionPlanner.MAVLinkInterface - 286 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,285  INFO MissionPlanner.MAVLinkInterface - 285 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,285  INFO MissionPlanner.MAVLinkInterface - 285 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,286  INFO MissionPlanner.MAVLinkInterface - 286 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,284  INFO MissionPlanner.MAVLinkInterface - set giveComport Thread Pool Worker current False new False (:0) [Thread Pool Worker]
+2026-09-14 21:54:47,286  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,288  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,287  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,287  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,287  INFO MissionPlanner.MAVLinkInterface - 287 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,287  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,288  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,289 ERROR MissionPlanner.MAVLinkInterface - System.InvalidOperationException: Sequence contains no elements
+  at System.Linq.Enumerable.Aggregate[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`3[T1,T2,TResult] func) [0x00030] in <69ada62907b24213a012734531df1db1>:0 
+  at MissionPlanner.MAVLinkInterface.OpenBg (MissionPlanner.Utilities.IProgressReporterDialogue PRsender, System.Boolean getparams) [0x0029e] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,288  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,289  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,288  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,289  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,289  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,289  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,290  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,290 ERROR MissionPlanner.MAVLinkInterface - System.InvalidOperationException: Sequence contains no elements
+  at System.Linq.Enumerable.Aggregate[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`3[T1,T2,TResult] func) [0x00030] in <69ada62907b24213a012734531df1db1>:0 
+  at MissionPlanner.MAVLinkInterface.OpenBg (MissionPlanner.Utilities.IProgressReporterDialogue PRsender, System.Boolean getparams) [0x0029e] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,290  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,290 ERROR MissionPlanner.MAVLinkInterface - System.InvalidOperationException: Sequence contains no elements
+  at System.Linq.Enumerable.Aggregate[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`3[T1,T2,TResult] func) [0x00030] in <69ada62907b24213a012734531df1db1>:0 
+  at MissionPlanner.MAVLinkInterface.OpenBg (MissionPlanner.Utilities.IProgressReporterDialogue PRsender, System.Boolean getparams) [0x0029e] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,291 ERROR MissionPlanner.MAVLinkInterface - System.InvalidOperationException: Sequence contains no elements
+  at System.Linq.Enumerable.Aggregate[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`3[T1,T2,TResult] func) [0x00030] in <69ada62907b24213a012734531df1db1>:0 
+  at MissionPlanner.MAVLinkInterface.OpenBg (MissionPlanner.Utilities.IProgressReporterDialogue PRsender, System.Boolean getparams) [0x0029e] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,291  INFO MissionPlanner.MAVLinkInterface - 291 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,293  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,294  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,294  INFO MissionPlanner.MAVLinkInterface - 294 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,295  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,296  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,296  INFO MissionPlanner.MAVLinkInterface - 296 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,297  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,298  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,298  INFO MissionPlanner.MAVLinkInterface - 298 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,299  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,299  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,300  INFO MissionPlanner.MAVLinkInterface - 300 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,301  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,301  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,302  INFO MissionPlanner.MAVLinkInterface - 302 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,303  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,303  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,303  INFO MissionPlanner.MAVLinkInterface - 303 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,305  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,305  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,305  INFO MissionPlanner.MAVLinkInterface - 305 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,306  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,307  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,307  INFO MissionPlanner.MAVLinkInterface - 307 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,308  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,309  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,309  INFO MissionPlanner.MAVLinkInterface - 309 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,310  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,311  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,311  INFO MissionPlanner.MAVLinkInterface - 311 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,312  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,313  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,313  INFO MissionPlanner.MAVLinkInterface - 313 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,314  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,315  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,315  INFO MissionPlanner.MAVLinkInterface - 315 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,316  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,317  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,317  INFO MissionPlanner.MAVLinkInterface - 317 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,318  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,319  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,319  INFO MissionPlanner.MAVLinkInterface - 319 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,320  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,320  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,321  INFO MissionPlanner.MAVLinkInterface - 321 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,322  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,322  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,323  INFO MissionPlanner.MAVLinkInterface - 323 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,324  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,324  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,325  INFO MissionPlanner.MAVLinkInterface - 325 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,326  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,326  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,327  INFO MissionPlanner.MAVLinkInterface - 327 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,328  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,328  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,329  INFO MissionPlanner.MAVLinkInterface - 329 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,330  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,331  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,331  INFO MissionPlanner.MAVLinkInterface - 331 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,332  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,335  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,335  INFO MissionPlanner.MAVLinkInterface - 335 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,336  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,337  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,337  INFO MissionPlanner.MAVLinkInterface - 337 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,338  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new True (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,338  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current True new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,339  INFO MissionPlanner.MAVLinkInterface - 339 Start connect loop  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,339  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,339  INFO MissionPlanner.Comms.TcpSerial - TCP Close  5760 (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,339  INFO MissionPlanner.MAVLinkInterface - set giveComport ProgressReporterDialogue Background thread current False new False (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:47,340 ERROR MissionPlanner.MAVLinkInterface - System.InvalidOperationException: Sequence contains no elements
+  at System.Linq.Enumerable.Aggregate[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`3[T1,T2,TResult] func) [0x00030] in <69ada62907b24213a012734531df1db1>:0 
+  at MissionPlanner.MAVLinkInterface.OpenBg (MissionPlanner.Utilities.IProgressReporterDialogue PRsender, System.Boolean getparams) [0x0029e] in <3f469290027b4f4f9b9cce6b6c47604d>:0  (:0) [ProgressReporterDialogue Background thread]
+2026-09-14 21:54:49,153 DEBUG MissionPlanner.MAVLinkInterface - UnSubscribeToPacketType -699362605 (:0) [plugin runner thread]
+2026-09-14 21:54:50,251 DEBUG MissionPlanner.MAVLinkInterface - UnSubscribed Finalize at offset 0 in file:line:column <filename unknown>:0:0 _interface_OnPacketReceived TerrainFollow System.EventHandler`1[MAVLink+MAVLinkMessage] (:0) [Finalizer]
+2026-09-14 21:54:55,041 ERROR MissionPlanner.Utilities.AutoConnect - System.Net.Sockets.SocketException (0x80004005): The socket is not connected
+  at System.Net.Sockets.Socket.get_RemoteEndPoint () [0x00035] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at MissionPlanner.Utilities.AutoConnect.clientdataMAVLink (System.IAsyncResult ar) [0x00059] in <c7cb5fd349cd49ffbca279b7c11182d1>:0  (:0) [Thread Pool Worker]
+2026-09-14 21:55:00,584  INFO MissionPlanner.MainV2 - comport is closed. existing connect (:0) [Base Thread]
+2026-09-14 21:55:00,590  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current False new False (:0) [Base Thread]
+2026-09-14 21:55:01,350  INFO MissionPlanner.MainV2 - comport is closed. existing connect (:0) [Base Thread]
+2026-09-14 21:55:01,354  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current False new False (:0) [Base Thread]
+2026-09-14 21:55:01,951  INFO MissionPlanner.MainV2 - comport is closed. existing connect (:0) [Base Thread]
+2026-09-14 21:55:01,954  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current False new False (:0) [Base Thread]
+2026-09-14 21:55:02,568  INFO MissionPlanner.MainV2 - comport is closed. existing connect (:0) [Base Thread]
+2026-09-14 21:55:02,571  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current False new False (:0) [Base Thread]
+2026-09-14 21:55:03,183  INFO MissionPlanner.MainV2 - comport is closed. existing connect (:0) [Base Thread]
+2026-09-14 21:55:03,184  INFO MissionPlanner.MAVLinkInterface - set giveComport Base Thread current False new False (:0) [Base Thread]
