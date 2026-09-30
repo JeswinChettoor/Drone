@@ -1,0 +1,3532 @@
+<sdf version='1.10'>
+  <world name='arena_world'>
+    <gravity>0 0 -9.8000000000000007</gravity>
+    <physics name='default_physics' type='ode'>
+      <max_step_size>0.002</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>500</real_time_update_rate>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+          <sor>1.3</sor>
+          <use_dynamic_moi_rescaling>false</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>0</cfm>
+          <erp>0.20000000000000001</erp>
+          <contact_max_correcting_vel>100</contact_max_correcting_vel>
+          <contact_surface_layer>0.001</contact_surface_layer>
+        </constraints>
+      </ode>
+    </physics>
+    <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
+    <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
+    <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
+    <plugin name='gz::sim::systems::Sensors' filename='gz-sim-sensors-system'>
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/>
+    <plugin name='gz::sim::systems::Imu' filename='gz-sim-imu-system'/>
+    <plugin name='gz::sim::systems::AirPressure' filename='gz-sim-air-pressure-system'/>
+    <plugin name='gz::sim::systems::Magnetometer' filename='gz-sim-magnetometer-system'/>
+    <scene>
+      <ambient>0.5 0.5 0.5 1</ambient>
+      <background>0.25 0.25 0.280000001 1</background>
+      <shadows>false</shadows>
+      <grid>false</grid>
+      <origin_visual>false</origin_visual>
+    </scene>
+    <gui fullscreen='false'>
+      <plugin name='3D View' filename='MinimalScene'>
+        <gz-gui>
+          <title>3D View</title>
+          <property type='bool' key='showTitleBar'>false</property>
+          <property type='string' key='state'>docked</property>
+        </gz-gui>
+        <engine>ogre2</engine>
+        <scene>scene</scene>
+        <ambient_light>0.5 0.5 0.5</ambient_light>
+        <background_color>0.25 0.25 0.28</background_color>
+        <camera_pose>0 0 22 0 1.5708 0</camera_pose>
+      </plugin>
+      <plugin name='Scene Manager' filename='GzSceneManager'>
+        <gz-gui>
+          <property key='resizable' type='bool'>false</property>
+          <property key='width' type='double'>5</property>
+          <property key='height' type='double'>5</property>
+          <property key='state' type='string'>floating</property>
+          <property key='showTitleBar' type='bool'>false</property>
+        </gz-gui>
+      </plugin>
+      <plugin name='Interactive view control' filename='InteractiveViewControl'>
+        <gz-gui>
+          <property key='resizable' type='bool'>false</property>
+          <property key='width' type='double'>5</property>
+          <property key='height' type='double'>5</property>
+          <property key='state' type='string'>floating</property>
+          <property key='showTitleBar' type='bool'>false</property>
+        </gz-gui>
+      </plugin>
+      <plugin name='World control' filename='WorldControl'>
+        <gz-gui>
+          <title>World control</title>
+          <property type='bool' key='showTitleBar'>false</property>
+          <property type='bool' key='resizable'>false</property>
+          <property type='double' key='height'>72</property>
+          <property type='double' key='width'>121</property>
+          <property type='string' key='state'>floating</property>
+          <anchors target='3D View'>
+            <line own='left' target='left'/>
+            <line own='bottom' target='bottom'/>
+          </anchors>
+        </gz-gui>
+        <play_pause>true</play_pause>
+        <step>true</step>
+        <start_paused>false</start_paused>
+      </plugin>
+      <plugin name='World stats' filename='WorldStats'>
+        <gz-gui>
+          <title>World stats</title>
+          <property type='bool' key='showTitleBar'>false</property>
+          <property type='bool' key='resizable'>false</property>
+          <property type='double' key='height'>110</property>
+          <property type='double' key='width'>290</property>
+          <property type='string' key='state'>floating</property>
+          <anchors target='3D View'>
+            <line own='right' target='right'/>
+            <line own='bottom' target='bottom'/>
+          </anchors>
+        </gz-gui>
+        <sim_time>true</sim_time>
+        <real_time>true</real_time>
+        <real_time_factor>true</real_time_factor>
+        <iterations>true</iterations>
+      </plugin>
+      <plugin name='Camera: front_down_cam' filename='ImageDisplay'>
+        <gz-gui>
+          <title>Camera Feed</title>
+          <property type='string' key='state'>docked</property>
+          <property type='bool' key='showTitleBar'>true</property>
+        </gz-gui>
+        <topic>/camera/image_raw</topic>
+        <topic_picker>false</topic_picker>
+      </plugin>
+      <plugin name='Entity tree' filename='EntityTree'>
+        <gz-gui>
+          <title>Entity tree</title>
+          <property type='string' key='state'>docked_collapsed</property>
+          <property type='bool' key='showTitleBar'>true</property>
+        </gz-gui>
+      </plugin>
+      <plugin name='Component inspector' filename='ComponentInspector'>
+        <gz-gui>
+          <title>Component inspector</title>
+          <property type='string' key='state'>docked_collapsed</property>
+          <property type='bool' key='showTitleBar'>true</property>
+        </gz-gui>
+      </plugin>
+      <plugin name='Transform control' filename='TransformControl'>
+        <gz-gui>
+          <property key='resizable' type='bool'>false</property>
+          <property key='width' type='double'>250</property>
+          <property key='height' type='double'>50</property>
+          <property key='state' type='string'>floating</property>
+          <property key='showTitleBar' type='bool'>false</property>
+          <anchors target='3D View'>
+            <line own='left' target='left'/>
+            <line own='top' target='top'/>
+          </anchors>
+        </gz-gui>
+      </plugin>
+      <plugin name='View angle' filename='ViewAngle'>
+        <gz-gui>
+          <property key='resizable' type='bool'>false</property>
+          <property key='width' type='double'>200</property>
+          <property key='height' type='double'>50</property>
+          <property key='state' type='string'>floating</property>
+          <property key='showTitleBar' type='bool'>false</property>
+          <anchors target='3D View'>
+            <line own='right' target='right'/>
+            <line own='top' target='top'/>
+          </anchors>
+        </gz-gui>
+      </plugin>
+      <plugin name='Spawn Entities' filename='Spawn'>
+        <gz-gui>
+          <anchors target='Select entities'>
+            <line own='right' target='right'/>
+            <line own='top' target='top'/>
+          </anchors>
+          <property key='resizable' type='bool'>false</property>
+          <property key='width' type='double'>5</property>
+          <property key='height' type='double'>5</property>
+          <property key='state' type='string'>floating</property>
+          <property key='showTitleBar' type='bool'>false</property>
+        </gz-gui>
+      </plugin>
+      <plugin name='Select entities' filename='SelectEntities'>
+        <gz-gui>
+          <anchors target='Select entities'>
+            <line own='right' target='right'/>
+            <line own='top' target='top'/>
+          </anchors>
+          <property key='resizable' type='bool'>false</property>
+          <property key='width' type='double'>5</property>
+          <property key='height' type='double'>5</property>
+          <property key='state' type='string'>floating</property>
+          <property key='showTitleBar' type='bool'>false</property>
+        </gz-gui>
+      </plugin>
+      <plugin name='Visualization Capabilities' filename='VisualizationCapabilities'>
+        <gz-gui>
+          <property key='resizable' type='bool'>false</property>
+          <property key='width' type='double'>5</property>
+          <property key='height' type='double'>5</property>
+          <property key='state' type='string'>floating</property>
+          <property key='showTitleBar' type='bool'>false</property>
+        </gz-gui>
+      </plugin>
+      <plugin name='Screenshot' filename='Screenshot'>
+        <gz-gui>
+          <property key='resizable' type='bool'>false</property>
+          <property key='width' type='double'>5</property>
+          <property key='height' type='double'>5</property>
+          <property key='state' type='string'>floating</property>
+          <property key='showTitleBar' type='bool'>false</property>
+        </gz-gui>
+      </plugin>
+    </gui>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>15 15</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.80000000000000004</mu>
+                <mu2>0.80000000000000004</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+              </ode>
+            </contact>
+            <bounce/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>15 15</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.449999988 0.449999988 0.439999998 1</ambient>
+            <diffuse>0.5 0.5 0.479999989 1</diffuse>
+            <specular>0.150000006 0.150000006 0.150000006 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.95</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_000'>
+      <static>true</static>
+      <pose>0 7.4500000000000002 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>15 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>15 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_001'>
+      <static>true</static>
+      <pose>-7.4500000000000002 -0.050000000000000003 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 14.9 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 14.9 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_002'>
+      <static>true</static>
+      <pose>7.4500000000000002 -0.050000000000000003 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 14.9 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 14.9 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_003'>
+      <static>true</static>
+      <pose>-2.6499999999999999 6.25 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>5.9000000000000004 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>5.9000000000000004 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_004'>
+      <static>true</static>
+      <pose>3.5499999999999998 6.25 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>4.0999999999999996 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>4.0999999999999996 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.550000012 0.529999971 1</ambient>
+            <diffuse>0.579999983 0.579999983 0.560000002 1</diffuse>
+            <specular>0.0799999982 0.0799999982 0.0799999982 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.9</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_005'>
+      <static>true</static>
+      <pose>-5.5499999999999998 3.8500000000000001 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 4.7000000000000002 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 4.7000000000000002 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_006'>
+      <static>true</static>
+      <pose>0.25 2.2999999999999998 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 7.7999999999999998 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 7.7999999999999998 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_007'>
+      <static>true</static>
+      <pose>1.55 3.8999999999999999 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 4.5999999999999996 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 4.5999999999999996 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_008'>
+      <static>true</static>
+      <pose>3.5499999999999998 4.4000000000000004 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 3.6000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 3.6000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_009'>
+      <static>true</static>
+      <pose>-2.9500000000000002 5.1500000000000004 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3.1000000000000001 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>3.1000000000000001 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_010'>
+      <static>true</static>
+      <pose>-4.4500000000000002 3.9500000000000002 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 2.2999999999999998 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 2.2999999999999998 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_011'>
+      <static>true</static>
+      <pose>-1.45 3.2999999999999998 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 3.6000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 3.6000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_012'>
+      <static>true</static>
+      <pose>6.4500000000000002 4.5499999999999998 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1.8999999999999999 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1.8999999999999999 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_013'>
+      <static>true</static>
+      <pose>5.5499999999999998 3.5 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 2 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 2 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_014'>
+      <static>true</static>
+      <pose>7.25 4.4500000000000002 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.29999999999999999 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.29999999999999999 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_015'>
+      <static>true</static>
+      <pose>-2.8999999999999999 4.3499999999999996 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1.2 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1.2 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.550000012 0.529999971 1</ambient>
+            <diffuse>0.579999983 0.579999983 0.560000002 1</diffuse>
+            <specular>0.0799999982 0.0799999982 0.0799999982 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.9</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_016'>
+      <static>true</static>
+      <pose>-2.3500000000000001 3.5499999999999998 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 1.5 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 1.5 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_017'>
+      <static>true</static>
+      <pose>-3.3999999999999999 2.8500000000000001 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>2 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>2 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_018'>
+      <static>true</static>
+      <pose>4.5 1.6499999999999999 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>5.7999999999999998 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>5.7999999999999998 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_019'>
+      <static>true</static>
+      <pose>-5.6500000000000004 1.55 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_020'>
+      <static>true</static>
+      <pose>-3.5 1.55 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>4 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>4 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_021'>
+      <static>true</static>
+      <pose>6.2000000000000002 0.55000000000000004 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>2.3999999999999999 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>2.3999999999999999 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_022'>
+      <static>true</static>
+      <pose>2.6499999999999999 0.45000000000000001 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>2.2999999999999998 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>2.2999999999999998 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_023'>
+      <static>true</static>
+      <pose>1.55 -0.59999999999999998 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 2 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 2 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_024'>
+      <static>true</static>
+      <pose>3.75 -0.10000000000000001 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 1 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 1 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_025'>
+      <static>true</static>
+      <pose>-5.2000000000000002 -0.45000000000000001 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.80000000000000004 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.80000000000000004 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_026'>
+      <static>true</static>
+      <pose>-5.5499999999999998 -1.05 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 1.1000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 1.1000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_027'>
+      <static>true</static>
+      <pose>-3.2000000000000002 -0.55000000000000004 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3.3999999999999999 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>3.3999999999999999 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_028'>
+      <static>true</static>
+      <pose>-6.5 -1.55 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1.8 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1.8 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_029'>
+      <static>true</static>
+      <pose>-2.6499999999999999 -1.55 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>5.7000000000000002 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>5.7000000000000002 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_030'>
+      <static>true</static>
+      <pose>4.5 -1.55 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>5.7999999999999998 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>5.7999999999999998 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.550000012 0.529999971 1</ambient>
+            <diffuse>0.579999983 0.579999983 0.560000002 1</diffuse>
+            <specular>0.0799999982 0.0799999982 0.0799999982 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.9</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_031'>
+      <static>true</static>
+      <pose>3.25 -3.4500000000000002 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>2.7000000000000002 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>2.7000000000000002 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_032'>
+      <static>true</static>
+      <pose>-6.7000000000000002 -3.5499999999999998 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1.3999999999999999 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1.3999999999999999 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.550000012 0.529999971 1</ambient>
+            <diffuse>0.579999983 0.579999983 0.560000002 1</diffuse>
+            <specular>0.0799999982 0.0799999982 0.0799999982 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.9</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_033'>
+      <static>true</static>
+      <pose>-4.2000000000000002 -3.5499999999999998 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_034'>
+      <static>true</static>
+      <pose>-1 -3.5499999999999998 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>3 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.550000012 0.529999971 1</ambient>
+            <diffuse>0.579999983 0.579999983 0.560000002 1</diffuse>
+            <specular>0.0799999982 0.0799999982 0.0799999982 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.9</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_035'>
+      <static>true</static>
+      <pose>1.95 -4.75 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 2.5 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 2.5 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_036'>
+      <static>true</static>
+      <pose>4.5499999999999998 -5.5 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 4 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 4 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_037'>
+      <static>true</static>
+      <pose>6.5999999999999996 -4.5499999999999998 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1.6000000000000001 2.1000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1.6000000000000001 2.1000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.419999987 0.280000001 1</ambient>
+            <diffuse>0.620000005 0.469999999 0.319999993 1</diffuse>
+            <specular>0.0599999987 0.0599999987 0.0599999987 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.7</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_038'>
+      <static>true</static>
+      <pose>-3.75 -5.5499999999999998 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 3.8999999999999999 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 3.8999999999999999 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.550000012 0.529999971 1</ambient>
+            <diffuse>0.579999983 0.579999983 0.560000002 1</diffuse>
+            <specular>0.0799999982 0.0799999982 0.0799999982 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.9</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_039'>
+      <static>true</static>
+      <pose>0.45000000000000001 -5.5499999999999998 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 3.8999999999999999 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 3.8999999999999999 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.550000012 0.529999971 1</ambient>
+            <diffuse>0.579999983 0.579999983 0.560000002 1</diffuse>
+            <specular>0.0799999982 0.0799999982 0.0799999982 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.9</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_040'>
+      <static>true</static>
+      <pose>-2.4500000000000002 -6.0499999999999998 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 2.8999999999999999 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.10000000000000001 2.8999999999999999 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.550000012 0.529999971 1</ambient>
+            <diffuse>0.579999983 0.579999983 0.560000002 1</diffuse>
+            <specular>0.0799999982 0.0799999982 0.0799999982 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.9</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_041'>
+      <static>true</static>
+      <pose>2.7000000000000002 -5.9500000000000002 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1.3999999999999999 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1.3999999999999999 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_042'>
+      <static>true</static>
+      <pose>-5.5999999999999996 -7.4500000000000002 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3.6000000000000001 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>3.6000000000000001 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_043'>
+      <static>true</static>
+      <pose>-3.1000000000000001 -7.4500000000000002 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1.2 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1.2 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.550000012 0.550000012 0.529999971 1</ambient>
+            <diffuse>0.579999983 0.579999983 0.560000002 1</diffuse>
+            <specular>0.0799999982 0.0799999982 0.0799999982 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.9</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_044'>
+      <static>true</static>
+      <pose>-1 -7.4500000000000002 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>2.7999999999999998 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>2.7999999999999998 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='wall_045'>
+      <static>true</static>
+      <pose>2.5 -7.4500000000000002 1.22 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>4 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.69999999999999996</mu>
+                <mu2>0.69999999999999996</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1000000000</kp>
+                <kd>1</kd>
+                <max_vel>0.10000000000000001</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1000000</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>4 0.10000000000000001 2.4399999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.819999993 0.800000012 0.75 1</ambient>
+            <diffuse>0.850000024 0.829999983 0.779999971 1</diffuse>
+            <specular>0.0500000007 0.0500000007 0.0500000007 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.85</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <include>
+      <uri>file:///workspace/ardupilot_gazebo/models/iris_with_ardupilot</uri>
+      <name>iris</name>
+      <pose>6 -6.5 0.5 0 0 1.5708000000000004</pose>
+    </include>
+    <include>
+      <uri>file:///workspace/ardupilot_gazebo/models/Casual female</uri>
+      <name>casual_female</name>
+      <pose>-0.044440809295309247 5.7492725246033345 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///workspace/ardupilot_gazebo/models/Casual female</uri>
+      <name>casual_female_0</name>
+      <pose>-0.21247290998339219 -4.7910769876999035 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///workspace/ardupilot_gazebo/models/Standing person</uri>
+      <name>person_standing</name>
+      <pose>2.7141839068044495 5.9700748635322309 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///workspace/ardupilot_gazebo/models/Standing person</uri>
+      <name>person_standing_0</name>
+      <pose>-5.2707646631683076 -5.5509130660369985 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///workspace/ardupilot_gazebo/models/Standing person</uri>
+      <name>person_standing_1</name>
+      <pose>2.5076984293171662 0.059314351977586721 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///workspace/ardupilot_gazebo/models/Standing person</uri>
+      <name>person_standing_2</name>
+      <pose>-7.1352702294551635 0.77522260169931312 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///workspace/ardupilot_gazebo/models/Casual female</uri>
+      <name>casual_female_1</name>
+      <pose>-3.3029823183208968 -1.9702516357181081 0 0 0 0</pose>
+    </include>
+    <light name='sun' type='directional'>
+      <pose>0 0 15 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.40000000000000002 0.20000000000000001 -0.90000000000000002</direction>
+      <diffuse>0.850000024 0.850000024 0.819999993 1</diffuse>
+      <specular>0.25 0.25 0.25 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.01</linear>
+        <constant>0.90000000000000002</constant>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <light name='ceiling_lamp_00' type='point'>
+      <pose>-2.5 2.5 2.3399999999999999 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <intensity>1</intensity>
+      <direction>0 0 -1</direction>
+      <diffuse>0.899999976 0.850000024 0.699999988 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>6</range>
+        <linear>0.20000000000000001</linear>
+        <constant>0.59999999999999998</constant>
+        <quadratic>0.050000000000000003</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <light name='ceiling_lamp_01' type='point'>
+      <pose>-2.5 -2.5 2.3399999999999999 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <intensity>1</intensity>
+      <direction>0 0 -1</direction>
+      <diffuse>0.899999976 0.850000024 0.699999988 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>6</range>
+        <linear>0.20000000000000001</linear>
+        <constant>0.59999999999999998</constant>
+        <quadratic>0.050000000000000003</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <light name='ceiling_lamp_02' type='point'>
+      <pose>-2.5 -7.5 2.3399999999999999 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <intensity>1</intensity>
+      <direction>0 0 -1</direction>
+      <diffuse>0.899999976 0.850000024 0.699999988 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>6</range>
+        <linear>0.20000000000000001</linear>
+        <constant>0.59999999999999998</constant>
+        <quadratic>0.050000000000000003</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <light name='ceiling_lamp_03' type='point'>
+      <pose>2.5 2.5 2.3399999999999999 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <intensity>1</intensity>
+      <direction>0 0 -1</direction>
+      <diffuse>0.899999976 0.850000024 0.699999988 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>6</range>
+        <linear>0.20000000000000001</linear>
+        <constant>0.59999999999999998</constant>
+        <quadratic>0.050000000000000003</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <light name='ceiling_lamp_04' type='point'>
+      <pose>2.5 -2.5 2.3399999999999999 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <intensity>1</intensity>
+      <direction>0 0 -1</direction>
+      <diffuse>0.899999976 0.850000024 0.699999988 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>6</range>
+        <linear>0.20000000000000001</linear>
+        <constant>0.59999999999999998</constant>
+        <quadratic>0.050000000000000003</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <light name='ceiling_lamp_05' type='point'>
+      <pose>2.5 -7.5 2.3399999999999999 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <intensity>1</intensity>
+      <direction>0 0 -1</direction>
+      <diffuse>0.899999976 0.850000024 0.699999988 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>6</range>
+        <linear>0.20000000000000001</linear>
+        <constant>0.59999999999999998</constant>
+        <quadratic>0.050000000000000003</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <light name='ceiling_lamp_06' type='point'>
+      <pose>7.5 2.5 2.3399999999999999 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <intensity>1</intensity>
+      <direction>0 0 -1</direction>
+      <diffuse>0.899999976 0.850000024 0.699999988 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>6</range>
+        <linear>0.20000000000000001</linear>
+        <constant>0.59999999999999998</constant>
+        <quadratic>0.050000000000000003</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <light name='ceiling_lamp_07' type='point'>
+      <pose>7.5 -2.5 2.3399999999999999 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <intensity>1</intensity>
+      <direction>0 0 -1</direction>
+      <diffuse>0.899999976 0.850000024 0.699999988 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>6</range>
+        <linear>0.20000000000000001</linear>
+        <constant>0.59999999999999998</constant>
+        <quadratic>0.050000000000000003</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <light name='ceiling_lamp_08' type='point'>
+      <pose>7.5 -7.5 2.3399999999999999 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <intensity>1</intensity>
+      <direction>0 0 -1</direction>
+      <diffuse>0.899999976 0.850000024 0.699999988 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>6</range>
+        <linear>0.20000000000000001</linear>
+        <constant>0.59999999999999998</constant>
+        <quadratic>0.050000000000000003</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+  </world>
+</sdf>
