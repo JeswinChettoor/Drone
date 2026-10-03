@@ -1,0 +1,18 @@
+[0mBuilding ardupilot_gazebo as an `ament_cmake` project.[0m
+[31mCMake Error at CMakeLists.txt:85 (find_package):
+  By not providing "FindRapidJSON.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "RapidJSON", but CMake did not find one.
+
+  Could not find a package configuration file provided by "RapidJSON" with
+  any of the following names:
+
+    RapidJSONConfig.cmake
+    rapidjson-config.cmake
+
+  Add the installation prefix of "RapidJSON" to CMAKE_PREFIX_PATH or set
+  "RapidJSON_DIR" to a directory containing one of the above files.  If
+  "RapidJSON" provides a separate development package or SDK, be sure it has
+  been installed.
+
+[0m

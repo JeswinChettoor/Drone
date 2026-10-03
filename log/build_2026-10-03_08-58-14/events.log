@@ -1,0 +1,639 @@
+[0.000000] (-) TimerEvent: {}
+[0.000124] (ardupilot_gazebo) JobQueued: {'identifier': 'ardupilot_gazebo', 'dependencies': OrderedDict()}
+[0.000153] (ardupilot_msgs) JobQueued: {'identifier': 'ardupilot_msgs', 'dependencies': OrderedDict()}
+[0.000174] (drone_control) JobQueued: {'identifier': 'drone_control', 'dependencies': OrderedDict()}
+[0.000192] (gz_ros_bridge) JobQueued: {'identifier': 'gz_ros_bridge', 'dependencies': OrderedDict()}
+[0.000211] (lidar_processing) JobQueued: {'identifier': 'lidar_processing', 'dependencies': OrderedDict()}
+[0.000229] (perception) JobQueued: {'identifier': 'perception', 'dependencies': OrderedDict()}
+[0.000245] (rf2o_laser_odometry) JobQueued: {'identifier': 'rf2o_laser_odometry', 'dependencies': OrderedDict()}
+[0.000274] (ardupilot_sitl) JobQueued: {'identifier': 'ardupilot_sitl', 'dependencies': OrderedDict([('ardupilot_msgs', '/workspace/install/ardupilot_msgs')])}
+[0.000307] (ardupilot_dds_tests) JobQueued: {'identifier': 'ardupilot_dds_tests', 'dependencies': OrderedDict([('ardupilot_msgs', '/workspace/install/ardupilot_msgs'), ('ardupilot_sitl', '/workspace/install/ardupilot_sitl')])}
+[0.000363] (ardupilot_msgs) JobStarted: {'identifier': 'ardupilot_msgs'}
+[0.007129] (ardupilot_gazebo) JobStarted: {'identifier': 'ardupilot_gazebo'}
+[0.009049] (drone_control) JobStarted: {'identifier': 'drone_control'}
+[0.012452] (gz_ros_bridge) JobStarted: {'identifier': 'gz_ros_bridge'}
+[0.014464] (lidar_processing) JobStarted: {'identifier': 'lidar_processing'}
+[0.017155] (perception) JobStarted: {'identifier': 'perception'}
+[0.020124] (rf2o_laser_odometry) JobStarted: {'identifier': 'rf2o_laser_odometry'}
+[0.022915] (ardupilot_msgs) JobProgress: {'identifier': 'ardupilot_msgs', 'progress': 'cmake'}
+[0.023150] (ardupilot_msgs) Command: {'cmd': ['/usr/bin/cmake', '/workspace/ardupilot/Tools/ros2/ardupilot_msgs', '-DCMAKE_INSTALL_PREFIX=/workspace/install/ardupilot_msgs'], 'cwd': '/workspace/build/ardupilot_msgs', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/ardupilot_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[0.025211] (ardupilot_gazebo) JobProgress: {'identifier': 'ardupilot_gazebo', 'progress': 'cmake'}
+[0.025474] (ardupilot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/workspace/ardupilot_gazebo', '-DCMAKE_INSTALL_PREFIX=/workspace/install/ardupilot_gazebo'], 'cwd': '/workspace/build/ardupilot_gazebo', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/ardupilot_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[0.099657] (-) TimerEvent: {}
+[0.139795] (gz_ros_bridge) JobProgress: {'identifier': 'gz_ros_bridge', 'progress': 'cmake'}
+[0.140730] (gz_ros_bridge) JobProgress: {'identifier': 'gz_ros_bridge', 'progress': 'build'}
+[0.140776] (gz_ros_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/gz_ros_bridge', '--', '-j16', '-l16'], 'cwd': '/workspace/build/gz_ros_bridge', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/gz_ros_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[0.199738] (-) TimerEvent: {}
+[0.299975] (-) TimerEvent: {}
+[0.366750] (ardupilot_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.367115] (ardupilot_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.367159] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.367188] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.367370] (ardupilot_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.367407] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.367434] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.367460] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.367486] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.367512] (ardupilot_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.367538] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.367564] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.367595] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.367620] (ardupilot_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.367793] (ardupilot_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.367820] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.367845] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.367870] (ardupilot_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.367895] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.367920] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.367944] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.367966] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.367991] (ardupilot_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.368014] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.368039] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.368980] (rf2o_laser_odometry) JobProgress: {'identifier': 'rf2o_laser_odometry', 'progress': 'cmake'}
+[0.369285] (rf2o_laser_odometry) JobProgress: {'identifier': 'rf2o_laser_odometry', 'progress': 'build'}
+[0.369755] (rf2o_laser_odometry) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/rf2o_laser_odometry', '--', '-j16', '-l16'], 'cwd': '/workspace/build/rf2o_laser_odometry', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/rf2o_laser_odometry'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[0.370520] (gz_ros_bridge) CommandEnded: {'returncode': 0}
+[0.370622] (gz_ros_bridge) JobProgress: {'identifier': 'gz_ros_bridge', 'progress': 'install'}
+[0.376691] (gz_ros_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/gz_ros_bridge'], 'cwd': '/workspace/build/gz_ros_bridge', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/gz_ros_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[0.383561] (gz_ros_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.384264] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/launch\n'}
+[0.384380] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/launch/bridge.launch.py\n'}
+[0.384484] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/config\n'}
+[0.384576] (gz_ros_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/config/bridge.yaml\n'}
+[0.384653] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/ament_index/resource_index/package_run_dependencies/gz_ros_bridge\n'}
+[0.384724] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/ament_index/resource_index/parent_prefix_path/gz_ros_bridge\n'}
+[0.384792] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/ament_prefix_path.sh\n'}
+[0.384880] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/ament_prefix_path.dsv\n'}
+[0.384976] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/path.sh\n'}
+[0.385045] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/path.dsv\n'}
+[0.385112] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.bash\n'}
+[0.385177] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.sh\n'}
+[0.385241] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.zsh\n'}
+[0.385304] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.dsv\n'}
+[0.385368] (gz_ros_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/package.dsv\n'}
+[0.385431] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/ament_index/resource_index/packages/gz_ros_bridge\n'}
+[0.385494] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/cmake/gz_ros_bridgeConfig.cmake\n'}
+[0.385557] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/cmake/gz_ros_bridgeConfig-version.cmake\n'}
+[0.385635] (gz_ros_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/package.xml\n'}
+[0.386444] (gz_ros_bridge) CommandEnded: {'returncode': 0}
+[0.398201] (gz_ros_bridge) JobEnded: {'identifier': 'gz_ros_bridge', 'rc': 0}
+[0.400054] (-) TimerEvent: {}
+[0.451880] (rf2o_laser_odometry) StdoutLine: {'line': b'[ 40%] Built target rf2o_laser_odometry\n'}
+[0.453900] (rf2o_laser_odometry) StdoutLine: {'line': b'[100%] Built target rf2o_laser_odometry_node\n'}
+[0.463414] (rf2o_laser_odometry) CommandEnded: {'returncode': 0}
+[0.463916] (rf2o_laser_odometry) JobProgress: {'identifier': 'rf2o_laser_odometry', 'progress': 'install'}
+[0.464282] (rf2o_laser_odometry) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/rf2o_laser_odometry'], 'cwd': '/workspace/build/rf2o_laser_odometry', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/rf2o_laser_odometry'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[0.471094] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.471275] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/lib/rf2o_laser_odometry/rf2o_laser_odometry_node\n'}
+[0.471375] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch\n'}
+[0.471459] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch/rf2o_laser_odometry.launch.py\n'}
+[0.471547] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/ament_index/resource_index/package_run_dependencies/rf2o_laser_odometry\n'}
+[0.471642] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/ament_index/resource_index/parent_prefix_path/rf2o_laser_odometry\n'}
+[0.471739] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/ament_prefix_path.sh\n'}
+[0.471824] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/ament_prefix_path.dsv\n'}
+[0.471908] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/path.sh\n'}
+[0.471981] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/path.dsv\n'}
+[0.472045] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.bash\n'}
+[0.472122] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.sh\n'}
+[0.472200] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.zsh\n'}
+[0.472273] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.dsv\n'}
+[0.472338] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.dsv\n'}
+[0.472399] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/ament_index/resource_index/packages/rf2o_laser_odometry\n'}
+[0.472462] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/cmake/rf2o_laser_odometryConfig.cmake\n'}
+[0.472522] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/cmake/rf2o_laser_odometryConfig-version.cmake\n'}
+[0.472615] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.xml\n'}
+[0.473599] (rf2o_laser_odometry) CommandEnded: {'returncode': 0}
+[0.485350] (rf2o_laser_odometry) JobEnded: {'identifier': 'rf2o_laser_odometry', 'rc': 0}
+[0.500143] (-) TimerEvent: {}
+[0.538908] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.540584] (ardupilot_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.600247] (-) TimerEvent: {}
+[0.616601] (ardupilot_gazebo) StderrLine: {'line': b'\x1b[0mBuilding ardupilot_gazebo as an `ament_cmake` project.\x1b[0m\n'}
+[0.618991] (ardupilot_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.637190] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.9.0\n'}
+[0.637682] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[0.641989] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.642312] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[0.644506] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.649647] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.650699] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[0.653594] (ardupilot_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.656472] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[0.658949] (ardupilot_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.668168] (ardupilot_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.669114] (perception) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/perception', 'build', '--build-base', '/workspace/build/perception/build', 'install', '--record', '/workspace/build/perception/install.log', '--install-scripts', '$base/lib/perception', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspace/src/perception', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/perception'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/perception/lib/python3.10/site-packages:/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge')]), 'shell': False}
+[0.670922] (drone_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/drone_control', 'build', '--build-base', '/workspace/build/drone_control/build', 'install', '--record', '/workspace/build/drone_control/install.log', '--install-scripts', '$base/lib/drone_control', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspace/src/drone_control', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/drone_control'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/build/drone_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/drone_control/lib/python3.10/site-packages:/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge')]), 'shell': False}
+[0.672137] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[0.672402] (lidar_processing) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/lidar_processing', 'build', '--build-base', '/workspace/build/lidar_processing/build', 'install', '--record', '/workspace/build/lidar_processing/install.log', '--install-scripts', '$base/lib/lidar_processing', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspace/src/lidar_processing', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/lidar_processing'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/build/lidar_processing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge')]), 'shell': False}
+[0.680262] (ardupilot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.692241] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[0.692747] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 - found\n'}
+[0.692854] (ardupilot_gazebo) StdoutLine: {'line': b'\n'}
+[0.693486] (ardupilot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.695425] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[0.695585] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering8\n'}
+[0.697995] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.7.0\n'}
+[0.698162] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[0.698289] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.698805] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-math7> component [eigen3]\n'}
+[0.700404] (-) TimerEvent: {}
+[0.700826] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7-eigen3 -- found version 7.7.0\n'}
+[0.701002] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7-eigen3\n'}
+[0.714344] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.9.0\n'}
+[0.714521] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[0.714632] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.714786] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.714877] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.720549] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[0.723910] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-graphics -- found version 5.9.0\n'}
+[0.724109] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-graphics\n'}
+[0.724272] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.7.0\n'}
+[0.724689] (ardupilot_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.730752] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found GzAssimp: TRUE (found version "5.2.0") \n'}
+[0.731441] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[0.735248] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-events -- found version 5.9.0\n'}
+[0.735540] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-events\n'}
+[0.735982] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.7.0\n'}
+[0.736599] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [geospatial]\n'}
+[0.739970] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-geospatial -- found version 5.9.0\n'}
+[0.740174] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-geospatial\n'}
+[0.740244] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.7.0\n'}
+[0.740483] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.9.0\n'}
+[0.743708] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[0.743920] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[0.743995] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.744078] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[0.744164] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[0.746384] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.2.1\n'}
+[0.746504] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[0.747746] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [all]\n'}
+[0.749731] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for all libraries of gz-plugin2 -- found version 2.0.4\n'}
+[0.749961] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[0.752176] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2-loader -- found version 2.0.4\n'}
+[0.752337] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-loader\n'}
+[0.754885] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2-register -- found version 2.0.4\n'}
+[0.755057] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-register\n'}
+[0.755958] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.761227] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL \n'}
+[0.761943] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 - found\n'}
+[0.762085] (ardupilot_gazebo) StdoutLine: {'line': b'\n'}
+[0.767809] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sim8 -- found version 8.15.0\n'}
+[0.767977] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sim8\n'}
+[0.770310] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[0.770531] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of sdformat14\n'}
+[0.774563] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[0.784471] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[0.793182] (drone_control) StdoutLine: {'line': b'running egg_info\n'}
+[0.793771] (lidar_processing) StdoutLine: {'line': b'running egg_info\n'}
+[0.799600] (drone_control) StdoutLine: {'line': b'writing ../../build/drone_control/drone_control.egg-info/PKG-INFO\n'}
+[0.799893] (drone_control) StdoutLine: {'line': b'writing dependency_links to ../../build/drone_control/drone_control.egg-info/dependency_links.txt\n'}
+[0.800009] (lidar_processing) StdoutLine: {'line': b'writing ../../build/lidar_processing/lidar_processing.egg-info/PKG-INFO\n'}
+[0.800098] (drone_control) StdoutLine: {'line': b'writing requirements to ../../build/drone_control/drone_control.egg-info/requires.txt\n'}
+[0.800170] (drone_control) StdoutLine: {'line': b'writing top-level names to ../../build/drone_control/drone_control.egg-info/top_level.txt\n'}
+[0.800251] (lidar_processing) StdoutLine: {'line': b'writing dependency_links to ../../build/lidar_processing/lidar_processing.egg-info/dependency_links.txt\n'}
+[0.800379] (lidar_processing) StdoutLine: {'line': b'writing entry points to ../../build/lidar_processing/lidar_processing.egg-info/entry_points.txt\n'}
+[0.800456] (-) TimerEvent: {}
+[0.800561] (perception) StdoutLine: {'line': b'running egg_info\n'}
+[0.800684] (lidar_processing) StdoutLine: {'line': b'writing requirements to ../../build/lidar_processing/lidar_processing.egg-info/requires.txt\n'}
+[0.800756] (lidar_processing) StdoutLine: {'line': b'writing top-level names to ../../build/lidar_processing/lidar_processing.egg-info/top_level.txt\n'}
+[0.806415] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.7.0\n'}
+[0.806597] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.806764] (perception) StdoutLine: {'line': b'creating ../../build/perception/perception.egg-info\n'}
+[0.806901] (perception) StdoutLine: {'line': b'writing ../../build/perception/perception.egg-info/PKG-INFO\n'}
+[0.807241] (perception) StdoutLine: {'line': b'writing dependency_links to ../../build/perception/perception.egg-info/dependency_links.txt\n'}
+[0.807402] (perception) StdoutLine: {'line': b'writing requirements to ../../build/perception/perception.egg-info/requires.txt\n'}
+[0.807498] (perception) StdoutLine: {'line': b'writing top-level names to ../../build/perception/perception.egg-info/top_level.txt\n'}
+[0.807582] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[0.807652] (perception) StdoutLine: {'line': b"writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'\n"}
+[0.810460] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.6.0\n'}
+[0.810624] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13\n'}
+[0.813879] (lidar_processing) StdoutLine: {'line': b"reading manifest file '../../build/lidar_processing/lidar_processing.egg-info/SOURCES.txt'\n"}
+[0.814024] (drone_control) StdoutLine: {'line': b"reading manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'\n"}
+[0.814435] (drone_control) StdoutLine: {'line': b"writing manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'\n"}
+[0.814582] (lidar_processing) StdoutLine: {'line': b"writing manifest file '../../build/lidar_processing/lidar_processing.egg-info/SOURCES.txt'\n"}
+[0.814659] (drone_control) StdoutLine: {'line': b'running build\n'}
+[0.814833] (drone_control) StdoutLine: {'line': b'running build_py\n'}
+[0.814926] (lidar_processing) StdoutLine: {'line': b'running build\n'}
+[0.814997] (lidar_processing) StdoutLine: {'line': b'running build_py\n'}
+[0.815059] (lidar_processing) StdoutLine: {'line': b'copying lidar_processing/lidar_tilt_stabilizer_node.py -> /workspace/build/lidar_processing/build/lib/lidar_processing\n'}
+[0.815122] (drone_control) StdoutLine: {'line': b'running install\n'}
+[0.815181] (lidar_processing) StdoutLine: {'line': b'running install\n'}
+[0.817159] (drone_control) StdoutLine: {'line': b'running install_lib\n'}
+[0.817298] (lidar_processing) StdoutLine: {'line': b'running install_lib\n'}
+[0.821063] (perception) StdoutLine: {'line': b"reading manifest file '../../build/perception/perception.egg-info/SOURCES.txt'\n"}
+[0.821210] (perception) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[0.821599] (perception) StdoutLine: {'line': b"writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'\n"}
+[0.821783] (perception) StdoutLine: {'line': b'running build\n'}
+[0.821971] (perception) StdoutLine: {'line': b'running build_py\n'}
+[0.822063] (perception) StdoutLine: {'line': b'creating /workspace/build/perception/build/lib/perception\n'}
+[0.822130] (perception) StdoutLine: {'line': b'copying perception/__init__.py -> /workspace/build/perception/build/lib/perception\n'}
+[0.822195] (perception) StdoutLine: {'line': b'running install\n'}
+[0.823229] (lidar_processing) StdoutLine: {'line': b'copying /workspace/build/lidar_processing/build/lib/lidar_processing/lidar_tilt_stabilizer_node.py -> /workspace/install/lidar_processing/lib/python3.10/site-packages/lidar_processing\n'}
+[0.823463] (lidar_processing) StdoutLine: {'line': b'byte-compiling /workspace/install/lidar_processing/lib/python3.10/site-packages/lidar_processing/lidar_tilt_stabilizer_node.py to lidar_tilt_stabilizer_node.cpython-310.pyc\n'}
+[0.823556] (drone_control) StdoutLine: {'line': b'running install_data\n'}
+[0.823794] (drone_control) StdoutLine: {'line': b'copying config/slam_toolbox.yaml -> /workspace/install/drone_control/share/drone_control/config\n'}
+[0.823906] (drone_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.824072] (lidar_processing) StdoutLine: {'line': b'running install_data\n'}
+[0.824153] (perception) StdoutLine: {'line': b'running install_lib\n'}
+[0.824338] (lidar_processing) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.830550] (perception) StdoutLine: {'line': b'creating /workspace/install/perception/lib/python3.10/site-packages/perception\n'}
+[0.830718] (perception) StdoutLine: {'line': b'copying /workspace/build/perception/build/lib/perception/__init__.py -> /workspace/install/perception/lib/python3.10/site-packages/perception\n'}
+[0.830967] (drone_control) StdoutLine: {'line': b"removing '/workspace/install/drone_control/lib/python3.10/site-packages/drone_control-0.1.0-py3.10.egg-info' (and everything under it)\n"}
+[0.831196] (perception) StdoutLine: {'line': b'byte-compiling /workspace/install/perception/lib/python3.10/site-packages/perception/__init__.py to __init__.cpython-310.pyc\n'}
+[0.831285] (drone_control) StdoutLine: {'line': b'Copying ../../build/drone_control/drone_control.egg-info to /workspace/install/drone_control/lib/python3.10/site-packages/drone_control-0.1.0-py3.10.egg-info\n'}
+[0.831316] (perception) StdoutLine: {'line': b'running install_data\n'}
+[0.831345] (perception) StdoutLine: {'line': b'creating /workspace/install/perception/share/ament_index/resource_index/packages\n'}
+[0.831375] (perception) StdoutLine: {'line': b'copying resource/perception -> /workspace/install/perception/share/ament_index/resource_index/packages\n'}
+[0.831402] (lidar_processing) StdoutLine: {'line': b"removing '/workspace/install/lidar_processing/lib/python3.10/site-packages/lidar_processing-0.0.1-py3.10.egg-info' (and everything under it)\n"}
+[0.831466] (perception) StdoutLine: {'line': b'copying package.xml -> /workspace/install/perception/share/perception\n'}
+[0.831494] (perception) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.831521] (lidar_processing) StdoutLine: {'line': b'Copying ../../build/lidar_processing/lidar_processing.egg-info to /workspace/install/lidar_processing/lib/python3.10/site-packages/lidar_processing-0.0.1-py3.10.egg-info\n'}
+[0.831574] (drone_control) StdoutLine: {'line': b'running install_scripts\n'}
+[0.831796] (lidar_processing) StdoutLine: {'line': b'running install_scripts\n'}
+[0.838902] (perception) StdoutLine: {'line': b'Copying ../../build/perception/perception.egg-info to /workspace/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info\n'}
+[0.839124] (perception) StdoutLine: {'line': b'running install_scripts\n'}
+[0.845321] (drone_control) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/drone_control/install.log'\n"}
+[0.845428] (lidar_processing) StdoutLine: {'line': b'Installing lidar_tilt_stabilizer_node script to /workspace/install/lidar_processing/lib/lidar_processing\n'}
+[0.845744] (lidar_processing) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/lidar_processing/install.log'\n"}
+[0.853690] (perception) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/perception/install.log'\n"}
+[0.863262] (drone_control) CommandEnded: {'returncode': 0}
+[0.866952] (drone_control) JobEnded: {'identifier': 'drone_control', 'rc': 0}
+[0.867529] (lidar_processing) CommandEnded: {'returncode': 0}
+[0.870957] (lidar_processing) JobEnded: {'identifier': 'lidar_processing', 'rc': 0}
+[0.871493] (perception) CommandEnded: {'returncode': 0}
+[0.874813] (perception) JobEnded: {'identifier': 'perception', 'rc': 0}
+[0.900649] (-) TimerEvent: {}
+[0.945053] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.15 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[0.947329] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.15 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[0.949229] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.15 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[0.951600] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.1 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.966050] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[0.975615] (ardupilot_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[0.978500] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[0.989161] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.000737] (-) TimerEvent: {}
+[1.015119] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.020903] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.023840] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.4.0\n'}
+[1.024064] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs10\n'}
+[1.039455] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.039636] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.7.0\n'}
+[1.046417] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-transport13> component [log]\n'}
+[1.048408] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13-log -- found version 13.6.0\n'}
+[1.048552] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13-log\n'}
+[1.049218] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-transport13> component [parameters]\n'}
+[1.051216] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13-parameters -- found version 13.6.0\n'}
+[1.051357] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13-parameters\n'}
+[1.052120] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.4.0\n'}
+[1.052256] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.9.0\n'}
+[1.052445] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.052779] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.052965] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.053046] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.057842] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [av]\n'}
+[1.060022] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-av -- found version 5.9.0\n'}
+[1.060163] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-av\n'}
+[1.063720] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[1.073013] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found libswscale, version 5.9.100\n'}
+[1.096408] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[1.100320] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[1.100800] (-) TimerEvent: {}
+[1.111392] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found libavdevice , version 58.13.100\n'}
+[1.137776] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[1.141917] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[1.151317] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found libavformat, version 58.76.100\n'}
+[1.176780] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[1.180514] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[1.189407] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found libavcodec, version 58.134.100\n'}
+[1.200948] (-) TimerEvent: {}
+[1.214373] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[1.218870] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[1.223927] (ardupilot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.227661] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found libavutil, version 56.70.100\n'}
+[1.250253] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[1.250709] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[1.251083] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[1.251181] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [io]\n'}
+[1.253652] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-io -- found version 5.9.0\n'}
+[1.253814] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-io\n'}
+[1.254364] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [profiler]\n'}
+[1.256456] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-profiler -- found version 5.9.0\n'}
+[1.256530] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-profiler\n'}
+[1.259280] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-fuel_tools9 -- found version 9.1.1\n'}
+[1.259350] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-fuel_tools9\n'}
+[1.301107] (-) TimerEvent: {}
+[1.317037] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[1.323587] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.329604] (ardupilot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.333478] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.346477] (ardupilot_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.348502] (ardupilot_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.357763] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[1.362881] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.369761] (ardupilot_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.369857] (ardupilot_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.369888] (ardupilot_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.369914] (ardupilot_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.372357] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.382687] (ardupilot_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.395241] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[1.395356] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.395469] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.9.0\n'}
+[1.396015] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.396097] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.396134] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.396171] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.401087] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [testing]\n'}
+[1.401167] (-) TimerEvent: {}
+[1.403581] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-testing -- found version 5.9.0\n'}
+[1.403799] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-testing\n'}
+[1.404768] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.7.0\n'}
+[1.405014] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.4.0\n'}
+[1.407726] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-gui8 -- found version 8.4.0\n'}
+[1.407795] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-gui8\n'}
+[1.428742] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.428979] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.7.0\n'}
+[1.429176] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.15 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[1.429383] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.9.0\n'}
+[1.429842] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.430153] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.6.0\n'}
+[1.430452] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[1.430934] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.4.0\n'}
+[1.431375] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.15 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[1.466114] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7 -- found version 7.8.0\n'}
+[1.466325] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7\n'}
+[1.466816] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.9.0\n'}
+[1.467103] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.7.0\n'}
+[1.467370] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.467840] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.469455] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [heightmap]\n'}
+[1.471568] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7-heightmap -- found version 7.8.0\n'}
+[1.471786] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-heightmap\n'}
+[1.472017] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.9.0\n'}
+[1.472253] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [mesh]\n'}
+[1.474430] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7-mesh -- found version 7.8.0\n'}
+[1.474548] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-mesh\n'}
+[1.474852] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.9.0\n'}
+[1.475240] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [sdf]\n'}
+[1.477446] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7-sdf -- found version 7.8.0\n'}
+[1.477578] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-sdf\n'}
+[1.477969] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[1.481436] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.481561] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8\n'}
+[1.487482] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.495655] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.7.0\n'}
+[1.495896] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.9.0\n'}
+[1.496009] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.6.0\n'}
+[1.496228] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[1.496409] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.4.0\n'}
+[1.496781] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[1.497432] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [air_pressure]\n'}
+[1.498367] (ardupilot_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.498684] (ardupilot_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.499453] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-air_pressure -- found version 8.2.2\n'}
+[1.499581] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-air_pressure\n'}
+[1.500277] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [air_speed]\n'}
+[1.500410] (ardupilot_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.501264] (-) TimerEvent: {}
+[1.502467] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-air_speed -- found version 8.2.2\n'}
+[1.502736] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-air_speed\n'}
+[1.503334] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [altimeter]\n'}
+[1.505339] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-altimeter -- found version 8.2.2\n'}
+[1.505473] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-altimeter\n'}
+[1.505949] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [imu]\n'}
+[1.507960] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-imu -- found version 8.2.2\n'}
+[1.508261] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-imu\n'}
+[1.508772] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [force_torque]\n'}
+[1.510815] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-force_torque -- found version 8.2.2\n'}
+[1.511052] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-force_torque\n'}
+[1.511543] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [logical_camera]\n'}
+[1.513604] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-logical_camera -- found version 8.2.2\n'}
+[1.513850] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-logical_camera\n'}
+[1.514381] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [magnetometer]\n'}
+[1.516458] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-magnetometer -- found version 8.2.2\n'}
+[1.516746] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-magnetometer\n'}
+[1.517233] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [navsat]\n'}
+[1.519217] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-navsat -- found version 8.2.2\n'}
+[1.519346] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-navsat\n'}
+[1.519894] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [dvl]\n'}
+[1.522054] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-dvl -- found version 8.2.2\n'}
+[1.522189] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-dvl\n'}
+[1.522422] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.522719] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8\n'}
+[1.524460] (ardupilot_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.531519] (ardupilot_msgs) StdoutLine: {'line': b'-- Build files have been written to: /workspace/build/ardupilot_msgs\n'}
+[1.537195] (ardupilot_msgs) CommandEnded: {'returncode': 0}
+[1.537549] (ardupilot_msgs) JobProgress: {'identifier': 'ardupilot_msgs', 'progress': 'build'}
+[1.537761] (ardupilot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/ardupilot_msgs', '--', '-j16', '-l16'], 'cwd': '/workspace/build/ardupilot_msgs', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/ardupilot_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[1.538439] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.7.0\n'}
+[1.538909] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.9.0\n'}
+[1.539184] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.6.0\n'}
+[1.539711] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[1.539963] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.4.0\n'}
+[1.540405] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[1.540464] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rendering]\n'}
+[1.544501] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-rendering -- found version 8.2.2\n'}
+[1.545171] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-rendering\n'}
+[1.546839] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rendering]\n'}
+[1.547033] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [lidar]\n'}
+[1.550884] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-lidar -- found version 8.2.2\n'}
+[1.551130] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-lidar\n'}
+[1.551415] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.552235] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [gpu_lidar]\n'}
+[1.554481] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-gpu_lidar -- found version 8.2.2\n'}
+[1.554687] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-gpu_lidar\n'}
+[1.554890] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.555447] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [camera]\n'}
+[1.557466] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-camera -- found version 8.2.2\n'}
+[1.557706] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-camera\n'}
+[1.557861] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.558287] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [boundingbox_camera]\n'}
+[1.560234] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-boundingbox_camera -- found version 8.2.2\n'}
+[1.560447] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-boundingbox_camera\n'}
+[1.561038] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [segmentation_camera]\n'}
+[1.563148] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-segmentation_camera -- found version 8.2.2\n'}
+[1.563418] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-segmentation_camera\n'}
+[1.564066] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [depth_camera]\n'}
+[1.566303] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-depth_camera -- found version 8.2.2\n'}
+[1.566409] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-depth_camera\n'}
+[1.566797] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.567233] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rgbd_camera]\n'}
+[1.569208] (ardupilot_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.569328] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-rgbd_camera -- found version 8.2.2\n'}
+[1.569467] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-rgbd_camera\n'}
+[1.569759] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.570285] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [thermal_camera]\n'}
+[1.572114] (ardupilot_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.572485] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-thermal_camera -- found version 8.2.2\n'}
+[1.572769] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-thermal_camera\n'}
+[1.572976] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.573615] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [wide_angle_camera]\n'}
+[1.576010] (ardupilot_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[1.576105] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-wide_angle_camera -- found version 8.2.2\n'}
+[1.576277] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-wide_angle_camera\n'}
+[1.576707] (ardupilot_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_ardupilot_msgs\n'}
+[1.577272] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[1.577468] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.7.0\n'}
+[1.577712] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.593950] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sim8 - found\n'}
+[1.594109] (ardupilot_gazebo) StdoutLine: {'line': b'\n'}
+[1.594182] (ardupilot_gazebo) StdoutLine: {'line': b'-- Compiling against Gazebo Harmonic\n'}
+[1.601388] (-) TimerEvent: {}
+[1.602184] (ardupilot_gazebo) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:85 (find_package):\n'}
+[1.602321] (ardupilot_gazebo) StderrLine: {'line': b'  By not providing "FindRapidJSON.cmake" in CMAKE_MODULE_PATH this project\n'}
+[1.602377] (ardupilot_gazebo) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[1.602427] (ardupilot_gazebo) StderrLine: {'line': b'  "RapidJSON", but CMake did not find one.\n'}
+[1.602477] (ardupilot_gazebo) StderrLine: {'line': b'\n'}
+[1.602524] (ardupilot_gazebo) StderrLine: {'line': b'  Could not find a package configuration file provided by "RapidJSON" with\n'}
+[1.602573] (ardupilot_gazebo) StderrLine: {'line': b'  any of the following names:\n'}
+[1.602622] (ardupilot_gazebo) StderrLine: {'line': b'\n'}
+[1.602666] (ardupilot_gazebo) StderrLine: {'line': b'    RapidJSONConfig.cmake\n'}
+[1.602709] (ardupilot_gazebo) StderrLine: {'line': b'    rapidjson-config.cmake\n'}
+[1.602750] (ardupilot_gazebo) StderrLine: {'line': b'\n'}
+[1.602793] (ardupilot_gazebo) StderrLine: {'line': b'  Add the installation prefix of "RapidJSON" to CMAKE_PREFIX_PATH or set\n'}
+[1.602836] (ardupilot_gazebo) StderrLine: {'line': b'  "RapidJSON_DIR" to a directory containing one of the above files.  If\n'}
+[1.602885] (ardupilot_gazebo) StderrLine: {'line': b'  "RapidJSON" provides a separate development package or SDK, be sure it has\n'}
+[1.602934] (ardupilot_gazebo) StderrLine: {'line': b'  been installed.\n'}
+[1.602982] (ardupilot_gazebo) StderrLine: {'line': b'\n'}
+[1.603025] (ardupilot_gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[1.603067] (ardupilot_gazebo) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.603118] (ardupilot_gazebo) StdoutLine: {'line': b'See also "/workspace/build/ardupilot_gazebo/CMakeFiles/CMakeOutput.log".\n'}
+[1.610601] (ardupilot_gazebo) CommandEnded: {'returncode': 1}
+[1.625136] (ardupilot_gazebo) JobEnded: {'identifier': 'ardupilot_gazebo', 'rc': 1}
+[1.690546] (ardupilot_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.696328] (ardupilot_msgs) StdoutLine: {'line': b'creating ardupilot_msgs.egg-info\n'}
+[1.696436] (ardupilot_msgs) StdoutLine: {'line': b'writing ardupilot_msgs.egg-info/PKG-INFO\n'}
+[1.696567] (ardupilot_msgs) StdoutLine: {'line': b'writing dependency_links to ardupilot_msgs.egg-info/dependency_links.txt\n'}
+[1.696700] (ardupilot_msgs) StdoutLine: {'line': b'writing top-level names to ardupilot_msgs.egg-info/top_level.txt\n'}
+[1.696769] (ardupilot_msgs) StdoutLine: {'line': b"writing manifest file 'ardupilot_msgs.egg-info/SOURCES.txt'\n"}
+[1.701449] (-) TimerEvent: {}
+[1.716385] (ardupilot_msgs) StdoutLine: {'line': b"reading manifest file 'ardupilot_msgs.egg-info/SOURCES.txt'\n"}
+[1.716786] (ardupilot_msgs) StdoutLine: {'line': b"writing manifest file 'ardupilot_msgs.egg-info/SOURCES.txt'\n"}
+[1.734333] (ardupilot_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_ardupilot_msgs_egg\n'}
+[1.801544] (-) TimerEvent: {}
+[1.901778] (-) TimerEvent: {}
+[1.949108] (ardupilot_msgs) StdoutLine: {'line': b'[  3%] Built target ardupilot_msgs__rs\n'}
+[2.001858] (-) TimerEvent: {}
+[2.081590] (ardupilot_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/msg/detail/airspeed__functions.c.o\x1b[0m\n'}
+[2.081810] (ardupilot_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/msg/detail/global_position__functions.c.o\x1b[0m\n'}
+[2.081853] (ardupilot_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/msg/detail/status__functions.c.o\x1b[0m\n'}
+[2.082147] (ardupilot_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/msg/detail/rc__functions.c.o\x1b[0m\n'}
+[2.083234] (ardupilot_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/srv/detail/arm_motors__functions.c.o\x1b[0m\n'}
+[2.083836] (ardupilot_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/srv/detail/takeoff__functions.c.o\x1b[0m\n'}
+[2.084329] (ardupilot_msgs) StdoutLine: {'line': b'[ 11%] Built target ardupilot_msgs__cpp\n'}
+[2.084520] (ardupilot_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/srv/detail/mode_switch__functions.c.o\x1b[0m\n'}
+[2.090292] (ardupilot_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.090457] (ardupilot_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.090747] (ardupilot_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.101989] (-) TimerEvent: {}
+[2.151762] (ardupilot_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library libardupilot_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.185299] (ardupilot_msgs) StdoutLine: {'line': b'[ 17%] Built target ardupilot_msgs__rosidl_generator_c\n'}
+[2.191329] (ardupilot_msgs) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.193714] (ardupilot_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.193842] (ardupilot_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.202095] (-) TimerEvent: {}
+[2.302351] (-) TimerEvent: {}
+[2.402637] (-) TimerEvent: {}
+[2.489381] (ardupilot_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ardupilot_msgs/msg/status__type_support.cpp.o\x1b[0m\n'}
+[2.490853] (ardupilot_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ardupilot_msgs/msg/airspeed__type_support.cpp.o\x1b[0m\n'}
+[2.491036] (ardupilot_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ardupilot_msgs/srv/arm_motors__type_support.cpp.o\x1b[0m\n'}
+[2.491127] (ardupilot_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ardupilot_msgs/msg/rc__type_support.cpp.o\x1b[0m\n'}
+[2.491198] (ardupilot_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ardupilot_msgs/msg/global_position__type_support.cpp.o\x1b[0m\n'}
+[2.491277] (ardupilot_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ardupilot_msgs/srv/mode_switch__type_support.cpp.o\x1b[0m\n'}
+[2.492272] (ardupilot_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ardupilot_msgs/srv/takeoff__type_support.cpp.o\x1b[0m\n'}
+[2.502754] (-) TimerEvent: {}
+[2.537610] (ardupilot_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ardupilot_msgs/msg/detail/status__type_support.cpp.o\x1b[0m\n'}
+[2.537804] (ardupilot_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ardupilot_msgs/msg/detail/rc__type_support.cpp.o\x1b[0m\n'}
+[2.537940] (ardupilot_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ardupilot_msgs/msg/detail/airspeed__type_support.cpp.o\x1b[0m\n'}
+[2.538021] (ardupilot_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ardupilot_msgs/srv/detail/arm_motors__type_support.cpp.o\x1b[0m\n'}
+[2.539013] (ardupilot_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ardupilot_msgs/msg/detail/global_position__type_support.cpp.o\x1b[0m\n'}
+[2.605631] (-) TimerEvent: {}
+[2.685526] (ardupilot_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ardupilot_msgs/msg/global_position__type_support.cpp.o\x1b[0m\n'}
+[2.705741] (-) TimerEvent: {}
+[2.725512] (ardupilot_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ardupilot_msgs/msg/detail/dds_fastrtps/global_position__type_support.cpp.o\x1b[0m\n'}
+[2.739431] (ardupilot_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ardupilot_msgs/msg/rc__type_support.cpp.o\x1b[0m\n'}
+[2.790897] (ardupilot_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ardupilot_msgs/msg/status__type_support.cpp.o\x1b[0m\n'}
+[2.805846] (-) TimerEvent: {}
+[2.806289] (ardupilot_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ardupilot_msgs/msg/airspeed__type_support.cpp.o\x1b[0m\n'}
+[2.814824] (ardupilot_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ardupilot_msgs/srv/arm_motors__type_support.cpp.o\x1b[0m\n'}
+[2.821685] (ardupilot_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ardupilot_msgs/srv/mode_switch__type_support.cpp.o\x1b[0m\n'}
+[2.829135] (ardupilot_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ardupilot_msgs/srv/takeoff__type_support.cpp.o\x1b[0m\n'}
+[2.845892] (ardupilot_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ardupilot_msgs/srv/detail/mode_switch__type_support.cpp.o\x1b[0m\n'}
+[2.852765] (ardupilot_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libardupilot_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.853015] (ardupilot_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ardupilot_msgs/msg/detail/dds_fastrtps/rc__type_support.cpp.o\x1b[0m\n'}
+[2.853183] (ardupilot_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ardupilot_msgs/srv/detail/takeoff__type_support.cpp.o\x1b[0m\n'}
+[2.857810] (ardupilot_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ardupilot_msgs/msg/detail/dds_fastrtps/status__type_support.cpp.o\x1b[0m\n'}
+[2.862045] (ardupilot_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ardupilot_msgs/msg/detail/dds_fastrtps/airspeed__type_support.cpp.o\x1b[0m\n'}
+[2.862278] (ardupilot_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ardupilot_msgs/msg/detail/global_position__type_support.c.o\x1b[0m\n'}
+[2.884691] (ardupilot_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ardupilot_msgs/msg/detail/rc__type_support.c.o\x1b[0m\n'}
+[2.893705] (ardupilot_msgs) StdoutLine: {'line': b'[ 56%] Built target ardupilot_msgs__rosidl_typesupport_cpp\n'}
+[2.898910] (ardupilot_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libardupilot_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.904648] (ardupilot_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ardupilot_msgs/msg/detail/status__type_support.c.o\x1b[0m\n'}
+[2.905935] (-) TimerEvent: {}
+[2.922118] (ardupilot_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ardupilot_msgs/msg/detail/airspeed__type_support.c.o\x1b[0m\n'}
+[2.943367] (ardupilot_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ardupilot_msgs/srv/detail/arm_motors__type_support.c.o\x1b[0m\n'}
+[2.956077] (ardupilot_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ardupilot_msgs/msg/detail/global_position__type_support_c.cpp.o\x1b[0m\n'}
+[2.956343] (ardupilot_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ardupilot_msgs/srv/detail/dds_fastrtps/arm_motors__type_support.cpp.o\x1b[0m\n'}
+[2.962101] (ardupilot_msgs) StdoutLine: {'line': b'[ 63%] Built target ardupilot_msgs__rosidl_typesupport_c\n'}
+[2.971654] (ardupilot_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ardupilot_msgs/msg/detail/rc__type_support_c.cpp.o\x1b[0m\n'}
+[2.982859] (ardupilot_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ardupilot_msgs/srv/detail/dds_fastrtps/mode_switch__type_support.cpp.o\x1b[0m\n'}
+[2.999492] (ardupilot_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ardupilot_msgs/msg/detail/status__type_support_c.cpp.o\x1b[0m\n'}
+[3.005211] (ardupilot_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ardupilot_msgs/srv/detail/mode_switch__type_support.c.o\x1b[0m\n'}
+[3.006013] (-) TimerEvent: {}
+[3.008770] (ardupilot_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ardupilot_msgs/msg/detail/airspeed__type_support_c.cpp.o\x1b[0m\n'}
+[3.029653] (ardupilot_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ardupilot_msgs/srv/detail/takeoff__type_support.c.o\x1b[0m\n'}
+[3.041698] (ardupilot_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ardupilot_msgs/srv/detail/arm_motors__type_support_c.cpp.o\x1b[0m\n'}
+[3.057063] (ardupilot_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ardupilot_msgs/srv/detail/dds_fastrtps/takeoff__type_support.cpp.o\x1b[0m\n'}
+[3.064875] (ardupilot_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ardupilot_msgs/srv/detail/mode_switch__type_support_c.cpp.o\x1b[0m\n'}
+[3.080827] (ardupilot_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking C shared library libardupilot_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.106137] (-) TimerEvent: {}
+[3.123703] (ardupilot_msgs) StdoutLine: {'line': b'[ 76%] Built target ardupilot_msgs__rosidl_typesupport_introspection_c\n'}
+[3.135429] (ardupilot_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ardupilot_msgs/srv/detail/takeoff__type_support_c.cpp.o\x1b[0m\n'}
+[3.206277] (-) TimerEvent: {}
+[3.277736] (ardupilot_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libardupilot_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.306412] (-) TimerEvent: {}
+[3.347733] (ardupilot_msgs) StdoutLine: {'line': b'[ 78%] Built target ardupilot_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.406614] (-) TimerEvent: {}
+[3.460893] (ardupilot_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libardupilot_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.468010] (ardupilot_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libardupilot_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.506721] (-) TimerEvent: {}
+[3.515909] (ardupilot_msgs) StdoutLine: {'line': b'[ 81%] Built target ardupilot_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.521456] (ardupilot_msgs) StdoutLine: {'line': b'[ 81%] Built target ardupilot_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.533767] (ardupilot_msgs) StdoutLine: {'line': b'[ 81%] Built target ardupilot_msgs\n'}
+[3.548634] (ardupilot_msgs) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.606861] (-) TimerEvent: {}
+[3.707203] (-) TimerEvent: {}
+[3.807656] (-) TimerEvent: {}
+[3.907868] (-) TimerEvent: {}
+[4.008133] (-) TimerEvent: {}
+[4.108400] (-) TimerEvent: {}
+[4.208707] (-) TimerEvent: {}
+[4.309019] (-) TimerEvent: {}
+[4.407869] (ardupilot_msgs) StdoutLine: {'line': b'[ 82%] Built target ardupilot_msgs__py\n'}
+[4.409117] (-) TimerEvent: {}
+[4.423136] (ardupilot_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_py.dir/rosidl_generator_py/ardupilot_msgs/msg/_rc_s.c.o\x1b[0m\n'}
+[4.423330] (ardupilot_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_py.dir/rosidl_generator_py/ardupilot_msgs/msg/_status_s.c.o\x1b[0m\n'}
+[4.423435] (ardupilot_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_py.dir/rosidl_generator_py/ardupilot_msgs/msg/_airspeed_s.c.o\x1b[0m\n'}
+[4.423618] (ardupilot_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_py.dir/rosidl_generator_py/ardupilot_msgs/srv/_mode_switch_s.c.o\x1b[0m\n'}
+[4.423951] (ardupilot_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_py.dir/rosidl_generator_py/ardupilot_msgs/srv/_takeoff_s.c.o\x1b[0m\n'}
+[4.424507] (ardupilot_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_py.dir/rosidl_generator_py/ardupilot_msgs/msg/_global_position_s.c.o\x1b[0m\n'}
+[4.425597] (ardupilot_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_py.dir/rosidl_generator_py/ardupilot_msgs/srv/_arm_motors_s.c.o\x1b[0m\n'}
+[4.509300] (-) TimerEvent: {}
+[4.558851] (ardupilot_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ardupilot_msgs/libardupilot_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[4.591600] (ardupilot_msgs) StdoutLine: {'line': b'[ 92%] Built target ardupilot_msgs__rosidl_generator_py\n'}
+[4.602259] (ardupilot_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ardupilot_msgs/_ardupilot_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.606486] (ardupilot_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ardupilot_msgs/_ardupilot_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.607160] (ardupilot_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ardupilot_msgs/_ardupilot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.609439] (-) TimerEvent: {}
+[4.709683] (-) TimerEvent: {}
+[4.712112] (ardupilot_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.720487] (ardupilot_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.723723] (ardupilot_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.740183] (ardupilot_msgs) StdoutLine: {'line': b'[100%] Built target ardupilot_msgs__rosidl_typesupport_c__pyext\n'}
+[4.751719] (ardupilot_msgs) StdoutLine: {'line': b'[100%] Built target ardupilot_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.753640] (ardupilot_msgs) StdoutLine: {'line': b'[100%] Built target ardupilot_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[4.762149] (ardupilot_msgs) JobEnded: {'identifier': 'ardupilot_msgs', 'rc': 'SIGINT'}
+[4.772770] (ardupilot_sitl) JobSkipped: {'identifier': 'ardupilot_sitl'}
+[4.772809] (ardupilot_dds_tests) JobSkipped: {'identifier': 'ardupilot_dds_tests'}
+[4.772825] (-) EventReactorShutdown: {}

@@ -15,12 +15,12 @@ slam_toolbox:
     map_frame: map
     odom_frame: odom
     base_frame: base_link
-    scan_topic: /sca_stabilized
+    scan_topic: /scan_stabilized
 
     # Update behavior
-    transform_publish_period: 0.5  # ~50 Hz map->odom publish
+    transform_publish_period: 0.5  
     map_update_interval: 1.0
-    transform_timeout: 1.0           # accommodates sim RTF jitter
+    transform_timeout: 1.0          
     tf_buffer_duration: 20.0
     stack_size_to_use: 40000000
     enable_interactive_mode: true
@@ -32,7 +32,7 @@ slam_toolbox:
     minimum_travel_distance: 0.0
     minimum_travel_heading: 0.0
     minimum_laser_range: 0.15
-    max_laser_range: 10.0            # match pointcloud_to_laserscan range_max
+    max_laser_range: 10.0            
     resolution: 0.10
     scan_buffer_size: 10
     scan_buffer_maximum_scan_distance: 10.0

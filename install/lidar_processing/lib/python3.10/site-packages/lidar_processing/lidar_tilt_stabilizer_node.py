@@ -1,15 +1,5 @@
 #!/usr/bin/env python3
-"""
-lidar_tilt_filter_node.py
 
- Reads roll/pitch from ArduPilot SITL (MAVLink), and for each
-incoming /scan point, works out how high that point actually is once the
-vehicle's tilt is accounted for. Points that are really just ground or
-ceiling get dropped (set to inf). 
-
-No re-binning, no yaw correction, no vectorization tricks. Feed
-/scan_stabilized straight into slam_toolbox.
-"""
 
 import math
 import threading
