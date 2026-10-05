@@ -1,0 +1,1 @@
+/workspace/src/nidar_msgs/msg/PersonDetectionArray.msg

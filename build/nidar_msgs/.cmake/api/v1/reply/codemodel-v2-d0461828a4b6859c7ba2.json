@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-3416f5162f099bf79c3c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "nidar_msgs__py",
+					"jsonFile" : "directory-nidar_msgs__py-b20f46980bb05af86b7d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/workspace/build/nidar_msgs/nidar_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "nidar_msgs__rs",
+					"jsonFile" : "directory-nidar_msgs__rs-c2118dad11c14ceca346.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/workspace/build/nidar_msgs/nidar_msgs__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "nidar_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_nidar_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_nidar_msgs_egg-de3c5fe6be0c5d7bb590.json",
+					"name" : "ament_cmake_python_build_nidar_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_nidar_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_nidar_msgs-3980c45196f31737f664.json",
+					"name" : "ament_cmake_python_symlink_nidar_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nidar_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nidar_msgs-de79c7b86cd27ef6ba4c.json",
+					"name" : "nidar_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nidar_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nidar_msgs__cpp-7bb80ab3eacebbf09ab1.json",
+					"name" : "nidar_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "nidar_msgs__py::@28a088186f873149fa05",
+					"jsonFile" : "target-nidar_msgs__py-db6e392b3395c69319d5.json",
+					"name" : "nidar_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nidar_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nidar_msgs__rosidl_generator_c-1eba5cad8a05a74dff60.json",
+					"name" : "nidar_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nidar_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nidar_msgs__rosidl_generator_py-74bb52b9c1898b9816fe.json",
+					"name" : "nidar_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nidar_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nidar_msgs__rosidl_typesupport_c-6eced67ae0fafd886007.json",
+					"name" : "nidar_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nidar_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nidar_msgs__rosidl_typesupport_c__pyext-af0e5f33275f117e8d98.json",
+					"name" : "nidar_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nidar_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nidar_msgs__rosidl_typesupport_cpp-5efa24200fced0672882.json",
+					"name" : "nidar_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nidar_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nidar_msgs__rosidl_typesupport_fastrtps_c-bea66c6878ed8025602f.json",
+					"name" : "nidar_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nidar_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nidar_msgs__rosidl_typesupport_fastrtps_c__pyext-790c2de00ba1c90b24a4.json",
+					"name" : "nidar_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nidar_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nidar_msgs__rosidl_typesupport_fastrtps_cpp-85abf2c9f63b1f15f18c.json",
+					"name" : "nidar_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nidar_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nidar_msgs__rosidl_typesupport_introspection_c-fb3bb13e1d13093c2846.json",
+					"name" : "nidar_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nidar_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nidar_msgs__rosidl_typesupport_introspection_c__pyext-dff2fdfd15788cf349b3.json",
+					"name" : "nidar_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nidar_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nidar_msgs__rosidl_typesupport_introspection_cpp-8ffc21e04ac405714f2d.json",
+					"name" : "nidar_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "nidar_msgs__rs::@4843c3008b193eee0c20",
+					"jsonFile" : "target-nidar_msgs__rs-0cd98f35359e9fedf00e.json",
+					"name" : "nidar_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nidar_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nidar_msgs_uninstall-5affd36c6b36d1c0ec00.json",
+					"name" : "nidar_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-eb5b59fc5f5caa0b16c9.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspace/build/nidar_msgs",
+		"source" : "/workspace/src/nidar_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

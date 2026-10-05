@@ -1,0 +1,1 @@
+/workspace/build/nidar_msgs/rosidl_typesupport_fastrtps_cpp/nidar_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h

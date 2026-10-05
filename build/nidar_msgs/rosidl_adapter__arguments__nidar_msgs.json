@@ -1,0 +1,7 @@
+{
+  "package_name": "nidar_msgs",
+  "non_idl_tuples": [
+    "/workspace/src/nidar_msgs:msg/PersonDetection.msg",
+    "/workspace/src/nidar_msgs:msg/PersonDetectionArray.msg"
+  ]
+}

@@ -1,0 +1,1 @@
+/workspace/build/nidar_msgs/rosidl_generator_cpp/nidar_msgs/msg/detail/person_detection_array__traits.hpp

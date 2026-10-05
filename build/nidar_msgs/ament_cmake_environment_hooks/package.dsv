@@ -1,0 +1,4 @@
+source;share/nidar_msgs/local_setup.bash
+source;share/nidar_msgs/local_setup.dsv
+source;share/nidar_msgs/local_setup.sh
+source;share/nidar_msgs/local_setup.zsh

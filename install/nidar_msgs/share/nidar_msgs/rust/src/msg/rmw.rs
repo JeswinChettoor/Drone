@@ -1,0 +1,1 @@
+/workspace/build/nidar_msgs/rosidl_generator_rs/nidar_msgs/rust/src/msg/rmw.rs

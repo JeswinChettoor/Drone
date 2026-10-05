@@ -1,0 +1,1 @@
+/workspace/build/nidar_msgs/ament_cmake_core/nidar_msgsConfig.cmake

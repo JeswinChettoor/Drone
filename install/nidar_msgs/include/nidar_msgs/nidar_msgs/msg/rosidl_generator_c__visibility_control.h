@@ -1,0 +1,1 @@
+/workspace/build/nidar_msgs/rosidl_generator_c/nidar_msgs/msg/rosidl_generator_c__visibility_control.h
