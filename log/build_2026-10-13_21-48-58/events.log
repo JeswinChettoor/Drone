@@ -1,0 +1,47 @@
+[0.000000] (-) TimerEvent: {}
+[0.000247] (-) JobUnselected: {'identifier': 'ardupilot_dds_tests'}
+[0.000285] (-) JobUnselected: {'identifier': 'ardupilot_gazebo'}
+[0.000308] (-) JobUnselected: {'identifier': 'ardupilot_msgs'}
+[0.000327] (-) JobUnselected: {'identifier': 'ardupilot_sitl'}
+[0.000345] (-) JobUnselected: {'identifier': 'drone_control'}
+[0.000369] (-) JobUnselected: {'identifier': 'gz_ros_bridge'}
+[0.000550] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.000574] (-) JobUnselected: {'identifier': 'mapping'}
+[0.000592] (-) JobUnselected: {'identifier': 'maze_explorer'}
+[0.000610] (-) JobUnselected: {'identifier': 'nidar_msgs'}
+[0.000629] (-) JobUnselected: {'identifier': 'perception'}
+[0.000724] (-) JobUnselected: {'identifier': 'rf2o_laser_odometry'}
+[0.000838] (nidar_explorer) JobQueued: {'identifier': 'nidar_explorer', 'dependencies': OrderedDict()}
+[0.000884] (nidar_explorer) JobStarted: {'identifier': 'nidar_explorer'}
+[0.099933] (-) TimerEvent: {}
+[0.200253] (-) TimerEvent: {}
+[0.300471] (-) TimerEvent: {}
+[0.377721] (nidar_explorer) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/nidar_explorer', 'build', '--build-base', '/workspace/build/nidar_explorer/build', 'install', '--record', '/workspace/build/nidar_explorer/install.log', '--install-scripts', '$base/lib/nidar_explorer', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspace/src/nidar_explorer', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/nidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/nidar_explorer:/workspace/install/rf2o_laser_odometry:/workspace/install/perception:/workspace/install/nidar_msgs:/workspace/install/maze_explorer:/workspace/install/mapping:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/nidar_explorer'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/build/nidar_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/nidar_explorer/lib/python3.10/site-packages:/workspace/install/nidar_explorer/lib/python3.10/site-packages:/workspace/install/perception/lib/python3.10/site-packages:/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages:/workspace/install/maze_explorer/lib/python3.10/site-packages:/workspace/install/mapping/lib/python3.10/site-packages:/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/nidar_msgs:/workspace/install/gz_ros_bridge')]), 'shell': False}
+[0.400577] (-) TimerEvent: {}
+[0.500810] (-) TimerEvent: {}
+[0.516734] (nidar_explorer) StdoutLine: {'line': b'running egg_info\n'}
+[0.524071] (nidar_explorer) StdoutLine: {'line': b'writing ../../build/nidar_explorer/nidar_explorer.egg-info/PKG-INFO\n'}
+[0.524186] (nidar_explorer) StdoutLine: {'line': b'writing dependency_links to ../../build/nidar_explorer/nidar_explorer.egg-info/dependency_links.txt\n'}
+[0.524328] (nidar_explorer) StdoutLine: {'line': b'writing entry points to ../../build/nidar_explorer/nidar_explorer.egg-info/entry_points.txt\n'}
+[0.524424] (nidar_explorer) StdoutLine: {'line': b'writing requirements to ../../build/nidar_explorer/nidar_explorer.egg-info/requires.txt\n'}
+[0.524531] (nidar_explorer) StdoutLine: {'line': b'writing top-level names to ../../build/nidar_explorer/nidar_explorer.egg-info/top_level.txt\n'}
+[0.540188] (nidar_explorer) StdoutLine: {'line': b"reading manifest file '../../build/nidar_explorer/nidar_explorer.egg-info/SOURCES.txt'\n"}
+[0.540843] (nidar_explorer) StdoutLine: {'line': b"writing manifest file '../../build/nidar_explorer/nidar_explorer.egg-info/SOURCES.txt'\n"}
+[0.540915] (nidar_explorer) StdoutLine: {'line': b'running build\n'}
+[0.540949] (nidar_explorer) StdoutLine: {'line': b'running build_py\n'}
+[0.540998] (nidar_explorer) StdoutLine: {'line': b'copying nidar_explorer/dfs_explorer.py -> /workspace/build/nidar_explorer/build/lib/nidar_explorer\n'}
+[0.541185] (nidar_explorer) StdoutLine: {'line': b'running install\n'}
+[0.543400] (nidar_explorer) StdoutLine: {'line': b'running install_lib\n'}
+[0.550734] (nidar_explorer) StdoutLine: {'line': b'copying /workspace/build/nidar_explorer/build/lib/nidar_explorer/dfs_explorer.py -> /workspace/install/nidar_explorer/lib/python3.10/site-packages/nidar_explorer\n'}
+[0.551004] (nidar_explorer) StdoutLine: {'line': b'byte-compiling /workspace/install/nidar_explorer/lib/python3.10/site-packages/nidar_explorer/dfs_explorer.py to dfs_explorer.cpython-310.pyc\n'}
+[0.552865] (nidar_explorer) StdoutLine: {'line': b'running install_data\n'}
+[0.553054] (nidar_explorer) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.560977] (nidar_explorer) StdoutLine: {'line': b"removing '/workspace/install/nidar_explorer/lib/python3.10/site-packages/nidar_explorer-0.1.0-py3.10.egg-info' (and everything under it)\n"}
+[0.561074] (nidar_explorer) StdoutLine: {'line': b'Copying ../../build/nidar_explorer/nidar_explorer.egg-info to /workspace/install/nidar_explorer/lib/python3.10/site-packages/nidar_explorer-0.1.0-py3.10.egg-info\n'}
+[0.561616] (nidar_explorer) StdoutLine: {'line': b'running install_scripts\n'}
+[0.577153] (nidar_explorer) StdoutLine: {'line': b'Installing dfs_explorer script to /workspace/install/nidar_explorer/lib/nidar_explorer\n'}
+[0.577400] (nidar_explorer) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/nidar_explorer/install.log'\n"}
+[0.591098] (nidar_explorer) CommandEnded: {'returncode': 0}
+[0.602449] (-) TimerEvent: {}
+[0.604334] (nidar_explorer) JobEnded: {'identifier': 'nidar_explorer', 'rc': 0}
+[0.604704] (-) EventReactorShutdown: {}

@@ -1,0 +1,155 @@
+[0.000000] (-) TimerEvent: {}
+[0.000219] (-) JobUnselected: {'identifier': 'ardupilot_dds_tests'}
+[0.000259] (-) JobUnselected: {'identifier': 'ardupilot_gazebo'}
+[0.000280] (-) JobUnselected: {'identifier': 'ardupilot_msgs'}
+[0.000297] (-) JobUnselected: {'identifier': 'ardupilot_sitl'}
+[0.000314] (-) JobUnselected: {'identifier': 'cv_bridge'}
+[0.000330] (-) JobUnselected: {'identifier': 'drone_control'}
+[0.000348] (-) JobUnselected: {'identifier': 'gz_ros_bridge'}
+[0.000854] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.000929] (-) JobUnselected: {'identifier': 'nidar_msgs'}
+[0.000957] (-) JobUnselected: {'identifier': 'opencv_tests'}
+[0.000978] (-) JobUnselected: {'identifier': 'perception'}
+[0.001113] (-) JobUnselected: {'identifier': 'rf2o_laser_odometry'}
+[0.001171] (-) JobUnselected: {'identifier': 'vision_opencv'}
+[0.001227] (image_geometry) JobQueued: {'identifier': 'image_geometry', 'dependencies': OrderedDict()}
+[0.001293] (image_geometry) JobStarted: {'identifier': 'image_geometry'}
+[0.007505] (image_geometry) JobProgress: {'identifier': 'image_geometry', 'progress': 'cmake'}
+[0.007978] (image_geometry) Command: {'cmd': ['/usr/bin/cmake', '/workspace/src/vision_opencv/image_geometry', '-DCMAKE_INSTALL_PREFIX=/workspace/install/image_geometry'], 'cwd': '/workspace/build/image_geometry', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/cv_bridge/lib:/workspace/install/nidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/home/developer/.local/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/vision_opencv:/workspace/install/cv_bridge:/workspace/install/rf2o_laser_odometry:/workspace/install/perception:/workspace/install/nidar_msgs:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/image_geometry'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/cv_bridge/local/lib/python3.10/dist-packages:/workspace/install/perception/lib/python3.10/site-packages:/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages:/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/vision_opencv:/workspace/install/cv_bridge:/workspace/install/rf2o_laser_odometry:/workspace/install/nidar_msgs:/workspace/install/gz_ros_bridge:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[0.050639] (image_geometry) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.087773] (image_geometry) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.092403] (image_geometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099702] (-) TimerEvent: {}
+[0.146004] (image_geometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.150052] (image_geometry) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.150233] (image_geometry) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.150401] (image_geometry) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.152383] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199838] (-) TimerEvent: {}
+[0.209338] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.213778] (image_geometry) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.213955] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.214044] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.215991] (image_geometry) StdoutLine: {'line': b'-- Found ament_cmake_python: 1.3.14 (/opt/ros/humble/share/ament_cmake_python/cmake)\n'}
+[0.217368] (image_geometry) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.1 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.299961] (-) TimerEvent: {}
+[0.400296] (-) TimerEvent: {}
+[0.463453] (image_geometry) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500427] (-) TimerEvent: {}
+[0.592851] (image_geometry) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") found components: calib3d core highgui imgproc \n'}
+[0.594170] (image_geometry) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.600605] (-) TimerEvent: {}
+[0.618273] (image_geometry) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.621816] (image_geometry) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.627437] (image_geometry) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.635083] (image_geometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.645327] (image_geometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.681811] (image_geometry) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[0.683238] (image_geometry) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700760] (-) TimerEvent: {}
+[0.738309] (image_geometry) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.738628] (image_geometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.790788] (image_geometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.791407] (image_geometry) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.800844] (-) TimerEvent: {}
+[0.847873] (image_geometry) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.856487] (image_geometry) StdoutLine: {'line': b'-- Generating done\n'}
+[0.859438] (image_geometry) StdoutLine: {'line': b'-- Build files have been written to: /workspace/build/image_geometry\n'}
+[0.865008] (image_geometry) CommandEnded: {'returncode': 0}
+[0.865549] (image_geometry) JobProgress: {'identifier': 'image_geometry', 'progress': 'build'}
+[0.866169] (image_geometry) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/image_geometry', '--', '-j16', '-l16'], 'cwd': '/workspace/build/image_geometry', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/cv_bridge/lib:/workspace/install/nidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/home/developer/.local/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/vision_opencv:/workspace/install/cv_bridge:/workspace/install/rf2o_laser_odometry:/workspace/install/perception:/workspace/install/nidar_msgs:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/image_geometry'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/cv_bridge/local/lib/python3.10/dist-packages:/workspace/install/perception/lib/python3.10/site-packages:/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages:/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/vision_opencv:/workspace/install/cv_bridge:/workspace/install/rf2o_laser_odometry:/workspace/install/nidar_msgs:/workspace/install/gz_ros_bridge:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[0.900107] (image_geometry) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[0.900261] (image_geometry) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[0.900917] (-) TimerEvent: {}
+[0.904189] (image_geometry) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/image_geometry.dir/src/pinhole_camera_model.cpp.o\x1b[0m\n'}
+[0.904380] (image_geometry) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/image_geometry.dir/src/stereo_camera_model.cpp.o\x1b[0m\n'}
+[0.904825] (image_geometry) StdoutLine: {'line': b'[ 44%] Built target ament_cmake_python_copy_image_geometry\n'}
+[1.001081] (-) TimerEvent: {}
+[1.028414] (image_geometry) StdoutLine: {'line': b'running egg_info\n'}
+[1.035731] (image_geometry) StdoutLine: {'line': b'creating image_geometry.egg-info\n'}
+[1.035910] (image_geometry) StdoutLine: {'line': b'writing image_geometry.egg-info/PKG-INFO\n'}
+[1.036087] (image_geometry) StdoutLine: {'line': b'writing dependency_links to image_geometry.egg-info/dependency_links.txt\n'}
+[1.036272] (image_geometry) StdoutLine: {'line': b'writing top-level names to image_geometry.egg-info/top_level.txt\n'}
+[1.036347] (image_geometry) StdoutLine: {'line': b"writing manifest file 'image_geometry.egg-info/SOURCES.txt'\n"}
+[1.059135] (image_geometry) StdoutLine: {'line': b"reading manifest file 'image_geometry.egg-info/SOURCES.txt'\n"}
+[1.059704] (image_geometry) StdoutLine: {'line': b"writing manifest file 'image_geometry.egg-info/SOURCES.txt'\n"}
+[1.079500] (image_geometry) StdoutLine: {'line': b'[ 44%] Built target ament_cmake_python_build_image_geometry_egg\n'}
+[1.101280] (-) TimerEvent: {}
+[1.201651] (-) TimerEvent: {}
+[1.227841] (image_geometry) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[1.253824] (image_geometry) StdoutLine: {'line': b'[ 55%] Built target gtest_main\n'}
+[1.301801] (-) TimerEvent: {}
+[1.402137] (-) TimerEvent: {}
+[1.496120] (image_geometry) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libimage_geometry.so\x1b[0m\n'}
+[1.502209] (-) TimerEvent: {}
+[1.570023] (image_geometry) StdoutLine: {'line': b'[ 66%] Built target image_geometry\n'}
+[1.602329] (-) TimerEvent: {}
+[1.702585] (-) TimerEvent: {}
+[1.802879] (-) TimerEvent: {}
+[1.903169] (-) TimerEvent: {}
+[2.003455] (-) TimerEvent: {}
+[2.103714] (-) TimerEvent: {}
+[2.203969] (-) TimerEvent: {}
+[2.304248] (-) TimerEvent: {}
+[2.404560] (-) TimerEvent: {}
+[2.444703] (image_geometry) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[2.487543] (image_geometry) StdoutLine: {'line': b'[ 77%] Built target gtest\n'}
+[2.502353] (image_geometry) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/image_geometry-utest.dir/test/utest.cpp.o\x1b[0m\n'}
+[2.504617] (-) TimerEvent: {}
+[2.604872] (-) TimerEvent: {}
+[2.705217] (-) TimerEvent: {}
+[2.805500] (-) TimerEvent: {}
+[2.905775] (-) TimerEvent: {}
+[3.006125] (-) TimerEvent: {}
+[3.106427] (-) TimerEvent: {}
+[3.206694] (-) TimerEvent: {}
+[3.235360] (image_geometry) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable image_geometry-utest\x1b[0m\n'}
+[3.306834] (-) TimerEvent: {}
+[3.343082] (image_geometry) StdoutLine: {'line': b'[100%] Built target image_geometry-utest\n'}
+[3.352276] (image_geometry) CommandEnded: {'returncode': 0}
+[3.352752] (image_geometry) JobProgress: {'identifier': 'image_geometry', 'progress': 'install'}
+[3.359873] (image_geometry) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/image_geometry'], 'cwd': '/workspace/build/image_geometry', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/cv_bridge/lib:/workspace/install/nidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/home/developer/.local/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/vision_opencv:/workspace/install/cv_bridge:/workspace/install/rf2o_laser_odometry:/workspace/install/perception:/workspace/install/nidar_msgs:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/image_geometry'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/cv_bridge/local/lib/python3.10/dist-packages:/workspace/install/perception/lib/python3.10/site-packages:/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages:/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/vision_opencv:/workspace/install/cv_bridge:/workspace/install/rf2o_laser_odometry:/workspace/install/nidar_msgs:/workspace/install/gz_ros_bridge:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[3.364847] (image_geometry) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.364961] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/environment/pythonpath.sh\n'}
+[3.365011] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/environment/pythonpath.dsv\n'}
+[3.365040] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-3.2.1-py3.10.egg-info\n'}
+[3.365067] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-3.2.1-py3.10.egg-info/top_level.txt\n'}
+[3.365105] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-3.2.1-py3.10.egg-info/dependency_links.txt\n'}
+[3.365132] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-3.2.1-py3.10.egg-info/SOURCES.txt\n'}
+[3.365160] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-3.2.1-py3.10.egg-info/PKG-INFO\n'}
+[3.365304] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry\n'}
+[3.365390] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/cameramodels.py\n'}
+[3.365424] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/__init__.py\n'}
+[3.389535] (image_geometry) StdoutLine: {'line': b"Listing '/workspace/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry'...\n"}
+[3.389638] (image_geometry) StdoutLine: {'line': b"Compiling '/workspace/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/__init__.py'...\n"}
+[3.389678] (image_geometry) StdoutLine: {'line': b"Compiling '/workspace/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/cameramodels.py'...\n"}
+[3.392236] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/include/image_geometry\n'}
+[3.392316] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/include/image_geometry/image_geometry\n'}
+[3.392351] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/include/image_geometry/image_geometry/stereo_camera_model.h\n'}
+[3.392546] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/include/image_geometry/image_geometry/pinhole_camera_model.h\n'}
+[3.392692] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/include/image_geometry/image_geometry/visibility_control.hpp\n'}
+[3.392759] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/lib/libimage_geometry.so\n'}
+[3.392793] (image_geometry) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/image_geometry/lib/libimage_geometry.so" to ""\n'}
+[3.392820] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/ament_index/resource_index/package_run_dependencies/image_geometry\n'}
+[3.392871] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/ament_index/resource_index/parent_prefix_path/image_geometry\n'}
+[3.393002] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/environment/ament_prefix_path.sh\n'}
+[3.393080] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/environment/ament_prefix_path.dsv\n'}
+[3.393116] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/environment/path.sh\n'}
+[3.393147] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/environment/path.dsv\n'}
+[3.393313] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/local_setup.bash\n'}
+[3.393386] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/local_setup.sh\n'}
+[3.393419] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/local_setup.zsh\n'}
+[3.393449] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/local_setup.dsv\n'}
+[3.393477] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/package.dsv\n'}
+[3.393505] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/ament_index/resource_index/packages/image_geometry\n'}
+[3.393539] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport.cmake\n'}
+[3.393567] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport-noconfig.cmake\n'}
+[3.393706] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.393775] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.393807] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/cmake/image_geometryConfig.cmake\n'}
+[3.393835] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/cmake/image_geometryConfig-version.cmake\n'}
+[3.393862] (image_geometry) StdoutLine: {'line': b'-- Installing: /workspace/install/image_geometry/share/image_geometry/package.xml\n'}
+[3.395448] (image_geometry) CommandEnded: {'returncode': 0}
+[3.406942] (-) TimerEvent: {}
+[3.412439] (image_geometry) JobEnded: {'identifier': 'image_geometry', 'rc': 0}
+[3.413027] (-) EventReactorShutdown: {}

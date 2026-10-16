@@ -1,0 +1,24 @@
+running egg_info
+writing ../../build/drone_control/drone_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/drone_control/drone_control.egg-info/dependency_links.txt
+writing requirements to ../../build/drone_control/drone_control.egg-info/requires.txt
+writing top-level names to ../../build/drone_control/drone_control.egg-info/top_level.txt
+reading manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'
+running build
+running build_py
+copying drone_control/init.py -> /workspace/build/drone_control/build/lib/drone_control
+running install
+running install_lib
+copying /workspace/build/drone_control/build/lib/drone_control/init.py -> /workspace/install/drone_control/lib/python3.10/site-packages/drone_control
+byte-compiling /workspace/install/drone_control/lib/python3.10/site-packages/drone_control/init.py to init.cpython-310.pyc
+running install_data
+copying resource/drone_control -> /workspace/install/drone_control/share/ament_index/resource_index/packages
+copying package.xml -> /workspace/install/drone_control/share/drone_control
+copying launch/slam.launch.py -> /workspace/install/drone_control/share/drone_control/launch
+copying config/slam_toolbox.yaml -> /workspace/install/drone_control/share/drone_control/config
+running install_egg_info
+removing '/workspace/install/drone_control/lib/python3.10/site-packages/drone_control-0.1.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/drone_control/drone_control.egg-info to /workspace/install/drone_control/lib/python3.10/site-packages/drone_control-0.1.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/workspace/build/drone_control/install.log'

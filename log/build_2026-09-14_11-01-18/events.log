@@ -1,0 +1,120 @@
+[0.000000] (-) TimerEvent: {}
+[0.000543] (-) JobUnselected: {'identifier': 'ardupilot_dds_tests'}
+[0.000843] (-) JobUnselected: {'identifier': 'ardupilot_gazebo'}
+[0.000942] (-) JobUnselected: {'identifier': 'ardupilot_msgs'}
+[0.001128] (-) JobUnselected: {'identifier': 'ardupilot_sitl'}
+[0.001165] (-) JobUnselected: {'identifier': 'drone_control'}
+[0.001198] (-) JobUnselected: {'identifier': 'gz_ros_bridge'}
+[0.001224] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.001268] (rf2o_laser_odometry) JobQueued: {'identifier': 'rf2o_laser_odometry', 'dependencies': OrderedDict()}
+[0.001307] (rf2o_laser_odometry) JobStarted: {'identifier': 'rf2o_laser_odometry'}
+[0.011905] (rf2o_laser_odometry) JobProgress: {'identifier': 'rf2o_laser_odometry', 'progress': 'cmake'}
+[0.012238] (rf2o_laser_odometry) Command: {'cmd': ['/usr/bin/cmake', '/workspace/src/rf2o_laser_odometry', '-DCMAKE_INSTALL_PREFIX=/workspace/install/rf2o_laser_odometry'], 'cwd': '/workspace/build/rf2o_laser_odometry', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build:'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds:'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/rf2o_laser_odometry'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/gz_ros_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[0.088544] (rf2o_laser_odometry) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099597] (-) TimerEvent: {}
+[0.152785] (rf2o_laser_odometry) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.164290] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199726] (-) TimerEvent: {}
+[0.216139] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.221739] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.222029] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.222641] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.225382] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.286101] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.291319] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.291547] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.291794] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.299800] (-) TimerEvent: {}
+[0.300142] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399889] (-) TimerEvent: {}
+[0.500143] (-) TimerEvent: {}
+[0.600557] (-) TimerEvent: {}
+[0.662326] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.700618] (-) TimerEvent: {}
+[0.767882] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.800719] (-) TimerEvent: {}
+[0.823516] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.832158] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.843105] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.860409] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.879845] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.900846] (-) TimerEvent: {}
+[0.936334] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.3 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.939735] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.001017] (-) TimerEvent: {}
+[1.046986] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.077087] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.101090] (-) TimerEvent: {}
+[1.122437] (rf2o_laser_odometry) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.136508] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.188284] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.188538] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.201255] (-) TimerEvent: {}
+[1.239577] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.240738] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.301346] (-) TimerEvent: {}
+[1.307445] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.321679] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.22 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.341085] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.342523] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.342616] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.401423] (-) TimerEvent: {}
+[1.462643] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.480248] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.2 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.501462] (-) TimerEvent: {}
+[1.511570] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0")  \n'}
+[1.580312] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.595305] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Generating done\n'}
+[1.601597] (-) TimerEvent: {}
+[1.602016] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Build files have been written to: /workspace/build/rf2o_laser_odometry\n'}
+[1.610653] (rf2o_laser_odometry) CommandEnded: {'returncode': 0}
+[1.611138] (rf2o_laser_odometry) JobProgress: {'identifier': 'rf2o_laser_odometry', 'progress': 'build'}
+[1.611699] (rf2o_laser_odometry) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/rf2o_laser_odometry', '--', '-j16', '-l16'], 'cwd': '/workspace/build/rf2o_laser_odometry', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build:'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds:'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/rf2o_laser_odometry'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/gz_ros_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[1.656162] (rf2o_laser_odometry) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/rf2o_laser_odometry.dir/src/CLaserOdometry2D.cpp.o\x1b[0m\n'}
+[1.656383] (rf2o_laser_odometry) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/rf2o_laser_odometry_node.dir/src/CLaserOdometry2D.cpp.o\x1b[0m\n'}
+[1.656458] (rf2o_laser_odometry) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/rf2o_laser_odometry_node.dir/src/CLaserOdometry2DNode.cpp.o\x1b[0m\n'}
+[1.701658] (-) TimerEvent: {}
+[1.801930] (-) TimerEvent: {}
+[1.814263] (rf2o_laser_odometry) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable rf2o_laser_odometry_node\x1b[0m\n'}
+[1.814430] (rf2o_laser_odometry) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library librf2o_laser_odometry.a\x1b[0m\n'}
+[1.902054] (-) TimerEvent: {}
+[2.002456] (-) TimerEvent: {}
+[2.024205] (rf2o_laser_odometry) StdoutLine: {'line': b'[100%] Built target rf2o_laser_odometry\n'}
+[2.102600] (-) TimerEvent: {}
+[2.203407] (-) TimerEvent: {}
+[2.303889] (-) TimerEvent: {}
+[2.404226] (-) TimerEvent: {}
+[2.504568] (-) TimerEvent: {}
+[2.604835] (-) TimerEvent: {}
+[2.705148] (-) TimerEvent: {}
+[2.805411] (-) TimerEvent: {}
+[2.905719] (-) TimerEvent: {}
+[3.006093] (-) TimerEvent: {}
+[3.106414] (-) TimerEvent: {}
+[3.135973] (rf2o_laser_odometry) StdoutLine: {'line': b'[100%] Built target rf2o_laser_odometry_node\n'}
+[3.144518] (rf2o_laser_odometry) CommandEnded: {'returncode': 0}
+[3.145380] (rf2o_laser_odometry) JobProgress: {'identifier': 'rf2o_laser_odometry', 'progress': 'install'}
+[3.152924] (rf2o_laser_odometry) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/rf2o_laser_odometry'], 'cwd': '/workspace/build/rf2o_laser_odometry', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build:'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds:'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/rf2o_laser_odometry'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/gz_ros_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[3.158009] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.158129] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/lib/rf2o_laser_odometry/rf2o_laser_odometry_node\n'}
+[3.164555] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/rf2o_laser_odometry/lib/rf2o_laser_odometry/rf2o_laser_odometry_node" to ""\n'}
+[3.164728] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch\n'}
+[3.164828] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch/rf2o_laser_odometry.launch.py\n'}
+[3.165274] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/ament_index/resource_index/package_run_dependencies/rf2o_laser_odometry\n'}
+[3.165559] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/ament_index/resource_index/parent_prefix_path/rf2o_laser_odometry\n'}
+[3.165697] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/ament_prefix_path.sh\n'}
+[3.165765] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/ament_prefix_path.dsv\n'}
+[3.165878] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/path.sh\n'}
+[3.165956] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/path.dsv\n'}
+[3.166038] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.bash\n'}
+[3.166104] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.sh\n'}
+[3.166214] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.zsh\n'}
+[3.166352] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.dsv\n'}
+[3.166425] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.dsv\n'}
+[3.166567] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/ament_index/resource_index/packages/rf2o_laser_odometry\n'}
+[3.166675] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/cmake/rf2o_laser_odometryConfig.cmake\n'}
+[3.166745] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/cmake/rf2o_laser_odometryConfig-version.cmake\n'}
+[3.166870] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /workspace/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.xml\n'}
+[3.169099] (rf2o_laser_odometry) CommandEnded: {'returncode': 0}
+[3.188363] (rf2o_laser_odometry) JobEnded: {'identifier': 'rf2o_laser_odometry', 'rc': 0}
+[3.189182] (-) EventReactorShutdown: {}

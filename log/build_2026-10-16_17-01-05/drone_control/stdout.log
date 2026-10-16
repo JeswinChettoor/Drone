@@ -1,0 +1,17 @@
+running egg_info
+writing ../../build/drone_control/drone_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/drone_control/drone_control.egg-info/dependency_links.txt
+writing requirements to ../../build/drone_control/drone_control.egg-info/requires.txt
+writing top-level names to ../../build/drone_control/drone_control.egg-info/top_level.txt
+reading manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/workspace/install/drone_control/lib/python3.10/site-packages/drone_control-0.1.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/drone_control/drone_control.egg-info to /workspace/install/drone_control/lib/python3.10/site-packages/drone_control-0.1.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/workspace/build/drone_control/install.log'

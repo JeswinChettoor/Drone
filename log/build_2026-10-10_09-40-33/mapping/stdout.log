@@ -1,0 +1,26 @@
+running egg_info
+creating ../../build/mapping/mapping.egg-info
+writing ../../build/mapping/mapping.egg-info/PKG-INFO
+writing dependency_links to ../../build/mapping/mapping.egg-info/dependency_links.txt
+writing requirements to ../../build/mapping/mapping.egg-info/requires.txt
+writing top-level names to ../../build/mapping/mapping.egg-info/top_level.txt
+writing manifest file '../../build/mapping/mapping.egg-info/SOURCES.txt'
+reading manifest file '../../build/mapping/mapping.egg-info/SOURCES.txt'
+writing manifest file '../../build/mapping/mapping.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /workspace/build/mapping/build/lib/mapping
+copying mapping/__init__.py -> /workspace/build/mapping/build/lib/mapping
+running install
+running install_lib
+creating /workspace/install/mapping/lib/python3.10/site-packages/mapping
+copying /workspace/build/mapping/build/lib/mapping/__init__.py -> /workspace/install/mapping/lib/python3.10/site-packages/mapping
+byte-compiling /workspace/install/mapping/lib/python3.10/site-packages/mapping/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /workspace/install/mapping/share/ament_index/resource_index/packages
+copying resource/mapping -> /workspace/install/mapping/share/ament_index/resource_index/packages
+copying package.xml -> /workspace/install/mapping/share/mapping
+running install_egg_info
+Copying ../../build/mapping/mapping.egg-info to /workspace/install/mapping/lib/python3.10/site-packages/mapping-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/workspace/build/mapping/install.log'

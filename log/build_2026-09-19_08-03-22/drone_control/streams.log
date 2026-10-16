@@ -1,0 +1,19 @@
+[0.471s] Invoking command in '/workspace/src/drone_control': PYTHONPATH=/workspace/build/drone_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/drone_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/drone_control build --build-base /workspace/build/drone_control/build install --record /workspace/build/drone_control/install.log --install-scripts $base/lib/drone_control --single-version-externally-managed install_data
+[0.592s] running egg_info
+[0.598s] writing ../../build/drone_control/drone_control.egg-info/PKG-INFO
+[0.599s] writing dependency_links to ../../build/drone_control/drone_control.egg-info/dependency_links.txt
+[0.599s] writing requirements to ../../build/drone_control/drone_control.egg-info/requires.txt
+[0.599s] writing top-level names to ../../build/drone_control/drone_control.egg-info/top_level.txt
+[0.613s] reading manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'
+[0.614s] writing manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'
+[0.614s] running build
+[0.614s] running build_py
+[0.614s] running install
+[0.616s] running install_lib
+[0.623s] running install_data
+[0.623s] running install_egg_info
+[0.630s] removing '/workspace/install/drone_control/lib/python3.10/site-packages/drone_control-0.1.0-py3.10.egg-info' (and everything under it)
+[0.630s] Copying ../../build/drone_control/drone_control.egg-info to /workspace/install/drone_control/lib/python3.10/site-packages/drone_control-0.1.0-py3.10.egg-info
+[0.630s] running install_scripts
+[0.644s] writing list of installed files to '/workspace/build/drone_control/install.log'
+[0.658s] Invoked command in '/workspace/src/drone_control' returned '0': PYTHONPATH=/workspace/build/drone_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/drone_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/drone_control build --build-base /workspace/build/drone_control/build install --record /workspace/build/drone_control/install.log --install-scripts $base/lib/drone_control --single-version-externally-managed install_data

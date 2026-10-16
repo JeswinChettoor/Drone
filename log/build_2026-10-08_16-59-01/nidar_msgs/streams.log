@@ -1,0 +1,268 @@
+[0.019s] Invoking command in '/workspace/build/nidar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake /workspace/src/nidar_msgs -DCMAKE_INSTALL_PREFIX=/workspace/install/nidar_msgs
+[0.262s] -- The C compiler identification is GNU 11.4.0
+[0.263s] -- The CXX compiler identification is GNU 11.4.0
+[0.263s] -- Detecting C compiler ABI info
+[0.263s] -- Detecting C compiler ABI info - done
+[0.263s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.263s] -- Detecting C compile features
+[0.263s] -- Detecting C compile features - done
+[0.263s] -- Detecting CXX compiler ABI info
+[0.263s] -- Detecting CXX compiler ABI info - done
+[0.273s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.273s] -- Detecting CXX compile features
+[0.273s] -- Detecting CXX compile features - done
+[0.273s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.515s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.592s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.598s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.608s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.647s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.682s] -- Found std_msgs: 4.9.2 (/opt/ros/humble/share/std_msgs/cmake)
+[0.913s] -- Found ament_cmake_ros: 0.10.1 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.057s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.248s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.263s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.265s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.283s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.283s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.283s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.283s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.297s] -- Found PythonExtra: .so  
+[1.374s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.391s] -- Added test 'lint_cmake' to check CMake code style
+[1.392s] -- Added test 'xmllint' to check XML markup files
+[1.393s] -- Configuring done
+[1.411s] -- Generating done
+[1.418s] -- Build files have been written to: /workspace/build/nidar_msgs
+[1.423s] Invoked command in '/workspace/build/nidar_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake /workspace/src/nidar_msgs -DCMAKE_INSTALL_PREFIX=/workspace/install/nidar_msgs
+[1.423s] Invoking command in '/workspace/build/nidar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake --build /workspace/build/nidar_msgs -- -j16 -l16
+[1.451s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.457s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.460s] [  5%] Built target ament_cmake_python_copy_nidar_msgs
+[1.461s] [  7%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[1.579s] running egg_info
+[1.586s] creating nidar_msgs.egg-info
+[1.586s] writing nidar_msgs.egg-info/PKG-INFO
+[1.586s] writing dependency_links to nidar_msgs.egg-info/dependency_links.txt
+[1.587s] writing top-level names to nidar_msgs.egg-info/top_level.txt
+[1.587s] writing manifest file 'nidar_msgs.egg-info/SOURCES.txt'
+[1.603s] [  7%] Built target nidar_msgs__rs
+[1.610s] reading manifest file 'nidar_msgs.egg-info/SOURCES.txt'
+[1.610s] writing manifest file 'nidar_msgs.egg-info/SOURCES.txt'
+[1.624s] [  7%] Built target nidar_msgs__cpp
+[1.630s] [ 15%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.630s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.630s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.636s] [ 15%] Built target ament_cmake_python_build_nidar_msgs_egg
+[1.640s] [ 17%] [32mBuilding C object CMakeFiles/nidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/nidar_msgs/msg/detail/person_detection_array__functions.c.o[0m
+[1.641s] [ 20%] [32mBuilding C object CMakeFiles/nidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/nidar_msgs/msg/detail/person_detection__functions.c.o[0m
+[1.695s] [ 22%] [32m[1mLinking C shared library libnidar_msgs__rosidl_generator_c.so[0m
+[1.730s] [ 22%] Built target nidar_msgs__rosidl_generator_c
+[1.737s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.737s] [ 27%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.740s] [ 30%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.775s] [ 32%] [32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nidar_msgs/msg/person_detection__type_support.cpp.o[0m
+[1.776s] [ 35%] [32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nidar_msgs/msg/person_detection_array__type_support.cpp.o[0m
+[1.802s] [ 40%] [32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nidar_msgs/msg/detail/dds_fastrtps/person_detection_array__type_support.cpp.o[0m
+[1.802s] [ 40%] [32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nidar_msgs/msg/detail/dds_fastrtps/person_detection__type_support.cpp.o[0m
+[1.803s] [ 45%] [32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nidar_msgs/msg/detail/person_detection_array__type_support.cpp.o[0m
+[1.803s] [ 45%] [32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nidar_msgs/msg/detail/person_detection__type_support.cpp.o[0m
+[1.928s] [ 47%] [32mBuilding C object CMakeFiles/nidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nidar_msgs/msg/detail/person_detection__type_support.c.o[0m
+[1.929s] [ 50%] [32mBuilding C object CMakeFiles/nidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nidar_msgs/msg/detail/person_detection_array__type_support.c.o[0m
+[1.939s] [ 55%] [32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nidar_msgs/msg/person_detection_array__type_support.cpp.o[0m
+[1.939s] [ 55%] [32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nidar_msgs/msg/person_detection__type_support.cpp.o[0m
+[1.963s] [ 60%] [32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nidar_msgs/msg/detail/person_detection__type_support_c.cpp.o[0m
+[1.964s] [ 60%] [32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nidar_msgs/msg/detail/person_detection_array__type_support_c.cpp.o[0m
+[1.981s] [ 62%] [32m[1mLinking C shared library libnidar_msgs__rosidl_typesupport_introspection_c.so[0m
+[1.985s] [ 65%] [32m[1mLinking CXX shared library libnidar_msgs__rosidl_typesupport_c.so[0m
+[2.009s] [ 65%] Built target nidar_msgs__rosidl_typesupport_introspection_c
+[2.022s] [ 65%] Built target nidar_msgs__rosidl_typesupport_c
+[2.115s] [ 67%] [32m[1mLinking CXX shared library libnidar_msgs__rosidl_typesupport_cpp.so[0m
+[2.137s] [ 70%] [32m[1mLinking CXX shared library libnidar_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[2.147s] [ 70%] Built target nidar_msgs__rosidl_typesupport_cpp
+[2.190s] [ 70%] Built target nidar_msgs__rosidl_typesupport_introspection_cpp
+[2.207s] [ 72%] [32m[1mLinking CXX shared library libnidar_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.252s] [ 75%] [32m[1mLinking CXX shared library libnidar_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[2.268s] [ 75%] Built target nidar_msgs__rosidl_typesupport_fastrtps_cpp
+[2.307s] [ 75%] Built target nidar_msgs__rosidl_typesupport_fastrtps_c
+[2.324s] [ 75%] Built target nidar_msgs
+[2.340s] [ 77%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.555s] [ 77%] Built target nidar_msgs__py
+[2.572s] [ 82%] [32mBuilding C object CMakeFiles/nidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/nidar_msgs/msg/_person_detection_array_s.c.o[0m
+[2.572s] [ 82%] [32mBuilding C object CMakeFiles/nidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/nidar_msgs/msg/_person_detection_s.c.o[0m
+[2.708s] [ 85%] [32m[1mLinking C shared library rosidl_generator_py/nidar_msgs/libnidar_msgs__rosidl_generator_py.so[0m
+[2.742s] [ 85%] Built target nidar_msgs__rosidl_generator_py
+[2.755s] [ 87%] [32mBuilding C object CMakeFiles/nidar_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/nidar_msgs/_nidar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.758s] [ 90%] [32mBuilding C object CMakeFiles/nidar_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/nidar_msgs/_nidar_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.760s] [ 92%] [32mBuilding C object CMakeFiles/nidar_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/nidar_msgs/_nidar_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[2.864s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/nidar_msgs/nidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.868s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/nidar_msgs/nidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.878s] [100%] [32m[1mLinking C shared library rosidl_generator_py/nidar_msgs/nidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.900s] [100%] Built target nidar_msgs__rosidl_typesupport_c__pyext
+[2.900s] [100%] Built target nidar_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.905s] [100%] Built target nidar_msgs__rosidl_typesupport_introspection_c__pyext
+[2.915s] Invoked command in '/workspace/build/nidar_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake --build /workspace/build/nidar_msgs -- -j16 -l16
+[2.917s] Invoking command in '/workspace/build/nidar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake --install /workspace/build/nidar_msgs
+[2.924s] -- Install configuration: ""
+[2.924s] -- Installing: /workspace/install/nidar_msgs/share/ament_index/resource_index/rosidl_interfaces/nidar_msgs
+[2.924s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs
+[2.924s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg
+[2.924s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.924s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail
+[2.924s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__functions.h
+[2.924s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__functions.c
+[2.924s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__struct.h
+[2.924s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__type_support.h
+[2.924s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__functions.c
+[2.924s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__type_support.h
+[2.925s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__functions.h
+[2.925s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__struct.h
+[2.925s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/person_detection_array.h
+[2.925s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/person_detection.h
+[2.925s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/environment/library_path.sh
+[2.925s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/environment/library_path.dsv
+[2.925s] -- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_generator_c.so
+[2.925s] -- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_generator_c.so" to ""
+[2.925s] -- Up-to-date: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs
+[2.925s] -- Up-to-date: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg
+[2.925s] -- Up-to-date: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail
+[2.925s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__rosidl_typesupport_fastrtps_c.h
+[2.926s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__rosidl_typesupport_fastrtps_c.h
+[2.926s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.926s] -- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_fastrtps_c.so
+[2.926s] -- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[2.926s] -- Up-to-date: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs
+[2.926s] -- Up-to-date: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg
+[2.926s] -- Up-to-date: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail
+[2.926s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__type_support.c
+[2.926s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__type_support.c
+[2.926s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__rosidl_typesupport_introspection_c.h
+[2.926s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__rosidl_typesupport_introspection_c.h
+[2.926s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.927s] -- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_introspection_c.so
+[2.927s] -- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_introspection_c.so" to ""
+[2.927s] -- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_c.so
+[2.927s] -- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_c.so" to ""
+[2.927s] -- Up-to-date: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs
+[2.927s] -- Up-to-date: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg
+[2.927s] -- Up-to-date: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail
+[2.927s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__struct.hpp
+[2.927s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__builder.hpp
+[2.927s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__struct.hpp
+[2.927s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__type_support.hpp
+[2.927s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__traits.hpp
+[2.927s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__builder.hpp
+[2.928s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__traits.hpp
+[2.928s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__type_support.hpp
+[2.928s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/person_detection_array.hpp
+[2.928s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.928s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/person_detection.hpp
+[2.928s] -- Up-to-date: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs
+[2.928s] -- Up-to-date: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg
+[2.928s] -- Up-to-date: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail
+[2.928s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__rosidl_typesupport_fastrtps_cpp.hpp
+[2.928s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/dds_fastrtps
+[2.928s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__rosidl_typesupport_fastrtps_cpp.hpp
+[2.928s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.928s] -- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.928s] -- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.928s] -- Up-to-date: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs
+[2.928s] -- Up-to-date: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg
+[2.928s] -- Up-to-date: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail
+[2.929s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__type_support.cpp
+[2.929s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__rosidl_typesupport_introspection_cpp.hpp
+[2.929s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__type_support.cpp
+[2.929s] -- Installing: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__rosidl_typesupport_introspection_cpp.hpp
+[2.929s] -- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_introspection_cpp.so
+[2.929s] -- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[2.929s] -- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_cpp.so
+[2.929s] -- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_cpp.so" to ""
+[2.929s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/environment/pythonpath.sh
+[2.929s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/environment/pythonpath.dsv
+[2.929s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs-0.0.0-py3.10.egg-info
+[2.929s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[2.929s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.929s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.929s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[2.929s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs
+[2.929s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/_nidar_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[2.930s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/nidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.930s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/__init__.py
+[2.930s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg
+[2.930s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/_person_detection_array_s.c
+[2.930s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/_person_detection_s.c
+[2.930s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/_person_detection_array.py
+[2.930s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/__init__.py
+[2.930s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/_person_detection.py
+[2.930s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/nidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.930s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/nidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.930s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/_nidar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.930s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/_nidar_msgs_s.ep.rosidl_typesupport_c.c
+[2.930s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/libnidar_msgs__rosidl_generator_py.so
+[2.956s] Listing '/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs'...
+[2.956s] Compiling '/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/__init__.py'...
+[2.956s] Listing '/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg'...
+[2.956s] Compiling '/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/__init__.py'...
+[2.956s] Compiling '/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/_person_detection.py'...
+[2.956s] Compiling '/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/_person_detection_array.py'...
+[2.960s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/nidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.960s] -- Set runtime path of "/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/nidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.960s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/nidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.960s] -- Set runtime path of "/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/nidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.960s] -- Installing: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/nidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.960s] -- Set runtime path of "/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/nidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.960s] -- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_generator_py.so
+[2.961s] -- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_generator_py.so" to ""
+[2.961s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/rust
+[2.961s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/rust/Cargo.toml
+[2.961s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/rust/build.rs
+[2.961s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/rust/src
+[2.961s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/rust/src/msg.rs
+[2.961s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/rust/src/msg
+[2.961s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/rust/src/msg/rmw.rs
+[2.961s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/rust/src/lib.rs
+[2.961s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/msg/PersonDetection.idl
+[2.961s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/msg/PersonDetectionArray.idl
+[2.961s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/msg/PersonDetection.msg
+[2.961s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/msg/PersonDetectionArray.msg
+[2.962s] -- Installing: /workspace/install/nidar_msgs/share/ament_index/resource_index/package_run_dependencies/nidar_msgs
+[2.962s] -- Installing: /workspace/install/nidar_msgs/share/ament_index/resource_index/parent_prefix_path/nidar_msgs
+[2.962s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/environment/ament_prefix_path.sh
+[2.962s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/environment/ament_prefix_path.dsv
+[2.962s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/environment/path.sh
+[2.962s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/environment/path.dsv
+[2.962s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/local_setup.bash
+[2.962s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/local_setup.sh
+[2.962s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/local_setup.zsh
+[2.962s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/local_setup.dsv
+[2.962s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/package.dsv
+[2.962s] -- Installing: /workspace/install/nidar_msgs/share/ament_index/resource_index/packages/nidar_msgs
+[2.962s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_generator_cExport.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_generator_cExport-noconfig.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_cExport.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_generator_cppExport.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_cppExport.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_generator_pyExport.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_generator_pyExport-noconfig.cmake
+[2.963s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/rosidl_cmake-extras.cmake
+[2.964s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.964s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.964s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.964s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.964s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.964s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.964s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[2.964s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgsConfig.cmake
+[2.964s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgsConfig-version.cmake
+[2.964s] -- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/package.xml
+[2.965s] Invoked command in '/workspace/build/nidar_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake --install /workspace/build/nidar_msgs

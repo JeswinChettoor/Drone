@@ -1,0 +1,26 @@
+[0.436s] Invoking command in '/workspace/src/perception': CMAKE_PREFIX_PATH=/workspace/install/nidar_msgs:/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge PYTHONPATH=/workspace/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /workspace/build/perception/build install --record /workspace/build/perception/install.log --install-scripts $base/lib/perception --single-version-externally-managed install_data
+[0.566s] running egg_info
+[0.573s] writing ../../build/perception/perception.egg-info/PKG-INFO
+[0.573s] writing dependency_links to ../../build/perception/perception.egg-info/dependency_links.txt
+[0.575s] writing entry points to ../../build/perception/perception.egg-info/entry_points.txt
+[0.576s] writing requirements to ../../build/perception/perception.egg-info/requires.txt
+[0.576s] writing top-level names to ../../build/perception/perception.egg-info/top_level.txt
+[0.590s] reading manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[0.590s] adding license file 'LICENSE'
+[0.590s] writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[0.591s] running build
+[0.591s] running build_py
+[0.591s] copying perception/camera_yolo_node.py -> /workspace/build/perception/build/lib/perception
+[0.591s] running install
+[0.593s] running install_lib
+[0.600s] copying /workspace/build/perception/build/lib/perception/camera_yolo_node.py -> /workspace/install/perception/lib/python3.10/site-packages/perception
+[0.600s] byte-compiling /workspace/install/perception/lib/python3.10/site-packages/perception/camera_yolo_node.py to camera_yolo_node.cpython-310.pyc
+[0.600s] running install_data
+[0.600s] copying package.xml -> /workspace/install/perception/share/perception
+[0.601s] running install_egg_info
+[0.608s] removing '/workspace/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info' (and everything under it)
+[0.608s] Copying ../../build/perception/perception.egg-info to /workspace/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info
+[0.609s] running install_scripts
+[0.623s] Installing camera_yolo_node script to /workspace/install/perception/lib/perception
+[0.623s] writing list of installed files to '/workspace/build/perception/install.log'
+[0.638s] Invoked command in '/workspace/src/perception' returned '0': CMAKE_PREFIX_PATH=/workspace/install/nidar_msgs:/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge PYTHONPATH=/workspace/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /workspace/build/perception/build install --record /workspace/build/perception/install.log --install-scripts $base/lib/perception --single-version-externally-managed install_data

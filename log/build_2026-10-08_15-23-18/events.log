@@ -1,0 +1,51 @@
+[0.000000] (-) TimerEvent: {}
+[0.000165] (-) JobUnselected: {'identifier': 'ardupilot_dds_tests'}
+[0.000404] (-) JobUnselected: {'identifier': 'ardupilot_gazebo'}
+[0.000684] (-) JobUnselected: {'identifier': 'ardupilot_msgs'}
+[0.000750] (-) JobUnselected: {'identifier': 'ardupilot_sitl'}
+[0.000794] (-) JobUnselected: {'identifier': 'drone_control'}
+[0.000832] (-) JobUnselected: {'identifier': 'gz_ros_bridge'}
+[0.000869] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.000905] (-) JobUnselected: {'identifier': 'nidar_msgs'}
+[0.000939] (-) JobUnselected: {'identifier': 'rf2o_laser_odometry'}
+[0.000976] (perception) JobQueued: {'identifier': 'perception', 'dependencies': OrderedDict([('nidar_msgs', '/workspace/install/nidar_msgs')])}
+[0.001036] (perception) JobStarted: {'identifier': 'perception'}
+[0.099701] (-) TimerEvent: {}
+[0.199969] (-) TimerEvent: {}
+[0.300174] (-) TimerEvent: {}
+[0.400329] (-) TimerEvent: {}
+[0.500566] (-) TimerEvent: {}
+[0.600858] (-) TimerEvent: {}
+[0.605669] (perception) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/perception', 'build', '--build-base', '/workspace/build/perception/build', 'install', '--record', '/workspace/build/perception/install.log', '--install-scripts', '$base/lib/perception', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspace/src/perception', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/workspace/install/nidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/workspace/install/nidar_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/perception'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/perception/lib/python3.10/site-packages:/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/nidar_msgs')]), 'shell': False}
+[0.700940] (-) TimerEvent: {}
+[0.801107] (-) TimerEvent: {}
+[0.814908] (perception) StdoutLine: {'line': b'running egg_info\n'}
+[0.826243] (perception) StdoutLine: {'line': b'writing ../../build/perception/perception.egg-info/PKG-INFO\n'}
+[0.826587] (perception) StdoutLine: {'line': b'writing dependency_links to ../../build/perception/perception.egg-info/dependency_links.txt\n'}
+[0.826741] (perception) StdoutLine: {'line': b'writing entry points to ../../build/perception/perception.egg-info/entry_points.txt\n'}
+[0.826877] (perception) StdoutLine: {'line': b'writing requirements to ../../build/perception/perception.egg-info/requires.txt\n'}
+[0.827002] (perception) StdoutLine: {'line': b'writing top-level names to ../../build/perception/perception.egg-info/top_level.txt\n'}
+[0.851821] (perception) StdoutLine: {'line': b"reading manifest file '../../build/perception/perception.egg-info/SOURCES.txt'\n"}
+[0.852237] (perception) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[0.853163] (perception) StdoutLine: {'line': b"writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'\n"}
+[0.853387] (perception) StdoutLine: {'line': b'running build\n'}
+[0.853472] (perception) StdoutLine: {'line': b'running build_py\n'}
+[0.853635] (perception) StdoutLine: {'line': b'copying perception/survivor_confirmation_node.py -> /workspace/build/perception/build/lib/perception\n'}
+[0.853999] (perception) StdoutLine: {'line': b'running install\n'}
+[0.857843] (perception) StdoutLine: {'line': b'running install_lib\n'}
+[0.868835] (perception) StdoutLine: {'line': b'copying /workspace/build/perception/build/lib/perception/survivor_confirmation_node.py -> /workspace/install/perception/lib/python3.10/site-packages/perception\n'}
+[0.869646] (perception) StdoutLine: {'line': b'byte-compiling /workspace/install/perception/lib/python3.10/site-packages/perception/survivor_confirmation_node.py to survivor_confirmation_node.cpython-310.pyc\n'}
+[0.871153] (perception) StdoutLine: {'line': b'running install_data\n'}
+[0.871532] (perception) StdoutLine: {'line': b'copying package.xml -> /workspace/install/perception/share/perception\n'}
+[0.871882] (perception) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.883640] (perception) StdoutLine: {'line': b"removing '/workspace/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.883965] (perception) StdoutLine: {'line': b'Copying ../../build/perception/perception.egg-info to /workspace/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info\n'}
+[0.884421] (perception) StdoutLine: {'line': b'running install_scripts\n'}
+[0.901210] (-) TimerEvent: {}
+[0.907268] (perception) StdoutLine: {'line': b'Installing camera_yolo_node script to /workspace/install/perception/lib/perception\n'}
+[0.907559] (perception) StdoutLine: {'line': b'Installing survivor_confirmation_node script to /workspace/install/perception/lib/perception\n'}
+[0.907649] (perception) StdoutLine: {'line': b'Installing survivor_localizer_node script to /workspace/install/perception/lib/perception\n'}
+[0.907843] (perception) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/perception/install.log'\n"}
+[0.936252] (perception) CommandEnded: {'returncode': 0}
+[0.952416] (perception) JobEnded: {'identifier': 'perception', 'rc': 0}
+[0.953022] (-) EventReactorShutdown: {}

@@ -1,0 +1,28 @@
+[0.433s] Invoking command in '/workspace/src/mapping': PYTHONPATH=/workspace/build/mapping/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/mapping/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mapping build --build-base /workspace/build/mapping/build install --record /workspace/build/mapping/install.log --install-scripts $base/lib/mapping --single-version-externally-managed install_data
+[0.573s] running egg_info
+[0.580s] writing ../../build/mapping/mapping.egg-info/PKG-INFO
+[0.583s] writing dependency_links to ../../build/mapping/mapping.egg-info/dependency_links.txt
+[0.583s] writing requirements to ../../build/mapping/mapping.egg-info/requires.txt
+[0.583s] writing top-level names to ../../build/mapping/mapping.egg-info/top_level.txt
+[0.599s] reading manifest file '../../build/mapping/mapping.egg-info/SOURCES.txt'
+[0.600s] writing manifest file '../../build/mapping/mapping.egg-info/SOURCES.txt'
+[0.600s] running build
+[0.600s] running build_py
+[0.600s] copying mapping/nav2apbridge.py -> /workspace/build/mapping/build/lib/mapping
+[0.600s] copying mapping/auto_move.py -> /workspace/build/mapping/build/lib/mapping
+[0.600s] copying mapping/ap_bridge.py -> /workspace/build/mapping/build/lib/mapping
+[0.601s] running install
+[0.603s] running install_lib
+[0.612s] copying /workspace/build/mapping/build/lib/mapping/nav2apbridge.py -> /workspace/install/mapping/lib/python3.10/site-packages/mapping
+[0.612s] copying /workspace/build/mapping/build/lib/mapping/auto_move.py -> /workspace/install/mapping/lib/python3.10/site-packages/mapping
+[0.612s] copying /workspace/build/mapping/build/lib/mapping/ap_bridge.py -> /workspace/install/mapping/lib/python3.10/site-packages/mapping
+[0.612s] byte-compiling /workspace/install/mapping/lib/python3.10/site-packages/mapping/nav2apbridge.py to nav2apbridge.cpython-310.pyc
+[0.613s] byte-compiling /workspace/install/mapping/lib/python3.10/site-packages/mapping/auto_move.py to auto_move.cpython-310.pyc
+[0.613s] byte-compiling /workspace/install/mapping/lib/python3.10/site-packages/mapping/ap_bridge.py to ap_bridge.cpython-310.pyc
+[0.614s] running install_data
+[0.614s] running install_egg_info
+[0.622s] removing '/workspace/install/mapping/lib/python3.10/site-packages/mapping-0.0.0-py3.10.egg-info' (and everything under it)
+[0.622s] Copying ../../build/mapping/mapping.egg-info to /workspace/install/mapping/lib/python3.10/site-packages/mapping-0.0.0-py3.10.egg-info
+[0.622s] running install_scripts
+[0.637s] writing list of installed files to '/workspace/build/mapping/install.log'
+[0.652s] Invoked command in '/workspace/src/mapping' returned '0': PYTHONPATH=/workspace/build/mapping/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/mapping/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mapping build --build-base /workspace/build/mapping/build install --record /workspace/build/mapping/install.log --install-scripts $base/lib/mapping --single-version-externally-managed install_data

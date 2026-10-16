@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/mapping/mapping.egg-info/PKG-INFO
+../../build/mapping/mapping.egg-info/SOURCES.txt
+../../build/mapping/mapping.egg-info/dependency_links.txt
+../../build/mapping/mapping.egg-info/requires.txt
+../../build/mapping/mapping.egg-info/top_level.txt
+../../build/mapping/mapping.egg-info/zip-safe
+mapping/__init__.py
+mapping/ap_bridge.py
+mapping/auto_move.py
+mapping/nav2apbridge.py
+resource/mapping
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

@@ -1,0 +1,249 @@
+[0.000000] (-) TimerEvent: {}
+[0.000180] (-) JobUnselected: {'identifier': 'ardupilot_dds_tests'}
+[0.000227] (-) JobUnselected: {'identifier': 'ardupilot_gazebo'}
+[0.000256] (-) JobUnselected: {'identifier': 'ardupilot_msgs'}
+[0.000284] (-) JobUnselected: {'identifier': 'ardupilot_sitl'}
+[0.000319] (-) JobUnselected: {'identifier': 'drone_control'}
+[0.000338] (-) JobUnselected: {'identifier': 'gz_ros_bridge'}
+[0.000365] (-) JobUnselected: {'identifier': 'image_geometry'}
+[0.000400] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.000424] (-) JobUnselected: {'identifier': 'nidar_msgs'}
+[0.000538] (-) JobUnselected: {'identifier': 'opencv_tests'}
+[0.000569] (-) JobUnselected: {'identifier': 'perception'}
+[0.000589] (-) JobUnselected: {'identifier': 'rf2o_laser_odometry'}
+[0.000607] (-) JobUnselected: {'identifier': 'vision_opencv'}
+[0.000634] (cv_bridge) JobQueued: {'identifier': 'cv_bridge', 'dependencies': OrderedDict()}
+[0.000665] (cv_bridge) JobStarted: {'identifier': 'cv_bridge'}
+[0.011096] (cv_bridge) JobProgress: {'identifier': 'cv_bridge', 'progress': 'cmake'}
+[0.011560] (cv_bridge) Command: {'cmd': ['/usr/bin/cmake', '/workspace/src/vision_opencv/cv_bridge', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_INSTALL_PREFIX=/workspace/install/cv_bridge'], 'cwd': '/workspace/build/cv_bridge', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/nidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/perception:/workspace/install/nidar_msgs:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/cv_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/perception/lib/python3.10/site-packages:/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages:/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/nidar_msgs:/workspace/install/gz_ros_bridge:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[0.099618] (-) TimerEvent: {}
+[0.137748] (cv_bridge) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199843] (-) TimerEvent: {}
+[0.242231] (cv_bridge) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.261229] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300005] (-) TimerEvent: {}
+[0.400563] (-) TimerEvent: {}
+[0.412496] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.427269] (cv_bridge) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.428088] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.429068] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.436487] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500715] (-) TimerEvent: {}
+[0.581527] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.592704] (cv_bridge) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.593308] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.594140] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.600818] (-) TimerEvent: {}
+[0.602490] (cv_bridge) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.1 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.700947] (-) TimerEvent: {}
+[0.801349] (-) TimerEvent: {}
+[0.901843] (-) TimerEvent: {}
+[1.002312] (-) TimerEvent: {}
+[1.102601] (-) TimerEvent: {}
+[1.160176] (cv_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.202755] (-) TimerEvent: {}
+[1.303066] (-) TimerEvent: {}
+[1.403451] (-) TimerEvent: {}
+[1.503862] (-) TimerEvent: {}
+[1.604196] (-) TimerEvent: {}
+[1.704502] (-) TimerEvent: {}
+[1.804814] (-) TimerEvent: {}
+[1.905290] (-) TimerEvent: {}
+[2.006294] (-) TimerEvent: {}
+[2.074340] (cv_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/include/python3.10 (found version "3.10.12") found components: Development NumPy Interpreter Development.Module Development.Embed \n'}
+[2.103039] (cv_bridge) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: python310 \n'}
+[2.105511] (cv_bridge) StdoutLine: {'line': b'-- Found rcpputils: 2.4.7 (/opt/ros/humble/share/rcpputils/cmake)\n'}
+[2.106354] (-) TimerEvent: {}
+[2.124959] (cv_bridge) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.187541] (cv_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.201278] (cv_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.206497] (-) TimerEvent: {}
+[2.228281] (cv_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.261348] (cv_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.290846] (cv_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.306637] (-) TimerEvent: {}
+[2.407000] (-) TimerEvent: {}
+[2.507449] (-) TimerEvent: {}
+[2.608080] (-) TimerEvent: {}
+[2.621806] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY\n'}
+[2.708206] (-) TimerEvent: {}
+[2.786044] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success\n'}
+[2.788289] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY\n'}
+[2.808425] (-) TimerEvent: {}
+[2.909124] (-) TimerEvent: {}
+[2.988049] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success\n'}
+[2.989267] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_DEPRECATED_ATTR\n'}
+[3.009323] (-) TimerEvent: {}
+[3.109965] (-) TimerEvent: {}
+[3.191103] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success\n'}
+[3.204076] (cv_bridge) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.210079] (-) TimerEvent: {}
+[3.310544] (-) TimerEvent: {}
+[3.410989] (-) TimerEvent: {}
+[3.431924] (cv_bridge) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[3.440938] (cv_bridge) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.511195] (-) TimerEvent: {}
+[3.611861] (-) TimerEvent: {}
+[3.625349] (cv_bridge) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.625957] (cv_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.712055] (-) TimerEvent: {}
+[3.768698] (cv_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.770914] (cv_bridge) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.812274] (-) TimerEvent: {}
+[3.912774] (-) TimerEvent: {}
+[4.013210] (-) TimerEvent: {}
+[4.113531] (-) TimerEvent: {}
+[4.213832] (-) TimerEvent: {}
+[4.314143] (-) TimerEvent: {}
+[4.414409] (-) TimerEvent: {}
+[4.514754] (-) TimerEvent: {}
+[4.615013] (-) TimerEvent: {}
+[4.715281] (-) TimerEvent: {}
+[4.739408] (cv_bridge) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.756084] (cv_bridge) StdoutLine: {'line': b'-- Generating done\n'}
+[4.761900] (cv_bridge) StdoutLine: {'line': b'-- Build files have been written to: /workspace/build/cv_bridge\n'}
+[4.771328] (cv_bridge) CommandEnded: {'returncode': 0}
+[4.771909] (cv_bridge) JobProgress: {'identifier': 'cv_bridge', 'progress': 'build'}
+[4.773493] (cv_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/cv_bridge', '--', '-j16', '-l16'], 'cwd': '/workspace/build/cv_bridge', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/nidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/perception:/workspace/install/nidar_msgs:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/cv_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/perception/lib/python3.10/site-packages:/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages:/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/nidar_msgs:/workspace/install/gz_ros_bridge:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[4.815378] (-) TimerEvent: {}
+[4.819492] (cv_bridge) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[4.819669] (cv_bridge) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/rgb_colors.cpp.o\x1b[0m\n'}
+[4.820193] (cv_bridge) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[4.821149] (cv_bridge) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_bridge.cpp.o\x1b[0m\n'}
+[4.830295] (cv_bridge) StdoutLine: {'line': b'[ 25%] Built target ament_cmake_python_copy_cv_bridge\n'}
+[4.915558] (-) TimerEvent: {}
+[5.016137] (-) TimerEvent: {}
+[5.040062] (cv_bridge) StdoutLine: {'line': b'running egg_info\n'}
+[5.047043] (cv_bridge) StdoutLine: {'line': b'creating cv_bridge.egg-info\n'}
+[5.047245] (cv_bridge) StdoutLine: {'line': b'writing cv_bridge.egg-info/PKG-INFO\n'}
+[5.047435] (cv_bridge) StdoutLine: {'line': b'writing dependency_links to cv_bridge.egg-info/dependency_links.txt\n'}
+[5.047598] (cv_bridge) StdoutLine: {'line': b'writing top-level names to cv_bridge.egg-info/top_level.txt\n'}
+[5.047708] (cv_bridge) StdoutLine: {'line': b"writing manifest file 'cv_bridge.egg-info/SOURCES.txt'\n"}
+[5.069416] (cv_bridge) StdoutLine: {'line': b"reading manifest file 'cv_bridge.egg-info/SOURCES.txt'\n"}
+[5.069947] (cv_bridge) StdoutLine: {'line': b"writing manifest file 'cv_bridge.egg-info/SOURCES.txt'\n"}
+[5.091198] (cv_bridge) StdoutLine: {'line': b'[ 25%] Built target ament_cmake_python_build_cv_bridge_egg\n'}
+[5.116256] (-) TimerEvent: {}
+[5.216562] (-) TimerEvent: {}
+[5.266529] (cv_bridge) StdoutLine: {'line': b'[ 31%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[5.293982] (cv_bridge) StdoutLine: {'line': b'[ 31%] Built target gtest_main\n'}
+[5.316670] (-) TimerEvent: {}
+[5.417038] (-) TimerEvent: {}
+[5.517336] (-) TimerEvent: {}
+[5.617628] (-) TimerEvent: {}
+[5.717991] (-) TimerEvent: {}
+[5.818494] (-) TimerEvent: {}
+[5.918873] (-) TimerEvent: {}
+[6.019219] (-) TimerEvent: {}
+[6.119462] (-) TimerEvent: {}
+[6.219744] (-) TimerEvent: {}
+[6.320017] (-) TimerEvent: {}
+[6.420306] (-) TimerEvent: {}
+[6.520553] (-) TimerEvent: {}
+[6.620798] (-) TimerEvent: {}
+[6.721073] (-) TimerEvent: {}
+[6.821356] (-) TimerEvent: {}
+[6.921587] (-) TimerEvent: {}
+[7.021853] (-) TimerEvent: {}
+[7.122157] (-) TimerEvent: {}
+[7.222396] (-) TimerEvent: {}
+[7.322697] (-) TimerEvent: {}
+[7.422983] (-) TimerEvent: {}
+[7.523288] (-) TimerEvent: {}
+[7.623557] (-) TimerEvent: {}
+[7.723814] (-) TimerEvent: {}
+[7.824110] (-) TimerEvent: {}
+[7.924375] (-) TimerEvent: {}
+[8.024621] (-) TimerEvent: {}
+[8.124884] (-) TimerEvent: {}
+[8.225184] (-) TimerEvent: {}
+[8.325497] (-) TimerEvent: {}
+[8.423911] (cv_bridge) StdoutLine: {'line': b'[ 37%] \x1b[32m\x1b[1mLinking CXX shared library libcv_bridge.so\x1b[0m\n'}
+[8.425563] (-) TimerEvent: {}
+[8.490082] (cv_bridge) StdoutLine: {'line': b'[ 37%] Built target cv_bridge\n'}
+[8.505430] (cv_bridge) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module_opencv3.cpp.o\x1b[0m\n'}
+[8.505571] (cv_bridge) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module.cpp.o\x1b[0m\n'}
+[8.525670] (-) TimerEvent: {}
+[8.625953] (-) TimerEvent: {}
+[8.726185] (-) TimerEvent: {}
+[8.826428] (-) TimerEvent: {}
+[8.926686] (-) TimerEvent: {}
+[9.026961] (-) TimerEvent: {}
+[9.032785] (cv_bridge) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[9.061657] (cv_bridge) StdoutLine: {'line': b'[ 56%] Built target gtest\n'}
+[9.076859] (cv_bridge) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest2.cpp.o\x1b[0m\n'}
+[9.077020] (cv_bridge) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest.cpp.o\x1b[0m\n'}
+[9.077079] (cv_bridge) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_rgb_colors.cpp.o\x1b[0m\n'}
+[9.078071] (cv_bridge) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_endian.cpp.o\x1b[0m\n'}
+[9.078180] (cv_bridge) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_compression.cpp.o\x1b[0m\n'}
+[9.127059] (-) TimerEvent: {}
+[9.227474] (-) TimerEvent: {}
+[9.327782] (-) TimerEvent: {}
+[9.428089] (-) TimerEvent: {}
+[9.528455] (-) TimerEvent: {}
+[9.628820] (-) TimerEvent: {}
+[9.729215] (-) TimerEvent: {}
+[9.829533] (-) TimerEvent: {}
+[9.929814] (-) TimerEvent: {}
+[10.030156] (-) TimerEvent: {}
+[10.130441] (-) TimerEvent: {}
+[10.230735] (-) TimerEvent: {}
+[10.257032] (cv_bridge) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable cv_bridge-utest\x1b[0m\n'}
+[10.330872] (-) TimerEvent: {}
+[10.431200] (-) TimerEvent: {}
+[10.450107] (cv_bridge) StdoutLine: {'line': b'[ 93%] Built target cv_bridge-utest\n'}
+[10.531388] (-) TimerEvent: {}
+[10.631734] (-) TimerEvent: {}
+[10.677986] (cv_bridge) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared module boost/cv_bridge_boost.so\x1b[0m\n'}
+[10.731861] (-) TimerEvent: {}
+[10.761767] (cv_bridge) StdoutLine: {'line': b'[100%] Built target cv_bridge_boost\n'}
+[10.771199] (cv_bridge) CommandEnded: {'returncode': 0}
+[10.771899] (cv_bridge) JobProgress: {'identifier': 'cv_bridge', 'progress': 'install'}
+[10.780901] (cv_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/cv_bridge'], 'cwd': '/workspace/build/cv_bridge', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/nidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/perception:/workspace/install/nidar_msgs:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/cv_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/perception/lib/python3.10/site-packages:/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages:/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/nidar_msgs:/workspace/install/gz_ros_bridge:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[10.787454] (cv_bridge) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[10.787732] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/environment/pythonpath.sh\n'}
+[10.787840] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/environment/pythonpath.dsv\n'}
+[10.787896] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info\n'}
+[10.787938] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/top_level.txt\n'}
+[10.787988] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/dependency_links.txt\n'}
+[10.788030] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/SOURCES.txt\n'}
+[10.788087] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/PKG-INFO\n'}
+[10.788210] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge\n'}
+[10.788273] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py\n'}
+[10.788370] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py\n'}
+[10.820076] (cv_bridge) StdoutLine: {'line': b"Listing '/workspace/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge'...\n"}
+[10.820200] (cv_bridge) StdoutLine: {'line': b"Compiling '/workspace/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py'...\n"}
+[10.820256] (cv_bridge) StdoutLine: {'line': b"Compiling '/workspace/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py'...\n"}
+[10.824422] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/lib/libcv_bridge.so\n'}
+[10.825038] (cv_bridge) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/cv_bridge/lib/libcv_bridge.so" to ""\n'}
+[10.825145] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge_export.h\n'}
+[10.825207] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so\n'}
+[10.825424] (cv_bridge) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so" to ""\n'}
+[10.825641] (cv_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cv_bridge/include/cv_bridge\n'}
+[10.825745] (cv_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cv_bridge/include/cv_bridge/cv_bridge\n'}
+[10.825903] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h\n'}
+[10.826014] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/include/cv_bridge/cv_bridge/rgb_colors.h\n'}
+[10.826061] (cv_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/cv_bridge/lib/libcv_bridge.so\n'}
+[10.826113] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/ament_index/resource_index/package_run_dependencies/cv_bridge\n'}
+[10.826154] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/ament_index/resource_index/parent_prefix_path/cv_bridge\n'}
+[10.826204] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.sh\n'}
+[10.826249] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.dsv\n'}
+[10.826336] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/environment/path.sh\n'}
+[10.826378] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/environment/path.dsv\n'}
+[10.826429] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/local_setup.bash\n'}
+[10.826502] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/local_setup.sh\n'}
+[10.826613] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/local_setup.zsh\n'}
+[10.826674] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/local_setup.dsv\n'}
+[10.826723] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/package.dsv\n'}
+[10.826776] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/ament_index/resource_index/packages/cv_bridge\n'}
+[10.826865] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport.cmake\n'}
+[10.826951] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport-release.cmake\n'}
+[10.827024] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/cmake/cv_bridge-extras.cmake\n'}
+[10.827094] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.827163] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[10.827238] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig.cmake\n'}
+[10.827297] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake\n'}
+[10.827369] (cv_bridge) StdoutLine: {'line': b'-- Installing: /workspace/install/cv_bridge/share/cv_bridge/package.xml\n'}
+[10.829138] (cv_bridge) CommandEnded: {'returncode': 0}
+[10.831978] (-) TimerEvent: {}
+[10.857703] (cv_bridge) JobEnded: {'identifier': 'cv_bridge', 'rc': 0}
+[10.858283] (-) EventReactorShutdown: {}

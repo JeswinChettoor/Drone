@@ -1,0 +1,39 @@
+[0.657s] Invoking command in '/workspace/src/nidar_explorer': PYTHONPATH=/workspace/build/nidar_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/nidar_explorer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nidar_explorer build --build-base /workspace/build/nidar_explorer/build install --record /workspace/build/nidar_explorer/install.log --install-scripts $base/lib/nidar_explorer --single-version-externally-managed install_data
+[0.868s] running egg_info
+[0.878s] creating ../../build/nidar_explorer/nidar_explorer.egg-info
+[0.878s] writing ../../build/nidar_explorer/nidar_explorer.egg-info/PKG-INFO
+[0.879s] writing dependency_links to ../../build/nidar_explorer/nidar_explorer.egg-info/dependency_links.txt
+[0.879s] writing entry points to ../../build/nidar_explorer/nidar_explorer.egg-info/entry_points.txt
+[0.879s] writing requirements to ../../build/nidar_explorer/nidar_explorer.egg-info/requires.txt
+[0.879s] writing top-level names to ../../build/nidar_explorer/nidar_explorer.egg-info/top_level.txt
+[0.879s] writing manifest file '../../build/nidar_explorer/nidar_explorer.egg-info/SOURCES.txt'
+[0.902s] reading manifest file '../../build/nidar_explorer/nidar_explorer.egg-info/SOURCES.txt'
+[0.903s] writing manifest file '../../build/nidar_explorer/nidar_explorer.egg-info/SOURCES.txt'
+[0.903s] running build
+[0.903s] running build_py
+[0.903s] creating /workspace/build/nidar_explorer/build/lib/nidar_explorer
+[0.903s] copying nidar_explorer/__init__.py -> /workspace/build/nidar_explorer/build/lib/nidar_explorer
+[0.903s] copying nidar_explorer/dfs_explorer.py -> /workspace/build/nidar_explorer/build/lib/nidar_explorer
+[0.904s] running install
+[0.907s] running install_lib
+[0.917s] creating /workspace/install/nidar_explorer/lib/python3.10/site-packages/nidar_explorer
+[0.917s] copying /workspace/build/nidar_explorer/build/lib/nidar_explorer/__init__.py -> /workspace/install/nidar_explorer/lib/python3.10/site-packages/nidar_explorer
+[0.917s] copying /workspace/build/nidar_explorer/build/lib/nidar_explorer/dfs_explorer.py -> /workspace/install/nidar_explorer/lib/python3.10/site-packages/nidar_explorer
+[0.918s] byte-compiling /workspace/install/nidar_explorer/lib/python3.10/site-packages/nidar_explorer/__init__.py to __init__.cpython-310.pyc
+[0.918s] byte-compiling /workspace/install/nidar_explorer/lib/python3.10/site-packages/nidar_explorer/dfs_explorer.py to dfs_explorer.cpython-310.pyc
+[0.920s] running install_data
+[0.920s] creating /workspace/install/nidar_explorer/share/ament_index/resource_index/packages
+[0.920s] copying resource/nidar_explorer -> /workspace/install/nidar_explorer/share/ament_index/resource_index/packages
+[0.920s] copying package.xml -> /workspace/install/nidar_explorer/share/nidar_explorer
+[0.920s] creating /workspace/install/nidar_explorer/share/nidar_explorer/launch
+[0.920s] copying launch/explore.launch.py -> /workspace/install/nidar_explorer/share/nidar_explorer/launch
+[0.920s] creating /workspace/install/nidar_explorer/share/nidar_explorer/config
+[0.920s] copying config/nav2_params.yaml -> /workspace/install/nidar_explorer/share/nidar_explorer/config
+[0.920s] creating /workspace/install/nidar_explorer/share/nidar_explorer/behavior_trees
+[0.921s] copying behavior_trees/nav_bt.xml -> /workspace/install/nidar_explorer/share/nidar_explorer/behavior_trees
+[0.921s] running install_egg_info
+[0.932s] Copying ../../build/nidar_explorer/nidar_explorer.egg-info to /workspace/install/nidar_explorer/lib/python3.10/site-packages/nidar_explorer-0.1.0-py3.10.egg-info
+[0.933s] running install_scripts
+[0.957s] Installing dfs_explorer script to /workspace/install/nidar_explorer/lib/nidar_explorer
+[0.957s] writing list of installed files to '/workspace/build/nidar_explorer/install.log'
+[0.985s] Invoked command in '/workspace/src/nidar_explorer' returned '0': PYTHONPATH=/workspace/build/nidar_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/nidar_explorer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nidar_explorer build --build-base /workspace/build/nidar_explorer/build install --record /workspace/build/nidar_explorer/install.log --install-scripts $base/lib/nidar_explorer --single-version-externally-managed install_data

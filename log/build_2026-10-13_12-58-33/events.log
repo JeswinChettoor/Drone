@@ -1,0 +1,41 @@
+[0.000000] (-) TimerEvent: {}
+[0.000215] (-) JobUnselected: {'identifier': 'ardupilot_dds_tests'}
+[0.000465] (-) JobUnselected: {'identifier': 'ardupilot_gazebo'}
+[0.000683] (-) JobUnselected: {'identifier': 'ardupilot_msgs'}
+[0.000783] (-) JobUnselected: {'identifier': 'ardupilot_sitl'}
+[0.001083] (-) JobUnselected: {'identifier': 'gz_ros_bridge'}
+[0.001122] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.001138] (-) JobUnselected: {'identifier': 'mapping'}
+[0.001247] (-) JobUnselected: {'identifier': 'maze_explorer'}
+[0.001342] (-) JobUnselected: {'identifier': 'nidar_msgs'}
+[0.001358] (-) JobUnselected: {'identifier': 'perception'}
+[0.001367] (-) JobUnselected: {'identifier': 'rf2o_laser_odometry'}
+[0.001390] (drone_control) JobQueued: {'identifier': 'drone_control', 'dependencies': OrderedDict()}
+[0.001406] (drone_control) JobStarted: {'identifier': 'drone_control'}
+[0.099603] (-) TimerEvent: {}
+[0.199839] (-) TimerEvent: {}
+[0.300005] (-) TimerEvent: {}
+[0.378481] (drone_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/drone_control', 'build', '--build-base', '/workspace/build/drone_control/build', 'install', '--record', '/workspace/build/drone_control/install.log', '--install-scripts', '$base/lib/drone_control', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspace/src/drone_control', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '0'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/drone_control'), ('LC_ALL', 'en_US.UTF-8'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('PYTHONPATH', '/workspace/build/drone_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/drone_control/lib/python3.10/site-packages:')]), 'shell': False}
+[0.400081] (-) TimerEvent: {}
+[0.500282] (-) TimerEvent: {}
+[0.511736] (drone_control) StdoutLine: {'line': b'running egg_info\n'}
+[0.516184] (drone_control) StdoutLine: {'line': b'writing ../../build/drone_control/drone_control.egg-info/PKG-INFO\n'}
+[0.516658] (drone_control) StdoutLine: {'line': b'writing dependency_links to ../../build/drone_control/drone_control.egg-info/dependency_links.txt\n'}
+[0.516822] (drone_control) StdoutLine: {'line': b'writing requirements to ../../build/drone_control/drone_control.egg-info/requires.txt\n'}
+[0.516925] (drone_control) StdoutLine: {'line': b'writing top-level names to ../../build/drone_control/drone_control.egg-info/top_level.txt\n'}
+[0.528873] (drone_control) StdoutLine: {'line': b"reading manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'\n"}
+[0.529611] (drone_control) StdoutLine: {'line': b"writing manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'\n"}
+[0.529809] (drone_control) StdoutLine: {'line': b'running build\n'}
+[0.529845] (drone_control) StdoutLine: {'line': b'running build_py\n'}
+[0.530035] (drone_control) StdoutLine: {'line': b'running install\n'}
+[0.532307] (drone_control) StdoutLine: {'line': b'running install_lib\n'}
+[0.537982] (drone_control) StdoutLine: {'line': b'running install_data\n'}
+[0.538201] (drone_control) StdoutLine: {'line': b'copying launch/explorer.launch.py -> /workspace/install/drone_control/share/drone_control/launch\n'}
+[0.538334] (drone_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.543866] (drone_control) StdoutLine: {'line': b"removing '/workspace/install/drone_control/lib/python3.10/site-packages/drone_control-0.1.0-py3.10.egg-info' (and everything under it)\n"}
+[0.544094] (drone_control) StdoutLine: {'line': b'Copying ../../build/drone_control/drone_control.egg-info to /workspace/install/drone_control/lib/python3.10/site-packages/drone_control-0.1.0-py3.10.egg-info\n'}
+[0.544429] (drone_control) StdoutLine: {'line': b'running install_scripts\n'}
+[0.554200] (drone_control) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/drone_control/install.log'\n"}
+[0.577470] (drone_control) CommandEnded: {'returncode': 0}
+[0.584713] (drone_control) JobEnded: {'identifier': 'drone_control', 'rc': 0}
+[0.585325] (-) EventReactorShutdown: {}

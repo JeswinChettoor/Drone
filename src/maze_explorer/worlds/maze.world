@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="nidar_maze_world">
+    
+    <!-- A global light source so everything is visible -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- A flat ground plane for the robot to drive on -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Your custom STL map -->
+    <model name="nidar_maze">
+      <!-- CRITICAL: Prevents the maze from falling due to gravity or moving when bumped -->
+      <static>true</static>
+      
+      <link name="maze_link">
+        
+        <!-- Collision: The physical boundaries your rover will crash into or detect with LiDAR -->
+        <collision name="maze_collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/yash/noss_ws/src/maze_explorer/meshes/nidar_maze1.stl</uri>
+              <!-- Assumes CAD was in mm. Change to 1 1 1 if the maze looks tiny (exported in meters) -->
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        
+        <!-- Visual: What you actually see on the screen -->
+        <visual name="maze_visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/yash/noss_ws/src/maze_explorer/meshes/nidar_maze1.stl</uri>
+              <!-- Must match the collision scale -->
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <!-- Gives the mesh a clean, visible gray color instead of blinding white -->
+          <material>
+            <ambient>0.6 0.6 0.6 1</ambient>
+            <diffuse>0.6 0.6 0.6 1</diffuse>
+          </material>
+        </visual>
+
+      </link>
+    </model>
+
+  </world>
+</sdf>

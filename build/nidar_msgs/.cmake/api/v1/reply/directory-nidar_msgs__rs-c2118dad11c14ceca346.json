@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "nidar_msgs__rs",
+		"source" : "/workspace/build/nidar_msgs/nidar_msgs__rs"
+	}
+}

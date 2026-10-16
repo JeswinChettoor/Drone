@@ -1,0 +1,24 @@
+[0.584s] Invoking command in '/workspace/src/maze_explorer': PYTHONPATH=/workspace/build/maze_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/maze_explorer/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/maze_explorer build --build-base /workspace/build/maze_explorer/build install --record /workspace/build/maze_explorer/install.log --install-scripts $base/lib/maze_explorer --single-version-externally-managed install_data
+[0.708s] /home/developer/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'
+[0.708s]   warnings.warn(msg)
+[0.753s] running egg_info
+[0.760s] writing ../../build/maze_explorer/maze_explorer.egg-info/PKG-INFO
+[0.760s] writing dependency_links to ../../build/maze_explorer/maze_explorer.egg-info/dependency_links.txt
+[0.760s] writing entry points to ../../build/maze_explorer/maze_explorer.egg-info/entry_points.txt
+[0.760s] writing requirements to ../../build/maze_explorer/maze_explorer.egg-info/requires.txt
+[0.760s] writing top-level names to ../../build/maze_explorer/maze_explorer.egg-info/top_level.txt
+[0.774s] reading manifest file '../../build/maze_explorer/maze_explorer.egg-info/SOURCES.txt'
+[0.775s] writing manifest file '../../build/maze_explorer/maze_explorer.egg-info/SOURCES.txt'
+[0.775s] running build
+[0.775s] running build_py
+[0.775s] running install
+[0.779s] running install_lib
+[0.786s] running install_data
+[0.786s] copying launch/maze_sim.launch.py -> /workspace/install/maze_explorer/share/maze_explorer/launch
+[0.787s] running install_egg_info
+[0.794s] removing '/workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer-0.0.0-py3.10.egg-info' (and everything under it)
+[0.794s] Copying ../../build/maze_explorer/maze_explorer.egg-info to /workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer-0.0.0-py3.10.egg-info
+[0.795s] running install_scripts
+[0.808s] Installing explorer_node script to /workspace/install/maze_explorer/lib/maze_explorer
+[0.808s] writing list of installed files to '/workspace/build/maze_explorer/install.log'
+[0.837s] Invoked command in '/workspace/src/maze_explorer' returned '0': PYTHONPATH=/workspace/build/maze_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/maze_explorer/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/maze_explorer build --build-base /workspace/build/maze_explorer/build install --record /workspace/build/maze_explorer/install.log --install-scripts $base/lib/maze_explorer --single-version-externally-managed install_data

@@ -1,0 +1,2678 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="arena_world">
+
+    <gravity>0 0 -9.8</gravity>
+
+    <physics name="default_physics" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>150</iters>
+          <sor>1.3</sor>
+        </solver>
+        <constraints>
+          <cfm>0.0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100</contact_max_correcting_vel>
+          <contact_surface_layer>0.001</contact_surface_layer>
+        </constraints>
+      </ode>
+    </physics>
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"></plugin>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"></plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"></plugin>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact"></plugin>
+
+    <scene>
+      <ambient>0.5 0.5 0.5 1</ambient>
+      <background>0.25 0.25 0.28 1</background>
+      <shadows>true</shadows>
+      <grid>false</grid>
+      <origin_visual>false</origin_visual>
+    </scene>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 15 0 0 0</pose>
+      <diffuse>0.85 0.85 0.82 1</diffuse>
+      <specular>0.25 0.25 0.25 1</specular>
+      <direction>-0.4 0.2 -0.9</direction>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+    </light>
+
+    <light type="point" name="ceiling_lamp_00">
+      <pose>-2.50 2.50 2.34 0 0 0</pose>
+      <diffuse>0.9 0.85 0.7 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>6</range>
+        <constant>0.6</constant>
+        <linear>0.2</linear>
+        <quadratic>0.05</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+    <light type="point" name="ceiling_lamp_01">
+      <pose>-2.50 -2.50 2.34 0 0 0</pose>
+      <diffuse>0.9 0.85 0.7 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>6</range>
+        <constant>0.6</constant>
+        <linear>0.2</linear>
+        <quadratic>0.05</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+    <light type="point" name="ceiling_lamp_02">
+      <pose>-2.50 -7.50 2.34 0 0 0</pose>
+      <diffuse>0.9 0.85 0.7 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>6</range>
+        <constant>0.6</constant>
+        <linear>0.2</linear>
+        <quadratic>0.05</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+    <light type="point" name="ceiling_lamp_03">
+      <pose>2.50 2.50 2.34 0 0 0</pose>
+      <diffuse>0.9 0.85 0.7 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>6</range>
+        <constant>0.6</constant>
+        <linear>0.2</linear>
+        <quadratic>0.05</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+    <light type="point" name="ceiling_lamp_04">
+      <pose>2.50 -2.50 2.34 0 0 0</pose>
+      <diffuse>0.9 0.85 0.7 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>6</range>
+        <constant>0.6</constant>
+        <linear>0.2</linear>
+        <quadratic>0.05</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+    <light type="point" name="ceiling_lamp_05">
+      <pose>2.50 -7.50 2.34 0 0 0</pose>
+      <diffuse>0.9 0.85 0.7 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>6</range>
+        <constant>0.6</constant>
+        <linear>0.2</linear>
+        <quadratic>0.05</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+    <light type="point" name="ceiling_lamp_06">
+      <pose>7.50 2.50 2.34 0 0 0</pose>
+      <diffuse>0.9 0.85 0.7 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>6</range>
+        <constant>0.6</constant>
+        <linear>0.2</linear>
+        <quadratic>0.05</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+    <light type="point" name="ceiling_lamp_07">
+      <pose>7.50 -2.50 2.34 0 0 0</pose>
+      <diffuse>0.9 0.85 0.7 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>6</range>
+        <constant>0.6</constant>
+        <linear>0.2</linear>
+        <quadratic>0.05</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+    <light type="point" name="ceiling_lamp_08">
+      <pose>7.50 -7.50 2.34 0 0 0</pose>
+      <diffuse>0.9 0.85 0.7 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>6</range>
+        <constant>0.6</constant>
+        <linear>0.2</linear>
+        <quadratic>0.05</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>15.00 15.00</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.8</mu>
+                <mu2>0.8</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>15.00 15.00</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.45 0.45 0.44 1</ambient>
+            <diffuse>0.5 0.5 0.48 1</diffuse>
+            <specular>0.15 0.15 0.15 1</specular>
+            <pbr>
+              <metal>
+                <roughness>0.95</roughness>
+                <metalness>0.0</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_000">
+      <static>true</static>
+      <pose>0.0000 7.4500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>15.0000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>15.0000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_001">
+      <static>true</static>
+      <pose>-7.4500 -0.0500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 14.9000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 14.9000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_002">
+      <static>true</static>
+      <pose>7.4500 -0.0500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 14.9000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 14.9000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_003">
+      <static>true</static>
+      <pose>-2.6500 6.2500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>5.9000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>5.9000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_004">
+      <static>true</static>
+      <pose>3.5500 6.2500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>4.1000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>4.1000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.55 0.53 1</ambient>
+          <diffuse>0.58 0.58 0.56 1</diffuse>
+          <specular>0.08 0.08 0.08 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.9</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_005">
+      <static>true</static>
+      <pose>-5.5500 3.8500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 4.7000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 4.7000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_006">
+      <static>true</static>
+      <pose>0.2500 2.3000 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 7.8000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 7.8000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_007">
+      <static>true</static>
+      <pose>1.5500 3.9000 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 4.6000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 4.6000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_008">
+      <static>true</static>
+      <pose>3.5500 4.4000 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 3.6000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 3.6000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_009">
+      <static>true</static>
+      <pose>-2.9500 5.1500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>3.1000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>3.1000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_010">
+      <static>true</static>
+      <pose>-4.4500 3.9500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 2.3000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 2.3000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_011">
+      <static>true</static>
+      <pose>-1.4500 3.3000 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 3.6000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 3.6000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_012">
+      <static>true</static>
+      <pose>6.4500 4.5500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1.9000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.9000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_013">
+      <static>true</static>
+      <pose>5.5500 3.5000 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 2.0000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 2.0000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_014">
+      <static>true</static>
+      <pose>7.2500 4.4500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.3000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.3000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_015">
+      <static>true</static>
+      <pose>-2.9000 4.3500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1.2000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.2000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.55 0.53 1</ambient>
+          <diffuse>0.58 0.58 0.56 1</diffuse>
+          <specular>0.08 0.08 0.08 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.9</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_016">
+      <static>true</static>
+      <pose>-2.3500 3.5500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 1.5000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 1.5000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_017">
+      <static>true</static>
+      <pose>-3.4000 2.8500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>2.0000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2.0000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_018">
+      <static>true</static>
+      <pose>4.5000 1.6500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>5.8000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>5.8000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_019">
+      <static>true</static>
+      <pose>-5.6500 1.5500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_020">
+      <static>true</static>
+      <pose>-3.5000 1.5500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>4.0000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>4.0000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_021">
+      <static>true</static>
+      <pose>6.2000 0.5500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>2.4000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2.4000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_022">
+      <static>true</static>
+      <pose>2.6500 0.4500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>2.3000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2.3000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_023">
+      <static>true</static>
+      <pose>1.5500 -0.6000 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 2.0000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 2.0000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_024">
+      <static>true</static>
+      <pose>3.7500 -0.1000 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 1.0000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 1.0000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_025">
+      <static>true</static>
+      <pose>-5.2000 -0.4500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.8000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.8000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_026">
+      <static>true</static>
+      <pose>-5.5500 -1.0500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 1.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 1.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_027">
+      <static>true</static>
+      <pose>-3.2000 -0.5500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>3.4000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>3.4000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_028">
+      <static>true</static>
+      <pose>-6.5000 -1.5500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1.8000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.8000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_029">
+      <static>true</static>
+      <pose>-2.6500 -1.5500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>5.7000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>5.7000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_030">
+      <static>true</static>
+      <pose>4.5000 -1.5500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>5.8000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>5.8000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.55 0.53 1</ambient>
+          <diffuse>0.58 0.58 0.56 1</diffuse>
+          <specular>0.08 0.08 0.08 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.9</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_031">
+      <static>true</static>
+      <pose>3.2500 -3.4500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>2.7000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2.7000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_032">
+      <static>true</static>
+      <pose>-6.7000 -3.5500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1.4000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.4000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.55 0.53 1</ambient>
+          <diffuse>0.58 0.58 0.56 1</diffuse>
+          <specular>0.08 0.08 0.08 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.9</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_033">
+      <static>true</static>
+      <pose>-4.2000 -3.5500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1.0000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.0000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_034">
+      <static>true</static>
+      <pose>-1.0000 -3.5500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>3.0000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>3.0000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.55 0.53 1</ambient>
+          <diffuse>0.58 0.58 0.56 1</diffuse>
+          <specular>0.08 0.08 0.08 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.9</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_035">
+      <static>true</static>
+      <pose>1.9500 -4.7500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 2.5000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 2.5000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_036">
+      <static>true</static>
+      <pose>4.5500 -5.5000 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 4.0000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 4.0000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_037">
+      <static>true</static>
+      <pose>6.6000 -4.5500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1.6000 2.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.6000 2.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.42 0.28 1</ambient>
+          <diffuse>0.62 0.47 0.32 1</diffuse>
+          <specular>0.06 0.06 0.06 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.7</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_038">
+      <static>true</static>
+      <pose>-3.7500 -5.5500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 3.9000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 3.9000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.55 0.53 1</ambient>
+          <diffuse>0.58 0.58 0.56 1</diffuse>
+          <specular>0.08 0.08 0.08 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.9</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_039">
+      <static>true</static>
+      <pose>0.4500 -5.5500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 3.9000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 3.9000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.55 0.53 1</ambient>
+          <diffuse>0.58 0.58 0.56 1</diffuse>
+          <specular>0.08 0.08 0.08 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.9</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_040">
+      <static>true</static>
+      <pose>-2.4500 -6.0500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1000 2.9000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1000 2.9000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.55 0.53 1</ambient>
+          <diffuse>0.58 0.58 0.56 1</diffuse>
+          <specular>0.08 0.08 0.08 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.9</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_041">
+      <static>true</static>
+      <pose>2.7000 -5.9500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1.4000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.4000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_042">
+      <static>true</static>
+      <pose>-5.6000 -7.4500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>3.6000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>3.6000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_043">
+      <static>true</static>
+      <pose>-3.1000 -7.4500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1.2000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.2000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.55 0.55 0.53 1</ambient>
+          <diffuse>0.58 0.58 0.56 1</diffuse>
+          <specular>0.08 0.08 0.08 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.9</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_044">
+      <static>true</static>
+      <pose>-1.0000 -7.4500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>2.8000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2.8000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+    <model name="wall_045">
+      <static>true</static>
+      <pose>2.5000 -7.4500 1.2200 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>4.0000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.7</mu>
+                <mu2>0.7</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e9</kp>
+                <kd>1.0</kd>
+                <max_vel>0.1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>4.0000 0.1000 2.4400</size>
+            </box>
+          </geometry>
+        <material>
+          <ambient>0.82 0.80 0.75 1</ambient>
+          <diffuse>0.85 0.83 0.78 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map></albedo_map>
+              <roughness>0.85</roughness>
+              <metalness>0.0</metalness>
+            </metal>
+          </pbr>
+        </material>
+        </visual>
+      </link>
+    </model>
+
+    <gui fullscreen="0">
+      <plugin filename="MinimalScene" name="3D View">
+        <gz-gui>
+          <title>3D View</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">docked</property>
+        </gz-gui>
+        <engine>ogre2</engine>
+        <scene>scene</scene>
+        <ambient_light>0.5 0.5 0.5</ambient_light>
+        <background_color>0.25 0.25 0.28</background_color>
+        <camera_pose>0 -10 8 0 0.5 1.57</camera_pose>
+      </plugin>
+      <plugin filename="GzSceneManager" name="Scene Manager">
+        <gz-gui>
+          <property key="resizable" type="bool">false</property>
+          <property key="width" type="double">5</property>
+          <property key="height" type="double">5</property>
+          <property key="state" type="string">floating</property>
+          <property key="showTitleBar" type="bool">false</property>
+        </gz-gui>
+      </plugin>
+      <plugin filename="InteractiveViewControl" name="Interactive view control">
+        <gz-gui>
+          <property key="resizable" type="bool">false</property>
+          <property key="width" type="double">5</property>
+          <property key="height" type="double">5</property>
+          <property key="state" type="string">floating</property>
+          <property key="showTitleBar" type="bool">false</property>
+        </gz-gui>
+      </plugin>
+      <plugin filename="WorldControl" name="World control">
+        <gz-gui>
+          <title>World control</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="height">72</property>
+          <property type="double" key="width">121</property>
+          <property type="string" key="state">floating</property>
+          <anchors target="3D View">
+            <line own="left" target="left"/>
+            <line own="bottom" target="bottom"/>
+          </anchors>
+        </gz-gui>
+        <play_pause>true</play_pause>
+        <step>true</step>
+        <start_paused>true</start_paused>
+      </plugin>
+      <plugin filename="WorldStats" name="World stats">
+        <gz-gui>
+          <title>World stats</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="height">110</property>
+          <property type="double" key="width">290</property>
+          <property type="string" key="state">floating</property>
+          <anchors target="3D View">
+            <line own="right" target="right"/>
+            <line own="bottom" target="bottom"/>
+          </anchors>
+        </gz-gui>
+        <sim_time>true</sim_time>
+        <real_time>true</real_time>
+        <real_time_factor>true</real_time_factor>
+        <iterations>true</iterations>
+      </plugin>
+    </gui>
+    <include>
+      <uri>model://X3</uri>
+      <name>X3</name>
+      <pose>6.0 -6.5 50 0 0 -1.5708</pose>
+    </include>
+  </world>
+</sdf>

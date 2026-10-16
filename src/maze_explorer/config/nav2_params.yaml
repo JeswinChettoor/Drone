@@ -1,0 +1,207 @@
+# ---------------------------------------------------------------------------
+# nav2_params.yaml  (ROS 2 Humble, slam_toolbox provides /map and map->odom)
+# Every section appears ONCE. A repeated top-level key (e.g. a second
+# "controller_server:") silently replaces the first one in YAML.
+# ---------------------------------------------------------------------------
+
+amcl:
+  ros__parameters:
+    enabled: False                # slam_toolbox does the localization
+    use_sim_time: True
+
+bt_navigator:
+  ros__parameters:
+    use_sim_time: True
+    global_frame: map
+    robot_base_frame: base_footprint
+    odom_topic: /odom
+    default_bt_xml_filename: "navigate_w_replanning_and_recovery.xml"
+
+# ---------------------------------------------------------------------------
+# Controller: how the robot actually drives along the path
+# ---------------------------------------------------------------------------
+controller_server:
+  ros__parameters:
+    use_sim_time: True
+    controller_frequency: 20.0
+
+    progress_checker_plugin: "progress_checker"
+    goal_checker_plugins: ["general_goal_checker"]
+    controller_plugins: ["FollowPath"]
+
+    progress_checker:
+      plugin: "nav2_controller::SimpleProgressChecker"
+      required_movement_radius: 0.2
+      movement_time_allowance: 50.0
+
+    # stateful True = once the robot is inside the xy tolerance it only has to finish
+    # turning, so it can't flip between "reached" and "not reached" (the to-and-fro)
+    general_goal_checker:
+      stateful: True
+      plugin: "nav2_controller::SimpleGoalChecker"
+      xy_goal_tolerance: 0.10
+      yaw_goal_tolerance: 0.3       # ~17 deg: enough for the camera to face a room, no fussy re-turning
+
+    # Rotation Shim wraps Regulated Pure Pursuit:
+    #   heading within ~20 deg of the path -> just drive and steer smoothly
+    #   heading more than 20 deg off       -> stop and tank-turn in place first
+    # (checked every time a new path arrives, so it also applies to sharp bends)
+    FollowPath:
+      plugin: "nav2_rotation_shim_controller::RotationShimController"
+      primary_controller: "nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController"
+
+      # --- rotation shim ---
+      angular_dist_threshold: 0.349     # 20 degrees (radians)
+      forward_sampling_distance: 0.5    # how far ahead on the path it looks to judge the heading
+      rotate_to_heading_angular_vel: 3.0   # slower turns keep slam_toolbox's scan matching happy
+      max_angular_accel: 5.0
+      simulate_ahead_time: 1.0
+
+      # --- regulated pure pursuit (the primary controller) ---
+      desired_linear_vel: 0.5
+
+      lookahead_dist: 0.45              # shorter = tracks the path tightly (needed for a 0.5 m door)
+      min_lookahead_dist: 0.25
+      max_lookahead_dist: 0.7
+      lookahead_time: 1.5
+      use_velocity_scaled_lookahead_dist: false
+      transform_tolerance: 0.3
+
+      approach_velocity_scaling_dist: 0.4
+      min_approach_linear_velocity: 0.15
+
+      use_regulated_linear_velocity_scaling: true
+      regulated_linear_scaling_min_radius: 0.4
+      regulated_linear_scaling_min_speed: 0.2
+      use_cost_regulated_linear_velocity_scaling: false
+
+      # at the very end of the path: turn in place to the goal heading (camera faces the room)
+      use_rotate_to_heading: true
+      rotate_to_heading_min_angle: 0.349
+      allow_reversing: false
+
+      use_collision_detection: true
+      max_allowed_time_to_collision_up_to_carrot: 1.0
+
+# ---------------------------------------------------------------------------
+# Costmaps
+# ---------------------------------------------------------------------------
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      update_frequency: 10.0
+      publish_frequency: 5.0
+      global_frame: odom
+      robot_base_frame: base_footprint
+      use_sim_time: True
+      rolling_window: true
+      width: 4
+      height: 4
+      resolution: 0.05
+      # exact 0.4 x 0.4 m body instead of a 0.6 m circle (robot_radius 0.3): a 0.5 m doorway now
+      # leaves the planner a path. Inscribed radius 0.2, corner radius 0.28.
+      footprint: "[[0.2, 0.2], [0.2, -0.2], [-0.2, -0.2], [-0.2, 0.2]]"
+
+      plugins: ["obstacle_layer", "inflation_layer"]
+
+      # inflation_radius must be at least the robot's inscribed radius (0.304),
+      # but under ~0.40 or the 0.8 m doorways stop being plannable
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        inflation_radius: 0.35            # just past the 0.2 m inscribed radius
+        cost_scaling_factor: 10.0         # steep: cost drops off fast so doorways stay usable
+
+      obstacle_layer:
+        plugin: "nav2_costmap_2d::ObstacleLayer"
+        observation_sources: scan
+        scan:
+          topic: /scan
+          clearing: True
+          marking: True
+          data_type: "LaserScan"
+          raytrace_min_range: 0.2
+          raytrace_max_range: 12.0
+          obstacle_min_range: 0.15
+          obstacle_max_range: 11.5
+
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      update_frequency: 2.0
+      publish_frequency: 1.0
+      global_frame: map
+      robot_base_frame: base_footprint
+      use_sim_time: True
+      footprint: "[[0.2, 0.2], [0.2, -0.2], [-0.2, -0.2], [-0.2, 0.2]]"
+      resolution: 0.05
+      track_unknown_space: true
+
+      width: 20
+      height: 20
+      origin_x: -10.0
+      origin_y: -10.0
+
+      plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
+
+      static_layer:
+        plugin: "nav2_costmap_2d::StaticLayer"
+        map_subscribe_transient_local: True
+
+      obstacle_layer:
+        plugin: "nav2_costmap_2d::ObstacleLayer"
+        observation_sources: scan
+        scan:
+          topic: /scan
+          clearing: True
+          marking: True
+          data_type: "LaserScan"
+          raytrace_min_range: 0.2
+          raytrace_max_range: 12.0
+          obstacle_min_range: 0.15
+          obstacle_max_range: 11.5
+
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        inflation_radius: 0.35            # just past the 0.2 m inscribed radius
+        cost_scaling_factor: 10.0         # steep: cost drops off fast so doorways stay usable
+
+# ---------------------------------------------------------------------------
+# Planner
+# ---------------------------------------------------------------------------
+planner_server:
+  ros__parameters:
+    use_sim_time: True
+    planner_plugins: ["GridBased"]
+
+    GridBased:
+      plugin: "nav2_navfn_planner/NavfnPlanner"
+      use_astar: true
+      # every goal the explorer sends is on a cell that /map already shows as free,
+      # so the planner never needs to route through unknown space
+      allow_unknown: false
+      tolerance: 0.2                # was 0.5: the plan could stop half a metre short of a doorway goal
+
+# ---------------------------------------------------------------------------
+# Behaviors (the explorer uses "spin" to sweep the camera inside rooms)
+# ---------------------------------------------------------------------------
+behavior_server:
+  ros__parameters:
+    use_sim_time: True
+    behavior_plugins: ["spin", "backup", "wait"]
+
+    spin:
+      plugin: "nav2_behaviors/Spin"
+    backup:
+      plugin: "nav2_behaviors/BackUp"
+    wait:
+      plugin: "nav2_behaviors/Wait"
+
+    global_frame: odom
+    robot_base_frame: base_footprint
+    transform_tolerance: 0.2
+    cycle_frequency: 10.0
+    simulate_ahead_time: 2.0
+
+    max_rotational_vel: 1.0
+    min_rotational_vel: 0.4
+    rotational_acc_lim: 2.0

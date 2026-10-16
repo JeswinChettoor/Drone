@@ -1,0 +1,15 @@
+<!-- Replan at 1 Hz, follow the path; on failure clear the local costmap and retry twice, then give up
+     (the explorer then moves to the next frontier). No spin/backup/wait chain. -->
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <PipelineSequence name="NavigateWithReplanning">
+      <RateController hz="1.0">
+        <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"/>
+      </RateController>
+      <RecoveryNode number_of_retries="2" name="FollowPathRecovery">
+        <FollowPath path="{path}" controller_id="FollowPath"/>
+        <ClearEntireCostmap name="ClearLocalCostmap" service_name="local_costmap/clear_entirely_local_costmap"/>
+      </RecoveryNode>
+    </PipelineSequence>
+  </BehaviorTree>
+</root>

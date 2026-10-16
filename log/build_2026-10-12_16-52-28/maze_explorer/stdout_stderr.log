@@ -1,0 +1,52 @@
+/home/developer/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+creating ../../build/maze_explorer/maze_explorer.egg-info
+writing ../../build/maze_explorer/maze_explorer.egg-info/PKG-INFO
+writing dependency_links to ../../build/maze_explorer/maze_explorer.egg-info/dependency_links.txt
+writing entry points to ../../build/maze_explorer/maze_explorer.egg-info/entry_points.txt
+writing requirements to ../../build/maze_explorer/maze_explorer.egg-info/requires.txt
+writing top-level names to ../../build/maze_explorer/maze_explorer.egg-info/top_level.txt
+writing manifest file '../../build/maze_explorer/maze_explorer.egg-info/SOURCES.txt'
+reading manifest file '../../build/maze_explorer/maze_explorer.egg-info/SOURCES.txt'
+writing manifest file '../../build/maze_explorer/maze_explorer.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /workspace/build/maze_explorer/build/lib/maze_explorer
+copying maze_explorer/__init__.py -> /workspace/build/maze_explorer/build/lib/maze_explorer
+copying maze_explorer/explorer_node.py -> /workspace/build/maze_explorer/build/lib/maze_explorer
+running install
+running install_lib
+creating /workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer
+copying /workspace/build/maze_explorer/build/lib/maze_explorer/__init__.py -> /workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer
+copying /workspace/build/maze_explorer/build/lib/maze_explorer/explorer_node.py -> /workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer
+byte-compiling /workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer/__init__.py to __init__.cpython-310.pyc
+byte-compiling /workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer/explorer_node.py to explorer_node.cpython-310.pyc
+running install_data
+creating /workspace/install/maze_explorer/share/ament_index/resource_index/packages
+copying resource/maze_explorer -> /workspace/install/maze_explorer/share/ament_index/resource_index/packages
+copying package.xml -> /workspace/install/maze_explorer/share/maze_explorer
+creating /workspace/install/maze_explorer/share/maze_explorer/launch
+copying launch/maze_sim.launch.py -> /workspace/install/maze_explorer/share/maze_explorer/launch
+creating /workspace/install/maze_explorer/share/maze_explorer/urdf
+copying urdf/robot.urdf -> /workspace/install/maze_explorer/share/maze_explorer/urdf
+creating /workspace/install/maze_explorer/share/maze_explorer/worlds
+copying worlds/maze1.world -> /workspace/install/maze_explorer/share/maze_explorer/worlds
+copying worlds/maze.world -> /workspace/install/maze_explorer/share/maze_explorer/worlds
+creating /workspace/install/maze_explorer/share/maze_explorer/meshes
+copying meshes/wheel.stl -> /workspace/install/maze_explorer/share/maze_explorer/meshes
+copying meshes/caster_part.stl -> /workspace/install/maze_explorer/share/maze_explorer/meshes
+copying meshes/bot_body_ascii.stl -> /workspace/install/maze_explorer/share/maze_explorer/meshes
+copying meshes/nidar_maze2.stl -> /workspace/install/maze_explorer/share/maze_explorer/meshes
+copying meshes/caster_wheel.stl -> /workspace/install/maze_explorer/share/maze_explorer/meshes
+copying meshes/bot_body.stl -> /workspace/install/maze_explorer/share/maze_explorer/meshes
+copying meshes/nidar_maze1.stl -> /workspace/install/maze_explorer/share/maze_explorer/meshes
+creating /workspace/install/maze_explorer/share/maze_explorer/config
+copying config/nav2_params.yaml -> /workspace/install/maze_explorer/share/maze_explorer/config
+copying config/slam_params.yaml -> /workspace/install/maze_explorer/share/maze_explorer/config
+copying config/explorer_params.yaml -> /workspace/install/maze_explorer/share/maze_explorer/config
+running install_egg_info
+Copying ../../build/maze_explorer/maze_explorer.egg-info to /workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer-0.0.0-py3.10.egg-info
+running install_scripts
+Installing explorer_node script to /workspace/install/maze_explorer/lib/maze_explorer
+writing list of installed files to '/workspace/build/maze_explorer/install.log'

@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: perception
+Version: 0.0.0
+Summary: NIDAR Person Detection
+Maintainer: developer
+Maintainer-email: jeswin.j.chettoor@gmail.com
+License: Apache-2.0
+License-File: LICENSE
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: license-file
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

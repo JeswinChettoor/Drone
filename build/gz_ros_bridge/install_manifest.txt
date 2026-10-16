@@ -1,0 +1,17 @@
+/workspace/install/gz_ros_bridge/share/gz_ros_bridge/launch/bridge.launch.py
+/workspace/install/gz_ros_bridge/share/gz_ros_bridge/config/bridge.yaml
+/workspace/install/gz_ros_bridge/share/ament_index/resource_index/package_run_dependencies/gz_ros_bridge
+/workspace/install/gz_ros_bridge/share/ament_index/resource_index/parent_prefix_path/gz_ros_bridge
+/workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/ament_prefix_path.sh
+/workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/ament_prefix_path.dsv
+/workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/path.sh
+/workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/path.dsv
+/workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.bash
+/workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.sh
+/workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.zsh
+/workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.dsv
+/workspace/install/gz_ros_bridge/share/gz_ros_bridge/package.dsv
+/workspace/install/gz_ros_bridge/share/ament_index/resource_index/packages/gz_ros_bridge
+/workspace/install/gz_ros_bridge/share/gz_ros_bridge/cmake/gz_ros_bridgeConfig.cmake
+/workspace/install/gz_ros_bridge/share/gz_ros_bridge/cmake/gz_ros_bridgeConfig-version.cmake
+/workspace/install/gz_ros_bridge/share/gz_ros_bridge/package.xml

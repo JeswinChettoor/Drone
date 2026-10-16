@@ -1,0 +1,2 @@
+[console_scripts]
+explorer_node = maze_explorer.explorer_node:main

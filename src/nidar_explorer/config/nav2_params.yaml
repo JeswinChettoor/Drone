@@ -1,0 +1,194 @@
+# ---------------------------------------------------------------------------
+# nav2_params.yaml  (ROS 2 Humble; slam_toolbox provides /map and map->odom)
+# Every top-level section appears ONCE (a repeated key silently replaces the first).
+# The behaviour tree file is passed by explore.launch.py (default_nav_to_pose_bt_xml),
+# so it is not set here. AMCL / map_server are not used.
+# ---------------------------------------------------------------------------
+
+bt_navigator:
+  ros__parameters:
+    use_sim_time: True
+    global_frame: map
+    robot_base_frame: base_link
+    odom_topic: /odom
+
+# ---------------------------------------------------------------------------
+# Controller: Rotation Shim + Regulated Pure Pursuit
+# ---------------------------------------------------------------------------
+controller_server:
+  ros__parameters:
+    use_sim_time: True
+    controller_frequency: 20.0
+
+    progress_checker_plugin: "progress_checker"
+    goal_checker_plugins: ["general_goal_checker"]
+    controller_plugins: ["FollowPath"]
+
+    # fail a stuck goal after ~12 s (was 50 s) so the explorer moves on quickly
+    progress_checker:
+      plugin: "nav2_controller::SimpleProgressChecker"
+      required_movement_radius: 0.2
+      movement_time_allowance: 12.0
+
+    # Frontier goals don't need precision: a wide tolerance means the robot keeps rolling
+    # instead of creeping to a full stop on every goal. stateful = no reached/not-reached flicker.
+    general_goal_checker:
+      stateful: True
+      plugin: "nav2_controller::SimpleGoalChecker"
+      xy_goal_tolerance: 0.30
+      yaw_goal_tolerance: 0.5
+
+    FollowPath:
+      plugin: "nav2_rotation_shim_controller::RotationShimController"
+      primary_controller: "nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController"
+
+      # --- rotation shim: heading > 20 deg off the path -> tank-turn first, else just drive ---
+      angular_dist_threshold: 0.349
+      forward_sampling_distance: 0.5
+      rotate_to_heading_angular_vel: 1.0    # keep turns gentle for slam_toolbox scan matching
+      max_angular_accel: 2.0
+      simulate_ahead_time: 1.0
+
+      # --- regulated pure pursuit ---
+      desired_linear_vel: 0.5               # was 0.3; raise until the SLAM map starts to smear
+      lookahead_dist: 0.45
+      min_lookahead_dist: 0.25
+      max_lookahead_dist: 0.7
+      lookahead_time: 1.5
+      use_velocity_scaled_lookahead_dist: false
+      transform_tolerance: 0.3
+
+      approach_velocity_scaling_dist: 0.6
+      min_approach_linear_velocity: 0.2
+
+      use_regulated_linear_velocity_scaling: true
+      regulated_linear_scaling_min_radius: 0.4
+      regulated_linear_scaling_min_speed: 0.25
+      use_cost_regulated_linear_velocity_scaling: false
+
+      use_rotate_to_heading: true
+      rotate_to_heading_min_angle: 0.349
+      allow_reversing: false
+
+      use_collision_detection: true
+      max_allowed_time_to_collision_up_to_carrot: 1.0
+
+# ---------------------------------------------------------------------------
+# Costmaps. Body 0.4 x 0.4 m: inscribed radius 0.20, corner radius 0.28.
+# Inflation cost = 252 * exp(-10 * (d - 0.20)), zero beyond 0.35 m from a wall:
+#   0.30 m from a wall -> cost ~93 (plannable), corridor centre (0.5 m) -> 0.
+# Explorer CLEARANCE_M (0.30) must stay >= inscribed radius + ~0.1.
+# ---------------------------------------------------------------------------
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      update_frequency: 10.0
+      publish_frequency: 5.0
+      global_frame: odom
+      robot_base_frame: base_link
+      use_sim_time: True
+      rolling_window: true
+      width: 4
+      height: 4
+      resolution: 0.05
+      footprint: "[[0.2, 0.2], [0.2, -0.2], [-0.2, -0.2], [-0.2, 0.2]]"
+
+      plugins: ["obstacle_layer", "inflation_layer"]
+
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        inflation_radius: 0.35
+        cost_scaling_factor: 10.0
+
+      obstacle_layer:
+        plugin: "nav2_costmap_2d::ObstacleLayer"
+        observation_sources: scan
+        scan:
+          topic: /scan
+          clearing: True
+          marking: True
+          data_type: "LaserScan"
+          raytrace_min_range: 0.2
+          raytrace_max_range: 12.0
+          obstacle_min_range: 0.15
+          obstacle_max_range: 11.5
+
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      update_frequency: 2.0
+      publish_frequency: 1.0
+      global_frame: map
+      robot_base_frame: base_link
+      use_sim_time: True
+      footprint: "[[0.2, 0.2], [0.2, -0.2], [-0.2, -0.2], [-0.2, 0.2]]"
+      resolution: 0.05
+      track_unknown_space: true
+
+      width: 20
+      height: 20
+      origin_x: -10.0
+      origin_y: -10.0
+
+      plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
+
+      static_layer:
+        plugin: "nav2_costmap_2d::StaticLayer"
+        map_subscribe_transient_local: True
+
+      obstacle_layer:
+        plugin: "nav2_costmap_2d::ObstacleLayer"
+        observation_sources: scan
+        scan:
+          topic: /scan
+          clearing: True
+          marking: True
+          data_type: "LaserScan"
+          raytrace_min_range: 0.2
+          raytrace_max_range: 12.0
+          obstacle_min_range: 0.15
+          obstacle_max_range: 11.5
+
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        inflation_radius: 0.35
+        cost_scaling_factor: 10.0
+
+# ---------------------------------------------------------------------------
+# Planner
+# ---------------------------------------------------------------------------
+planner_server:
+  ros__parameters:
+    use_sim_time: True
+    planner_plugins: ["GridBased"]
+
+    GridBased:
+      plugin: "nav2_navfn_planner/NavfnPlanner"
+      use_astar: true
+      allow_unknown: false          # explorer goals are always on cells /map shows as free
+      tolerance: 0.2
+
+# ---------------------------------------------------------------------------
+# Behaviors (backup/spin/wait are only used by the BT's recovery branch)
+# ---------------------------------------------------------------------------
+behavior_server:
+  ros__parameters:
+    use_sim_time: True
+    behavior_plugins: ["spin", "backup", "wait"]
+
+    spin:
+      plugin: "nav2_behaviors/Spin"
+    backup:
+      plugin: "nav2_behaviors/BackUp"
+    wait:
+      plugin: "nav2_behaviors/Wait"
+
+    global_frame: odom
+    robot_base_frame: base_link
+    transform_tolerance: 0.2
+    cycle_frequency: 10.0
+    simulate_ahead_time: 2.0
+
+    max_rotational_vel: 1.0
+    min_rotational_vel: 0.4
+    rotational_acc_lim: 2.0

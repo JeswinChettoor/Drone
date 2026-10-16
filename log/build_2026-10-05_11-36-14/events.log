@@ -1,0 +1,345 @@
+[0.000000] (-) TimerEvent: {}
+[0.001485] (-) JobUnselected: {'identifier': 'ardupilot_dds_tests'}
+[0.002115] (-) JobUnselected: {'identifier': 'ardupilot_gazebo'}
+[0.002733] (-) JobUnselected: {'identifier': 'ardupilot_msgs'}
+[0.002980] (-) JobUnselected: {'identifier': 'ardupilot_sitl'}
+[0.003239] (-) JobUnselected: {'identifier': 'drone_control'}
+[0.003496] (-) JobUnselected: {'identifier': 'gz_ros_bridge'}
+[0.003634] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.003834] (-) JobUnselected: {'identifier': 'perception'}
+[0.004125] (-) JobUnselected: {'identifier': 'rf2o_laser_odometry'}
+[0.004271] (nidar_msgs) JobQueued: {'identifier': 'nidar_msgs', 'dependencies': OrderedDict()}
+[0.004407] (nidar_msgs) JobStarted: {'identifier': 'nidar_msgs'}
+[0.035058] (nidar_msgs) JobProgress: {'identifier': 'nidar_msgs', 'progress': 'cmake'}
+[0.036303] (nidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '/workspace/src/nidar_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspace/install/nidar_msgs'], 'cwd': '/workspace/build/nidar_msgs', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/nidar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/perception/lib/python3.10/site-packages:/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[0.099179] (-) TimerEvent: {}
+[0.199778] (-) TimerEvent: {}
+[0.276916] (nidar_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.299894] (-) TimerEvent: {}
+[0.400346] (-) TimerEvent: {}
+[0.435789] (nidar_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.452748] (nidar_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500461] (-) TimerEvent: {}
+[0.533908] (nidar_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.542398] (nidar_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.542875] (nidar_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.543681] (nidar_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.548311] (nidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600578] (-) TimerEvent: {}
+[0.639140] (nidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.649195] (nidar_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.649547] (nidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.650210] (nidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.665793] (nidar_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.700768] (-) TimerEvent: {}
+[0.801336] (-) TimerEvent: {}
+[0.901714] (-) TimerEvent: {}
+[1.002196] (-) TimerEvent: {}
+[1.102744] (-) TimerEvent: {}
+[1.203263] (-) TimerEvent: {}
+[1.303764] (-) TimerEvent: {}
+[1.404101] (-) TimerEvent: {}
+[1.474669] (nidar_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.504192] (-) TimerEvent: {}
+[1.588659] (nidar_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.604359] (-) TimerEvent: {}
+[1.705003] (-) TimerEvent: {}
+[1.726222] (nidar_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.741678] (nidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.771409] (nidar_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.805115] (-) TimerEvent: {}
+[1.905636] (-) TimerEvent: {}
+[1.967300] (nidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.005791] (-) TimerEvent: {}
+[2.106453] (-) TimerEvent: {}
+[2.139910] (nidar_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.9.2 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[2.206620] (-) TimerEvent: {}
+[2.307231] (-) TimerEvent: {}
+[2.407727] (-) TimerEvent: {}
+[2.508072] (-) TimerEvent: {}
+[2.608492] (-) TimerEvent: {}
+[2.709026] (-) TimerEvent: {}
+[2.728963] (nidar_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.1 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.809121] (-) TimerEvent: {}
+[2.909727] (-) TimerEvent: {}
+[3.010279] (-) TimerEvent: {}
+[3.110780] (-) TimerEvent: {}
+[3.211213] (-) TimerEvent: {}
+[3.311661] (-) TimerEvent: {}
+[3.362459] (nidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.411767] (-) TimerEvent: {}
+[3.512200] (-) TimerEvent: {}
+[3.612743] (-) TimerEvent: {}
+[3.713314] (-) TimerEvent: {}
+[3.813864] (-) TimerEvent: {}
+[3.914449] (-) TimerEvent: {}
+[4.015142] (-) TimerEvent: {}
+[4.052121] (nidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.115290] (-) TimerEvent: {}
+[4.122128] (nidar_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.131382] (nidar_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.215911] (-) TimerEvent: {}
+[4.227380] (nidar_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.227925] (nidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.228159] (nidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.228340] (nidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.278324] (nidar_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.316051] (-) TimerEvent: {}
+[4.416583] (-) TimerEvent: {}
+[4.516922] (-) TimerEvent: {}
+[4.517973] (nidar_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.563853] (nidar_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.566415] (nidar_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.571891] (nidar_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.617064] (-) TimerEvent: {}
+[4.630022] (nidar_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[4.647287] (nidar_msgs) StdoutLine: {'line': b'-- Build files have been written to: /workspace/build/nidar_msgs\n'}
+[4.654596] (nidar_msgs) CommandEnded: {'returncode': 0}
+[4.655345] (nidar_msgs) JobProgress: {'identifier': 'nidar_msgs', 'progress': 'build'}
+[4.656206] (nidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/nidar_msgs', '--', '-j16', '-l16'], 'cwd': '/workspace/build/nidar_msgs', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/nidar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/perception/lib/python3.10/site-packages:/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[4.717180] (-) TimerEvent: {}
+[4.751290] (nidar_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.779802] (nidar_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.780288] (nidar_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[4.800939] (nidar_msgs) StdoutLine: {'line': b'[  7%] Built target ament_cmake_python_symlink_nidar_msgs\n'}
+[4.817308] (-) TimerEvent: {}
+[4.917708] (-) TimerEvent: {}
+[5.018044] (-) TimerEvent: {}
+[5.090245] (nidar_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.105562] (nidar_msgs) StdoutLine: {'line': b'creating nidar_msgs.egg-info\n'}
+[5.106037] (nidar_msgs) StdoutLine: {'line': b'writing nidar_msgs.egg-info/PKG-INFO\n'}
+[5.106205] (nidar_msgs) StdoutLine: {'line': b'writing dependency_links to nidar_msgs.egg-info/dependency_links.txt\n'}
+[5.106496] (nidar_msgs) StdoutLine: {'line': b'writing top-level names to nidar_msgs.egg-info/top_level.txt\n'}
+[5.106668] (nidar_msgs) StdoutLine: {'line': b"writing manifest file 'nidar_msgs.egg-info/SOURCES.txt'\n"}
+[5.118125] (-) TimerEvent: {}
+[5.122650] (nidar_msgs) StdoutLine: {'line': b'[  7%] Built target nidar_msgs__rs\n'}
+[5.161982] (nidar_msgs) StdoutLine: {'line': b"reading manifest file 'nidar_msgs.egg-info/SOURCES.txt'\n"}
+[5.163064] (nidar_msgs) StdoutLine: {'line': b"writing manifest file 'nidar_msgs.egg-info/SOURCES.txt'\n"}
+[5.182585] (nidar_msgs) StdoutLine: {'line': b'[  7%] Built target nidar_msgs__cpp\n'}
+[5.190372] (nidar_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/nidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/nidar_msgs/msg/detail/person_detection__functions.c.o\x1b[0m\n'}
+[5.191237] (nidar_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/nidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/nidar_msgs/msg/detail/person_detection_array__functions.c.o\x1b[0m\n'}
+[5.195237] (nidar_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.195489] (nidar_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.196869] (nidar_msgs) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.212408] (nidar_msgs) StdoutLine: {'line': b'[ 20%] Built target ament_cmake_python_build_nidar_msgs_egg\n'}
+[5.218214] (-) TimerEvent: {}
+[5.290061] (nidar_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libnidar_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[5.318355] (-) TimerEvent: {}
+[5.349281] (nidar_msgs) StdoutLine: {'line': b'[ 22%] Built target nidar_msgs__rosidl_generator_c\n'}
+[5.362621] (nidar_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.363087] (nidar_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.363234] (nidar_msgs) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.418448] (-) TimerEvent: {}
+[5.518761] (-) TimerEvent: {}
+[5.563691] (nidar_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nidar_msgs/msg/detail/person_detection_array__type_support.cpp.o\x1b[0m\n'}
+[5.564115] (nidar_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nidar_msgs/msg/detail/person_detection__type_support.cpp.o\x1b[0m\n'}
+[5.586756] (nidar_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nidar_msgs/msg/person_detection__type_support.cpp.o\x1b[0m\n'}
+[5.589205] (nidar_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nidar_msgs/msg/person_detection_array__type_support.cpp.o\x1b[0m\n'}
+[5.618873] (-) TimerEvent: {}
+[5.663935] (nidar_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nidar_msgs/msg/detail/dds_fastrtps/person_detection_array__type_support.cpp.o\x1b[0m\n'}
+[5.666187] (nidar_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nidar_msgs/msg/detail/dds_fastrtps/person_detection__type_support.cpp.o\x1b[0m\n'}
+[5.718997] (-) TimerEvent: {}
+[5.778499] (nidar_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/nidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nidar_msgs/msg/detail/person_detection__type_support.c.o\x1b[0m\n'}
+[5.779061] (nidar_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/nidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nidar_msgs/msg/detail/person_detection_array__type_support.c.o\x1b[0m\n'}
+[5.804532] (nidar_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nidar_msgs/msg/person_detection__type_support.cpp.o\x1b[0m\n'}
+[5.805482] (nidar_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nidar_msgs/msg/person_detection_array__type_support.cpp.o\x1b[0m\n'}
+[5.822935] (-) TimerEvent: {}
+[5.837198] (nidar_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nidar_msgs/msg/detail/person_detection__type_support_c.cpp.o\x1b[0m\n'}
+[5.848174] (nidar_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/nidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nidar_msgs/msg/detail/person_detection_array__type_support_c.cpp.o\x1b[0m\n'}
+[5.894705] (nidar_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libnidar_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.913704] (nidar_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking C shared library libnidar_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.923402] (-) TimerEvent: {}
+[5.976974] (nidar_msgs) StdoutLine: {'line': b'[ 65%] Built target nidar_msgs__rosidl_typesupport_introspection_c\n'}
+[5.977962] (nidar_msgs) StdoutLine: {'line': b'[ 65%] Built target nidar_msgs__rosidl_typesupport_c\n'}
+[6.023507] (-) TimerEvent: {}
+[6.123833] (-) TimerEvent: {}
+[6.182010] (nidar_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libnidar_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[6.223986] (-) TimerEvent: {}
+[6.257074] (nidar_msgs) StdoutLine: {'line': b'[ 67%] Built target nidar_msgs__rosidl_typesupport_cpp\n'}
+[6.324095] (-) TimerEvent: {}
+[6.377770] (nidar_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libnidar_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.424439] (-) TimerEvent: {}
+[6.508354] (nidar_msgs) StdoutLine: {'line': b'[ 70%] Built target nidar_msgs__rosidl_typesupport_introspection_cpp\n'}
+[6.524559] (-) TimerEvent: {}
+[6.528584] (nidar_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libnidar_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[6.537791] (nidar_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libnidar_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.624659] (-) TimerEvent: {}
+[6.645089] (nidar_msgs) StdoutLine: {'line': b'[ 75%] Built target nidar_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[6.654664] (nidar_msgs) StdoutLine: {'line': b'[ 75%] Built target nidar_msgs__rosidl_typesupport_fastrtps_c\n'}
+[6.679837] (nidar_msgs) StdoutLine: {'line': b'[ 75%] Built target nidar_msgs\n'}
+[6.704905] (nidar_msgs) StdoutLine: {'line': b'[ 77%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.724701] (-) TimerEvent: {}
+[6.824990] (-) TimerEvent: {}
+[6.925479] (-) TimerEvent: {}
+[7.025913] (-) TimerEvent: {}
+[7.126511] (-) TimerEvent: {}
+[7.217487] (nidar_msgs) StdoutLine: {'line': b'[ 77%] Built target nidar_msgs__py\n'}
+[7.226611] (-) TimerEvent: {}
+[7.244086] (nidar_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/nidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/nidar_msgs/msg/_person_detection_array_s.c.o\x1b[0m\n'}
+[7.244384] (nidar_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/nidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/nidar_msgs/msg/_person_detection_s.c.o\x1b[0m\n'}
+[7.326716] (-) TimerEvent: {}
+[7.427049] (-) TimerEvent: {}
+[7.509938] (nidar_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/nidar_msgs/libnidar_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[7.527148] (-) TimerEvent: {}
+[7.568242] (nidar_msgs) StdoutLine: {'line': b'[ 85%] Built target nidar_msgs__rosidl_generator_py\n'}
+[7.594500] (nidar_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/nidar_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/nidar_msgs/_nidar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.594781] (nidar_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/nidar_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/nidar_msgs/_nidar_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.594900] (nidar_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/nidar_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/nidar_msgs/_nidar_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.627282] (-) TimerEvent: {}
+[7.727664] (-) TimerEvent: {}
+[7.828123] (-) TimerEvent: {}
+[7.840076] (nidar_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/nidar_msgs/nidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.844481] (nidar_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/nidar_msgs/nidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.849525] (nidar_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/nidar_msgs/nidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.899369] (nidar_msgs) StdoutLine: {'line': b'[100%] Built target nidar_msgs__rosidl_typesupport_c__pyext\n'}
+[7.900549] (nidar_msgs) StdoutLine: {'line': b'[100%] Built target nidar_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[7.916632] (nidar_msgs) StdoutLine: {'line': b'[100%] Built target nidar_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.928269] (-) TimerEvent: {}
+[7.935629] (nidar_msgs) CommandEnded: {'returncode': 0}
+[7.935989] (nidar_msgs) JobProgress: {'identifier': 'nidar_msgs', 'progress': 'install'}
+[7.945426] (nidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/nidar_msgs'], 'cwd': '/workspace/build/nidar_msgs', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/workspace/ardupilot_gazebo/build'), ('GZ_SIM_RESOURCE_PATH', '/workspace/SIM/Models:/workspace/SIM/Worlds:/workspace/ardupilot_gazebo/models:/workspace/ardupilot_gazebo/worlds'), ('USER', 'developer'), ('HOSTNAME', 'jeswin-ASUS-TUF-F16'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/developer'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/usr/lib/ccache:/workspace/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/opt/ros/humble/bin:/home/developer/.local/bin:/workspace/ardupilot/Tools/autotest:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-developer'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('OGRE_GL_DISABLE_EXT_DISCARD_FRAMEBUFFER', '1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspace/build/nidar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/workspace/install/perception/lib/python3.10/site-packages:/workspace/install/lidar_processing/lib/python3.10/site-packages:/workspace/install/drone_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble')]), 'shell': False}
+[7.954689] (nidar_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.955560] (nidar_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[7.955986] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/ament_index/resource_index/rosidl_interfaces/nidar_msgs\n'}
+[7.967798] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__functions.h\n'}
+[7.978205] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__struct.h\n'}
+[7.989461] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__type_support.h\n'}
+[7.999603] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__functions.h\n'}
+[8.011674] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__struct.h\n'}
+[8.021401] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__type_support.h\n'}
+[8.028337] (-) TimerEvent: {}
+[8.037669] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/person_detection.h\n'}
+[8.056434] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/person_detection_array.h\n'}
+[8.072223] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.088212] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/environment/library_path.sh\n'}
+[8.103855] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/environment/library_path.dsv\n'}
+[8.125952] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__rosidl_typesupport_fastrtps_c.h\n'}
+[8.128476] (-) TimerEvent: {}
+[8.144561] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[8.161131] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.183512] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__rosidl_typesupport_introspection_c.h\n'}
+[8.205640] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__rosidl_typesupport_introspection_c.h\n'}
+[8.225611] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.228598] (-) TimerEvent: {}
+[8.245896] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__builder.hpp\n'}
+[8.265131] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__struct.hpp\n'}
+[8.280741] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__traits.hpp\n'}
+[8.297601] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__type_support.hpp\n'}
+[8.316814] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__builder.hpp\n'}
+[8.328965] (-) TimerEvent: {}
+[8.332625] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__struct.hpp\n'}
+[8.350132] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__traits.hpp\n'}
+[8.364048] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__type_support.hpp\n'}
+[8.374877] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/person_detection.hpp\n'}
+[8.386977] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/person_detection_array.hpp\n'}
+[8.396625] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[8.407617] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.417999] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.429079] (-) TimerEvent: {}
+[8.433330] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.445493] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.457200] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/include/nidar_msgs/nidar_msgs/msg/detail/person_detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.465880] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/environment/pythonpath.sh\n'}
+[8.478659] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/environment/pythonpath.dsv\n'}
+[8.490343] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[8.500849] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[8.512039] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[8.522557] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[8.529170] (-) TimerEvent: {}
+[8.533550] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/__init__.py\n'}
+[8.544241] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/_nidar_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[8.557701] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/_nidar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[8.567907] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/_nidar_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[8.579201] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/libnidar_msgs__rosidl_generator_py.so\n'}
+[8.590508] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/__init__.py\n'}
+[8.601633] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/_person_detection.py\n'}
+[8.613673] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/_person_detection_array.py\n'}
+[8.624649] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/_person_detection_array_s.c\n'}
+[8.629267] (-) TimerEvent: {}
+[8.635912] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/_person_detection_s.c\n'}
+[8.646537] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/nidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.658355] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/nidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.669347] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/nidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.679874] (nidar_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/nidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.680092] (nidar_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/nidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.680395] (nidar_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/nidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.680976] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/rust/Cargo.toml\n'}
+[8.691936] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/rust/build.rs\n'}
+[8.702657] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/rust/src/lib.rs\n'}
+[8.712242] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/rust/src/msg.rs\n'}
+[8.722921] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/rust/src/msg/rmw.rs\n'}
+[8.729360] (-) TimerEvent: {}
+[8.732255] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/msg/PersonDetection.idl\n'}
+[8.745422] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/msg/PersonDetectionArray.idl\n'}
+[8.757840] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/msg/PersonDetection.msg\n'}
+[8.768497] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/msg/PersonDetectionArray.msg\n'}
+[8.780047] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/ament_index/resource_index/package_run_dependencies/nidar_msgs\n'}
+[8.790615] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/ament_index/resource_index/parent_prefix_path/nidar_msgs\n'}
+[8.801473] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/environment/ament_prefix_path.sh\n'}
+[8.817588] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/environment/ament_prefix_path.dsv\n'}
+[8.829527] (-) TimerEvent: {}
+[8.841926] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/environment/path.sh\n'}
+[8.860704] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/environment/path.dsv\n'}
+[8.876384] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/local_setup.bash\n'}
+[8.889287] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/local_setup.sh\n'}
+[8.900873] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/local_setup.zsh\n'}
+[8.912996] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/local_setup.dsv\n'}
+[8.927281] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/package.dsv\n'}
+[8.929669] (-) TimerEvent: {}
+[8.940697] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/ament_index/resource_index/packages/nidar_msgs\n'}
+[8.955080] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[8.975857] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.003025] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.023443] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.029825] (-) TimerEvent: {}
+[9.044705] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.066317] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[9.083691] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[9.095476] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[9.106261] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgsConfig.cmake\n'}
+[9.122826] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgsConfig-version.cmake\n'}
+[9.129986] (-) TimerEvent: {}
+[9.137901] (nidar_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/install/nidar_msgs/share/nidar_msgs/package.xml\n'}
+[9.152534] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_generator_c.so\n'}
+[9.153003] (nidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_generator_c.so" to ""\n'}
+[9.153239] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[9.153593] (nidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[9.153863] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_introspection_c.so\n'}
+[9.154686] (nidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[9.154858] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_c.so\n'}
+[9.155296] (nidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_c.so" to ""\n'}
+[9.155453] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[9.155832] (nidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[9.155967] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[9.156273] (nidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[9.156386] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_cpp.so\n'}
+[9.156596] (nidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[9.208536] (nidar_msgs) StdoutLine: {'line': b"Listing '/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs'...\n"}
+[9.208887] (nidar_msgs) StdoutLine: {'line': b"Compiling '/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/__init__.py'...\n"}
+[9.209046] (nidar_msgs) StdoutLine: {'line': b"Listing '/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg'...\n"}
+[9.209176] (nidar_msgs) StdoutLine: {'line': b"Compiling '/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/__init__.py'...\n"}
+[9.209303] (nidar_msgs) StdoutLine: {'line': b"Compiling '/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/_person_detection.py'...\n"}
+[9.209435] (nidar_msgs) StdoutLine: {'line': b"Compiling '/workspace/install/nidar_msgs/local/lib/python3.10/dist-packages/nidar_msgs/msg/_person_detection_array.py'...\n"}
+[9.216127] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_generator_py.so\n'}
+[9.216427] (nidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/nidar_msgs/lib/libnidar_msgs__rosidl_generator_py.so" to ""\n'}
+[9.216570] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_generator_cExport.cmake\n'}
+[9.216716] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[9.216839] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[9.216974] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[9.217115] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[9.217338] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[9.217512] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_cExport.cmake\n'}
+[9.217643] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[9.217766] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_generator_cppExport.cmake\n'}
+[9.217879] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[9.217986] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[9.218096] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[9.218214] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[9.218315] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[9.218416] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/nidar_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[9.218496] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_generator_pyExport.cmake\n'}
+[9.218579] (nidar_msgs) StdoutLine: {'line': b'-- Installing: /workspace/install/nidar_msgs/share/nidar_msgs/cmake/export_nidar_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[9.221056] (nidar_msgs) CommandEnded: {'returncode': 0}
+[9.230382] (-) TimerEvent: {}
+[9.261033] (nidar_msgs) JobEnded: {'identifier': 'nidar_msgs', 'rc': 0}
+[9.261869] (-) EventReactorShutdown: {}

@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: nidar_explorer
+Version: 0.1.0
+Summary: DFS frontier explorer + Nav2 config for indoor maze exploration
+Maintainer: NIDAR team
+Maintainer-email: team@example.com
+License: Apache-2.0
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

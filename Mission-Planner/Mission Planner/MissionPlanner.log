@@ -1,0 +1,479 @@
+﻿2026-10-15 14:16:29,442  INFO MissionPlanner.MainV2 - Create FD (:0) [Base Thread]
+2026-10-15 14:16:29,447 DEBUG MissionPlanner.Program - Loaded: SkiaSharp, Version=2.88.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756 from /home/jeswin/NIDAR/Mission-Planner/SkiaSharp.dll (:0) [Base Thread]
+2026-10-15 14:16:29,450  INFO MissionPlanner.GCSViews.FlightData - Ctor Start (:0) [Base Thread]
+2026-10-15 14:16:29,452 DEBUG MissionPlanner.Program - Loaded: GeoUtility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/GeoUtility.dll (:0) [Base Thread]
+2026-10-15 14:16:29,452 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:29,469  INFO MissionPlanner.Controls.HUD - Static HUD ctor (:0) [Base Thread]
+2026-10-15 14:16:29,469 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:29,471 DEBUG MissionPlanner.Program - Loaded: System.Resources.Extensions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /home/jeswin/NIDAR/Mission-Planner/System.Resources.Extensions.dll (:0) [Base Thread]
+2026-10-15 14:16:29,473 DEBUG MissionPlanner.Program - Loaded: System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /home/jeswin/NIDAR/Mission-Planner/System.Memory.dll (:0) [Base Thread]
+2026-10-15 14:16:29,473 DEBUG MissionPlanner.Program - Loaded: System.Runtime.CompilerServices.Unsafe, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /home/jeswin/NIDAR/Mission-Planner/System.Runtime.CompilerServices.Unsafe.dll (:0) [Base Thread]
+2026-10-15 14:16:29,475 DEBUG MissionPlanner.Program - Loaded: System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /home/jeswin/NIDAR/Mission-Planner/System.Numerics.Vectors.dll (:0) [Base Thread]
+2026-10-15 14:16:29,485  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-10-15 14:16:29,486  INFO MissionPlanner.Controls.HUD - Instance HUD ctor (:0) [Base Thread]
+2026-10-15 14:16:29,521 DEBUG MissionPlanner.Program - Loaded: Microsoft.GeneratedCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (:0) [Base Thread]
+2026-10-15 14:16:29,696  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-10-15 14:16:29,719 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.Caching.Memory, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /home/jeswin/NIDAR/Mission-Planner/Microsoft.Extensions.Caching.Memory.dll (:0) [Base Thread]
+2026-10-15 14:16:29,719 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:29,719 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.Caching.Abstractions, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /home/jeswin/NIDAR/Mission-Planner/Microsoft.Extensions.Caching.Abstractions.dll (:0) [Base Thread]
+2026-10-15 14:16:29,719 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:29,720 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.Options, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /home/jeswin/NIDAR/Mission-Planner/Microsoft.Extensions.Options.dll (:0) [Base Thread]
+2026-10-15 14:16:29,720 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.Logging.Abstractions, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /home/jeswin/NIDAR/Mission-Planner/Microsoft.Extensions.Logging.Abstractions.dll (:0) [Base Thread]
+2026-10-15 14:16:29,720 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:29,722 DEBUG MissionPlanner.Program - Loaded: Microsoft.Extensions.Primitives, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 from /home/jeswin/NIDAR/Mission-Planner/Microsoft.Extensions.Primitives.dll (:0) [Base Thread]
+2026-10-15 14:16:29,722 DEBUG MissionPlanner.Program - Loaded: System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from /usr/lib/mono/gac/System.Xml.Linq/4.0.0.0__b77a5c561934e089/System.Xml.Linq.dll (:0) [Base Thread]
+2026-10-15 14:16:29,765 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:29,807  INFO MissionPlanner.GCSViews.FlightData - Components Done (:0) [Base Thread]
+2026-10-15 14:16:29,807  INFO MissionPlanner.GCSViews.FlightData - Tunning Graph Settings (:0) [Base Thread]
+2026-10-15 14:16:29,813  INFO MissionPlanner.GCSViews.FlightData - HUD Settings (:0) [Base Thread]
+2026-10-15 14:16:29,815  INFO MissionPlanner.GCSViews.FlightData - Graph Setup (:0) [Base Thread]
+2026-10-15 14:16:29,816  INFO MissionPlanner.GCSViews.FlightData - Map Setup (:0) [Base Thread]
+2026-10-15 14:16:29,817 DEBUG MissionPlanner.MAVLinkInterface - Subscribed .ctor at offset 0 in file:line:column <filename unknown>:0:0 FlightData_ParentChanged FlightData System.EventHandler (:0) [Base Thread]
+2026-10-15 14:16:29,817  INFO MissionPlanner.MainV2 - Create FP (:0) [Base Thread]
+2026-10-15 14:16:29,865  INFO MissionPlanner.GCSViews.FlightPlanner - Loading wp params (:0) [Base Thread]
+2026-10-15 14:16:29,865  INFO MissionPlanner.GCSViews.FlightPlanner - param WP_RADIUS 30 (:0) [Base Thread]
+2026-10-15 14:16:29,866  INFO MissionPlanner.GCSViews.FlightPlanner - param LOITER_RADIUS 45 (:0) [Base Thread]
+2026-10-15 14:16:29,867  INFO MissionPlanner.GCSViews.FlightPlanner - Reading MAV_CMD for ArduCopter2 (:0) [Base Thread]
+2026-10-15 14:16:29,874  INFO MissionPlanner.GCSViews.FlightPlanner - Command item count 0 orig list 51 (:0) [Base Thread]
+2026-10-15 14:16:29,887  INFO MissionPlanner.GCSViews.FlightPlanner - Reading MAV_CMD for ArduCopter2 (:0) [Base Thread]
+2026-10-15 14:16:29,887  INFO MissionPlanner.GCSViews.FlightPlanner - Command item count 0 orig list 51 (:0) [Base Thread]
+2026-10-15 14:16:29,889  INFO MissionPlanner.GCSViews.FlightPlanner - updateMapType invoke req? False (:0) [Base Thread]
+2026-10-15 14:16:29,892  INFO MissionPlanner.MainV2 - Create SIM (:0) [Base Thread]
+2026-10-15 14:16:29,908  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-10-15 14:16:29,911 DEBUG MissionPlanner.Program - Loaded: Microsoft.GeneratedCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (:0) [Base Thread]
+2026-10-15 14:16:29,931 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabQuick (:0) [Base Thread]
+2026-10-15 14:16:29,931 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabActions (:0) [Base Thread]
+2026-10-15 14:16:29,931 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagemessages (:0) [Base Thread]
+2026-10-15 14:16:29,931 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions tabActionsSimple (:0) [Base Thread]
+2026-10-15 14:16:29,931 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagePreFlight (:0) [Base Thread]
+2026-10-15 14:16:29,931 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabGauges (:0) [Base Thread]
+2026-10-15 14:16:29,931 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTransponder (:0) [Base Thread]
+2026-10-15 14:16:29,932 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabStatus (:0) [Base Thread]
+2026-10-15 14:16:29,932 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabServo (:0) [Base Thread]
+2026-10-15 14:16:29,932 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabAuxFunction (:0) [Base Thread]
+2026-10-15 14:16:29,932 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabScripts (:0) [Base Thread]
+2026-10-15 14:16:29,932 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPayload (:0) [Base Thread]
+2026-10-15 14:16:29,932 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTLogs (:0) [Base Thread]
+2026-10-15 14:16:29,932 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tablogbrowse (:0) [Base Thread]
+2026-10-15 14:16:29,933 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions  (:0) [Base Thread]
+2026-10-15 14:16:29,935  INFO MissionPlanner.MainV2 - myview width 1101 height 875 (:0) [Base Thread]
+2026-10-15 14:16:29,935  INFO MissionPlanner.MainV2 - this   width 1109 height 936 (:0) [Base Thread]
+2026-10-15 14:16:29,935  INFO MissionPlanner.MainV2 - myview width 1581 height 875 (:0) [Base Thread]
+2026-10-15 14:16:29,935  INFO MissionPlanner.MainV2 - this   width 1589 height 936 (:0) [Base Thread]
+2026-10-15 14:16:29,944  INFO MissionPlanner.MAVLinkInterface - Subscribed .ctor at offset 0 in file:line:column <filename unknown>:0:0 comPort_MavChanged MainV2 System.EventHandler (:0) [Base Thread]
+2026-10-15 14:16:29,944  INFO MissionPlanner.MainV2 - Saving config (:0) [Base Thread]
+2026-10-15 14:16:29,950 DEBUG MissionPlanner.Program - Loaded: LibVLC.NET, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/LibVLC.NET.dll (:0) [Base Thread]
+2026-10-15 14:16:29,950 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:29,951 DEBUG MissionPlanner.Program - Loaded: DroneCAN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/DroneCAN.dll (:0) [Base Thread]
+2026-10-15 14:16:29,951 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:29,952 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:29,959  INFO MissionPlanner.MainV2 - Load Pluggins (:0) [Base Thread]
+2026-10-15 14:16:29,960  INFO MissionPlanner.Plugin.PluginLoader - Plugin path: /home/jeswin/NIDAR/Mission-Planner/plugins/ (:0) [Base Thread]
+2026-10-15 14:16:29,961 DEBUG MissionPlanner.Program - Loaded: System.CodeDom, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /home/jeswin/NIDAR/Mission-Planner/System.CodeDom.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:29,961 DEBUG MissionPlanner.Program - Loaded: AltitudeAngelWings, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/plugins/AltitudeAngelWings.dll (:0) [Base Thread]
+2026-10-15 14:16:29,962  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/AltitudeAngelWings.dll (:0) [Base Thread]
+2026-10-15 14:16:29,962  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example8.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:29,963 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:29,963 DEBUG MissionPlanner.Program - Loaded: Flurl.Http, Version=3.2.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/Flurl.Http.dll (:0) [Base Thread]
+2026-10-15 14:16:29,964 DEBUG MissionPlanner.Program - Loaded: GeoJSON.Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/GeoJSON.Net.dll (:0) [Base Thread]
+2026-10-15 14:16:29,966 DEBUG MissionPlanner.Program - Loaded: Microsoft.CodeAnalysis, Version=3.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 from /home/jeswin/NIDAR/Mission-Planner/Microsoft.CodeAnalysis.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:29,966 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:29,967 DEBUG MissionPlanner.Program - Loaded: Microsoft.CodeAnalysis.CSharp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 from /home/jeswin/NIDAR/Mission-Planner/Microsoft.CodeAnalysis.CSharp.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:29,967 DEBUG MissionPlanner.Program - Loaded: System.Collections.Immutable, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /home/jeswin/NIDAR/Mission-Planner/System.Collections.Immutable.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:29,968 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:29,971 DEBUG MissionPlanner.Program - Loaded: example8, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:16:29,972  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example8.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:29,992 DEBUG MissionPlanner.Program - Loaded: NodaTime, Version=3.0.0.0, Culture=neutral, PublicKeyToken=4226afe0d9b296d1 from /home/jeswin/NIDAR/Mission-Planner/plugins/NodaTime.dll (:0) [Base Thread]
+2026-10-15 14:16:29,993 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:29,994 DEBUG MissionPlanner.Program - Loaded: Polly, Version=7.0.0.0, Culture=neutral, PublicKeyToken=c8a3ffc3f8f825cc from /home/jeswin/NIDAR/Mission-Planner/plugins/Polly.dll (:0) [Base Thread]
+2026-10-15 14:16:29,995 DEBUG MissionPlanner.Program - Loaded: Markdig, Version=0.32.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/plugins/Markdig.dll (:0) [Base Thread]
+2026-10-15 14:16:29,996 DEBUG MissionPlanner.Program - Loaded: NetTopologySuite, Version=2.0.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1 from /home/jeswin/NIDAR/Mission-Planner/NetTopologySuite.dll (:0) [Base Thread]
+2026-10-15 14:16:29,996 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:29,997  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/AltitudeAngelWings.dll time 0.036018 s (:0) [Base Thread]
+2026-10-15 14:16:29,997 DEBUG MissionPlanner.Program - Loaded: FaceMap, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/plugins/FaceMap.dll (:0) [Base Thread]
+2026-10-15 14:16:29,997  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/FaceMap.dll (:0) [Base Thread]
+2026-10-15 14:16:30,006 DEBUG MissionPlanner.Program - Loaded: Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null (:0) [Base Thread]
+2026-10-15 14:16:30,010  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Face Map 1.0.0.0 by Jonathan Wang (:0) [Base Thread]
+2026-10-15 14:16:30,010  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/FaceMap.dll time 0.013036 s (:0) [Base Thread]
+2026-10-15 14:16:30,010 DEBUG MissionPlanner.Program - Loaded: NodaTime, Version=3.0.0.0, Culture=neutral, PublicKeyToken=4226afe0d9b296d1 from /home/jeswin/NIDAR/Mission-Planner/plugins/NodaTime.dll (:0) [Base Thread]
+2026-10-15 14:16:30,011  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/NodaTime.dll (:0) [Base Thread]
+2026-10-15 14:16:30,013  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/NodaTime.dll time 0.002106 s (:0) [Base Thread]
+2026-10-15 14:16:30,013 DEBUG MissionPlanner.Program - Loaded: MavlinkMessagePlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/plugins/MavlinkMessagePlugin.dll (:0) [Base Thread]
+2026-10-15 14:16:30,013  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/MavlinkMessagePlugin.dll (:0) [Base Thread]
+2026-10-15 14:16:30,016  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init MavlinkMessagePlugin 0.1 by Michael Oborne (:0) [Base Thread]
+2026-10-15 14:16:30,016  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/MavlinkMessagePlugin.dll time 0.003355 s (:0) [Base Thread]
+2026-10-15 14:16:30,017 DEBUG MissionPlanner.Program - Loaded: NodaTime.Serialization.JsonNet, Version=3.0.1.0, Culture=neutral, PublicKeyToken=4226afe0d9b296d1 from /home/jeswin/NIDAR/Mission-Planner/plugins/NodaTime.Serialization.JsonNet.dll (:0) [Base Thread]
+2026-10-15 14:16:30,017  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/NodaTime.Serialization.JsonNet.dll (:0) [Base Thread]
+2026-10-15 14:16:30,017 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:30,017  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/NodaTime.Serialization.JsonNet.dll time 0.000986 s (:0) [Base Thread]
+2026-10-15 14:16:30,018 DEBUG MissionPlanner.Program - Loaded: Markdig, Version=0.32.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/plugins/Markdig.dll (:0) [Base Thread]
+2026-10-15 14:16:30,018  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/Markdig.dll (:0) [Base Thread]
+2026-10-15 14:16:30,020  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/Markdig.dll time 0.002366 s (:0) [Base Thread]
+2026-10-15 14:16:30,020 DEBUG MissionPlanner.Program - Loaded: TrackerHome, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/plugins/TrackerHome.dll (:0) [Base Thread]
+2026-10-15 14:16:30,021  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/TrackerHome.dll (:0) [Base Thread]
+2026-10-15 14:16:30,021  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init GPS Tracker Home Plugin 1.0 by Will Bryan (:0) [Base Thread]
+2026-10-15 14:16:30,022  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/TrackerHome.dll time 0.001233 s (:0) [Base Thread]
+2026-10-15 14:16:30,022 DEBUG MissionPlanner.Program - Loaded: opendroneid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/plugins/opendroneid.dll (:0) [Base Thread]
+2026-10-15 14:16:30,022  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/opendroneid.dll (:0) [Base Thread]
+2026-10-15 14:16:30,023 DEBUG MissionPlanner.Program - Loaded: Bulb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/plugins/Bulb.dll (:0) [Base Thread]
+2026-10-15 14:16:30,045  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Open Drone ID 0.05 by Steven Borenstein, updated by BlueMark Innovations BV (:0) [Base Thread]
+2026-10-15 14:16:30,046  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/opendroneid.dll time 0.023765 s (:0) [Base Thread]
+2026-10-15 14:16:30,046 DEBUG MissionPlanner.Program - Loaded: TerrainMakerPlugin, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/plugins/TerrainMakerPlugin.dll (:0) [Base Thread]
+2026-10-15 14:16:30,046  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/TerrainMakerPlugin.dll (:0) [Base Thread]
+2026-10-15 14:16:30,047  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init TerrainMakerPlugin 2.0 by Andras "EosBandi" Schaffer (:0) [Base Thread]
+2026-10-15 14:16:30,047  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/TerrainMakerPlugin.dll time 0.00115 s (:0) [Base Thread]
+2026-10-15 14:16:30,047 DEBUG MissionPlanner.Program - Loaded: MissionPlanner.SimpleGrid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/plugins/MissionPlanner.SimpleGrid.dll (:0) [Base Thread]
+2026-10-15 14:16:30,048  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/MissionPlanner.SimpleGrid.dll (:0) [Base Thread]
+2026-10-15 14:16:30,048  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init SimpleGrid 0.1 by Michael Oborne (:0) [Base Thread]
+2026-10-15 14:16:30,048  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/MissionPlanner.SimpleGrid.dll time 0.001101 s (:0) [Base Thread]
+2026-10-15 14:16:30,049 DEBUG MissionPlanner.Program - Loaded: MissionPlanner.Stats, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/plugins/MissionPlanner.Stats.dll (:0) [Base Thread]
+2026-10-15 14:16:30,049  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/MissionPlanner.Stats.dll (:0) [Base Thread]
+2026-10-15 14:16:30,050 DEBUG MissionPlanner.Program - Loaded: Microsoft.GeneratedCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (:0) [Base Thread]
+2026-10-15 14:16:30,055  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Stats 0.1 by Michael Oborne (:0) [Base Thread]
+2026-10-15 14:16:30,055  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/MissionPlanner.Stats.dll time 0.006504 s (:0) [Base Thread]
+2026-10-15 14:16:30,056 DEBUG MissionPlanner.Program - Loaded: Polly, Version=7.0.0.0, Culture=neutral, PublicKeyToken=c8a3ffc3f8f825cc from /home/jeswin/NIDAR/Mission-Planner/plugins/Polly.dll (:0) [Base Thread]
+2026-10-15 14:16:30,056  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/Polly.dll (:0) [Base Thread]
+2026-10-15 14:16:30,059  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/Polly.dll time 0.0033 s (:0) [Base Thread]
+2026-10-15 14:16:30,059 DEBUG MissionPlanner.Program - Loaded: MissionPlanner.Gridv2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/plugins/MissionPlanner.Gridv2.dll (:0) [Base Thread]
+2026-10-15 14:16:30,060  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/MissionPlanner.Gridv2.dll (:0) [Base Thread]
+2026-10-15 14:16:30,060  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Grid 0.1 by Michael Oborne (:0) [Base Thread]
+2026-10-15 14:16:30,060  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/MissionPlanner.Gridv2.dll time 0.001203 s (:0) [Base Thread]
+2026-10-15 14:16:30,061 DEBUG MissionPlanner.Program - Loaded: Bulb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/plugins/Bulb.dll (:0) [Base Thread]
+2026-10-15 14:16:30,061  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/Bulb.dll (:0) [Base Thread]
+2026-10-15 14:16:30,061  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/Bulb.dll time 0.000598 s (:0) [Base Thread]
+2026-10-15 14:16:30,062 DEBUG MissionPlanner.Program - Loaded: AltitudeAngelWings.Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/plugins/AltitudeAngelWings.Plugin.dll (:0) [Base Thread]
+2026-10-15 14:16:30,062  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/AltitudeAngelWings.Plugin.dll (:0) [Base Thread]
+2026-10-15 14:16:30,064 ERROR MissionPlanner.Plugin.PluginLoader - Failed to load plugin AltitudeAngelWings.Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (:0) [Base Thread]
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentException: A null reference or invalid value was found [GDI+ status: InvalidParameter]
+  at System.Drawing.GDIPlus.CheckStatus (System.Drawing.Status status) [0x0009b] in <728fbd68fe594062895e1f819791e76a>:0 
+  at System.Drawing.Bitmap..ctor (System.Int32 width, System.Int32 height, System.Drawing.Imaging.PixelFormat format) [0x00017] in <728fbd68fe594062895e1f819791e76a>:0 
+  at System.Drawing.Bitmap..ctor (System.Drawing.Image original, System.Int32 width, System.Int32 height) [0x00000] in <728fbd68fe594062895e1f819791e76a>:0 
+  at System.Drawing.Bitmap..ctor (System.Drawing.Image original) [0x0000e] in <728fbd68fe594062895e1f819791e76a>:0 
+  at (wrapper remoting-invoke-with-check) System.Drawing.Bitmap..ctor(System.Drawing.Image)
+  at System.Drawing.Icon.ToBitmap () [0x00021] in <728fbd68fe594062895e1f819791e76a>:0 
+  at (wrapper remoting-invoke-with-check) System.Drawing.Icon.ToBitmap()
+  at AltitudeAngelWings.Plugin.AltitudeAngelPlugin.CreateSettingsMenuItem () [0x0002f] in <3c3e1a75afc547c6ba2494e65ddded3e>:0 
+  at AltitudeAngelWings.Plugin.AltitudeAngelPlugin.<Init>b__9_0 () [0x00010] in <3c3e1a75afc547c6ba2494e65ddded3e>:0 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0007c] in <12b418a7818c4ca0893feeaaf67f1e7f>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0009a] in <12b418a7818c4ca0893feeaaf67f1e7f>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <12b418a7818c4ca0893feeaaf67f1e7f>:0 
+  at System.Delegate.DynamicInvokeImpl (System.Object[] args) [0x0010d] in <12b418a7818c4ca0893feeaaf67f1e7f>:0 
+  at System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) [0x0000b] in <12b418a7818c4ca0893feeaaf67f1e7f>:0 
+  at System.Delegate.DynamicInvoke (System.Object[] args) [0x00000] in <12b418a7818c4ca0893feeaaf67f1e7f>:0 
+  at System.Windows.Forms.Control.Invoke (System.Delegate method, System.Object[] args) [0x00012] in <a3daa9b84fd241a497578a25f68bc3c7>:0 
+  at (wrapper remoting-invoke-with-check) System.Windows.Forms.Control.Invoke(System.Delegate,object[])
+  at System.Windows.Forms.Control.Invoke (System.Delegate method) [0x00020] in <a3daa9b84fd241a497578a25f68bc3c7>:0 
+  at (wrapper remoting-invoke-with-check) System.Windows.Forms.Control.Invoke(System.Delegate)
+  at AltitudeAngelWings.Plugin.AltitudeAngelPlugin.Init () [0x00011] in <3c3e1a75afc547c6ba2494e65ddded3e>:0 
+  at MissionPlanner.Plugin.PluginLoader.InitPlugin (System.Reflection.Assembly asm, System.String pluginfilename) [0x00093] in <b0e70e19ad564dc7bb0b8e33a4ca21c0>:0 
+2026-10-15 14:16:30,065  INFO MissionPlanner.Plugin.PluginLoader - Plugin Load /home/jeswin/NIDAR/Mission-Planner/plugins/AltitudeAngelWings.Plugin.dll time 0.0031 s (:0) [Base Thread]
+2026-10-15 14:16:30,065 DEBUG MissionPlanner.Program - Loaded: OSDConfigurator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/OSDConfigurator.dll (:0) [Base Thread]
+2026-10-15 14:16:30,066 DEBUG MissionPlanner.Program - Loaded: netDxf, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/netDxf.dll (:0) [Base Thread]
+2026-10-15 14:16:30,067 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:30,067 DEBUG MissionPlanner.Program - Loaded: Microsoft.Scripting, Version=1.3.4.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1 from /home/jeswin/NIDAR/Mission-Planner/Microsoft.Scripting.dll (:0) [Base Thread]
+2026-10-15 14:16:30,068 DEBUG MissionPlanner.Program - Loaded: Xamarin.Forms.Platform.WinForms, Version=4.1.0.1, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/Xamarin.Forms.Platform.WinForms.dll (:0) [Base Thread]
+2026-10-15 14:16:30,068 DEBUG MissionPlanner.Program - Loaded: px4uploader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/px4uploader.dll (:0) [Base Thread]
+2026-10-15 14:16:30,068 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:30,069 DEBUG MissionPlanner.Program - Loaded: Accord.Imaging, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7 from /home/jeswin/NIDAR/Mission-Planner/Accord.Imaging.dll (:0) [Base Thread]
+2026-10-15 14:16:30,069 DEBUG MissionPlanner.Program - Loaded: Accord, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7 from /home/jeswin/NIDAR/Mission-Planner/Accord.dll (:0) [Base Thread]
+2026-10-15 14:16:30,070 DEBUG MissionPlanner.Program - Loaded: Renci.SshNet, Version=2020.0.2.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106 from /home/jeswin/NIDAR/Mission-Planner/Renci.SshNet.dll (:0) [Base Thread]
+2026-10-15 14:16:30,071  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Grid 1.3.9384.38250 by Michael Oborne (:0) [Base Thread]
+2026-10-15 14:16:30,074 DEBUG MissionPlanner.Program - Loaded: AviFile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/AviFile.dll (:0) [Base Thread]
+2026-10-15 14:16:30,075 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:30,075 DEBUG MissionPlanner.Program - Loaded: MissionPlanner.Antenna, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/MissionPlanner.Antenna.dll (:0) [Base Thread]
+2026-10-15 14:16:30,081 ERROR MissionPlanner.Plugin.PluginLoader - System.DllNotFoundException: setupapi.dll assembly:<unknown assembly> type:<unknown type> member:(null)
+  at (wrapper managed-to-native) TrackerHomeGPS.Device.SetupDiGetClassDevs(System.Guid&,intptr,intptr,uint)
+  at TrackerHomeGPS.Device.DevicePresent (System.Guid g) [0x00017] in <61b5e1c3b6794f43be7075a5b191b88c>:0 
+  at TrackerHomeGPS.GarminUSBGPS.DevicePresent () [0x00000] in <61b5e1c3b6794f43be7075a5b191b88c>:0 
+  at TrackerHome.getDevice () [0x00000] in <61b5e1c3b6794f43be7075a5b191b88c>:0 
+  at TrackerHome.Loaded () [0x00115] in <61b5e1c3b6794f43be7075a5b191b88c>:0 
+  at MissionPlanner.Plugin.PluginLoader.PluginInit () [0x00043] in <b0e70e19ad564dc7bb0b8e33a4ca21c0>:0  (:0) [Base Thread]
+2026-10-15 14:16:30,083  INFO MissionPlanner.MainV2 - Load Pluggins... Done (:0) [Base Thread]
+2026-10-15 14:16:30,084  INFO MissionPlanner.MainV2 - show FlightData (:0) [Base Thread]
+2026-10-15 14:16:30,086  INFO MissionPlanner.GCSViews.FlightData - Activate Called (:0) [Base Thread]
+2026-10-15 14:16:30,087 DEBUG MissionPlanner.Utilities.Tracking - v=1&tid=UA-43098846-1&cid=179a7a61-9c21-4030-b7fd-0cbe09035568&t=appview&an=Mission+Planner&av=1.3.83&cd=MissionPlanner.GCSViews.FlightData&dp=MissionPlanner.GCSViews.FlightData&dt=FlightData&sc=start&ul=en-US&sd=32-bits&sr=1920x1200&cd1=Unix+7.0.0.34&cd4=16&z=1519154865 (:0) [Thread Pool Worker]
+2026-10-15 14:16:30,095 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabQuick (:0) [Base Thread]
+2026-10-15 14:16:30,096 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabActions (:0) [Base Thread]
+2026-10-15 14:16:30,096 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagemessages (:0) [Base Thread]
+2026-10-15 14:16:30,096 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions tabActionsSimple (:0) [Base Thread]
+2026-10-15 14:16:30,096 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPagePreFlight (:0) [Base Thread]
+2026-10-15 14:16:30,097 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabGauges (:0) [Base Thread]
+2026-10-15 14:16:30,097 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTransponder (:0) [Base Thread]
+2026-10-15 14:16:30,097 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabStatus (:0) [Base Thread]
+2026-10-15 14:16:30,097 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabServo (:0) [Base Thread]
+2026-10-15 14:16:30,098 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabAuxFunction (:0) [Base Thread]
+2026-10-15 14:16:30,098 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabScripts (:0) [Base Thread]
+2026-10-15 14:16:30,098 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabPayload (:0) [Base Thread]
+2026-10-15 14:16:30,098 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tabTLogs (:0) [Base Thread]
+2026-10-15 14:16:30,099 DEBUG MissionPlanner.GCSViews.FlightData - add tabControlactions tablogbrowse (:0) [Base Thread]
+2026-10-15 14:16:30,099 DEBUG MissionPlanner.GCSViews.FlightData - not added to tabControlactions  (:0) [Base Thread]
+2026-10-15 14:16:30,099  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-10-15 14:16:30,103  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-10-15 14:16:30,120  INFO MissionPlanner.Controls.HUD - OnHandleCreated Start (:0) [Base Thread]
+2026-10-15 14:16:30,179  INFO MissionPlanner.Controls.HUD - OnLoad Start (:0) [Base Thread]
+2026-10-15 14:16:30,181  INFO MissionPlanner.Controls.HUD - Vendor: Intel (:0) [Base Thread]
+2026-10-15 14:16:30,182  INFO MissionPlanner.Controls.HUD - Version: 4.6 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.24.04.4 (:0) [Base Thread]
+2026-10-15 14:16:30,184  INFO MissionPlanner.Controls.HUD - Device: Mesa Intel(R) Graphics (RPL-S) (:0) [Base Thread]
+2026-10-15 14:16:30,185 DEBUG MissionPlanner.Controls.HUD - GetInteger (:0) [Base Thread]
+2026-10-15 14:16:30,187 DEBUG MissionPlanner.Controls.HUD - MatrixMode (:0) [Base Thread]
+2026-10-15 14:16:30,188 DEBUG MissionPlanner.Controls.HUD - LoadIdentity (:0) [Base Thread]
+2026-10-15 14:16:30,190 DEBUG MissionPlanner.Controls.HUD - Ortho (:0) [Base Thread]
+2026-10-15 14:16:30,191 DEBUG MissionPlanner.Controls.HUD - MatrixMode (:0) [Base Thread]
+2026-10-15 14:16:30,192 DEBUG MissionPlanner.Controls.HUD - LoadIdentity (:0) [Base Thread]
+2026-10-15 14:16:30,194 DEBUG MissionPlanner.Controls.HUD - PushAttrib (:0) [Base Thread]
+2026-10-15 14:16:30,195 DEBUG MissionPlanner.Controls.HUD - Disable (:0) [Base Thread]
+2026-10-15 14:16:30,197 DEBUG MissionPlanner.Controls.HUD - BlendFunc (:0) [Base Thread]
+2026-10-15 14:16:30,198 DEBUG MissionPlanner.Controls.HUD - Enable (:0) [Base Thread]
+2026-10-15 14:16:30,199 DEBUG MissionPlanner.Controls.HUD - Hint (:0) [Base Thread]
+2026-10-15 14:16:30,202 DEBUG MissionPlanner.Controls.HUD - Enable (:0) [Base Thread]
+2026-10-15 14:16:30,204  INFO MissionPlanner.Controls.HUD - OnLoad Done (:0) [Base Thread]
+2026-10-15 14:16:30,208  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-10-15 14:16:30,209  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-10-15 14:16:30,210  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-10-15 14:16:30,210  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-10-15 14:16:30,253  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-10-15 14:16:30,254  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-10-15 14:16:30,446  INFO MissionPlanner.MainV2 - Saving config (:0) [Base Thread]
+2026-10-15 14:16:30,447  INFO MissionPlanner.MainV2 - show FlightData... Done (:0) [Base Thread]
+2026-10-15 14:16:30,450  INFO MissionPlanner.MainV2 - start http (:0) [Base Thread]
+2026-10-15 14:16:30,451  INFO MissionPlanner.MainV2 - start joystick (:0) [Base Thread]
+2026-10-15 14:16:30,452  INFO MissionPlanner.Utilities.httpserver - Listening for client (:0) [motion jpg stream-network kml]
+2026-10-15 14:16:30,452 ERROR MissionPlanner.MainV2 - Mono: closing joystick thread (:0) [Base Thread]
+2026-10-15 14:16:30,453  INFO MissionPlanner.MainV2 - start serialreader (:0) [Base Thread]
+2026-10-15 14:16:30,456  INFO MissionPlanner.MainV2 - start adsbsender (:0) [Base Thread]
+2026-10-15 14:16:30,458  INFO MissionPlanner.MainV2 - start plugin thread (:0) [Base Thread]
+2026-10-15 14:16:30,459 DEBUG MissionPlanner.Program - Loaded: tlogThumbnailHandler, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/tlogThumbnailHandler.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:30,460 DEBUG MissionPlanner.Program - Loaded: DotNetZip, Version=1.16.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745 from /home/jeswin/NIDAR/Mission-Planner/DotNetZip.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:30,461  INFO MissionPlanner.MainV2 - start AutoConnect (:0) [Base Thread]
+2026-10-15 14:16:30,463 DEBUG MissionPlanner.Program - Loaded: SharpCompress, Version=0.29.0.0, Culture=neutral, PublicKeyToken=afb0a02973931d96 from /home/jeswin/NIDAR/Mission-Planner/SharpCompress.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:30,464 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:30,465 DEBUG MissionPlanner.Program - Loaded: I18N, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756 from /usr/lib/mono/gac/I18N/4.0.0.0__0738eb9f132ed756/I18N.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:30,470 DEBUG MissionPlanner.Program - Loaded: I18N.West, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756 from /usr/lib/mono/gac/I18N.West/4.0.0.0__0738eb9f132ed756/I18N.West.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:30,474 DEBUG MissionPlanner.Program - Loaded: System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /home/jeswin/NIDAR/Mission-Planner/System.Buffers.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:30,499  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Mavlink default port",
+  "Enabled": true,
+  "Port": 14550,
+  "Protocol": "Udp",
+  "Format": "MAVLink",
+  "Direction": "Inbound",
+  "ConfigString": ""
+} (:0) [Base Thread]
+2026-10-15 14:16:30,499  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Mavlink alt port",
+  "Enabled": true,
+  "Port": 14551,
+  "Protocol": "Udp",
+  "Format": "MAVLink",
+  "Direction": "Inbound",
+  "ConfigString": ""
+} (:0) [Base Thread]
+2026-10-15 14:16:30,500  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Video udp 5000 h264",
+  "Enabled": true,
+  "Port": 5000,
+  "Protocol": "Udp",
+  "Format": "Video",
+  "Direction": "Inbound",
+  "ConfigString": "udpsrc port=5000 buffer-size=90000 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+} (:0) [Base Thread]
+2026-10-15 14:16:30,503  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Video udp 5100 h264",
+  "Enabled": true,
+  "Port": 5100,
+  "Protocol": "Udp",
+  "Format": "Video",
+  "Direction": "Inbound",
+  "ConfigString": "udpsrc port=5100 buffer-size=90000 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+} (:0) [Base Thread]
+2026-10-15 14:16:30,503  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Video udp 5600 h264",
+  "Enabled": true,
+  "Port": 5600,
+  "Protocol": "Udp",
+  "Format": "Video",
+  "Direction": "Inbound",
+  "ConfigString": "udpsrc port=5600 buffer-size=90000 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+} (:0) [Base Thread]
+2026-10-15 14:16:30,504  INFO MissionPlanner.Utilities.AutoConnect - {
+  "Label": "Video udp 5601 h265",
+  "Enabled": true,
+  "Port": 5601,
+  "Protocol": "Udp",
+  "Format": "Video",
+  "Direction": "Inbound",
+  "ConfigString": "udpsrc port=5601 buffer-size=90000 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H265 ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+} (:0) [Base Thread]
+2026-10-15 14:16:30,506 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Base Thread]
+2026-10-15 14:16:30,534  INFO MissionPlanner.MainV2 - appload time (:0) [Base Thread]
+2026-10-15 14:16:30,535 DEBUG MissionPlanner.Utilities.Tracking - v=1&tid=UA-43098846-1&cid=179a7a61-9c21-4030-b7fd-0cbe09035568&t=timing&an=Mission+Planner&av=1.3.83&cd=MissionPlanner.GCSViews.FlightData&dp=MissionPlanner.GCSViews.FlightData&utc=AppLoad&utv=Load+Time&utt=1852&utl=&ul=en-US&sd=32-bits&sr=1920x1200&cd1=Unix+7.0.0.34&cd4=16&z=1655808329 (:0) [Thread Pool Worker]
+2026-10-15 14:16:30,552 DEBUG MissionPlanner.Program - Loaded: SharpKml, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/SharpKml.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:30,554 DEBUG MissionPlanner.Program - Loaded: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 from /usr/lib/mono/4.5/Facades/netstandard.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:30,605  INFO MissionPlanner.MainV2 - Loaded 4855 airports (:0) [Thread Pool Worker]
+2026-10-15 14:16:30,669 DEBUG MissionPlanner.Program - Loaded: System.Runtime.InteropServices.RuntimeInformation, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/4.5/Facades/System.Runtime.InteropServices.RuntimeInformation.dll (:0) [Base Thread]
+2026-10-15 14:16:31,102 DEBUG MissionPlanner.Program - Loaded: Flurl, Version=3.0.2.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/Flurl.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:31,972  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example18-externalapi.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:31,972  INFO MissionPlanner.Plugin.PluginLoader - Try load BouncyCastle.Cryptography (:0) [Thread Pool Worker]
+2026-10-15 14:16:32,026 DEBUG MissionPlanner.Program - Loaded: System.Reflection.Metadata, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /home/jeswin/NIDAR/Mission-Planner/System.Reflection.Metadata.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:32,146 DEBUG MissionPlanner.Program - Loaded: System.Globalization, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a from /usr/lib/mono/4.5/Facades/System.Globalization.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:32,529  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example18-externalapi.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:33,678 DEBUG MissionPlanner.Utilities.nfz.HK - fl=765f142
+h=www.cloudflare.com
+ip=45.112.151.60
+ts=1792053993.000
+visit_scheme=https
+uag=
+colo=MAA
+sliver=none
+http=http/1.1
+loc=IN
+tls=TLSv1.2
+sni=plaintext
+warp=off
+gateway=off
+rbi=off
+kex=X25519
+ (:0) [Thread Pool Worker]
+2026-10-15 14:16:33,764 DEBUG MissionPlanner.Utilities.nfz.EU - fl=765f109
+h=www.cloudflare.com
+ip=45.112.151.60
+ts=1792053993.000
+visit_scheme=https
+uag=
+colo=MAA
+sliver=none
+http=http/1.1
+loc=IN
+tls=TLSv1.2
+sni=plaintext
+warp=off
+gateway=off
+rbi=off
+kex=X25519
+ (:0) [Thread Pool Worker]
+2026-10-15 14:16:34,530  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/generator.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:34,533 DEBUG MissionPlanner.Program - Loaded: generator, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:16:34,533  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init generator 0.11 by Michael Oborne (:0) [Thread Pool Worker]
+2026-10-15 14:16:34,533  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/generator.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:36,334  INFO MissionPlanner.Utilities.Airports - getAirports - regen list (:0) [FD Mainloop]
+2026-10-15 14:16:36,335  INFO MissionPlanner.Utilities.Airports - getAirports done 0.00117 sec (:0) [FD Mainloop]
+2026-10-15 14:16:36,534  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example4-herelink.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:36,534 DEBUG MissionPlanner.Program - Loaded: example4-herelink, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:16:36,535  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Camera Control 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-10-15 14:16:36,535  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example4-herelink.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:38,535  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example13-herelink2.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:38,536 DEBUG MissionPlanner.Program - Loaded: example13-herelink2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:16:38,546  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example13-herelink2.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:40,547  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example20-multiplepositions.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:40,547 DEBUG MissionPlanner.Program - Loaded: example20-multiplepositions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:16:40,550  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init multiple positions  by  (:0) [Thread Pool Worker]
+2026-10-15 14:16:40,550  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example20-multiplepositions.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:42,551  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example15-leds.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:42,551 DEBUG MissionPlanner.Program - Loaded: example15-leds, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:16:42,552  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init LED Control 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-10-15 14:16:42,552  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example15-leds.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:44,552  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:44,553  INFO MissionPlanner.Plugin.PluginLoader - Try load MissionPlanner.WebAPIs (:0) [Thread Pool Worker]
+2026-10-15 14:16:44,553 DEBUG MissionPlanner.Program - Loaded: MissionPlanner.WebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null from /home/jeswin/NIDAR/Mission-Planner/MissionPlanner.WebAPIs.dll (:0) [Thread Pool Worker]
+2026-10-15 14:16:44,553 DEBUG MissionPlanner.Program - Loaded: example, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:16:44,554  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:46,554  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example14-mass.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:46,555 DEBUG MissionPlanner.Program - Loaded: example14-mass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:16:46,563  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init mass Control 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-10-15 14:16:46,563  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example14-mass.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:48,564  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example19-multiforward.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:48,564 DEBUG MissionPlanner.Program - Loaded: example19-multiforward, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:16:48,565  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Link Forward  by  (:0) [Thread Pool Worker]
+2026-10-15 14:16:48,565  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example19-multiforward.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:50,565  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example7-canrtcm.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:50,566  INFO MissionPlanner.Plugin.PluginLoader - Try load DroneCAN (:0) [Thread Pool Worker]
+2026-10-15 14:16:50,566 DEBUG MissionPlanner.Program - Loaded: example7-canrtcm, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:16:50,567  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init CAN RTCM Extract 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-10-15 14:16:50,567  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example7-canrtcm.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:52,567  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example4.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:52,568 DEBUG MissionPlanner.Program - Loaded: example8, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:16:52,568  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example4.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:54,569  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example9-hudonoff.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:54,571 DEBUG MissionPlanner.Program - Loaded: example9-hudonoff, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:16:54,571  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init HUD 0.2 by Michael Oborne (:0) [Thread Pool Worker]
+2026-10-15 14:16:54,572  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example9-hudonoff.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:56,572  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example3.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:56,573 DEBUG MissionPlanner.Program - Loaded: example8, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:16:56,573  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example3.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:58,573  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example6.cs (:0) [Thread Pool Worker]
+2026-10-15 14:16:58,573 DEBUG MissionPlanner.Program - Loaded: example8, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:16:58,574  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example6.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:00,574  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example6-mapicondesc.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:00,575 DEBUG MissionPlanner.Program - Loaded: example6-mapicondesc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:17:00,576  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init MapIconDesc 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-10-15 14:17:00,576  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example6-mapicondesc.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:02,576  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example16-donate.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:02,577 DEBUG MissionPlanner.Program - Loaded: example16-donate, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:17:02,578  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Donate 0.10 by Example (:0) [Thread Pool Worker]
+2026-10-15 14:17:02,578  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example16-donate.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:04,578  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example5.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:04,579 DEBUG MissionPlanner.Program - Loaded: example8, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:17:04,581  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example5.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:06,581  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example2-menu.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:06,582 DEBUG MissionPlanner.Program - Loaded: example2-menu, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:17:06,584  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init Small stuff 0.10 by EOSBandi (:0) [Thread Pool Worker]
+2026-10-15 14:17:06,585  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example2-menu.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:08,585  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example11-trace.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:08,586 DEBUG MissionPlanner.Program - Loaded: example11-trace, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:17:08,588  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init tracemp 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-10-15 14:17:08,589  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example11-trace.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:10,589  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example12-forwarding.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:10,589 DEBUG MissionPlanner.Program - Loaded: example12-forwarding, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:17:10,590  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example12-forwarding.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:12,590  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example8-modechange.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:12,591 DEBUG MissionPlanner.Program - Loaded: example8-modechange, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:17:12,593  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example8-modechange.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:14,593  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example3-fencedist.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:14,825 DEBUG MissionPlanner.Program - Loaded: example3-fencedist, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:17:14,825  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init FenceDist 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-10-15 14:17:14,825  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example3-fencedist.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:16,826  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example7.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:16,826 DEBUG MissionPlanner.Program - Loaded: example8, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:17:16,827  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example7.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:18,827  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example21-persistentsimple.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:18,877 DEBUG MissionPlanner.Program - Loaded: example21-persistentsimple, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:17:18,877  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example21-persistentsimple.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:20,878  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example22-payloadconfig.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:20,964 DEBUG MissionPlanner.Program - Loaded: example22-payloadconfig, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:17:20,964  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example22-payloadconfig.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:22,965  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example10-canlogfile.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:22,967  INFO MissionPlanner.Plugin.PluginLoader - Try load DroneCAN (:0) [Thread Pool Worker]
+2026-10-15 14:17:23,019 DEBUG MissionPlanner.Program - Loaded: example10-canlogfile, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null from  (:0) [Thread Pool Worker]
+2026-10-15 14:17:23,020  INFO MissionPlanner.Plugin.PluginLoader - Plugin Init CAN Log Extract 0.10 by Michael Oborne (:0) [Thread Pool Worker]
+2026-10-15 14:17:23,020  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example10-canlogfile.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:25,020  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example-watchbutton.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:25,052  INFO MissionPlanner.Plugin.PluginLoader - CodeGenRoslyn: /home/jeswin/NIDAR/Mission-Planner/plugins/example-watchbutton.cs (:0) [Thread Pool Worker]
+2026-10-15 14:17:27,052  INFO MissionPlanner.Plugin.PluginLoader - Plugin: /home/jeswin/NIDAR/Mission-Planner/plugins/example17-menuremove.cs (:0) [Thread Pool Worker]
+2026-10-15 14:25:54,628  INFO MissionPlanner.MainV2 - MainV2_FormClosing (:0) [Base Thread]
+2026-10-15 14:25:54,628  INFO MissionPlanner.MainV2 - GMaps write cache (:0) [Base Thread]
+2026-10-15 14:25:54,628  INFO MissionPlanner.MainV2 - close logs (:0) [Base Thread]
+2026-10-15 14:25:54,629  INFO MissionPlanner.MainV2 - close ports (:0) [Base Thread]
+2026-10-15 14:25:54,629  INFO MissionPlanner.MainV2 - stop adsb (:0) [Base Thread]
+2026-10-15 14:25:54,629  INFO MissionPlanner.Utilities.adsb - adsb stop (:0) [Base Thread]
+2026-10-15 14:25:54,629  INFO MissionPlanner.Utilities.adsb - adsb stopped (:0) [Base Thread]
+2026-10-15 14:25:54,629  INFO MissionPlanner.MainV2 - stop WarningEngine (:0) [Base Thread]
+2026-10-15 14:25:54,629  INFO MissionPlanner.MainV2 - stop GStreamer (:0) [Base Thread]
+2026-10-15 14:25:54,629  INFO MissionPlanner.MainV2 - closing vlcrender (:0) [Base Thread]
+2026-10-15 14:25:54,630  INFO MissionPlanner.MainV2 - closing pluginthread (:0) [Base Thread]
+2026-10-15 14:25:55,040  INFO MissionPlanner.MainV2 - closing serialthread (:0) [Base Thread]
+2026-10-15 14:25:55,040  INFO MissionPlanner.MainV2 - closing adsbthread (:0) [Base Thread]
+2026-10-15 14:25:55,040  INFO MissionPlanner.MainV2 - closing joystickthread (:0) [Base Thread]
+2026-10-15 14:25:55,040  INFO MissionPlanner.MainV2 - closing httpthread (:0) [Base Thread]
+2026-10-15 14:25:55,040  INFO MissionPlanner.MainV2 - sorting tlogs (:0) [Base Thread]
+2026-10-15 14:25:55,041  INFO MissionPlanner.MainV2 - closing MyView (:0) [Base Thread]
+2026-10-15 14:25:55,041  INFO MissionPlanner.Controls.HUD - OnResize start (:0) [Base Thread]
+2026-10-15 14:25:55,042  INFO MissionPlanner.Controls.HUD - OnResize doing (:0) [Base Thread]
+2026-10-15 14:25:55,091  INFO MissionPlanner.Controls.HUD - OnHandleDestroyed Start (:0) [Base Thread]
+2026-10-15 14:25:55,100  INFO MissionPlanner.Controls.HUD - HUD Dispose (:0) [Base Thread]
+2026-10-15 14:25:55,103  INFO MissionPlanner.MainV2 - closing fd (:0) [Base Thread]
+2026-10-15 14:25:55,104  INFO MissionPlanner.MainV2 - closing fp (:0) [Base Thread]
+2026-10-15 14:25:55,104  INFO MissionPlanner.MainV2 - closing sim (:0) [Base Thread]
+2026-10-15 14:25:55,104  INFO MissionPlanner.MainV2 - Saving config (:0) [Base Thread]
+2026-10-15 14:25:55,104  INFO MissionPlanner.MainV2 - MainV2_FormClosing done (:0) [Base Thread]

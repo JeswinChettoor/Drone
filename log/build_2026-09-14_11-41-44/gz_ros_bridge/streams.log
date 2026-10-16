@@ -1,0 +1,24 @@
+[0.123s] Invoking command in '/workspace/build/gz_ros_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake --build /workspace/build/gz_ros_bridge -- -j16 -l16
+[0.235s] Invoked command in '/workspace/build/gz_ros_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake --build /workspace/build/gz_ros_bridge -- -j16 -l16
+[0.243s] Invoking command in '/workspace/build/gz_ros_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake --install /workspace/build/gz_ros_bridge
+[0.249s] -- Install configuration: ""
+[0.249s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/launch
+[0.250s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/launch/bridge.launch.py
+[0.250s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/config
+[0.250s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/config/bridge.yaml
+[0.250s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/ament_index/resource_index/package_run_dependencies/gz_ros_bridge
+[0.250s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/ament_index/resource_index/parent_prefix_path/gz_ros_bridge
+[0.250s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/ament_prefix_path.sh
+[0.250s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/ament_prefix_path.dsv
+[0.250s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/path.sh
+[0.251s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/path.dsv
+[0.251s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.bash
+[0.251s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.sh
+[0.251s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.zsh
+[0.252s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.dsv
+[0.252s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/package.dsv
+[0.252s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/ament_index/resource_index/packages/gz_ros_bridge
+[0.252s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/cmake/gz_ros_bridgeConfig.cmake
+[0.252s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/cmake/gz_ros_bridgeConfig-version.cmake
+[0.252s] -- Up-to-date: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/package.xml
+[0.252s] Invoked command in '/workspace/build/gz_ros_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake --install /workspace/build/gz_ros_bridge

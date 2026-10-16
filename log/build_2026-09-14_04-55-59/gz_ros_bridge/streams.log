@@ -1,0 +1,43 @@
+[0.119s] Invoking command in '/workspace/build/gz_ros_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/ros2_ardupilot_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake /workspace/src/gz_ros_bridge -DCMAKE_INSTALL_PREFIX=/workspace/install/gz_ros_bridge
+[0.165s] -- The C compiler identification is GNU 11.4.0
+[0.206s] -- The CXX compiler identification is GNU 11.4.0
+[0.213s] -- Detecting C compiler ABI info
+[0.254s] -- Detecting C compiler ABI info - done
+[0.258s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.258s] -- Detecting C compile features
+[0.259s] -- Detecting C compile features - done
+[0.261s] -- Detecting CXX compiler ABI info
+[0.310s] -- Detecting CXX compiler ABI info - done
+[0.317s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.318s] -- Detecting CXX compile features
+[0.318s] -- Detecting CXX compile features - done
+[0.322s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.557s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.671s] -- Configuring done
+[0.672s] -- Generating done
+[0.673s] -- Build files have been written to: /workspace/build/gz_ros_bridge
+[0.677s] Invoked command in '/workspace/build/gz_ros_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/ros2_ardupilot_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake /workspace/src/gz_ros_bridge -DCMAKE_INSTALL_PREFIX=/workspace/install/gz_ros_bridge
+[0.677s] Invoking command in '/workspace/build/gz_ros_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/ros2_ardupilot_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake --build /workspace/build/gz_ros_bridge -- -j16 -l16
+[0.704s] Invoked command in '/workspace/build/gz_ros_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/ros2_ardupilot_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake --build /workspace/build/gz_ros_bridge -- -j16 -l16
+[0.710s] Invoking command in '/workspace/build/gz_ros_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/ros2_ardupilot_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake --install /workspace/build/gz_ros_bridge
+[0.715s] -- Install configuration: ""
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/launch
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/launch/bridge.launch.py
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/config
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/config/bridge.yaml
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/ament_index/resource_index/package_run_dependencies/gz_ros_bridge
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/ament_index/resource_index/parent_prefix_path/gz_ros_bridge
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/ament_prefix_path.sh
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/ament_prefix_path.dsv
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/path.sh
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/environment/path.dsv
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.bash
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.sh
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.zsh
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/local_setup.dsv
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/package.dsv
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/ament_index/resource_index/packages/gz_ros_bridge
+[0.715s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/cmake/gz_ros_bridgeConfig.cmake
+[0.716s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/cmake/gz_ros_bridgeConfig-version.cmake
+[0.716s] -- Installing: /workspace/install/gz_ros_bridge/share/gz_ros_bridge/package.xml
+[0.717s] Invoked command in '/workspace/build/gz_ros_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/ros2_ardupilot_bridge:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake --install /workspace/build/gz_ros_bridge

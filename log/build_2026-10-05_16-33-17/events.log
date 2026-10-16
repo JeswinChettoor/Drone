@@ -1,0 +1,18 @@
+[0.000000] (-) TimerEvent: {}
+[0.000443] (-) JobUnselected: {'identifier': 'ardupilot_dds_tests'}
+[0.000476] (-) JobUnselected: {'identifier': 'ardupilot_gazebo'}
+[0.000509] (-) JobUnselected: {'identifier': 'ardupilot_msgs'}
+[0.000534] (-) JobUnselected: {'identifier': 'ardupilot_sitl'}
+[0.000552] (-) JobUnselected: {'identifier': 'cv_bridge'}
+[0.000690] (-) JobUnselected: {'identifier': 'drone_control'}
+[0.000733] (-) JobUnselected: {'identifier': 'gz_ros_bridge'}
+[0.000744] (-) JobUnselected: {'identifier': 'image_geometry'}
+[0.000752] (-) JobUnselected: {'identifier': 'lidar_processing'}
+[0.000759] (-) JobUnselected: {'identifier': 'nidar_msgs'}
+[0.000766] (-) JobUnselected: {'identifier': 'opencv_tests'}
+[0.000773] (-) JobUnselected: {'identifier': 'rf2o_laser_odometry'}
+[0.000780] (-) JobUnselected: {'identifier': 'vision_opencv'}
+[0.000789] (perception) JobQueued: {'identifier': 'perception', 'dependencies': OrderedDict([('cv_bridge', '/workspace/install/cv_bridge'), ('nidar_msgs', '/workspace/install/nidar_msgs')])}
+[0.001051] (perception) JobStarted: {'identifier': 'perception'}
+[0.005888] (perception) JobEnded: {'identifier': 'perception', 'rc': 1}
+[0.016211] (-) EventReactorShutdown: {}

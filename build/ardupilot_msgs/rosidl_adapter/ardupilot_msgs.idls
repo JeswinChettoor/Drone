@@ -1,0 +1,7 @@
+/workspace/build/ardupilot_msgs/rosidl_adapter/ardupilot_msgs:msg/GlobalPosition.idl
+/workspace/build/ardupilot_msgs/rosidl_adapter/ardupilot_msgs:msg/Rc.idl
+/workspace/build/ardupilot_msgs/rosidl_adapter/ardupilot_msgs:msg/Status.idl
+/workspace/build/ardupilot_msgs/rosidl_adapter/ardupilot_msgs:msg/Airspeed.idl
+/workspace/build/ardupilot_msgs/rosidl_adapter/ardupilot_msgs:srv/ArmMotors.idl
+/workspace/build/ardupilot_msgs/rosidl_adapter/ardupilot_msgs:srv/ModeSwitch.idl
+/workspace/build/ardupilot_msgs/rosidl_adapter/ardupilot_msgs:srv/Takeoff.idl

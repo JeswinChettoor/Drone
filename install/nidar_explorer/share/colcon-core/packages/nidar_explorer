@@ -1,0 +1,1 @@
+action_msgs:ament_index_python:geometry_msgs:launch:launch_ros:nav2_behaviors:nav2_bt_navigator:nav2_controller:nav2_lifecycle_manager:nav2_msgs:nav2_navfn_planner:nav2_planner:nav2_regulated_pure_pursuit_controller:nav2_rotation_shim_controller:nav_msgs:python3-numpy:python3-opencv:rclpy:tf2_ros_py

@@ -1,0 +1,22 @@
+/home/developer/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+writing ../../build/maze_explorer/maze_explorer.egg-info/PKG-INFO
+writing dependency_links to ../../build/maze_explorer/maze_explorer.egg-info/dependency_links.txt
+writing entry points to ../../build/maze_explorer/maze_explorer.egg-info/entry_points.txt
+writing requirements to ../../build/maze_explorer/maze_explorer.egg-info/requires.txt
+writing top-level names to ../../build/maze_explorer/maze_explorer.egg-info/top_level.txt
+reading manifest file '../../build/maze_explorer/maze_explorer.egg-info/SOURCES.txt'
+writing manifest file '../../build/maze_explorer/maze_explorer.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/maze_sim.launch.py -> /workspace/install/maze_explorer/share/maze_explorer/launch
+running install_egg_info
+removing '/workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/maze_explorer/maze_explorer.egg-info to /workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer-0.0.0-py3.10.egg-info
+running install_scripts
+Installing explorer_node script to /workspace/install/maze_explorer/lib/maze_explorer
+writing list of installed files to '/workspace/build/maze_explorer/install.log'

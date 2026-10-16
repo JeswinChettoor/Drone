@@ -1,0 +1,10 @@
+[0.008s] Invoking command in '/workspace/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake --build /workspace/build/cv_bridge -- -j16 -l16
+[0.042s] failed to create symbolic link '/workspace/build/cv_bridge/ament_cmake_python/cv_bridge/cv_bridge' because existing path cannot be removed: Is a directory
+[0.043s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_cv_bridge.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_cv_bridge] Error 1
+[0.043s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/ament_cmake_python_symlink_cv_bridge.dir/all] Error 2
+[0.043s] gmake[1]: *** Waiting for unfinished jobs....
+[0.044s] [ 12%] Built target gtest_main
+[0.048s] [ 31%] Built target cv_bridge
+[0.049s] [ 43%] Built target gtest
+[0.050s] gmake: *** [Makefile:146: all] Error 2
+[0.052s] Invoked command in '/workspace/build/cv_bridge' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/install/perception:/workspace/install/lidar_processing:/workspace/install/drone_control:/opt/ros/humble /usr/bin/cmake --build /workspace/build/cv_bridge -- -j16 -l16

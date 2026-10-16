@@ -1,0 +1,27 @@
+running egg_info
+writing ../../build/lidar_processing/lidar_processing.egg-info/PKG-INFO
+writing dependency_links to ../../build/lidar_processing/lidar_processing.egg-info/dependency_links.txt
+writing entry points to ../../build/lidar_processing/lidar_processing.egg-info/entry_points.txt
+writing requirements to ../../build/lidar_processing/lidar_processing.egg-info/requires.txt
+writing top-level names to ../../build/lidar_processing/lidar_processing.egg-info/top_level.txt
+reading manifest file '../../build/lidar_processing/lidar_processing.egg-info/SOURCES.txt'
+writing manifest file '../../build/lidar_processing/lidar_processing.egg-info/SOURCES.txt'
+running build
+running build_py
+copying lidar_processing/__init__.py -> /workspace/build/lidar_processing/build/lib/lidar_processing
+copying lidar_processing/lidar_tilt_stabilizer_node.py -> /workspace/build/lidar_processing/build/lib/lidar_processing
+running install
+running install_lib
+copying /workspace/build/lidar_processing/build/lib/lidar_processing/__init__.py -> /workspace/install/lidar_processing/lib/python3.10/site-packages/lidar_processing
+copying /workspace/build/lidar_processing/build/lib/lidar_processing/lidar_tilt_stabilizer_node.py -> /workspace/install/lidar_processing/lib/python3.10/site-packages/lidar_processing
+running install_data
+copying resource/lidar_processing -> /workspace/install/lidar_processing/share/ament_index/resource_index/packages
+copying package.xml -> /workspace/install/lidar_processing/share/lidar_processing
+copying config/lidar_tilt_stabilizer.yaml -> /workspace/install/lidar_processing/share/lidar_processing/config
+copying launch/lidar_stabilization_launch.py -> /workspace/install/lidar_processing/share/lidar_processing/launch
+running install_egg_info
+removing '/workspace/install/lidar_processing/lib/python3.10/site-packages/lidar_processing-0.0.1-py3.10.egg-info' (and everything under it)
+Copying ../../build/lidar_processing/lidar_processing.egg-info to /workspace/install/lidar_processing/lib/python3.10/site-packages/lidar_processing-0.0.1-py3.10.egg-info
+running install_scripts
+Installing lidar_tilt_stabilizer_node script to /workspace/install/lidar_processing/lib/lidar_processing
+writing list of installed files to '/workspace/build/lidar_processing/install.log'

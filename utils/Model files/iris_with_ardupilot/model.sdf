@@ -1,0 +1,1069 @@
+<?xml version='1.0'?>
+<sdf version="1.9">
+  <model name="iris_with_ardupilot">
+    <include>
+      <uri>model://iris_with_standoffs</uri>
+    </include>
+    <link name="lidar_link">
+      <pose relative_to="iris_with_standoffs::base_link">0 0 0.08 0 0 0</pose>
+      <inertial>
+        <mass>0.08</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <iyy>0.0001</iyy>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+
+      <visual name="lidar_visual">
+        <geometry>
+          <cylinder>
+            <radius>0.035</radius>
+            <length>0.03</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.1 0.1 0.1 1.0</ambient>
+          <diffuse>0.2 0.2 0.2 1.0</diffuse>
+          <specular>0.5 0.5 0.5 1.0</specular>
+        </material>
+      </visual>
+
+      <collision name="lidar_collision">
+        <geometry>
+          <cylinder>
+            <radius>0.035</radius>
+            <length>0.03</length>
+          </cylinder>
+        </geometry>
+      </collision>
+
+      <sensor name="lidar_2d" type="gpu_lidar">
+        <pose>0 0 0 0 0 0</pose>
+        <topic>/model/iris/lidar/scan</topic>
+        <update_rate>10</update_rate>
+        <always_on>1</always_on>
+        <visualize>true</visualize>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>400</samples>
+              <resolution>1</resolution>
+              <min_angle>-3.141592</min_angle>
+              <max_angle>3.141592</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>1</samples>
+              <resolution>1</resolution>
+              <min_angle>0</min_angle>
+              <max_angle>0</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.15</min>
+            <max>12.0</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+      </sensor>
+    </link>
+
+    <joint name="lidar_joint" type="fixed">
+      <parent>iris_with_standoffs::base_link</parent>
+      <child>lidar_link</child>
+    </joint>
+    <link name="rangefinder_link">
+      <!-- Mounted under the frame pointing directly downward along -Z (Pitch = 90 deg / 1.5708 rad) -->
+      <pose relative_to="iris_with_standoffs::base_link">0 0 -0.05 0 1.5708 0</pose>
+      <inertial>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1e-05</ixx>
+          <iyy>1e-05</iyy>
+          <izz>1e-05</izz>
+        </inertia>
+      </inertial>
+
+      <visual name="rangefinder_visual">
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.1 0.1 0.1 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+        </material>
+      </visual>
+
+      <sensor name="rangefinder" type="gpu_lidar">
+        <pose>0 0 0 0 0 0</pose>
+        <topic>/model/iris/rangefinder</topic>
+        <update_rate>50</update_rate>
+        <always_on>1</always_on>
+        <visualize>false</visualize>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>1</samples>
+              <resolution>1</resolution>
+              <min_angle>0</min_angle>
+              <max_angle>0</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>1</samples>
+              <resolution>1</resolution>
+              <min_angle>0</min_angle>
+              <max_angle>0</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.05</min>
+            <max>25.0</max>
+            <resolution>0.01</resolution>
+          </range>
+        </ray>
+      </sensor>
+    </link>
+
+    <joint name="rangefinder_joint" type="fixed">
+      <parent>iris_with_standoffs::base_link</parent>
+      <child>rangefinder_link</child>
+    </joint>
+    <link name="front_camera_link">
+      <!-- Mounted at bottom front: X = +0.12m (forward), Z = -0.05m (underneath frame) -->
+      <!-- Pitch = 0.7854 rad (45 deg) downwards -->
+      <pose relative_to="iris_with_standoffs::base_link">0.12 0 -0.05 0 0.7854 0</pose>
+      <inertial>
+        <mass>0.03</mass>
+        <inertia>
+          <ixx>1e-05</ixx>
+          <iyy>1e-05</iyy>
+          <izz>1e-05</izz>
+        </inertia>
+      </inertial>
+
+      <visual name="camera_visual">
+        <geometry>
+          <box>
+            <size>0.02 0.03 0.02</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.05 0.05 0.05 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+        </material>
+      </visual>
+
+      <sensor name="front_down_camera" type="camera">
+        <pose>0 0 0 0 0 0</pose>
+        <camera>
+          <horizontal_fov>1.3962634</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.05</near>
+            <far>100</far>
+          </clip>
+        </camera>
+        <always_on>1</always_on>
+        <update_rate>30</update_rate>
+        <visualize>false</visualize>
+        <topic>/camera/image_raw</topic>
+      </sensor>
+    </link>
+
+    <joint name="front_camera_joint" type="fixed">
+      <parent>iris_with_standoffs::base_link</parent>
+      <child>front_camera_link</child>
+    </joint>
+    <!--
+      visual markers for debugging
+      - blade root    - teal
+      - blade tip     - orange
+      - blade cp      - yellow
+      - blade forward - red
+      - blade upward  - blue
+    -->
+    <!--
+    <link name="rotor_0_blade_1_cp">
+      <pose>0.13 -0.22 0.216 0 0 0</pose>
+      <visual name='rotor_0_visual_root'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 1 1 0.5</ambient>
+          <diffuse>0 1 1 0.5</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_0_visual_tip'>
+        <pose>0.12 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1.0 0.65 0</ambient>
+          <diffuse>1.0 0.65 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_0_visual_cp'>
+        <pose>0.084 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 1 0</ambient>
+          <diffuse>1 1 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_0_visual_cp_forward'>
+        <pose>0.084 0.02 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 0 0</ambient>
+          <diffuse>1 0 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_0_visual_cp_upward'>
+        <pose>0.084 0 0.02 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 0 1</ambient>
+          <diffuse>0 0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="rotor_0_blade_2_cp">
+      <gravity>0</gravity>
+      <pose>0.13 -0.22 0.216 0 0 0</pose>
+      <visual name='rotor_0_visual_root'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 1 1 0.5</ambient>
+          <diffuse>0 1 1 0.5</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_0_visual_tip'>
+        <pose>-0.12 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1.0 0.65 0</ambient>
+          <diffuse>1.0 0.65 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_0_visual_cp'>
+        <pose>-0.084 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 1 0</ambient>
+          <diffuse>1 1 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_0_visual_cp_forward'>
+        <pose>-0.084 -0.02 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 0 0</ambient>
+          <diffuse>1 0 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_0_visual_cp_upward'>
+        <pose>-0.084 0 0.02 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 0 1</ambient>
+          <diffuse>0 0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    <joint name="rotor_0_blade_1_cp_joint" type="revolute">
+      <parent>iris_with_standoffs::rotor_0</parent>
+      <child>rotor_0_blade_1_cp</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+    <joint name="rotor_0_blade_2_cp_joint" type="revolute">
+      <parent>iris_with_standoffs::rotor_0</parent>
+      <child>rotor_0_blade_2_cp</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <link name="rotor_1_blade_1_cp">
+      <gravity>0</gravity>
+      <pose>-0.13 0.2 0.216 0 0 0</pose>
+      <visual name='rotor_1_visual_root'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 1 1 0.5</ambient>
+          <diffuse>0 1 1 0.5</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_1_visual_tip'>
+        <pose>0.12 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1.0 0.65 0</ambient>
+          <diffuse>1.0 0.65 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_1_visual_cp'>
+        <pose>0.084 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 1 0</ambient>
+          <diffuse>1 1 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_1_visual_cp_forward'>
+        <pose>0.084 0.02 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 0 0</ambient>
+          <diffuse>1 0 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_1_visual_cp_upward'>
+        <pose>0.084 0 0.02 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 0 1</ambient>
+          <diffuse>0 0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="rotor_1_blade_2_cp">
+      <gravity>0</gravity>
+      <pose>-0.13 0.2 0.216 0 0 0</pose>
+      <visual name='rotor_1_visual_root'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 1 1 0.5</ambient>
+          <diffuse>0 1 1 0.5</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_1_visual_tip'>
+        <pose>-0.12 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1.0 0.65 0</ambient>
+          <diffuse>1.0 0.65 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_1_visual_cp'>
+        <pose>-0.084 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 1 0</ambient>
+          <diffuse>1 1 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_1_visual_cp_forward'>
+        <pose>-0.084 -0.02 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 0 0</ambient>
+          <diffuse>1 0 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_1_visual_cp_upward'>
+        <pose>-0.084 0 0.02 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 0 1</ambient>
+          <diffuse>0 0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    <joint name="rotor_1_blade_1_cp_joint" type="revolute">
+      <parent>iris_with_standoffs::rotor_1</parent>
+      <child>rotor_1_blade_1_cp</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+    <joint name="rotor_1_blade_2_cp_joint" type="revolute">
+      <parent>iris_with_standoffs::rotor_1</parent>
+      <child>rotor_1_blade_2_cp</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <link name="rotor_2_blade_1_cp">
+      <gravity>0</gravity>
+      <pose>0.13 0.22 0.216 0 0 0</pose>
+      <visual name='rotor_2_visual_root'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 1 1 0.5</ambient>
+          <diffuse>0 1 1 0.5</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_2_visual_tip'>
+        <pose>0.12 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1.0 0.65 0</ambient>
+          <diffuse>1.0 0.65 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_2_visual_cp'>
+        <pose>0.084 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 1 0</ambient>
+          <diffuse>1 1 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_2_visual_cp_forward'>
+        <pose>0.084 -0.02 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 0 0</ambient>
+          <diffuse>1 0 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_2_visual_cp_upward'>
+        <pose>0.084 0 0.02 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 0 1</ambient>
+          <diffuse>0 0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="rotor_2_blade_2_cp">
+      <gravity>0</gravity>
+      <pose>0.13 0.22 0.216 0 0 0</pose>
+      <visual name='rotor_2_visual_root'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 1 1 0.5</ambient>
+          <diffuse>0 1 1 0.5</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_2_visual_tip'>
+        <pose>-0.12 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1.0 0.65 0</ambient>
+          <diffuse>1.0 0.65 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_2_visual_cp'>
+        <pose>-0.084 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 1 0</ambient>
+          <diffuse>1 1 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_2_visual_cp_forward'>
+        <pose>-0.084 0.02 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 0 0</ambient>
+          <diffuse>1 0 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_2_visual_cp_upward'>
+        <pose>-0.084 0 0.02 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 0 1</ambient>
+          <diffuse>0 0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    <joint name="rotor_2_blade_1_cp_joint" type="revolute">
+      <parent>iris_with_standoffs::rotor_2</parent>
+      <child>rotor_2_blade_1_cp</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+    <joint name="rotor_2_blade_2_cp_joint" type="revolute">
+      <parent>iris_with_standoffs::rotor_2</parent>
+      <child>rotor_2_blade_2_cp</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <link name="rotor_3_blade_1_cp">
+      <gravity>0</gravity>
+      <pose>-0.13 -0.2 0.216 0 0 0</pose>
+      <visual name='rotor_3_visual_root'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 1 1 0.5</ambient>
+          <diffuse>0 1 1 0.5</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_3_visual_tip'>
+        <pose>0.12 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1.0 0.65 0</ambient>
+          <diffuse>1.0 0.65 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_3_visual_cp'>
+        <pose>0.084 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 1 0</ambient>
+          <diffuse>1 1 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_3_visual_cp_forward'>
+        <pose>0.084 -0.02 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 0 0</ambient>
+          <diffuse>1 0 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_3_visual_cp_upward'>
+        <pose>0.084 0 0.02 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 0 1</ambient>
+          <diffuse>0 0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    <link name="rotor_3_blade_2_cp">
+      <gravity>0</gravity>
+      <pose>-0.13 -0.2 0.216 0 0 0</pose>
+      <visual name='rotor_3_visual_root'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 1 1 0.5</ambient>
+          <diffuse>0 1 1 0.5</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_3_visual_tip'>
+        <pose>-0.12 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1.0 0.65 0</ambient>
+          <diffuse>1.0 0.65 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_3_visual_cp'>
+        <pose>-0.084 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 1 0</ambient>
+          <diffuse>1 1 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_3_visual_cp_forward'>
+        <pose>-0.084 0.02 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 0 0</ambient>
+          <diffuse>1 0 0</diffuse>
+        </material>
+      </visual>
+      <visual name='rotor_3_visual_cp_upward'>
+        <pose>-0.084 0 0.02 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.003</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 0 1</ambient>
+          <diffuse>0 0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    <joint name="rotor_3_blade_1_cp_joint" type="revolute">
+      <parent>iris_with_standoffs::rotor_3</parent>
+      <child>rotor_3_blade_1_cp</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+    <joint name="rotor_3_blade_2_cp_joint" type="revolute">
+      <parent>iris_with_standoffs::rotor_3</parent>
+      <child>rotor_3_blade_2_cp</child>
+      <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+    -->
+
+    <!-- plugins -->
+    <plugin filename="gz-sim-joint-state-publisher-system"
+      name="gz::sim::systems::JointStatePublisher">
+    </plugin>
+    <plugin filename="gz-sim-lift-drag-system"
+        name="gz::sim::systems::LiftDrag">
+      <a0>0.3</a0>
+      <alpha_stall>1.4</alpha_stall>
+      <cla>4.2500</cla>
+      <cda>0.10</cda>
+      <cma>0.0</cma>
+      <cla_stall>-0.025</cla_stall>
+      <cda_stall>0.0</cda_stall>
+      <cma_stall>0.0</cma_stall>
+      <area>0.002</area>
+      <air_density>1.2041</air_density>
+      <cp>0.084 0 0</cp>
+      <forward>0 1 0</forward>
+      <upward>0 0 1</upward>
+      <link_name>iris_with_standoffs::rotor_0</link_name>
+    </plugin>
+    <plugin filename="gz-sim-lift-drag-system"
+        name="gz::sim::systems::LiftDrag">
+      <a0>0.3</a0>
+      <alpha_stall>1.4</alpha_stall>
+      <cla>4.2500</cla>
+      <cda>0.10</cda>
+      <cma>0.0</cma>
+      <cla_stall>-0.025</cla_stall>
+      <cda_stall>0.0</cda_stall>
+      <cma_stall>0.0</cma_stall>
+      <area>0.002</area>
+      <air_density>1.2041</air_density>
+      <cp>-0.084 0 0</cp>
+      <forward>0 -1 0</forward>
+      <upward>0 0 1</upward>
+      <link_name>iris_with_standoffs::rotor_0</link_name>
+    </plugin>
+
+    <plugin filename="gz-sim-lift-drag-system"
+        name="gz::sim::systems::LiftDrag">
+      <a0>0.3</a0>
+      <alpha_stall>1.4</alpha_stall>
+      <cla>4.2500</cla>
+      <cda>0.10</cda>
+      <cma>0.0</cma>
+      <cla_stall>-0.025</cla_stall>
+      <cda_stall>0.0</cda_stall>
+      <cma_stall>0.0</cma_stall>
+      <area>0.002</area>
+      <air_density>1.2041</air_density>
+      <cp>0.084 0 0</cp>
+      <forward>0 1 0</forward>
+      <upward>0 0 1</upward>
+      <link_name>iris_with_standoffs::rotor_1</link_name>
+    </plugin>
+    <plugin filename="gz-sim-lift-drag-system"
+        name="gz::sim::systems::LiftDrag">
+      <a0>0.3</a0>
+      <alpha_stall>1.4</alpha_stall>
+      <cla>4.2500</cla>
+      <cda>0.10</cda>
+      <cma>0.0</cma>
+      <cla_stall>-0.025</cla_stall>
+      <cda_stall>0.0</cda_stall>
+      <cma_stall>0.0</cma_stall>
+      <area>0.002</area>
+      <air_density>1.2041</air_density>
+      <cp>-0.084 0 0</cp>
+      <forward>0 -1 0</forward>
+      <upward>0 0 1</upward>
+      <link_name>iris_with_standoffs::rotor_1</link_name>
+    </plugin>
+
+    <plugin filename="gz-sim-lift-drag-system"
+        name="gz::sim::systems::LiftDrag">
+      <a0>0.3</a0>
+      <alpha_stall>1.4</alpha_stall>
+      <cla>4.2500</cla>
+      <cda>0.10</cda>
+      <cma>0.0</cma>
+      <cla_stall>-0.025</cla_stall>
+      <cda_stall>0.0</cda_stall>
+      <cma_stall>0.0</cma_stall>
+      <area>0.002</area>
+      <air_density>1.2041</air_density>
+      <cp>0.084 0 0</cp>
+      <forward>0 -1 0</forward>
+      <upward>0 0 1</upward>
+      <link_name>iris_with_standoffs::rotor_2</link_name>
+    </plugin>
+    <plugin filename="gz-sim-lift-drag-system"
+        name="gz::sim::systems::LiftDrag">
+      <a0>0.3</a0>
+      <alpha_stall>1.4</alpha_stall>
+      <cla>4.2500</cla>
+      <cda>0.10</cda>
+      <cma>0.0</cma>
+      <cla_stall>-0.025</cla_stall>
+      <cda_stall>0.0</cda_stall>
+      <cma_stall>0.0</cma_stall>
+      <area>0.002</area>
+      <air_density>1.2041</air_density>
+      <cp>-0.084 0 0</cp>
+      <forward>0 1 0</forward>
+      <upward>0 0 1</upward>
+      <link_name>iris_with_standoffs::rotor_2</link_name>
+    </plugin>
+
+    <plugin filename="gz-sim-lift-drag-system"
+        name="gz::sim::systems::LiftDrag">
+      <a0>0.3</a0>
+      <alpha_stall>1.4</alpha_stall>
+      <cla>4.2500</cla>
+      <cda>0.10</cda>
+      <cma>0.0</cma>
+      <cla_stall>-0.025</cla_stall>
+      <cda_stall>0.0</cda_stall>
+      <cma_stall>0.0</cma_stall>
+      <area>0.002</area>
+      <air_density>1.2041</air_density>
+      <cp>0.084 0 0</cp>
+      <forward>0 -1 0</forward>
+      <upward>0 0 1</upward>
+      <link_name>iris_with_standoffs::rotor_3</link_name>
+    </plugin>
+    <plugin filename="gz-sim-lift-drag-system"
+        name="gz::sim::systems::LiftDrag">
+      <a0>0.3</a0>
+      <alpha_stall>1.4</alpha_stall>
+      <cla>4.2500</cla>
+      <cda>0.10</cda>
+      <cma>0.0</cma>
+      <cla_stall>-0.025</cla_stall>
+      <cda_stall>0.0</cda_stall>
+      <cma_stall>0.0</cma_stall>
+      <area>0.002</area>
+      <air_density>1.2041</air_density>
+      <cp>-0.084 0 0</cp>
+      <forward>0 1 0</forward>
+      <upward>0 0 1</upward>
+      <link_name>iris_with_standoffs::rotor_3</link_name>
+    </plugin>
+
+    <plugin filename="gz-sim-apply-joint-force-system"
+      name="gz::sim::systems::ApplyJointForce">
+      <joint_name>iris_with_standoffs::rotor_0_joint</joint_name>
+    </plugin>
+    <plugin filename="gz-sim-apply-joint-force-system"
+      name="gz::sim::systems::ApplyJointForce">
+      <joint_name>iris_with_standoffs::rotor_1_joint</joint_name>
+    </plugin>
+    <plugin filename="gz-sim-apply-joint-force-system"
+      name="gz::sim::systems::ApplyJointForce">
+      <joint_name>iris_with_standoffs::rotor_2_joint</joint_name>
+    </plugin>
+    <plugin filename="gz-sim-apply-joint-force-system"
+      name="gz::sim::systems::ApplyJointForce">
+      <joint_name>iris_with_standoffs::rotor_3_joint</joint_name>
+    </plugin>
+
+    <plugin name="ArduPilotPlugin"
+      filename="ArduPilotPlugin">
+      <!-- Port settings -->
+      <fdm_addr>127.0.0.1</fdm_addr>
+      <fdm_port_in>9002</fdm_port_in>
+      <connectionTimeoutMaxCount>5</connectionTimeoutMaxCount>
+      <lock_step>1</lock_step>
+      <no_time_sync>0</no_time_sync>
+      <have_32_channels>0</have_32_channels>
+
+      <!-- Frame conventions
+        Require by ArduPilot: change model and gazebo from XYZ to XY-Z coordinates
+      -->
+      <modelXYZToAirplaneXForwardZDown degrees="true">0 0 0 180 0 0</modelXYZToAirplaneXForwardZDown>
+      <gazeboXYZToNED degrees="true">0 0 0 180 0 90</gazeboXYZToNED>
+
+      <!-- Sensors -->
+      <imuName>iris_with_standoffs::imu_link::imu_sensor</imuName>
+      <imuName>iris_with_standoffs::imu_link::imu_sensor</imuName>
+      <have_imu>1</have_imu>
+      <have_mag>1</have_mag>
+      <have_pressure>1</have_pressure>
+      <have_gps>0</have_gps>
+      <have_rangefinder>1</have_rangefinder>
+      <rangefinderName>rangefinder_link::rangefinder</rangefinderName>
+      <!--
+          incoming control command [0, 1]
+          so offset it by 0 to get [0, 1]
+          and divide max target by 1.
+          offset = 0
+          multiplier = 838 max rpm / 1 = 838
+        -->
+      <control channel="0">
+        <jointName>iris_with_standoffs::rotor_0_joint</jointName>
+        <useForce>0</useForce>
+        <multiplier>838</multiplier>
+        <offset>0</offset>
+        <servo_min>1100</servo_min>
+        <servo_max>1900</servo_max>
+        <type>VELOCITY</type>
+        <p_gain>0.20</p_gain>
+        <i_gain>0</i_gain>
+        <d_gain>0</d_gain>
+        <i_max>0</i_max>
+        <i_min>0</i_min>
+        <cmd_max>2.5</cmd_max>
+        <cmd_min>-2.5</cmd_min>
+        <controlVelocitySlowdownSim>1</controlVelocitySlowdownSim>
+      </control>
+
+      <control channel="1">
+        <jointName>iris_with_standoffs::rotor_1_joint</jointName>
+        <useForce>0</useForce>
+        <multiplier>838</multiplier>
+        <offset>0</offset>
+        <servo_min>1100</servo_min>
+        <servo_max>1900</servo_max>
+        <type>VELOCITY</type>
+        <p_gain>0.20</p_gain>
+        <i_gain>0</i_gain>
+        <d_gain>0</d_gain>
+        <i_max>0</i_max>
+        <i_min>0</i_min>
+        <cmd_max>2.5</cmd_max>
+        <cmd_min>-2.5</cmd_min>
+        <controlVelocitySlowdownSim>1</controlVelocitySlowdownSim>
+      </control>
+
+      <control channel="2">
+        <jointName>iris_with_standoffs::rotor_2_joint</jointName>
+        <useForce>0</useForce>
+        <multiplier>-838</multiplier>
+        <offset>0</offset>
+        <servo_min>1100</servo_min>
+        <servo_max>1900</servo_max>
+        <type>VELOCITY</type>
+        <p_gain>0.20</p_gain>
+        <i_gain>0</i_gain>
+        <d_gain>0</d_gain>
+        <i_max>0</i_max>
+        <i_min>0</i_min>
+        <cmd_max>2.5</cmd_max>
+        <cmd_min>-2.5</cmd_min>
+        <controlVelocitySlowdownSim>1</controlVelocitySlowdownSim>
+      </control>
+
+      <control channel="3">
+        <jointName>iris_with_standoffs::rotor_3_joint</jointName>
+        <useForce>0</useForce>
+        <multiplier>-838</multiplier>
+        <offset>0</offset>
+        <servo_min>1100</servo_min>
+        <servo_max>1900</servo_max>
+        <type>VELOCITY</type>
+        <p_gain>0.20</p_gain>
+        <i_gain>0</i_gain>
+        <d_gain>0</d_gain>
+        <i_max>0</i_max>
+        <i_min>0</i_min>
+        <cmd_max>2.5</cmd_max>
+        <cmd_min>-2.5</cmd_min>
+        <controlVelocitySlowdownSim>1</controlVelocitySlowdownSim>
+      </control>
+
+    </plugin>
+
+  </model>
+</sdf>

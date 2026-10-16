@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: lidar_processing
+Version: 0.0.1
+Summary: 2D LiDAR tilt stabilization using ArduPilot attitude
+Maintainer: your_name
+Maintainer-email: you@example.com
+License: Apache-2.0
+Requires-Dist: setuptools
+Requires-Dist: pymavlink
+Requires-Dist: numpy
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary
