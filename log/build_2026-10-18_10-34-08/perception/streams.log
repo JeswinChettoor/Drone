@@ -1,0 +1,31 @@
+[0.347s] Invoking command in '/workspace/src/perception': CMAKE_PREFIX_PATH=/workspace/install/nidar_msgs:/workspace/install/sllidar_ros2:/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge PYTHONPATH=/workspace/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /workspace/build/perception/build install --record /workspace/build/perception/install.log --install-scripts $base/lib/perception --single-version-externally-managed install_data
+[0.482s] running egg_info
+[0.489s] writing ../../build/perception/perception.egg-info/PKG-INFO
+[0.489s] writing dependency_links to ../../build/perception/perception.egg-info/dependency_links.txt
+[0.489s] writing entry points to ../../build/perception/perception.egg-info/entry_points.txt
+[0.489s] writing requirements to ../../build/perception/perception.egg-info/requires.txt
+[0.490s] writing top-level names to ../../build/perception/perception.egg-info/top_level.txt
+[0.504s] reading manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[0.504s] adding license file 'LICENSE'
+[0.505s] writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[0.505s] running build
+[0.505s] running build_py
+[0.505s] copying perception/survivor_localizer_node.py -> /workspace/build/perception/build/lib/perception
+[0.505s] running install
+[0.507s] running install_lib
+[0.514s] copying /workspace/build/perception/build/lib/perception/survivor_localizer_node.py -> /workspace/install/perception/lib/python3.10/site-packages/perception
+[0.515s] byte-compiling /workspace/install/perception/lib/python3.10/site-packages/perception/survivor_localizer_node.py to survivor_localizer_node.cpython-310.pyc
+[0.515s] running install_data
+[0.516s] creating /workspace/install/perception/share/perception/launch
+[0.516s] copying launch/perception.launch.py -> /workspace/install/perception/share/perception/launch
+[0.516s] creating /workspace/install/perception/share/perception/models
+[0.516s] copying models/yolo11m.pt -> /workspace/install/perception/share/perception/models
+[0.531s] running install_egg_info
+[0.538s] removing '/workspace/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info' (and everything under it)
+[0.539s] Copying ../../build/perception/perception.egg-info to /workspace/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info
+[0.539s] running install_scripts
+[0.554s] Installing confirmer script to /workspace/install/perception/lib/perception
+[0.554s] Installing localizer script to /workspace/install/perception/lib/perception
+[0.554s] Installing yolo script to /workspace/install/perception/lib/perception
+[0.554s] writing list of installed files to '/workspace/build/perception/install.log'
+[0.567s] Invoked command in '/workspace/src/perception' returned '0': CMAKE_PREFIX_PATH=/workspace/install/nidar_msgs:/workspace/install/sllidar_ros2:/workspace/install/rf2o_laser_odometry:/workspace/install/gz_ros_bridge PYTHONPATH=/workspace/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /workspace/build/perception/build install --record /workspace/build/perception/install.log --install-scripts $base/lib/perception --single-version-externally-managed install_data

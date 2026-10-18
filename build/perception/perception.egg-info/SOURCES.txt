@@ -9,6 +9,8 @@ setup.py
 ../../build/perception/perception.egg-info/requires.txt
 ../../build/perception/perception.egg-info/top_level.txt
 ../../build/perception/perception.egg-info/zip-safe
+launch/perception.launch.py
+models/yolo11m.pt
 perception/__init__.py
 perception/camera_yolo_node.py
 perception/survivor_confirmation_node.py

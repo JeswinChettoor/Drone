@@ -1,4 +1,7 @@
 setuptools
+numpy
+pymavlink
+tf_transformations
 
 [test]
 pytest
