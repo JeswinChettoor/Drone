@@ -6,8 +6,8 @@ from geometry_msgs.msg import Pose, PoseArray, PoseStamped
 input_topic = '/localized_person'
 output_topic = '/confirmed_survivors'
 
-person_prox = 2.5 #Radius within which it is considered to be the same person
-min_count = 10
+person_prox = 2.0 #Radius within which it is considered to be the same person
+min_count = 20
 #Minimum number of detections needed to qualify as a cluster
 
 class SurvivorEvidence(Node):
@@ -23,7 +23,7 @@ class SurvivorEvidence(Node):
         y = msg.pose.position.y
 
         cluster = self.find_cluster(x, y)
-        if cluster is None: #Make new cluster
+        if cluster is None: 
             self.clusters.append({'points': [[x, y]], 'confirmed': False})
         else:
             # Add point

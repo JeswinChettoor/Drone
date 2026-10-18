@@ -46,33 +46,13 @@ class CameraYoloNode(Node):
 
     # DEBUGGING
          if self.debug:
-            debug_image = image.copy()
-            for box in result.boxes:
-                x1, y1, x2, y2 = map(int, box.xyxy[0])
-                confidence = float(box.conf[0])
-                cv2.rectangle(
-                    debug_image,
-                    (x1, y1),
-                    (x2, y2),
-                    (0, 255, 0),
-                    2
-                )
-                cv2.putText(
-                    debug_image,
-                    f'person {confidence:.2f}',
-                    (x1, y1 - 10),
-                    cv2.FONT_HERSHEY_SIMPLEX,
-                    0.5,
-                    (0, 255, 0),
-                    2
-                )
+            debug_image = np.ascontiguousarray(result.plot())
             debug_msg = Image()
             debug_msg.header = msg.header
-            debug_msg.height = debug_image.shape[0]
-            debug_msg.width = debug_image.shape[1]
+            debug_msg.height, debug_msg.width = debug_image.shape[:2]
             debug_msg.encoding = 'bgr8'
             debug_msg.is_bigendian = False
-            debug_msg.step = debug_image.shape[1] * 3
+            debug_msg.step = debug_image.strides[0]
             debug_msg.data = debug_image.tobytes()
             self.debug_publisher.publish(debug_msg)
 

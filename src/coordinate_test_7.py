@@ -1,4 +1,3 @@
-import sys
 import rclpy
 from rclpy.node import Node
 from rclpy.time import Time
@@ -13,7 +12,7 @@ class APSlamBridge(Node):
         super().__init__('ap_slam_bridge')
 
         self.declare_parameter('connection_url', 'udp:127.0.0.1:15001')
-        self.declare_parameter('rate_hz', 30.0)
+        self.declare_parameter('rate_hz', 20.0)
 
         url = self.get_parameter('connection_url').value
         self.mav = mavutil.mavlink_connection(url)
@@ -28,13 +27,13 @@ class APSlamBridge(Node):
 
     def on_timer(self):
         try:
-            t = self.tf_buffer.lookup_transform('map', 'base_link', Time())
+            t = self.tf_buffer.lookup_transform('map', 'base_footprint', Time())
         except TransformException:
             return
 
         stamp = t.header.stamp
         if self.last_stamp == (stamp.sec, stamp.nanosec):
-            return  # no new transform since last send
+            return  
         self.last_stamp = (stamp.sec, stamp.nanosec)
 
         p = t.transform.translation
@@ -52,7 +51,7 @@ class APSlamBridge(Node):
         print(x_ned, y_ned, z_ned)
 
 def main():
-    rclpy.init(args=sys.argv)
+    rclpy.init()
     node = APSlamBridge()
     try:
         rclpy.spin(node)

@@ -8,9 +8,11 @@ setup.py
 ../../build/mapping/mapping.egg-info/top_level.txt
 ../../build/mapping/mapping.egg-info/zip-safe
 mapping/__init__.py
-mapping/ap_bridge.py
-mapping/auto_move.py
-mapping/nav2apbridge.py
+mapping/ekf32odom.py
+mapping/ekf3tobase.py
+mapping/mapper.py
+mapping/scanstabilizer.py
+mapping/vel2ap.py
 resource/mapping
 test/test_copyright.py
 test/test_flake8.py

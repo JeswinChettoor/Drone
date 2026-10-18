@@ -6,8 +6,8 @@ from geometry_msgs.msg import Pose, PoseArray, PoseStamped
 input_topic = '/localized_person'
 output_topic = '/confirmed_survivors'
 
-person_prox = 2.5 #Radius within which it is considered to be the same person
-min_count = 10
+person_prox = 2.0 #Radius within which it is considered to be the same person
+min_count = 20
 #Minimum number of detections needed to qualify as a cluster
 
 class SurvivorEvidence(Node):

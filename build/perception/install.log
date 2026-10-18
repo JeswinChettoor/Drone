@@ -15,6 +15,6 @@
 /workspace/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info/requires.txt
 /workspace/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info/SOURCES.txt
 /workspace/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info/PKG-INFO
-/workspace/install/perception/lib/perception/camera_yolo_node
-/workspace/install/perception/lib/perception/survivor_confirmation_node
-/workspace/install/perception/lib/perception/survivor_localizer_node
+/workspace/install/perception/lib/perception/confirmer
+/workspace/install/perception/lib/perception/localizer
+/workspace/install/perception/lib/perception/yolo

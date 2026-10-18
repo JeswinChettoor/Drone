@@ -19,9 +19,9 @@ setup(
     license='Apache-2.0',
     entry_points={
         'console_scripts': [
-            'camera_yolo_node = perception.camera_yolo_node:main',
-            'survivor_localizer_node = perception.survivor_localizer_node:main',
-            'survivor_confirmation_node = perception.survivor_confirmation_node:main'
+            'yolo = perception.camera_yolo_node:main',
+            'localizer = perception.survivor_localizer_node:main',
+            'confirmer = perception.survivor_confirmation_node:main'
         ],
     },
 )
