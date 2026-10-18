@@ -32,7 +32,7 @@ def connect_mavlink():
     return connection
 
 def transform_publisher(node, broadcaster, height, roll, pitch):
-    z = -height  
+    z = height  
     transform = TransformStamped()
     transform.header.stamp = node.get_clock().now().to_msg()
     transform.header.frame_id = 'base_footprint'

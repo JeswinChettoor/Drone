@@ -23,7 +23,7 @@ class SurvivorEvidence(Node):
         y = msg.pose.position.y
 
         cluster = self.find_cluster(x, y)
-        if cluster is None: #Make new cluster
+        if cluster is None: 
             self.clusters.append({'points': [[x, y]], 'confirmed': False})
         else:
             # Add point

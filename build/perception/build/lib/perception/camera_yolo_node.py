@@ -26,7 +26,7 @@ class CameraYoloNode(Node):
          image=np.frombuffer(msg.data,dtype=np.uint8)
          image=image.reshape(msg.height,msg.width,3)
          image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
-         results = self.model.predict(image,conf=0.5,classes=[0],verbose=False)
+         results = self.model.predict(image,conf=0.6,classes=[0],verbose=False)
          result=results[0]
 
          # Detection message
