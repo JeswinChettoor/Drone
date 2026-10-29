@@ -1,0 +1,25 @@
+[0.484s] Invoking command in '/workspace/src/mapping': PYTHONPATH=/workspace/build/mapping/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/mapping/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mapping build --build-base /workspace/build/mapping/build install --record /workspace/build/mapping/install.log --install-scripts $base/lib/mapping --single-version-externally-managed install_data
+[0.675s] running egg_info
+[0.685s] writing ../../build/mapping/mapping.egg-info/PKG-INFO
+[0.686s] writing dependency_links to ../../build/mapping/mapping.egg-info/dependency_links.txt
+[0.686s] writing entry points to ../../build/mapping/mapping.egg-info/entry_points.txt
+[0.686s] writing requirements to ../../build/mapping/mapping.egg-info/requires.txt
+[0.686s] writing top-level names to ../../build/mapping/mapping.egg-info/top_level.txt
+[0.709s] reading manifest file '../../build/mapping/mapping.egg-info/SOURCES.txt'
+[0.710s] writing manifest file '../../build/mapping/mapping.egg-info/SOURCES.txt'
+[0.710s] running build
+[0.710s] running build_py
+[0.711s] running install
+[0.714s] running install_lib
+[0.725s] running install_data
+[0.725s] copying launch/mapping.launch.py -> /workspace/install/mapping/share/mapping/launch
+[0.725s] running install_egg_info
+[0.736s] removing '/workspace/install/mapping/lib/python3.10/site-packages/mapping-0.0.0-py3.10.egg-info' (and everything under it)
+[0.736s] Copying ../../build/mapping/mapping.egg-info to /workspace/install/mapping/lib/python3.10/site-packages/mapping-0.0.0-py3.10.egg-info
+[0.737s] running install_scripts
+[0.758s] Installing ekf3 script to /workspace/install/mapping/lib/mapping
+[0.759s] Installing posxy script to /workspace/install/mapping/lib/mapping
+[0.759s] Installing stabilizer script to /workspace/install/mapping/lib/mapping
+[0.759s] Installing velocity script to /workspace/install/mapping/lib/mapping
+[0.759s] writing list of installed files to '/workspace/build/mapping/install.log'
+[0.784s] Invoked command in '/workspace/src/mapping' returned '0': PYTHONPATH=/workspace/build/mapping/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/mapping/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mapping build --build-base /workspace/build/mapping/build install --record /workspace/build/mapping/install.log --install-scripts $base/lib/mapping --single-version-externally-managed install_data

@@ -1,1 +1,1 @@
-/workspace/install/rf2o_laser_odometry:/workspace/install/perception:/workspace/install/nidar_msgs:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble
+/workspace/install/sllidar_ros2:/workspace/install/rf2o_laser_odometry:/workspace/install/perception:/workspace/install/nidar_msgs:/workspace/install/nidar_explorer:/workspace/install/maze_explorer:/workspace/install/mapping:/workspace/install/lidar_processing:/workspace/install/gz_ros_bridge:/workspace/install/drone_control:/opt/ros/humble

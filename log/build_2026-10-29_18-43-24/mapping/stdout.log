@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/mapping/mapping.egg-info/PKG-INFO
+writing dependency_links to ../../build/mapping/mapping.egg-info/dependency_links.txt
+writing entry points to ../../build/mapping/mapping.egg-info/entry_points.txt
+writing requirements to ../../build/mapping/mapping.egg-info/requires.txt
+writing top-level names to ../../build/mapping/mapping.egg-info/top_level.txt
+reading manifest file '../../build/mapping/mapping.egg-info/SOURCES.txt'
+writing manifest file '../../build/mapping/mapping.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying config/slam_toolbox.yaml -> /workspace/install/mapping/share/mapping/config
+running install_egg_info
+removing '/workspace/install/mapping/lib/python3.10/site-packages/mapping-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/mapping/mapping.egg-info to /workspace/install/mapping/lib/python3.10/site-packages/mapping-0.0.0-py3.10.egg-info
+running install_scripts
+Installing ekf3 script to /workspace/install/mapping/lib/mapping
+Installing posxy script to /workspace/install/mapping/lib/mapping
+Installing stabilizer script to /workspace/install/mapping/lib/mapping
+Installing velocity script to /workspace/install/mapping/lib/mapping
+writing list of installed files to '/workspace/build/mapping/install.log'

@@ -7,7 +7,7 @@ from tf2_ros import TransformBroadcaster
 from tf_transformations import quaternion_from_euler
 
 def connect_mavlink():
-    interval = 2000
+    interval = 5000
     # Time interval between messages . IN MICROSECONDS
     connection=mavutil.mavlink_connection('udpin:127.0.0.1:15000')
     #This is when it is connected via udp . When connected via usb , set string to /dev/ttyUSB0

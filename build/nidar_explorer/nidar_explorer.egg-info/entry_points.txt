@@ -1,2 +1,0 @@
-[console_scripts]
-dfs_explorer = nidar_explorer.dfs_explorer:main
