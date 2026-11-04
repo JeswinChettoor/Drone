@@ -1,0 +1,103 @@
+# Loaded by the launch file. The top-level key must match the node name (explorer_node).
+explorer_node:
+  ros__parameters:
+    # ---- frames ----
+    map_frame: map
+    robot_base_frame: base_footprint
+    camera_frame: camera_link          # NOT camera_link_optical
+
+    # ---- loop rates (Optimized for Pi 5 CPU) ----
+    eval_rate_hz: 2.0                  # Lowered to save CPU
+    coverage_rate_hz: 5.0              # Lowered to save CPU
+
+    # ---- camera model ----
+    use_dual_cameras: True             # Generates the virtual rear camera
+    camera_hfov_deg: 90.0
+    camera_range_m: 2.5
+
+    # ---- coverage targets ----
+    min_unseen_area_m2: 0.6          
+    unseen_open_m: 0.3                 
+    unseen_refresh_s: 1.0              # CPU saver: limits how often unseen math runs
+    inspect_depth_m: 1.0               
+    visited_radius_m: 0.4              # Shrunk so nested doorways aren't accidentally excluded
+
+    # ---- NEW: Geometric Room Detection (v5.2) ----
+    # Defines the bounding-box size of what the drone considers a "room" from the hallway
+    room_min_len_m: 1.4
+    room_max_len_m: 3.0
+    room_min_area_m2: 1.0
+    room_min_short_side_m: 0.8
+
+    # ---- sweep ----
+    max_sweeps: 3
+    sweep_yaw_step_deg: 20.0
+    min_sweep_area_m2: 0.15          
+
+    # ---- NEW: Lockless Decision Engine (v5.1/v5.2) ----
+    # The score must beat the current goal by THIS much to force a switch (stops jitter)
+    switch_margin_m: 3.0               
+    invalid_grace_s: 1.5               # Wait before dropping a flickering frontier
+    goal_validity_radius_m: 1.0
+    goal_timeout_s: 120.0
+
+    # ---- frontier extraction / map processing ----
+    min_frontier_length_meters: 0.4  
+    denoise_kernel_size: 3
+    denoise_unknown_kernel_size: 3
+    occupied_threshold: 65
+    robot_clearance_m: 0.3             
+    cluster_merge_cells: 3
+    
+    # ---- scoring weights (Aggressive DFS) ----
+    w_dist: 10.0
+    w_size: 0.0
+    
+    # DFS TUNING:
+    turn_deadzone_deg: 135.0           # 0 penalty for turns inside this cone
+    turn_penalty_m: 3.0                # Penalty applied only to extreme U-turns
+    unseen_score_penalty_m: 0.0        # Keep at 0 so it doesn't repel from rooms
+    passing_door_bonus_m: 6.0          # Massive "Suction" bonus to force room entry
+    passing_door_radius_m: 6.0         # Distance at which the room suction begins to activate
+
+    # ---- Nav2 Costmap Integration & Self-Rescue ----
+    costmap_topic: /global_costmap/costmap
+    costmap_goal_max_cost: 50
+    costmap_snap_max_m: 0.55
+    costmap_goal_clearance_m: 0.45
+    costmap_snap_far_m: 2.5
+    
+    rescue_enabled: True
+    cmd_vel_topic: /cmd_vel
+    rescue_speed: 0.12
+    rescue_target_clearance_m: 0.40
+    rescue_exit_clearance_m: 0.36
+    rescue_open_clearance_m: 0.55
+
+    # ---- reachability check ----
+    path_check_enabled: true           
+    path_check_top_k: 3                
+    path_cache_ttl_s: 8.0
+    unreachable_ttl_s: 8.0             
+    unreachable_max_fails: 5           # Give up a bit slower (was 3)
+    unreachable_hard_ttl_s: 120.0
+
+    # ---- planner failure guards ----
+    global_fail_targets: 3
+    global_fail_window_s: 4.0
+    global_fail_hold_s: 12.0
+
+    # ---- blacklist / termination ----
+    blacklist_duration_s: 20.0         # Try failed goals again sooner (was 45)
+    blacklist_radius_m: 0.6
+    complete_confirmations: 10         # Adjusted for the new 2.0hz eval rate
+    unreachable_retry_rounds: 3
+    
+    frontier_standoff_m: 0.0           # Stop EXACTLY on the frontier edge (was 0.5)
+    frontier_recovery_max_rounds: 6    # Never give up while frontiers exist
+    frontier_recovery_hold_s: 10.0
+    recovery_snap_step_m: 0.5
+    
+    # ---- debug scoreboard ----
+    scoreboard_enabled: True           # Keep this True while testing!
+    scoreboard_period_s: 5.0           # Increased to 5s to reduce terminal spam

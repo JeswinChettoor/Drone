@@ -1,0 +1,54 @@
+[1.145s] Invoking command in '/workspace/src/maze_explorer': PYTHONPATH=/workspace/build/maze_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/maze_explorer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/maze_explorer build --build-base /workspace/build/maze_explorer/build install --record /workspace/build/maze_explorer/install.log --install-scripts $base/lib/maze_explorer --single-version-externally-managed install_data
+[1.397s] /home/developer/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'
+[1.398s]   warnings.warn(msg)
+[1.484s] running egg_info
+[1.499s] creating ../../build/maze_explorer/maze_explorer.egg-info
+[1.499s] writing ../../build/maze_explorer/maze_explorer.egg-info/PKG-INFO
+[1.499s] writing dependency_links to ../../build/maze_explorer/maze_explorer.egg-info/dependency_links.txt
+[1.500s] writing entry points to ../../build/maze_explorer/maze_explorer.egg-info/entry_points.txt
+[1.500s] writing requirements to ../../build/maze_explorer/maze_explorer.egg-info/requires.txt
+[1.500s] writing top-level names to ../../build/maze_explorer/maze_explorer.egg-info/top_level.txt
+[1.500s] writing manifest file '../../build/maze_explorer/maze_explorer.egg-info/SOURCES.txt'
+[1.533s] reading manifest file '../../build/maze_explorer/maze_explorer.egg-info/SOURCES.txt'
+[1.535s] writing manifest file '../../build/maze_explorer/maze_explorer.egg-info/SOURCES.txt'
+[1.535s] running build
+[1.535s] running build_py
+[1.535s] creating /workspace/build/maze_explorer/build/lib/maze_explorer
+[1.535s] copying maze_explorer/__init__.py -> /workspace/build/maze_explorer/build/lib/maze_explorer
+[1.535s] copying maze_explorer/explorer_node.py -> /workspace/build/maze_explorer/build/lib/maze_explorer
+[1.537s] running install
+[1.542s] running install_lib
+[1.565s] creating /workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer
+[1.565s] copying /workspace/build/maze_explorer/build/lib/maze_explorer/__init__.py -> /workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer
+[1.566s] copying /workspace/build/maze_explorer/build/lib/maze_explorer/explorer_node.py -> /workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer
+[1.567s] byte-compiling /workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer/__init__.py to __init__.cpython-310.pyc
+[1.568s] byte-compiling /workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer/explorer_node.py to explorer_node.cpython-310.pyc
+[1.605s] running install_data
+[1.606s] creating /workspace/install/maze_explorer/share/ament_index/resource_index/packages
+[1.606s] copying resource/maze_explorer -> /workspace/install/maze_explorer/share/ament_index/resource_index/packages
+[1.606s] copying package.xml -> /workspace/install/maze_explorer/share/maze_explorer
+[1.607s] creating /workspace/install/maze_explorer/share/maze_explorer/launch
+[1.607s] copying launch/maze_sim.launch.py -> /workspace/install/maze_explorer/share/maze_explorer/launch
+[1.609s] creating /workspace/install/maze_explorer/share/maze_explorer/urdf
+[1.609s] copying urdf/robot.urdf -> /workspace/install/maze_explorer/share/maze_explorer/urdf
+[1.609s] creating /workspace/install/maze_explorer/share/maze_explorer/worlds
+[1.610s] copying worlds/maze1.world -> /workspace/install/maze_explorer/share/maze_explorer/worlds
+[1.610s] copying worlds/maze.world -> /workspace/install/maze_explorer/share/maze_explorer/worlds
+[1.611s] creating /workspace/install/maze_explorer/share/maze_explorer/meshes
+[1.611s] copying meshes/wheel.stl -> /workspace/install/maze_explorer/share/maze_explorer/meshes
+[1.613s] copying meshes/caster_part.stl -> /workspace/install/maze_explorer/share/maze_explorer/meshes
+[1.615s] copying meshes/bot_body_ascii.stl -> /workspace/install/maze_explorer/share/maze_explorer/meshes
+[1.616s] copying meshes/nidar_maze2.stl -> /workspace/install/maze_explorer/share/maze_explorer/meshes
+[1.617s] copying meshes/caster_wheel.stl -> /workspace/install/maze_explorer/share/maze_explorer/meshes
+[1.618s] copying meshes/bot_body.stl -> /workspace/install/maze_explorer/share/maze_explorer/meshes
+[1.619s] copying meshes/nidar_maze1.stl -> /workspace/install/maze_explorer/share/maze_explorer/meshes
+[1.620s] creating /workspace/install/maze_explorer/share/maze_explorer/config
+[1.620s] copying config/nav2_params.yaml -> /workspace/install/maze_explorer/share/maze_explorer/config
+[1.621s] copying config/slam_params.yaml -> /workspace/install/maze_explorer/share/maze_explorer/config
+[1.622s] copying config/explorer_params.yaml -> /workspace/install/maze_explorer/share/maze_explorer/config
+[1.623s] running install_egg_info
+[1.678s] Copying ../../build/maze_explorer/maze_explorer.egg-info to /workspace/install/maze_explorer/lib/python3.10/site-packages/maze_explorer-0.0.0-py3.10.egg-info
+[1.680s] running install_scripts
+[1.754s] Installing explorer_node script to /workspace/install/maze_explorer/lib/maze_explorer
+[1.755s] writing list of installed files to '/workspace/build/maze_explorer/install.log'
+[1.793s] Invoked command in '/workspace/src/maze_explorer' returned '0': PYTHONPATH=/workspace/build/maze_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/install/maze_explorer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/maze_explorer build --build-base /workspace/build/maze_explorer/build install --record /workspace/build/maze_explorer/install.log --install-scripts $base/lib/maze_explorer --single-version-externally-managed install_data
